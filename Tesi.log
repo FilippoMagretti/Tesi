@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  3 MAR 2026 10:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  3 MAR 2026 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -608,26 +608,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.260     \newpage
                    [1]
-Underfull \hbox (badness 10000) in paragraph at lines 270--273
-
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.310     \newpage
-                   [2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+l.290     \item p
+                 recisa e accurata: i valori misurati sono vicini al valore ... [2]
+<Images/Capitolo_1/precisione_accuratezza.png, id=208, 538.26094pt x 176.91093pt>
+File: Images/Capitolo_1/precisione_accuratezza.png Graphic file (type png)
+<use Images/Capitolo_1/precisione_accuratezza.png>
+Package pdftex.def Info: Images/Capitolo_1/precisione_accuratezza.png  used on input line 298.
+(pdftex.def)             Requested size: 269.1298pt x 88.45525pt.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.342     \newpage
-                   [3]
+l.316 
+       [3{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/Capitolo_1/precisione_accuratezza.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.384     \newpage
-                   [4] [5] [6] [7] [8] [9] (./Tesi.aux)
+l.352     \newpage
+                   [4] [5] [6] [7] [8] [9] [10] [11] (./Tesi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -636,18 +637,18 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 64175A80C887D3F36DD8BEDF1EB59737;7847.
  ) 
 Here is how much of TeX's memory you used:
- 18125 strings out of 467538
- 291673 string characters out of 5423725
- 848616 words of memory out of 5000000
- 46702 multiletter control sequences out of 15000+600000
- 638910 words of font info for 68 fonts, out of 8000000 for 9000
+ 18147 strings out of 467538
+ 292263 string characters out of 5423725
+ 848670 words of memory out of 5000000
+ 46718 multiletter control sequences out of 15000+600000
+ 640440 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,117p,574b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on Tesi.pdf (14 pages, 200767 bytes).
+ 108i,12n,117p,614b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on Tesi.pdf (16 pages, 336397 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 

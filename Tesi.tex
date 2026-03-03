@@ -269,8 +269,50 @@ In particolare, la metrologia tecnico-scientifica ha il compito di rendere dispo
 
 Con lo scopo di fare chiarezza sui concetti di base, è importante introdurre alcuni termini fondamentali che saranno utilizzati nel corso del lavoro, spesso i quali vengono usati in modo improprio o confusi tra loro.
 Innanzitutto è importante chiarire il significato di \textbf{misurazione} e di \textbf{misura}.\\
-La misurazione è il processo mediante il quale si ottiene la misura di una grandezza fisica tramite l'utilizzo di opportuni strumenti.\\
+La \textbf{misurazione} è il processo mediante il quale si ottiene la misura di una grandezza fisica tramite l'utilizzo di opportuni strumenti.\\
+La \textbf{misura} è invece il risultato di una misurazione, costituita da: un \textbf{numero}, da una \textbf{incertezza} e da una \textbf{unità di misura}.\par
 
+Fondamentali sono i concetti di \textbf{riproducibilità}, \textbf{ripetibilità} e \textbf{riferibilità}, che costituiscono la qualità di una misurazione all'interno della norma ISO 9001, relativa appunto ai sistemi di gestione per la qualità.\\
+Con \textbf{riproducibilità} si intende la possibilità di che persone diverse possano ottenere la stessa misura della stessa grandezza, con risultati confrontabili tra loro.\\
+Con \textbf{ripetibilità} si intende la possibilità di ottenere la stessa misura da più misurazioni effettuate dal singolo operatore in tempi differenti ma nelle stesse condizioni.\\
+Con \textbf{riferibilità} si intende la possibilità di confrontare il risultato di una misurazione con quello che si ottiene da appropriati campioni di riferimento.\par 
+
+Per quanto riguarda la definizione di \textbf{errore} è importante sottolineare che non esiste una definizione univoca, ma in generale si può definire come la differenza tra il valore misurato e il valore "vero" della grandezza. Si possono comunque distinguere due principali tipi di errore: quello \textbf{casuale} e quello \textbf{sistematico}.\\
+Con \textbf{errori casuali} si intendono errori che, per loro natura, al ripetersi delle misurazioni affliggono i valori di misura facendoli oscillare attorno ad un valore pressoché costante (errore di parallasse, o fluttuazioni della stessa grandezza misurata in seguito a variazioni ambientali quali la temperatura ad esempio).\\
+Con \textbf{errori sistematici} si intendono invece gli errori di difficile individuazione in quanto si manifestano sempre nello stesso modo, tipicamente provocati dalla strumentazione stessa. \par
+
+Anche i termini di \textbf{precisione} e \textbf{accuratezza} sono spesso confusi tra loro.\\
+Con \textbf{precisione} si indica la dispersione dei dati ottenuti dalle misurazioni rispetto al valore "vero" della grandezza misurata, tipicamente espressa tramite  lo \textbf{scarto tipo} detta anche \textbf{deviazione standard sperimentale}, oppure come sinonimo di \textbf{errore relativo}. A questo poi si lega il termine di \textbf{classe di precisione} di uno strumento di misura, ripreso in seguito nel testo.\\
+Con \textbf{accuratezza} indica invece la vicinanza tra il valore misurato e il valore "vero" della grandezza misurata.\\
+Per rendere più chiara questa distinzione, si può pensare di attribuire queste due definizioni in tutte e quattro le possibili combinazioni per una misura:
+
+\begin{itemize}
+    \item precisa e accurata: i valori misurati sono vicini al valore medio e vicini al valore "vero";
+    \item precisa ma non accurata: i valori misurati sono vicini al valore medio ma lontani al valore "vero";
+    \item non precisa ma accurata: i valori misurati sono lontani al valore medio ma vicini al valore "vero";
+    \item non precisa e non accurata: i valori misurati sono lontani sia al valore medio che al valore "vero";
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.5]{Images/Capitolo_1/precisione_accuratezza.png}
+    \caption{Precisione e accuratezza},
+    \label{fig:precisione_accuratezza}
+\end{figure}
+
+\par
+La questione a questo punto è la seguente: come si può fare una stima dell'errore se non è noto il valore "vero" della grandezza misurata? Qui entra in gioco il concetto di \textbf{incertezza} di una misura, che rappresenta "il risultato della stima che determina l'ampiezza del campo entro il quale il valore vero di un misurando deve trovarsi, generalmente con una data probalità" (come definito nella norma UNI CEI EN ISO 10012 ediz.1993).\\
+Il valore "vero" diventa quindi un valore ricavabile in termini statistici dal quale, solo successivamente, è possibile ricavare gli errori, e non un valore di partenza a cui poter fare riferimento sin da subito. Con \textbf{incertezza} si esprime quindi l'intervallo all'interno del quale si trova il valore "vero" con una probabilità elevata.\par
+
+Ora risulta più comprensibile il modo con cui poter scrivere una misura, che come detto è costituita da un numero, da un'unità di misura e da un'incertezza:
+
+\begin{equation}
+    \text{Misura} = M_{\text{Valore medio}} \pm U_{\text{Incertezza}} 
+\end{equation}
+dove il valore medio $M$ rappresenta la stima del valore "vero" del misurando e l'incertezza $U$ rappresenta la stima dell'errore tale per cui il valore "vero" ricada all'interno dell'intervallo $[M-U ; M+U]$ con una data probabilità. \par
+
+Per quanto concerne questo elaborato, è importante sottolineare che l'obiettivo principale è quello di sviluppare procedure e sistemi di taratura per \textbf{catene di misura} di coppia e forza, con l'intento di accreditare un laboratorio prove secondo la normativa UNI EN ISO 17025.\\
+Rimane solo da definire in modo chiaro cosa si intenda con \textbf{catena di misura}. La catena di misura (o catena metrologica, o catena di riferibilità) è l'insieme di tutti gli elementi che partecipano al processo di misurazione, a partire dallo strumento da tarare fino a un campione di riferimento, chiamato anche \textbf{campione primario}, il quale rappresenta l'unità di misura di riferimento del Sistema Internazionale (SI). In questo modo si costituisce una riferibilità diretta tra lo strumento da tarare e il campione in questione.  
 
 
 
