@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  3 MAR 2026 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  4 MAR 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,8 +627,13 @@ l.316
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.352     \newpage
-                   [4] [5] [6] [7] [8] [9] [10] [11] (./Tesi.aux)
+l.349     \item 5
+                 .3    Luogo di lavoro e condizioni ambientali [4]
+Overfull \hbox (5.1079pt too wide) in paragraph at lines 359--362
+\T1/cmr/m/n/12 Molta im-por-tan-za è quin-di at-tri-bui-ta al-la va-li-da-zio-ne dei me-to-di di mi-su-ra-zio-ne/taratura
+ []
+
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] (./Tesi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -637,18 +642,18 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 64175A80C887D3F36DD8BEDF1EB59737;7847.
  ) 
 Here is how much of TeX's memory you used:
- 18147 strings out of 467538
- 292263 string characters out of 5423725
+ 18157 strings out of 467538
+ 292351 string characters out of 5423725
  848670 words of memory out of 5000000
  46718 multiletter control sequences out of 15000+600000
  640440 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,117p,614b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on Tesi.pdf (16 pages, 336397 bytes).
+ 108i,12n,117p,660b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on Tesi.pdf (20 pages, 376629 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  267 words of extra memory for PDF output out of 10000 (max. 10000000)
 

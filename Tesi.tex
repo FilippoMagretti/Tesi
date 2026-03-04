@@ -304,10 +304,10 @@ Per rendere più chiara questa distinzione, si può pensare di attribuire queste
 La questione a questo punto è la seguente: come si può fare una stima dell'errore se non è noto il valore "vero" della grandezza misurata? Qui entra in gioco il concetto di \textbf{incertezza} di una misura, che rappresenta "il risultato della stima che determina l'ampiezza del campo entro il quale il valore vero di un misurando deve trovarsi, generalmente con una data probalità" (come definito nella norma UNI CEI EN ISO 10012 ediz.1993).\\
 Il valore "vero" diventa quindi un valore ricavabile in termini statistici dal quale, solo successivamente, è possibile ricavare gli errori, e non un valore di partenza a cui poter fare riferimento sin da subito. Con \textbf{incertezza} si esprime quindi l'intervallo all'interno del quale si trova il valore "vero" con una probabilità elevata.\par
 
-Ora risulta più comprensibile il modo con cui poter scrivere una misura, che come detto è costituita da un numero, da un'unità di misura e da un'incertezza:
+Ora risulta più comprensibile il modo con cui poter scrivere una misura, che come detto è costituita da un numero, da un'incertezza e da un'unità di misura:
 
 \begin{equation}
-    \text{Misura} = M_{\text{Valore medio}} \pm U_{\text{Incertezza}} 
+    \text{Misura} = M_{\text{Valore medio}} \pm U_{\text{Incertezza}} [\text{Unità di misura}]
 \end{equation}
 dove il valore medio $M$ rappresenta la stima del valore "vero" del misurando e l'incertezza $U$ rappresenta la stima dell'errore tale per cui il valore "vero" ricada all'interno dell'intervallo $[M-U ; M+U]$ con una data probabilità. \par
 
@@ -315,30 +315,133 @@ Per quanto concerne questo elaborato, è importante sottolineare che l'obiettivo
 Rimane solo da definire in modo chiaro cosa si intenda con \textbf{catena di misura}. La catena di misura (o catena metrologica, o catena di riferibilità) è l'insieme di tutti gli elementi che partecipano al processo di misurazione, a partire dallo strumento da tarare fino a un campione di riferimento, chiamato anche \textbf{campione primario}, il quale rappresenta l'unità di misura di riferimento del Sistema Internazionale (SI). In questo modo si costituisce una riferibilità diretta tra lo strumento da tarare e il campione in questione.  
 
 
-
-\begin{itemize}
-    \item Concetti di misura, errore, accuratezza, precisione
-    \item Catena di misura
-\end{itemize}
-
-
-
 \subsection{1.2	La normativa UNI EN ISO 17025}
 
+Affinché un laboratorio di taratura possa essere accreditato da parte della SINAL (Sistema Nazionale di Accreditamento dei Laboratori), cioè che riceva un riconoscimento da parte di un ente terzo che attesti la competenza tecnica del laboratorio stesso, è necessario che il laboratorio soddisfi i requisiti stabiliti dalla norma UNI EN ISO 17025, che fanno riferimento sia alla capacità operativa che a quella organizzativa del laboratorio.\par
 
+Nel capitolo 4 della norma sono contenuti i requisiti generali di carattere organizzativo e gestionale:
 
 \begin{itemize}
-    \item Requisiti tecnici
-    \item Gestione della strumentazione
-    \item Rintracciabilita metrologica
-    \item Taratura e verifica
+    \item 4.1    Organizzazione
+    \item 4.2    Sistema qualità
+    \item 4.3    Controllo della documentazione
+    \item 4.4    Riesame delle richieste, delle offerte e dei contratti
+    \item 4.5    Subappalto delle prove e delle tarature
+    \item 4.6    Approvvigionamento di servizi e di forniture
+    \item 4.7    Servizi al cliente
+    \item 4.8    Reclami
+    \item 4.9    Controllo delle attività di prova e/o taratura non conformi
+    \item 4.10   Azioni correttive
+    \item 4.11   Azioni preventive
+    \item 4.12   Controllo delle registrazioni
+    \item 4.13   Verifiche ispettive interne
+    \item 4.14   Riesami da parte della direzione
 \end{itemize}
 
+\noindent
+Queste voci non riguardano gli aspetti tecnici, ma concorrono alla qualità e gestione della documentazione, importanti anche dal punto di vista del rapporto tra clienti e fornitori.\par
+
+Nel capitolo 5 della norma sono presi in considerazione invece gli aspetti tecnici, rilevanti per quanto concerne l'affidabilità dei risultati prodotti dal laboratorio, ed è così suddiviso:
+
+\begin{itemize}
+    \item 5.1    Generalità
+    \item 5.2    Personale
+    \item 5.3    Luogo di lavoro e condizioni ambientali
+    \item 5.4    Metodi di prova e di taratura e validazione dei metodi
+    \item 5.5    Apparecchiature
+    \item 5.6    Riferibilità delle misure
+    \item 5.7    Campionamento
+    \item 5.8    Manipolazione degli oggetti da provare e tarare
+    \item 5.9    Assicurazione della qualità dei risultati di prova e di taratura
+    \item 5.10   Rappresentazione dei risultati
+\end{itemize}
+
+\noindent
+Molta importanza è quindi attribuita alla validazione dei metodi di misurazione/taratura (gestione della strumentazione) e alla rintracciabilità metrologica.\\
+Per quanto riguarda il primo aspetto sono prescritte procedure per la programmazione delle tarature e per la determinazione dell'incertezza di misura.\\
+Per quanto riguarda invece la rintracciabilità metrologica è importante che le misure ottenute siano riferibili ai campioni di riferimento, che ogni taratura della catena di riferibilità sia eseguita in modo adeguato e che sia documentata con evidenza formale, attraverso certificati SIT (Servizio di taratura in Italia) o equivalenti.\par
+
+L'operazione di taratura deve quindi seguire una di queste due tecniche fondamentali:
+
+\begin{itemize}
+    \item taratura con una o più misurazioni di una grandezza di valore noto, chiamata \textbf{campione di riferimento};
+    \item taratura effettuata con un altro strumento taratore, chiamato \textbf{strumento campione}.
+\end{itemize}
+
+\noindent
+Occore inoltre che la grandezza (campione) utilizzata, o lo strumento campione, siano caratterizzati da una incertezza inferiore a quella dello strumento da tarare, in questo modo la grandezza associata al campione (oppure il risultato della misurazione effettuata con lo strumento campione) può essere considerata come un valore "vero" per la taratura dello strumento da tarare. \par
+
+In ogni caso il risultato della taratura deve essere rappresentato dallo scostamento tra quanto rilevato e il valore "vero", scostamento calcolato da una o più misurazioni che costituisce l'incertezza di misura assocciata alla taratura stessa, elemento fondamentale per il processo di verifica dell'operazione.\par
 
 
 \subsection{1.3	Valutazione dell'incertezza di misura}
 
+La “Guide to the expression of Uncertainty in Measurement” (GUM) fornisce
+linee guida universali e adottate a livello europeo per valutare l'incertezza nelle misure.\\
+L'incertezza di una misura è un parametro che caratterizza la dispersione dei valori ottenuti, e all'interno di questa guida è previsto considerarla come composta da due componenti che differiscono dal metodo di valutazione: l'incertezza di \textbf{tipo A} e l'incertezza di \textbf{tipo B}.\par
 
+L'incertezza di \textbf{tipo A} viene valutata attraverso una serie di ripetute misurazioni, sulle quali vengono effettuate elaborazioni statistiche. Il procedimento da adottare porta al calcolo dello \textbf{scarto tipo}, e risulta utilizzabile anche in sede di taratura, esprimibile come scostamento tra la media ottenuta da un certo numero di prove e il valore "vero" di riferimento fornito da un campione o da uno strumento campione. I risultati di questo procedimento sono quelli tipicamente ripotati nei certificati di taratura.\par
+
+La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare $N$ misurazioni e di seguire i successivi step:
+
+\begin{itemize}
+    \item calcolo della \text{media} come media aritmetica $m$ dei valori misurati
+    
+    \begin{equation}
+    m = \frac{1}{N} \sum_{i=1}^{N} x_i
+    \end{equation}
+
+    \item calcolo degli \textbf{scarti} $s_i$ dei valori misurati rispetto alla media
+   
+    \begin{equation}
+    s_i = x_i - m
+    \end{equation}
+
+    \item calcolo dello \textbf{scarto tipo} $s$ come stima della deviazione standard sperimentale di una distribuzione ipoteticamente gaussiana
+    
+    \begin{equation}
+    s = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} s_i^2}
+    \end{equation}
+
+\end{itemize}
+
+Occorre considerare nel calcolo della misurazione anche un altro contributo dovuto alla \textbf{incertezza diripetibilità}, classificabile come incertezzadi tipo A, che viene così calcolata:
+
+\begin{itemize}
+    \item calcolo della \textbf{media} $m$ calcolata su $N$ misurazioni come media aritmetica dei valori misurati;
+    \item calcolo dello \textbf{scarto tipo} $s$ come illustrato in precedenza;
+    \item calcolo della \textbf{deviazione standard della media} $s_m$ andando a dividere lo scarto tipo $s$ per la radice quadrata del numero di misurazioni $N$ effettuate
+    
+    \begin{equation}
+    s_m = \frac{s}{\sqrt{N}}
+    \end{equation}
+
+\end{itemize}
+
+L'incertezza di \textbf{tipo B} viene valutata invece tramite modalità che non necessitano di misurazioni ripetute, e il suo calcolo parte dalla conoscenza dell'entità massima della variazione casuale \textbf{$a$} di una grandezza, la quale tipicamente è simmetrica rispetto a zero, assumendo quindi valori compresi nell'intervallo $[-a ; a]$. Il valore \textbf{$a$} è ottenuto da report informativi, certificati di taratura, risultati sperimentali, in sostanza da conoscenze a priori del contesto in cui si opera.\\
+Stabilito il valore di $a$, in seguito a una ipotesi di distribuzione statistica della grandezza misurata all'interno dell'intervallo $[-a ; a]$, è possibile calcolare l'incertezza di tipo B $u$ nel modo seguente:
+
+\begin{itemize}
+    \item nel caso di variabili casuali, si ipotizza una \textbf{distribuzione rettangolare}, la cui deviazione standard è pari a
+    
+    \begin{equation}
+    u = \frac{a}{\sqrt{3}}
+    \end{equation}
+
+     Questa ipotesi viene fatta nei casi in cui non si hanno informazioni sufficienti per poter fare ipotesi più specifiche riguardo alla distribuzione della grandezza misurata.
+\end{itemize}
+
+Una volta calcolate le due componenti A e B, è possibile calcolare una combinazione di queste due incertezze, calcolando così una incertezza risultante, detta \textbf{incertezza tipo}.\par
+
+Al termine di un processo di misurazione, ottenuti $n$ valori di deviazione standard $u_1, u_2, ..., u_n$ associati a $n$ fonti di incertezza, l'\textbf{incertezza tipo} $u$ è data dalla loro somma quadratica, che si basa sull'ipotesi di indipendenza tra le fonti di incertezza:
+
+\begin{equation}
+u = \sqrt{u_1^2 + u_2^2 + ... + u_n^2}
+\end{equation}
+
+Successivamente occore determinare l'\textbf{equazione della misura}, che lega la grandezza misurata $Y$ alle grandezze di ingresso $X_1, X_2, ..., X_n$ che influenzano la misura. L'eventuale mancanza di informazioni relativa a tali grandezze di ingresso, alle loro relative misure ed incertezze, e alla relazione stessa che le lega alla gradezza misurata, determinerebbe una ulteriore fonte di incertezza, tipica degli ambienti di sperimentazione scientifica e meno usuale in ambito industriale.\par
+Ipotizzando di conoscere l'equazione della misura, è possibile calcolare la \textbf{legge di propagazione dell'incertezza}, che corrisponde alla legge di propagazione degli errori, riportata nell'appendice 1, che consente di calcolare la stima della varianza (ossia il quadrato della deviazione standard) come una combinazione lineare delle varianze associate alle grandezze di ingresso $X_1, X_2, ..., X_n$, ciascuna pesata con il quadrato del coefficiente di sensibilità $c_i$ che rappresenta la derivata parziale della grandezza misurata $Y$ rispetto alla grandezza di ingresso $X_i$.\par
+Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo composta} $u_c$, risultato della propagazione delle varie incertezze.
 
 \begin{itemize}
     \item Approccio GUM
