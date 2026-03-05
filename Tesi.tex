@@ -151,9 +151,9 @@
 % Modifica dello stile dei riferimenti, con il testo in cyano
 \hypersetup{
     colorlinks=true,
-    linkcolor=black,
+    linkcolor=blue,
     filecolor=black,      
-    urlcolor=black,
+    urlcolor=blue,
     pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
     citecolor=black,
@@ -312,7 +312,9 @@ Ora risulta più comprensibile il modo con cui poter scrivere una misura, che co
 dove il valore medio $M$ rappresenta la stima del valore "vero" del misurando e l'incertezza $U$ rappresenta la stima dell'errore tale per cui il valore "vero" ricada all'interno dell'intervallo $[M-U ; M+U]$ con una data probabilità. \par
 
 Per quanto concerne questo elaborato, è importante sottolineare che l'obiettivo principale è quello di sviluppare procedure e sistemi di taratura per \textbf{catene di misura} di coppia e forza, con l'intento di accreditare un laboratorio prove secondo la normativa UNI EN ISO 17025.\\
-Rimane solo da definire in modo chiaro cosa si intenda con \textbf{catena di misura}. La catena di misura (o catena metrologica, o catena di riferibilità) è l'insieme di tutti gli elementi che partecipano al processo di misurazione, a partire dallo strumento da tarare fino a un campione di riferimento, chiamato anche \textbf{campione primario}, il quale rappresenta l'unità di misura di riferimento del Sistema Internazionale (SI). In questo modo si costituisce una riferibilità diretta tra lo strumento da tarare e il campione in questione.  
+Rimane solo da definire in modo chiaro cosa si intenda con \textbf{catena di misura} e \textbf{catena di riferibilità} o \textbf{metrologica}.\\
+ La \textbf{catena di misura} è l'insieme di tutti gli elementi che partecipano al processo di misurazione, a partire dallo strumento da tarare fino a un campione di riferimento, chiamato anche \textbf{campione primario}, il quale rappresenta l'unità di misura di riferimento del Sistema Internazionale (SI). Comeprende quindi una serie di strumenti e dispositivi che elaborano il segnale in ingresso prodotto dalla grandezza da misurare per restituire in uscita il valore letto.\\
+La \textbf{catena di riferibilita} o \textbf{metrologica} è invece l'insieme di tutti i dicumenti di taratura che collegano il valore della grandezza misurata al campione primario, garantendone la rintracciabilità metrologica della misura.\par
 
 
 \subsection{1.2	La normativa UNI EN ISO 17025}
@@ -385,7 +387,7 @@ L'incertezza di \textbf{tipo A} viene valutata attraverso una serie di ripetute 
 La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare $N$ misurazioni e di seguire i successivi step:
 
 \begin{itemize}
-    \item calcolo della \text{media} come media aritmetica $m$ dei valori misurati
+    \item calcolo della \textbf{media} come media aritmetica $m$ dei valori misurati
     
     \begin{equation}
     m = \frac{1}{N} \sum_{i=1}^{N} x_i
@@ -444,10 +446,7 @@ Ipotizzando di conoscere l'equazione della misura, è possibile calcolare la \te
 Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo composta} $u_c$, risultato della propagazione delle varie incertezze.
 
 \begin{itemize}
-    \item Approccio GUM
-    \item Incertezze di tipo A e di tipo B
-    \item Propagazione dell’incertezza
-    \item Budget di incertezza
+    \item Budget di incertezza DOVREI ANCORA PARLARE DI QUESTO, MA NON SO COSA SIA, NON NE HO MAI SENTITO PARLARE
 \end{itemize}
 
 
@@ -458,15 +457,77 @@ Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo compost
 
 
 
-\subsection{Banco prova ingranaggi}
+\subsection{Banco prova ingranaggi RENK}
+
+Il RENK è un banco prova a ricircolo di potenza meccanica, che consente di effettuare prove su ingranaggi sottoponendoli a elevate coppie e potenze generate da un motore elettrico di taglia inferiore (coppia e potenza inferiori a quelle di esercizio). Questo è reso possibile mediante l'applicazione di un precarico a tutti gli ingranamenti delle ruote della catena cinematica chiusa, fornito da un servo motore di piccola taglia il quale forza la catena cinematica di ruote dentate tramite lo spostamento assiale di una ruota a denti elicoidali (obbligandone quindi l'ingranamento con altre due ruote dentate a denti elicoidali, con angolo d'elica opposto tra loro). In questo modo, quando il sistema viene alimentato da un motore elettrico che genera una determinata potenza e una conseguente coppia, all'interno della catena chiusa di ruote dentate si genera una potenza circolante (e quindi anche una coppia) superiori a quelle in ingresso fornite dal motore. Questa potenza (e coppia) rimane confinata comunque all'interno della catena, da qui il termine "ricircolo di potenza meccanica".
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Capitolo_2/RENK.png}
+    \caption{RENK}
+    \label{fig:RENK}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_2/Architettura del RENK.png}
+    \caption{Architettura del Renk}
+    \label{fig:Architettura del Renk}
+\end{figure}
+
+Sulla sinistra dell'immagine \ref{fig:Architettura del Renk} si possono vedere il motore elettrico in rosso e il servomotore più piccolino in celeste, nel centro la sezione "slave" contenente una parte della catena cinematica du ruote dentate, e sulla destra la sezione "Test-Article" che chiude la catena con due ruote dentate che costituiscono l'elemento sottoposto al test del banco. In rosso tra la sezione "slave" e quella "T/A" si possono notare i due torsiometri.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/RENK_lato sinistro_motori.jpg}
+    \caption{RENK lato sinistro motori}
+    \label{fig:RENK lato sinistro motori}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/RENK_lato destro_TA.jpg}
+    \caption{RENK lato destro TA}
+    \label{fig:RENK lato destro TA}
+\end{figure}
+
+La misura di coppia cui sono sottoposti i "Test Article" sono appunto letti dai due torsiometri, le cui caratteristiche sono riportate in tabella, sono i seguenti:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Capitolo_2/Torsiometri.png}
+    \caption{Torsiometri}
+    \label{fig:Torsiometri}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Sensor ID} & \textbf{Manufacturer} & \textbf{P/N} & \textbf{S/N} & \begin{tabular}[c]{@{}c@{}}\textbf{Range}\\ \textit{(Nm)}\end{tabular} & \textbf{Position} & \begin{tabular}[c]{@{}c@{}}\textbf{Conditioner}\\ \textbf{S/N}\end{tabular} & \textbf{Accuracy} \\ \hline
+        T HBM & HBM & T40B/1000Nm & 230930098 & $\pm$1000 & Axis 1 & 0009S50002FD & $<\pm$0.1\% \\ \hline
+        T Manner & Manner & HSFM 600 & 18360 & $\pm$600 & Axis 2 & 126631 & $<\pm$0.1\% \\ \hline
+    \end{tabular}
+    }
+    \caption{Identificazione dei torsiometri utilizzati}
+    \label{tab:Identificazione dei torsiometri utilizzati}
+\end{table}
+
+Come riportato nella tabella \ref{tab:Identificazione dei torsiometri utilizzati} sull'asse 1 (quello posto in alto nell'immagine \ref{fig:Torsiometri}) è posto il torsiometro T-HBM, mentre sull'asse 2 il torsiometro T-Manner. La \textbf{catena di misura} della coppia parte proprio da loro, ed è così costituita:
+
+SCRIVERE QUALCOSA SULLA CATENA DI MISURA DELLA QUALE ANCORA NON SO NULLA
+
+ANCHE RIGUARDO AL SISTEMA DI ACQUISIZIONE DATI
+
 
 
 
 \begin{itemize}
-    \item Architettura del sistema
-    \item Catene di misura della coppia
-    \item Torsiometri utilizzati
-    \item Sistema di acquisisizione dati
+    \item Architettura del sistema -ok
+    \item Catene di misura della coppia -NO
+    \item Torsiometri utilizzati -ok
+    \item Sistema di acquisisizione dati -NO
 \end{itemize}
 
 
@@ -495,6 +556,114 @@ Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo compost
 
 
 \subsection{Progettaazione del sistema di taratura}
+
+L'idea di base per la realizzazione di un apparecchio meccanico con il quale poter eseguire la taratura dei torsiometri del RENK costiste in un bilanciere che sfrutta dei pesi certificati per generare una coppia mediante un braccio di leva noto.\\
+Qui nascono i primi vincoli progettuali per quanto riguarda gli ingombri: il bilanciere sostituisce i "Test-Article" presenti in questa sezione:
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_2/Ingombro_bilancino.png}
+        \caption{Zona T/A vista da davanti}
+        \label{fig:Zona T/A vista da davanti}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=1.107\textwidth]{Images/Capitolo_2/Ingombro_bilancino (2).png}
+        \caption{Zona T/A vista da sopra}
+        \label{fig:Zona T/A vista da sopra}
+    \end{subfigure}
+    \caption{Lato T/A }
+    \label{fig:Lato T/A }
+\end{figure}
+
+Nella figura \ref{fig:Lato T/A } sono mostrati gli alberi dove alloggiano i T/A sui quali saranno montante le componenti del bilancino.
+
+Una volta definiti i volumi disponibili e gli ingombri del carter, è stato possibile sviluppare il sistema bilanciere, composto da 2 parti principali:
+
+\begin{itemize}
+    \item \textbf{il bilanciere}, composto da il \textbf{braccio di leva}; il \textbf{sistema di contrappesi regolabile} che permette di disporre di una regolazione continua del contrappeso applicato (necessario per riportare il baricentro del bilanciere in asse da scarico, ossia senza i pesi calibrati applicati al braccio di leva); la \textbf{staffa}, elemento di collegamento tra il braccio di leva e l'\textbf{anello di blocco}, flangiato direttamente sull'albero;
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/vista_in_sezione_bilanciere.png}
+        \caption{Bilanciere}
+        \label{fig:Bilanciere}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/vista_in_sezione_bilanciere (2).png}
+        \caption{Vista in sezione del bilanciere}
+        \label{fig:Vista in sezione del bilanciere}
+    \end{figure}
+
+    \item \textbf{il sistema di blocco cinematico}, composto da un perno (costituito da due parti saldate tra loro) montato direttamente sul carter, e l'elemento \textbf{forchetta}, flangiato sull'albero, che va ad accoppiarsi con il perno, bloccando la catena cinematica:
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/Blocco_cinematico.png}
+        \caption{Sistema di blocco cinematico}
+        \label{fig:Sistema di blocco cinematico}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/Blocco_cinematico_in_sezione.png}
+        \caption{Sistema di blocco cinematico in sezione}
+        \label{fig:Sistema di blocco cinematico in sezione}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/Dettaglio_bloccco_cinematico.png}
+        \caption{Dettaglio sul sistema di blocco}
+        \label{fig:Dettaglio sul sistema di blocco}
+    \end{figure}    
+
+\end{itemize}
+
+Nell'insieme il sistema \textbf{bilancino} si presenta come di seguito riportato:
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_2/Bilancino.png}
+        \caption{Vista non in sezione}
+        \label{fig:Vista non in sezione}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_2/Bilancino_in_sezione.png}
+        \caption{Vista in sezione}
+        \label{fig:Vista in sezione}
+    \end{subfigure}
+    \caption{Bilancino }
+    \label{fig:Bilancino }
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_2/Bilancino_in_sezione(2).png}
+        \caption{Sezione bilancino}
+        \label{fig:Sezione bilancino}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=0.8\textwidth]{Images/Capitolo_2/Dettaglio_Bilancino_in_sezione.png}
+        \caption{Dettaglio sezione del bilancino}
+        \label{fig:Dettaglio sezione del bilancino}
+    \end{subfigure}
+    \caption{Dettaglio bilancino }
+    \label{fig:Dettaglio bilancino }
+\end{figure}
+
 
 
 
