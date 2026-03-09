@@ -1,0 +1,35 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {0}Introduzione}{1}{section.0}%
+\contentsline {subsection}{\numberline {0.1}Contesto di riferimento e obiettivi del tirocinio}{1}{subsection.0.1}%
+\contentsline {subsection}{\numberline {0.2}I sistemi di prova per trasmissioni meccaniche e il ruolo della metrologia}{1}{subsection.0.2}%
+\contentsline {section}{\numberline {1}CAPITOLO 1 - RIFERIMENTI NORMATIVI E METROLOGICI}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}La metrologia nei laboratori di prova}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}1.2 La normativa UNI EN ISO 17025}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}1.3 Valutazione dell'incertezza di misura}{6}{subsection.1.3}%
+\contentsline {section}{\numberline {2}CAPITOLO 2 - DESCRIZIONE DEI SISTEMI DI PROVA}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Banco prova ingranaggi RENK}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Macchina per test STBF}{11}{subsection.2.2}%
+\contentsline {section}{\numberline {3}CAPITOLO 3 - SISTEMA DI TARATURA DEI TORSIOMETRI}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Analisi delle esigenze metrologiche}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Progettaazione del sistema di taratura}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Sequenza di montaggio}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Realizzazione e collaudo}{21}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Procedura di taratura}{21}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Analisi dei risultati sperimentali}{21}{subsection.3.6}%
+\contentsline {section}{\numberline {4}CAPITOLO 4 - SISTEMA DI VERIFICA DI CELLA DI CARICO E PONTI ESTENSIMETRICI}{22}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Analisi della catena di misura della forza}{22}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Progettazone del sistema di verifica}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Realizzazione e collaudo}{24}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Procedura di verifica}{24}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Analisi delle prestazioni metrologiche}{24}{subsection.4.5}%
+\contentsline {section}{\numberline {5}CAPITOLO 5 - Confronto con requisiti ISO 17025}{25}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Adeguatezza metrologica}{25}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Margini di miglioramento}{25}{subsection.5.2}%
+\contentsline {section}{\numberline {6}CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}{26}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Procedure di gestione della stumentazione}{26}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Tracciabilità metrologica}{26}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Piano di taratura periodica}{26}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Integrazione nel sistema qualità aziendale}{26}{subsection.6.4}%
+\contentsline {section}{\numberline {7}CAPITOLO 7 - CONCLUSIONI}{27}{section.7}%
+\contentsline {section}{\numberline {8}APPENDICI}{28}{section.8}%

@@ -1,0 +1,930 @@
+%   Il progetto nasce dal template per il frontespizio realizzato da Marco Antonio Corallo, che ringrazio. Seguono alcuni commenti per evidenziare la presenza di alcuni pacchetti che mi sono stati utili per la stesura della tesi. Chiaramente, dipende tutto dal tipo di lavoro che uno vuole eseguire, che determina anche le diverse esigenze. Durante la stesura ho passato molto tempo su siti e forum a cercare di risolvere alcuni probelmi di formattazione, ma in generale Latex è stato piuttosto versatile. 
+
+% Tipo di documento. L'uso di twoside implica che i capitoli inizino sempre con la prima pagina a sinistra, eventualmente lasciando una pagina vuota nel capitolo precedente. Se questa cosa è fastidiosa, è possibile rimuoverlo. 
+\documentclass[a4paper, twoside]{article}
+
+% Dimensione dei margini
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=3cm]{geometry} 
+% Dimensione del font
+\usepackage[fontsize=12pt]{scrextend}
+% Lingua del testo
+\usepackage[english,italian]{babel}
+% Codifica del testo
+\usepackage[utf8]{inputenc} 
+% Encoding del testo
+\usepackage[T1]{fontenc}
+% Permette di generare testo fittizio. Mi è stato utile 
+% per capire quale sarebbe stata l'impostazione del 
+% testo nella pagina prima che scrivessi un determinato paragrafo
+\usepackage{lipsum}
+% Per ruotare le immagini
+\usepackage{rotating}
+% Per modificare l'header delle pagine 
+%\usepackage{fancyhdr}
+% Librerie matematiche
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}         
+\usepackage{float}
+% Uso delle immagini
+\usepackage{graphicx}
+% Uso dei colori
+\usepackage[dvipsnames]{xcolor}         
+% Uso dei listing per il codice
+\usepackage{listings}          
+% Per inserire gli hyperlinks tra i vari elementi del testo 
+\usepackage{hyperref}
+% Diversi tipi di sottolineature
+\usepackage[normalem]{ulem}
+%per muovere le immagini
+\usepackage[export]{adjustbox}
+\usepackage{caption}
+% \ge= ">="
+% \le= "<="
+% \cdot= *
+\usepackage{subcaption}
+
+%pagine vuote
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+% Per modificare l'header delle pagine 
+\usepackage{fancyhdr}
+
+% -----------------------------------------------------------------
+
+
+% Modifica lo stile dell'header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\rfoot{\thepage}
+\fancyfoot[r]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14.5pt}
+
+% Rimuove il numero di pagina all'inizio dei capitoli
+\fancypagestyle{plain}{
+  \fancyfoot{}
+  \fancyhead{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Forza l'indentazione anche per il primo paragrafo dopo una sezione
+\usepackage{indentfirst}
+
+% Definisce l'ampiezza del rientro orizzontale (modificare il valore secondo necessità)
+\setlength{\parindent}{1.25cm}
+
+% Definisce la spaziatura verticale tra i paragrafi (modificare il valore secondo necessità)
+\setlength{\parskip}{0.5em}
+
+% Stile del codice
+\lstdefinestyle{codeStyle}{
+    % Colore dei commenti
+    commentstyle=\color{teal},
+    % Colore delle keyword
+    keywordstyle=\color{Magenta},
+    % Stile dei numeri di riga
+    numberstyle=\tiny\color{gray},
+    % Colore delle stringhe
+    stringstyle=\color{violet},
+    % Dimensione e stile del testo
+    basicstyle=\ttfamily\footnotesize,
+    % newline solo ai whitespaces
+    breakatwhitespace=false,     
+    % newline si/no
+    breaklines=true,                 
+    % Posizione della caption, top/bottom 
+    captionpos=b,                    
+    % Mantiene gli spazi nel codice, utile per l'indentazione
+    keepspaces=true,                 
+    % Dove visualizzare i numeri di linea
+    numbers=left,                    
+    % Distanza tra i numeri di linea
+    numbersep=5pt,                  
+    % Mostra gli spazi bianchi o meno
+    showspaces=false,                
+    % Mostra gli spazi bianchi nelle stringhe
+    showstringspaces=false,
+    % Mostra i tab
+    showtabs=false,
+    % Dimensione dei tab
+    tabsize=2
+} \lstset{style=codeStyle}
+
+% Stile di codice per dimensioni maggiori, in cui ho avuto bisogno di un testo più picolo (ad esempio se si vuole inserire del codice che ha linee molto lunghe). Per usare questo stile piuttosto che il precedente, usare 
+
+% \lstset{style=longBlock}
+%  % inserire il codice...
+% \lstset{style=codeStyle}
+
+% Il secondo comando consente di tornare allo stile precedente 
+\lstdefinestyle{longBlock}{
+    commentstyle=\color{teal},
+    keywordstyle=\color{Magenta},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{violet},
+    basicstyle=\ttfamily\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+} \lstset{style=codeStyle}
+
+% Togliendo il commento al comando che segue, si inseriscono nella bibliografia anche le fonti presenti in Bibliography.bib ma non citati direttamente con il comando \cite
+% \nocite{*}
+
+% Margini prima e dopo blocchi di codice, per avere più distanza
+\lstset{aboveskip=20pt,belowskip=20pt}
+
+% Modifica dello stile dei riferimenti, con il testo in cyano
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    citecolor=black,
+    }
+
+
+% Aggiunti definizioni, teoremi, linea e listing
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{theorem}{Teorema}[section]
+\providecommand*\definitionautorefname{Definizione}
+\providecommand*\theoremautorefname{Teorema}
+\providecommand*{\listingautorefname}{Listing}
+\providecommand*\lstnumberautorefname{Linea}
+
+\raggedbottom
+
+%\newcommand{\cgs}[1]{{\textcolor{brown}[\textcolor{red}{\bf{GS: }}{ \textcolor{brown}{#1]}}}}             
+%\newcommand{\cmc}[1]{{\textcolor{blue}[\textcolor{magenta}{\bf{MC: }}{ \textcolor{blue}{#1]}}}}
+
+
+
+% -----------------------------------------------------------------
+\begin{document}
+
+
+%\afterpage{\blankpage}
+\begin{titlepage}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.5]{Images/Frontespizio/Cherubino.jpg}
+\end{figure}
+
+
+\begin{center}
+    \LARGE{UNIVERSITÀ DI PISA}
+    \vspace{5mm}
+    \\ \large{DIPARTIMENTO DI INGEGNERIA INDUSTRIALE}
+    \vspace{5mm}
+    \\ \LARGE{Laurea Magistrale in Ingegneria Meccanica}
+\end{center}
+
+\vspace{15mm}
+\begin{center}
+        {\bfseries\large\textit{Sviluppo di procedure e sistemi di taratura per \vspace{1.5pt} catene di misura di coppia e forza nel percorso di \vspace{1.5pt} accreditamento UNI EN ISO 17025 di un \vspace{1.5pt} laboratorio prove}}
+    
+    % Se il titolo è abbastanza corto da stare su una riga, si può usare
+    
+    % {\LARGE{\bf Un fantastico titolo per la mia tesi!}}
+\end{center}
+\vspace{30mm}
+
+\begin{minipage}[t]{0.4\textwidth}
+	{\large{Relatori:}{\normalsize\vspace{3mm}
+	\bf\\ \large{ Prof.   Ciro Santus\\ Ing.    Matteo Nuti} \normalsize\vspace{3mm}}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}\raggedleft
+	{\large{Candidato:}{\normalsize\vspace{3mm} \bf\\ \large{Filippo Magretti}}}
+\end{minipage}
+
+\vspace{30mm}
+\hrulefill
+\\\centering{\large{ANNO ACCADEMICO 2025/2026}}
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+\newpage
+
+%Indice
+    \tableofcontents
+    \thispagestyle{empty}
+
+    \newpage
+% Rimuovere se non si vuole la tabella delle figure
+    \listoffigures
+    \thispagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+
+    \newpage
+
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+
+    \setcounter{section}{-1}
+%----------------------------------------------------------------------------------------
+    \blankpage
+    \newpage
+
+
+\section{Introduzione}
+
+
+
+\subsection{Contesto di riferimento e obiettivi del tirocinio}
+
+
+
+\subsection{I sistemi di prova per trasmissioni meccaniche e il ruolo della metrologia}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 1 - RIFERIMENTI NORMATIVI E METROLOGICI}
+
+
+
+\subsection{La metrologia nei laboratori di prova}
+La metrologia è la disciplina che riguarda tutti gli aspetti inerenti la misurazione delle grandezze fisiche. 
+In particolare, la metrologia tecnico-scientifica ha il compito di rendere disponibili metodologie, unità di misura in modo da garantire l'affidabilità dei processi di misurazione.\par
+
+Con lo scopo di fare chiarezza sui concetti di base, è importante introdurre alcuni termini fondamentali che saranno utilizzati nel corso del lavoro, spesso i quali vengono usati in modo improprio o confusi tra loro.
+Innanzitutto è importante chiarire il significato di \textbf{misurazione} e di \textbf{misura}.\\
+La \textbf{misurazione} è il processo mediante il quale si ottiene la misura di una grandezza fisica tramite l'utilizzo di opportuni strumenti.\\
+La \textbf{misura} è invece il risultato di una misurazione, costituita da: un \textbf{numero}, da una \textbf{incertezza} e da una \textbf{unità di misura}.\par
+
+Fondamentali sono i concetti di \textbf{riproducibilità}, \textbf{ripetibilità} e \textbf{riferibilità}, che costituiscono la qualità di una misurazione all'interno della norma ISO 9001, relativa appunto ai sistemi di gestione per la qualità.\\
+Con \textbf{riproducibilità} si intende la possibilità di che persone diverse possano ottenere la stessa misura della stessa grandezza, con risultati confrontabili tra loro.\\
+Con \textbf{ripetibilità} si intende la possibilità di ottenere la stessa misura da più misurazioni effettuate dal singolo operatore in tempi differenti ma nelle stesse condizioni.\\
+Con \textbf{riferibilità} si intende la possibilità di confrontare il risultato di una misurazione con quello che si ottiene da appropriati campioni di riferimento.\par 
+
+Per quanto riguarda la definizione di \textbf{errore} è importante sottolineare che non esiste una definizione univoca, ma in generale si può definire come la differenza tra il valore misurato e il valore "vero" della grandezza. Si possono comunque distinguere due principali tipi di errore: quello \textbf{casuale} e quello \textbf{sistematico}.\\
+Con \textbf{errori casuali} si intendono errori che, per loro natura, al ripetersi delle misurazioni affliggono i valori di misura facendoli oscillare attorno ad un valore pressoché costante (errore di parallasse, o fluttuazioni della stessa grandezza misurata in seguito a variazioni ambientali quali la temperatura ad esempio).\\
+Con \textbf{errori sistematici} si intendono invece gli errori di difficile individuazione in quanto si manifestano sempre nello stesso modo, tipicamente provocati dalla strumentazione stessa. \par
+
+Anche i termini di \textbf{precisione} e \textbf{accuratezza} sono spesso confusi tra loro.\\
+Con \textbf{precisione} si indica la dispersione dei dati ottenuti dalle misurazioni rispetto al valore "vero" della grandezza misurata, tipicamente espressa tramite  lo \textbf{scarto tipo} detta anche \textbf{deviazione standard sperimentale}, oppure come sinonimo di \textbf{errore relativo}. A questo poi si lega il termine di \textbf{classe di precisione} di uno strumento di misura, ripreso in seguito nel testo.\\
+Con \textbf{accuratezza} indica invece la vicinanza tra il valore misurato e il valore "vero" della grandezza misurata.\\
+Per rendere più chiara questa distinzione, si può pensare di attribuire queste due definizioni in tutte e quattro le possibili combinazioni per una misura:
+
+\begin{itemize}
+    \item precisa e accurata: i valori misurati sono vicini al valore medio e vicini al valore "vero";
+    \item precisa ma non accurata: i valori misurati sono vicini al valore medio ma lontani al valore "vero";
+    \item non precisa ma accurata: i valori misurati sono lontani al valore medio ma vicini al valore "vero";
+    \item non precisa e non accurata: i valori misurati sono lontani sia al valore medio che al valore "vero";
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio=true,scale=0.5]{Images/Capitolo_1/precisione_accuratezza.png}
+    \caption{Precisione e accuratezza},
+    \label{fig:precisione_accuratezza}
+\end{figure}
+
+\par
+La questione a questo punto è la seguente: come si può fare una stima dell'errore se non è noto il valore "vero" della grandezza misurata? Qui entra in gioco il concetto di \textbf{incertezza} di una misura, che rappresenta "il risultato della stima che determina l'ampiezza del campo entro il quale il valore vero di un misurando deve trovarsi, generalmente con una data probalità" (come definito nella norma UNI CEI EN ISO 10012 ediz.1993).\\
+Il valore "vero" diventa quindi un valore ricavabile in termini statistici dal quale, solo successivamente, è possibile ricavare gli errori, e non un valore di partenza a cui poter fare riferimento sin da subito. Con \textbf{incertezza} si esprime quindi l'intervallo all'interno del quale si trova il valore "vero" con una probabilità elevata.\par
+
+Ora risulta più comprensibile il modo con cui poter scrivere una misura, che come detto è costituita da un numero, da un'incertezza e da un'unità di misura:
+
+\begin{equation}
+    \text{Misura} = M_{\text{Valore medio}} \pm U_{\text{Incertezza}} [\text{Unità di misura}]
+\end{equation}
+dove il valore medio $M$ rappresenta la stima del valore "vero" del misurando e l'incertezza $U$ rappresenta la stima dell'errore tale per cui il valore "vero" ricada all'interno dell'intervallo $[M-U ; M+U]$ con una data probabilità. \par
+
+Per quanto concerne questo elaborato, è importante sottolineare che l'obiettivo principale è quello di sviluppare procedure e sistemi di taratura per \textbf{catene di misura} di coppia e forza, con l'intento di accreditare un laboratorio prove secondo la normativa UNI EN ISO 17025.\\
+Rimane solo da definire in modo chiaro cosa si intenda con \textbf{catena di misura} e \textbf{catena di riferibilità} o \textbf{metrologica}.\\
+ La \textbf{catena di misura} è l'insieme di tutti gli elementi che partecipano al processo di misurazione, a partire dallo strumento da tarare fino a un campione di riferimento, chiamato anche \textbf{campione primario}, il quale rappresenta l'unità di misura di riferimento del Sistema Internazionale (SI). Comeprende quindi una serie di strumenti e dispositivi che elaborano il segnale in ingresso prodotto dalla grandezza da misurare per restituire in uscita il valore letto.\\
+La \textbf{catena di riferibilita} o \textbf{metrologica} è invece l'insieme di tutti i dicumenti di taratura che collegano il valore della grandezza misurata al campione primario, garantendone la rintracciabilità metrologica della misura.\par
+
+
+\subsection{1.2	La normativa UNI EN ISO 17025}
+
+Affinché un laboratorio di taratura possa essere accreditato da parte della SINAL (Sistema Nazionale di Accreditamento dei Laboratori), cioè che riceva un riconoscimento da parte di un ente terzo che attesti la competenza tecnica del laboratorio stesso, è necessario che il laboratorio soddisfi i requisiti stabiliti dalla norma UNI EN ISO 17025, che fanno riferimento sia alla capacità operativa che a quella organizzativa del laboratorio.\par
+
+Nel capitolo 4 della norma sono contenuti i requisiti generali di carattere organizzativo e gestionale:
+
+\begin{itemize}
+    \item 4.1    Organizzazione
+    \item 4.2    Sistema qualità
+    \item 4.3    Controllo della documentazione
+    \item 4.4    Riesame delle richieste, delle offerte e dei contratti
+    \item 4.5    Subappalto delle prove e delle tarature
+    \item 4.6    Approvvigionamento di servizi e di forniture
+    \item 4.7    Servizi al cliente
+    \item 4.8    Reclami
+    \item 4.9    Controllo delle attività di prova e/o taratura non conformi
+    \item 4.10   Azioni correttive
+    \item 4.11   Azioni preventive
+    \item 4.12   Controllo delle registrazioni
+    \item 4.13   Verifiche ispettive interne
+    \item 4.14   Riesami da parte della direzione
+\end{itemize}
+
+\noindent
+Queste voci non riguardano gli aspetti tecnici, ma concorrono alla qualità e gestione della documentazione, importanti anche dal punto di vista del rapporto tra clienti e fornitori.\par
+
+Nel capitolo 5 della norma sono presi in considerazione invece gli aspetti tecnici, rilevanti per quanto concerne l'affidabilità dei risultati prodotti dal laboratorio, ed è così suddiviso:
+
+\begin{itemize}
+    \item 5.1    Generalità
+    \item 5.2    Personale
+    \item 5.3    Luogo di lavoro e condizioni ambientali
+    \item 5.4    Metodi di prova e di taratura e validazione dei metodi
+    \item 5.5    Apparecchiature
+    \item 5.6    Riferibilità delle misure
+    \item 5.7    Campionamento
+    \item 5.8    Manipolazione degli oggetti da provare e tarare
+    \item 5.9    Assicurazione della qualità dei risultati di prova e di taratura
+    \item 5.10   Rappresentazione dei risultati
+\end{itemize}
+
+
+
+Molta importanza è quindi attribuita alla validazione dei metodi di misurazione/taratura (gestione della strumentazione) e alla rintracciabilità metrologica.\\
+Per quanto riguarda il primo aspetto sono prescritte procedure per la programmazione delle tarature e per la determinazione dell'incertezza di misura.\\
+Per quanto riguarda invece la rintracciabilità metrologica è importante che le misure ottenute siano riferibili ai campioni di riferimento, che ogni taratura della catena di riferibilità sia eseguita in modo adeguato e che sia documentata con evidenza formale, attraverso certificati SIT (Servizio di taratura in Italia) o equivalenti.\par
+
+L'operazione di taratura deve quindi seguire una di queste due tecniche fondamentali:
+
+\begin{itemize}
+    \item taratura con una o più misurazioni di una grandezza di valore noto, chiamata \textbf{campione di riferimento};
+    \item taratura effettuata con un altro strumento taratore, chiamato \textbf{strumento campione}.
+\end{itemize}
+
+\noindent
+Occore inoltre che la grandezza (campione) utilizzata, o lo strumento campione, siano caratterizzati da una incertezza inferiore a quella dello strumento da tarare, in questo modo la grandezza associata al campione (oppure il risultato della misurazione effettuata con lo strumento campione) può essere considerata come un valore "vero" per la taratura dello strumento da tarare. \par
+
+In ogni caso il risultato della taratura deve essere rappresentato dallo scostamento tra quanto rilevato e il valore "vero", scostamento calcolato da una o più misurazioni che costituisce l'incertezza di misura assocciata alla taratura stessa, elemento fondamentale per il processo di verifica dell'operazione.\par
+
+
+\subsection{1.3	Valutazione dell'incertezza di misura}
+
+La “Guide to the expression of Uncertainty in Measurement” (GUM) fornisce
+linee guida universali e adottate a livello europeo per valutare l'incertezza nelle misure.\\
+L'incertezza di una misura è un parametro che caratterizza la dispersione dei valori ottenuti, e all'interno di questa guida è previsto considerarla come composta da due componenti che differiscono dal metodo di valutazione: l'incertezza di \textbf{tipo A} e l'incertezza di \textbf{tipo B}.\par
+
+L'incertezza di \textbf{tipo A} viene valutata attraverso una serie di ripetute misurazioni, sulle quali vengono effettuate elaborazioni statistiche. Il procedimento da adottare porta al calcolo dello \textbf{scarto tipo}, e risulta utilizzabile anche in sede di taratura, esprimibile come scostamento tra la media ottenuta da un certo numero di prove e il valore "vero" di riferimento fornito da un campione o da uno strumento campione. I risultati di questo procedimento sono quelli tipicamente ripotati nei certificati di taratura.\par
+
+La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare $N$ misurazioni e di seguire i successivi step:
+
+\begin{itemize}
+    \item calcolo della \textbf{media} come media aritmetica $m$ dei valori misurati
+    
+    \begin{equation}
+    m = \frac{1}{N} \sum_{i=1}^{N} x_i
+    \end{equation}
+
+    \item calcolo degli \textbf{scarti} $s_i$ dei valori misurati rispetto alla media
+   
+    \begin{equation}
+    s_i = x_i - m
+    \end{equation}
+
+    \item calcolo dello \textbf{scarto tipo} $s$ come stima della deviazione standard sperimentale di una distribuzione ipoteticamente gaussiana
+    
+    \begin{equation}
+    s = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} s_i^2}
+    \end{equation}
+
+\end{itemize}
+
+Occorre considerare nel calcolo della misurazione anche un altro contributo dovuto alla \textbf{incertezza diripetibilità}, classificabile come incertezzadi tipo A, che viene così calcolata:
+
+\begin{itemize}
+    \item calcolo della \textbf{media} $m$ calcolata su $N$ misurazioni come media aritmetica dei valori misurati;
+    \item calcolo dello \textbf{scarto tipo} $s$ come illustrato in precedenza;
+    \item calcolo della \textbf{deviazione standard della media} $s_m$ andando a dividere lo scarto tipo $s$ per la radice quadrata del numero di misurazioni $N$ effettuate
+    
+    \begin{equation}
+    s_m = \frac{s}{\sqrt{N}}
+    \end{equation}
+
+\end{itemize}
+
+L'incertezza di \textbf{tipo B} viene valutata invece tramite modalità che non necessitano di misurazioni ripetute, e il suo calcolo parte dalla conoscenza dell'entità massima della variazione casuale \textbf{$a$} di una grandezza, la quale tipicamente è simmetrica rispetto a zero, assumendo quindi valori compresi nell'intervallo $[-a ; a]$. Il valore \textbf{$a$} è ottenuto da report informativi, certificati di taratura, risultati sperimentali, in sostanza da conoscenze a priori del contesto in cui si opera.\\
+Stabilito il valore di $a$, in seguito a una ipotesi di distribuzione statistica della grandezza misurata all'interno dell'intervallo $[-a ; a]$, è possibile calcolare l'incertezza di tipo B $u$ nel modo seguente:
+
+\begin{itemize}
+    \item nel caso di variabili casuali, si ipotizza una \textbf{distribuzione rettangolare}, la cui deviazione standard è pari a
+    
+    \begin{equation}
+    u = \frac{a}{\sqrt{3}}
+    \end{equation}
+
+     Questa ipotesi viene fatta nei casi in cui non si hanno informazioni sufficienti per poter fare ipotesi più specifiche riguardo alla distribuzione della grandezza misurata.
+\end{itemize}
+
+Una volta calcolate le due componenti A e B, è possibile calcolare una combinazione di queste due incertezze, calcolando così una incertezza risultante, detta \textbf{incertezza tipo}.\par
+
+Al termine di un processo di misurazione, ottenuti $n$ valori di deviazione standard $u_1, u_2, ..., u_n$ associati a $n$ fonti di incertezza, l'\textbf{incertezza tipo} $u$ è data dalla loro somma quadratica, che si basa sull'ipotesi di indipendenza tra le fonti di incertezza:
+
+\begin{equation}
+u = \sqrt{u_1^2 + u_2^2 + ... + u_n^2}
+\end{equation}
+
+Successivamente occore determinare l'\textbf{equazione della misura}, che lega la grandezza misurata $Y$ alle grandezze di ingresso $X_1, X_2, ..., X_n$ che influenzano la misura. L'eventuale mancanza di informazioni relativa a tali grandezze di ingresso, alle loro relative misure ed incertezze, e alla relazione stessa che le lega alla gradezza misurata, determinerebbe una ulteriore fonte di incertezza, tipica degli ambienti di sperimentazione scientifica e meno usuale in ambito industriale.\par
+Ipotizzando di conoscere l'equazione della misura, è possibile calcolare la \textbf{legge di propagazione dell'incertezza}, che corrisponde alla legge di propagazione degli errori, riportata nell'appendice 1, che consente di calcolare la stima della varianza (ossia il quadrato della deviazione standard) come una combinazione lineare delle varianze associate alle grandezze di ingresso $X_1, X_2, ..., X_n$, ciascuna pesata con il quadrato del coefficiente di sensibilità $c_i$ che rappresenta la derivata parziale della grandezza misurata $Y$ rispetto alla grandezza di ingresso $X_i$.\par
+Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo composta} $u_c$, risultato della propagazione delle varie incertezze.
+
+\begin{itemize}
+    \item Budget di incertezza DOVREI ANCORA PARLARE DI QUESTO, MA NON SO COSA SIA, NON NE HO MAI SENTITO PARLARE
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 2 - DESCRIZIONE DEI SISTEMI DI PROVA}
+
+
+
+\subsection{Banco prova ingranaggi RENK}
+
+Il banco RENK è un banco prova a ricircolo di potenza meccanica, che consente di effettuare prove su ingranaggi sottoponendoli a elevate coppie e potenze generate da un motore elettrico di taglia inferiore (coppia e potenza inferiori a quelle di esercizio). Questo è reso possibile mediante l'applicazione di un precarico a tutti gli ingranamenti delle ruote della catena cinematica chiusa, fornito da un servo motore di piccola taglia il quale forza la catena cinematica di ruote dentate tramite lo spostamento assiale di una ruota a denti elicoidali (obbligandone quindi l'ingranamento con altre due ruote dentate a denti elicoidali, con angolo d'elica opposto tra loro). In questo modo, quando il sistema viene alimentato da un motore elettrico che genera una determinata potenza e una conseguente coppia, all'interno della catena chiusa di ruote dentate si genera una potenza circolante (e quindi anche una coppia) superiori a quelle in ingresso fornite dal motore. Questa potenza (e coppia) rimane confinata comunque all'interno della catena, da qui il termine "ricircolo di potenza meccanica".
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/Capitolo_2/RENK.png}
+    \caption{RENK}
+    \label{fig:RENK}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_2/Architettura del RENK.png}
+    \caption{Architettura del banco Renk}
+    \label{fig:Architettura del banco Renk}
+\end{figure}
+
+Sulla sinistra della fig.\ref{fig:Architettura del banco Renk} si possono vedere il motore elettrico in rosso e il servomotore più piccolino in celeste, nel centro la sezione "slave" contenente una parte della catena cinematica du ruote dentate, e sulla destra la sezione "Test-Article" che chiude la catena con due ruote dentate che costituiscono l'elemento sottoposto al test del banco. In rosso tra la sezione "slave" e quella "T/A" si possono notare i due torsiometri.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/RENK_lato sinistro_motori.jpg}
+    \caption{RENK lato sinistro motori}
+    \label{fig:RENK lato sinistro motori}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/RENK_lato destro_TA.jpg}
+    \caption{RENK lato destro TA}
+    \label{fig:RENK lato destro TA}
+\end{figure}
+
+La misura di coppia cui sono sottoposti i "Test Article" sono appunto letti dai due torsiometri, le cui caratteristiche sono riportate in tabella, sono i seguenti:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Capitolo_2/Torsiometri.png}
+    \caption{Torsiometri}
+    \label{fig:Torsiometri}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Sensor ID} & \textbf{Manufacturer} & \textbf{P/N} & \textbf{S/N} & \begin{tabular}[c]{@{}c@{}}\textbf{Range}\\ \textit{(Nm)}\end{tabular} & \textbf{Position} & \begin{tabular}[c]{@{}c@{}}\textbf{Conditioner}\\ \textbf{S/N}\end{tabular} & \textbf{Accuracy} \\ \hline
+        T HBM & HBM & T40B/1000Nm & 230930098 & $\pm$1000 & Axis 1 & 0009S50002FD & $<\pm$0.1\% \\ \hline
+        T Manner & Manner & HSFM 600 & 18360 & $\pm$600 & Axis 2 & 126631 & $<\pm$0.1\% \\ \hline
+    \end{tabular}
+    }
+    \caption{Identificazione dei torsiometri utilizzati}
+    \label{tab:Identificazione dei torsiometri utilizzati}
+\end{table}
+
+Come riportato nella tabella \ref{tab:Identificazione dei torsiometri utilizzati} sull'asse 1 (quello posto in alto nella fig.\ref{fig:Torsiometri}) è posto il torsiometro T-HBM, mentre sull'asse 2 il torsiometro T-Manner. La \textbf{catena di misura} della coppia parte proprio da loro, ed è così costituita:
+
+SCRIVERE QUALCOSA SULLA CATENA DI MISURA DELLA QUALE ANCORA NON SO NULLA
+
+ANCHE RIGUARDO AL SISTEMA DI ACQUISIZIONE DATI
+
+
+
+
+\begin{itemize}
+    \item Architettura del sistema -ok
+    \item Catene di misura della coppia -NO
+    \item Torsiometri utilizzati -ok
+    \item Sistema di acquisisizione dati -NO
+\end{itemize}
+
+
+
+\subsection{Macchina per test STBF}
+
+
+
+\begin{itemize}
+    \item Descrizione dell'attrezzatura di afferraggio
+    \item Cella di carico
+    \item Ponti estensimetrici
+    \item Sistema di acquisisizione dati
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 3 - SISTEMA DI TARATURA DEI TORSIOMETRI}
+
+
+
+\subsection{Analisi delle esigenze metrologiche}
+
+
+
+\subsection{Progettaazione del sistema di taratura}
+
+L'idea di base per la realizzazione di un apparecchio meccanico con il quale poter eseguire la taratura dei torsiometri del banco RENK costiste in un bilanciere che sfrutta dei pesi certificati per generare una coppia mediante un braccio di leva noto.\\
+Qui nascono i primi vincoli progettuali per quanto riguarda gli ingombri: il bilanciere sostituisce i "Test-Article" presenti in questa sezione:
+
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Ingombro_bilancino.png}
+        \caption{Zona T/A vista da davanti}
+        \label{fig:Zona T/A vista da davanti}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Ingombro_bilancino (2).png}
+        \caption{Zona T/A vista da sopra}
+        \label{fig:Zona T/A vista da sopra}
+    \end{subfigure}
+    \caption{Lato T/A }
+    \label{fig:Lato T/A }
+\end{figure}
+
+Nella fig.\ref{fig:Lato T/A } sono mostrati gli alberi dove alloggiano i T/A sui quali saranno montante le componenti del bilancino.
+
+Una volta definiti i volumi disponibili e gli ingombri del carter, è stato possibile sviluppare il sistema bilanciere, composto da 2 parti principali:
+
+\begin{itemize}
+    \item \textbf{il bilanciere}, composto da il \textbf{braccio di leva}; il \textbf{sistema di contrappesi regolabile} che permette di disporre di una regolazione continua del contrappeso applicato (necessario per riportare il baricentro del bilanciere in asse da scarico, ossia senza i pesi calibrati applicati al braccio di leva); la \textbf{staffa}, elemento di collegamento tra il braccio di leva e l'\textbf{anello di blocco}, flangiato direttamente sull'albero;
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{Images/Capitolo_3/Bilancino_da_solo.png}
+        \caption{Bilanciere}
+        \label{fig:Bilanciere}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{Images/Capitolo_3/vista_in_sezione_bilanciere.png}
+        \caption{Bilanciere e carter}
+        \label{fig:Bilanciere e carter}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{Images/Capitolo_3/vista_in_sezione_bilanciere (2).png}
+        \caption{Vista in sezione del bilanciere}
+        \label{fig:Vista in sezione del bilanciere}
+    \end{figure}
+
+    \item \textbf{il sistema di blocco cinematico}, composto da un perno (costituito da due parti saldate tra loro) montato direttamente sul carter, e l'elemento \textbf{forchetta}, flangiato sull'albero, che va ad accoppiarsi con il perno, bloccando la catena cinematica:
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\linewidth]{Images/Capitolo_3/Dettaglio_bloccco_cinematico.png}
+        \caption{Dettaglio sul sistema di blocco}
+        \label{fig:Dettaglio sul sistema di blocco}
+    \end{figure}
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{Images/Capitolo_3/Blocco_cinematico.png}
+        \caption{Sistema di blocco cinematico}
+        \label{fig:Sistema di blocco cinematico}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{Images/Capitolo_3/Blocco_cinematico_in_sezione.png}
+        \caption{Sistema di blocco cinematico in sezione}
+        \label{fig:Sistema di blocco cinematico in sezione}
+    \end{figure}
+
+  
+\end{itemize}
+
+Nell'insieme il sistema \textbf{bilancino} si presenta come di seguito riportato:
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Bilancino.png}
+        \caption{Vista non in sezione}
+        \label{fig:Vista non in sezione}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Bilancino_in_sezione.png}
+        \caption{Vista in sezione}
+        \label{fig:Vista in sezione}
+    \end{subfigure}
+    \caption{Bilancino }
+    \label{fig:Bilancino }
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Bilancino_in_sezione(2).png}
+        \caption{Sezione bilancino}
+        \label{fig:Sezione bilancino}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png}
+        \caption{Dettaglio sezione del bilancino}
+        \label{fig:Dettaglio sezione del bilancino}
+    \end{subfigure}
+    \caption{Dettaglio bilancino }
+    \label{fig:Dettaglio bilancino }
+\end{figure}
+
+
+\begin{itemize}
+    \item Scelta dei pesi certificati
+    \item configurazione Meccanica
+    \item braggio di leva e generazione della coppia
+\end{itemize}
+
+\subsection{Sequenza di montaggio}
+
+Per prima cosa vengono rimossi i due alberi dal carter. Si monta successivamente l'\textbf{anello di blocco} si di uno degli alberi, e si va a inserire nella sede corrispondente al torsiometro da tarare , ad esempio si sceglie di tarare il torsiometro  di destra (guardando il carter della sezione T/A da davanti):
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Capitolo_3/Sequenza_montaggio_1.png}
+    \caption{Sequenza montaggio: 1}
+    \label{fig:Sequenza montaggio 1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Capitolo_3/Sequenza_montaggio_2.png}
+    \caption{Sequenza montaggio: 2}
+    \label{fig:Sequenza montaggio: 2}
+\end{figure}
+
+Come mostrato in fig.\ref{fig:Sequenza montaggio: 2} si va poi a inserire l'albero opportunamente ruotato per via dell'ingombro dell'anello di blocco.\\
+Prima che l'albero ingaggi con la catena cinematica, lo si ruota in modo da poter collegare la \textbf{staffa}, inserita attraverso l'asola in alto.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{Images/Capitolo_3/Sequenza_montaggio_3.png}
+    \caption{Inserimento delle spine sulla staffa}
+    \label{fig:Inserimento delle spine sulla staffa}
+\end{figure}
+
+Si inseriscono le spine di riferimento nella staffa come mostrato in fig.\ref{fig:Inserimento delle spine sulla staffa}, per poi andarla a inserire nel carter così da collegarla all'anello di blocco:
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Sequenza_montaggio_3.1.png}
+        \caption{Sequenza montaggio: 3.1}
+        \label{fig:Sequenza montaggio: 3.1}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=1\textwidth]{Images/Capitolo_3/Sequenza_montaggio_3.2.png}
+        \caption{Sequenza montaggio: 3.2}
+        \label{fig:Sequenza montaggio: 3.3}
+    \end{subfigure}
+    \caption{Sequenza montaggio: 3}
+    \label{fig:Sequenza montaggio: 3}
+\end{figure}
+
+Inserite ed avvitate le viti di collegamento, si può a questo punto ruotare il tutto in posizione verticale, e collegare il braccio di leva alla staffa, una volta con il braccio verso destra e una volta con il braccio verso sinistra per poter applicare il carico al torsiometro in entrambi i versi di rotazione (di seguito è riportato il caso in cui si pone il braccio di leva orientato verso destra):
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_3/Sequenza_montaggio_4.png}
+    \caption{Sequenza montaggio: 4}
+    \label{fig:Sequenza montaggio: 4}
+\end{figure}
+
+Giunti in questa configurazione, è necessario esesguire il bilanciamento a vuoto del bilanciere, spostando opportunamente il pacco dei contrappesi lungo l'asola. Trovato l'equilibrio del sistema, si procede a serrare i dadi delle viti del pacco dei contrappesi così da tenerli in posizione.
+
+Si procede ora a montare sul secondo albero l'altro anello:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_3/Sequenza_montaggio_5.1.png}
+    \caption{Collegamento forchetta su albero, sequenza di montaggio: 5}
+    \label{fig:Collegamento forchetta su albero}
+\end{figure}
+
+Si inserisce ora l'albero con la forchetta nel carter da davanti, opportunamente ruotato:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_3/Sequenza_montaggio_5.1.png}
+    \caption{Sequenza di montaggio: 5.1}
+    \label{fig:Sequenza di montaggio: 5.1}
+\end{figure}
+
+Prima che l'albero ingaggi con la catena cinematica, lo ri ruota in posizione verticale, e solo dopo lo si può portare a battuta in direzione assiale fino a farlo ingaggiare.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_3/Sequenza_montaggio_5.2.png}
+    \caption{Sequenza di montaggio: 5.2}
+    \label{fig:Sequenza di montaggio: 5.2}
+\end{figure}
+
+Infine, si monta il \textbf{perno di blocco}, assicurandosi di far ingaggiare correttamente il perno nella sede della forchetta:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_3/Sequenza_montaggio_6.png}
+    \caption{Sequenza montaggio: 6}
+    \label{fig:Sequenza montaggio: 6}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_3/Sequenza_montaggio_6.1.png}
+    \caption{Dettaglio sequenza montaggio n°6}
+    \label{fig:Dettaglio sequenza montaggio n°6}
+\end{figure}
+
+Il braccio di leva, come già anticipato precedentemente, dovrà essere ruotato di 180° in modo da applicare il carico al torsiometro anche nel verso opposto per poter eseguire correttamente la procedura di taratura. Per ruotare il braccio è sufficiente svitare le viti (quelle usate nella sequenza di montaggio n°4 della fig.\ref{fig:Sequenza montaggio: 4}), senza dover smontare altre componenti. Sarà poi necessario ripetere l'operazione per poterlo applicare al secondo torsiometro di sinitra e prevedere anche per lui i caricamenti in entrambi i versi di rotazione (in questo caso, la fase di equilibratura illustrata nella sequenza n°4 della fig.\ref{fig:Sequenza montaggio: 4} non è necessario eseguirla nuovamente, purché durante lo smontaggio e rimontaggio non vengano allentati i bulloni del pacco dei contrappesi).
+
+\subsection{Realizzazione e collaudo}
+
+
+
+\subsection{Procedura di taratura}
+
+
+
+\subsection{Analisi dei risultati sperimentali}
+
+
+
+\begin{itemize}
+    \item Linearità
+    \item Ripetibiilità
+    \item Isteresi   
+\end{itemize}
+    
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 4 - SISTEMA DI VERIFICA DI CELLA DI CARICO E PONTI ESTENSIMETRICI}
+
+
+
+\subsection{Analisi della catena di misura della forza}
+
+
+
+\subsection{Progettazone del sistema di verifica}
+
+Dopo un accurato rilievo degli ingombri e volumi di lavoro disponibili, l'idea sviluppata consiste in un provino strumentato, che costituisce quindi un \textbf{strumento campione}, capace di leggere il carico di compressione ad esso applicato. L'idea è quella di sfruttare 
+Il provino si compone di 3 componenti principali:
+
+\begin{itemize}
+    \item la \textbf{base}:
+    
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Base.png}
+    \caption{Base}
+    \label{fig:Base}
+\end{figure}
+
+
+    \item il \textbf{corpo centrale} del provino,
+    
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Provino.png}
+   \caption{Corpo centrale}
+   \label{fig:Corpo centrale}
+ \end{figure}
+
+ \item il rullo da cuscinetti,
+    
+ \begin{figure}[H]
+   \centering
+   \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Rullo.png}     \caption{Rullo}
+   \label{fig:Rullo}
+ \end{figure}
+
+
+
+\end{itemize}
+
+Di seguito è riportato il provinonellasua interezza:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_4/Provino_intero.png}
+    \caption{Provino}
+    \label{fig:Provino}
+\end{figure}
+
+
+Il collegamento tra il corpo del provino e il rullo avviene mediante una semplice brasatura. Per quando riguarda il collegamento tra la base e il corpo si ha invece un collegamento mediante delle viti mordenti. Il gioco presente tra le viti mordenti e i fori passanti del corpo del provino consentono di avere la possibilità di effettuare una regolazione del posizionamento del provino direttamente in macchina. Questo risulta necessario in quanto risulta rilevante assicurarsi che il contatto tra il rullo cilindro e la pressa del macchinario avvenga esattamente nello stesso punto dove avviene il contatto tra il dente della ruota dentata (il T/A) e la pressa, in modo da replicare il più possibile le stesse condizioni di caricamento che avvengono di fatto durante l'esecuzione della prova a cui viene sottoposto il T/A.\par
+
+Il provino presenta due ampie superfici laterali, sulle quali sono montati due ponti estensimetrici (uno per superficie) che andranno a leggere i valori di compressione a cui viene sottoposto il provino.
+
+La particolare forma del provino "a coltello" è stata scelta per compensare l'effetto del momento flettente non voluto, che nasce da un eventuale errore di parallelismo (inevitabile) tra l'asse del cilindro e il piano di contatto del "martello". Questo errore di parallelismo trasformerebbe il contatto di linea tra cilindro e martello in un contatto di punto che genererebbe una componente di momento oltre alla forza di compressione come carico esterno per il provino. La componente di momento esterna indurrebbe la nascita del momento flettente all'interno del corpo centrale del provino, e questo andrebbe a diversificare i valori della tensione normale in direzione assiale (direzione dell'altezza del provino) e di conseguenza anche i valori di deformazione assiale letti dai due ponti estensimetrici presenti sulle due facce del provino. Riducendo la sezione centrale del corpo centrale si riduce l'effetto del momento flettente, uniformando quindi il più possibile le tensioni normali assiali sulle due facce. Per ridurre ulteriormente questo errore, dai due valori ottenuti dai due ponti estensimetrici ne se ricava un terzo ottenuto come media aritmetica dei due. 
+
+\subsection{Realizzazione e collaudo}
+
+
+
+\subsection{Procedura di verifica}
+
+
+
+\subsection{Analisi delle prestazioni metrologiche}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 5 - Confronto con requisiti ISO 17025}
+
+
+
+\subsection{Adeguatezza metrologica}
+
+
+
+\subsection{Margini di miglioramento}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}
+
+
+
+\subsection{Procedure di gestione della stumentazione}
+
+
+
+\subsection{Tracciabilità metrologica}
+
+
+
+\subsection{Piano di taratura periodica}
+
+
+
+\subsection{Integrazione nel sistema qualità aziendale}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 7 - CONCLUSIONI}
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{APPENDICI}
+%----------------------------------------------------------------------------------------
+
+
+
+\end{document}
