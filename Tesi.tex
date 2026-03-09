@@ -29,6 +29,7 @@
 % Uso delle immagini
 \usepackage{graphicx}
 % Uso dei colori
+\usepackage[table]{xcolor}
 \usepackage[dvipsnames]{xcolor}         
 % Uso dei listing per il codice
 \usepackage{listings}          
@@ -173,7 +174,9 @@
 %\newcommand{\cgs}[1]{{\textcolor{brown}[\textcolor{red}{\bf{GS: }}{ \textcolor{brown}{#1]}}}}             
 %\newcommand{\cmc}[1]{{\textcolor{blue}[\textcolor{magenta}{\bf{MC: }}{ \textcolor{blue}{#1]}}}}
 
-
+%Colori per la tabella dei risultati
+\definecolor{headerblue}{HTML}{3F5896}
+\definecolor{rowlight}{HTML}{E9EBF5}
 
 % -----------------------------------------------------------------
 \begin{document}
@@ -817,7 +820,9 @@ Il braccio di leva, come già anticipato precedentemente, dovrà essere ruotato 
 
 \subsection{Progettazone del sistema di verifica}
 
-Dopo un accurato rilievo degli ingombri e volumi di lavoro disponibili, l'idea sviluppata consiste in un provino strumentato, che costituisce quindi un \textbf{strumento campione}, capace di leggere il carico di compressione ad esso applicato. L'idea è quella di sfruttare 
+Per eseguire la prova di taratura, si esegue una prova statica ad un carico pari a $20kN$. Risulta quindi necessario realizzare un provino strumentato che legga il valore della forza di compressione, e che replichi al meglio le condizioni di caricamento sulla ruota dentata. Quindi è necessario assicurarsi che il contatto tra provino e martello sia un contatto di linea e che il provino sia in contatto con il martello esattamente dove va in contatto con il dente della ruota dentata.
+
+Dopo un accurato rilievo degli ingombri e volumi di lavoro disponibili, l'idea sviluppata consiste in un provino strumentato, che costituisce quindi uno \textbf{strumento campione}, capace di leggere il carico di compressione ad esso applicato. L'idea è quella di sfruttare 
 Il provino si compone di 3 componenti principali:
 
 \begin{itemize}
@@ -835,7 +840,7 @@ Il provino si compone di 3 componenti principali:
     
 \begin{figure}[H]
    \centering
-   \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Provino.png}
+   \includegraphics[width=0.25\linewidth]{Images/Capitolo_4/Provino.png}
    \caption{Corpo centrale}
    \label{fig:Corpo centrale}
  \end{figure}
@@ -844,7 +849,7 @@ Il provino si compone di 3 componenti principali:
     
  \begin{figure}[H]
    \centering
-   \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Rullo.png}     \caption{Rullo}
+   \includegraphics[width=0.25\linewidth]{Images/Capitolo_4/Rullo.png}     \caption{Rullo}
    \label{fig:Rullo}
  \end{figure}
 
@@ -852,11 +857,11 @@ Il provino si compone di 3 componenti principali:
 
 \end{itemize}
 
-Di seguito è riportato il provinonellasua interezza:
+Di seguito è riportato il provino nella sua interezza:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{Images/Capitolo_4/Provino_intero.png}
+    \includegraphics[width=0.45\linewidth]{Images/Capitolo_4/Provino_intero.png}
     \caption{Provino}
     \label{fig:Provino}
 \end{figure}
@@ -866,7 +871,107 @@ Il collegamento tra il corpo del provino e il rullo avviene mediante una semplic
 
 Il provino presenta due ampie superfici laterali, sulle quali sono montati due ponti estensimetrici (uno per superficie) che andranno a leggere i valori di compressione a cui viene sottoposto il provino.
 
-La particolare forma del provino "a coltello" è stata scelta per compensare l'effetto del momento flettente non voluto, che nasce da un eventuale errore di parallelismo (inevitabile) tra l'asse del cilindro e il piano di contatto del "martello". Questo errore di parallelismo trasformerebbe il contatto di linea tra cilindro e martello in un contatto di punto che genererebbe una componente di momento oltre alla forza di compressione come carico esterno per il provino. La componente di momento esterna indurrebbe la nascita del momento flettente all'interno del corpo centrale del provino, e questo andrebbe a diversificare i valori della tensione normale in direzione assiale (direzione dell'altezza del provino) e di conseguenza anche i valori di deformazione assiale letti dai due ponti estensimetrici presenti sulle due facce del provino. Riducendo la sezione centrale del corpo centrale si riduce l'effetto del momento flettente, uniformando quindi il più possibile le tensioni normali assiali sulle due facce. Per ridurre ulteriormente questo errore, dai due valori ottenuti dai due ponti estensimetrici ne se ricava un terzo ottenuto come media aritmetica dei due. 
+La particolare forma del provino "a coltello" è stata scelta per compensare l'effetto del momento flettente che nasce da un eventuale errore di parallelismo (inevitabile) tra l'asse del cilindro e il piano di contatto del "martello". Durante il contatto quindi, oltre a genersarsi una forza di compressione sul provino, nascerebbe anche una coppia che indurrebbe momento flettente nel provino. Questo andrebbe a diversificare i valori della tensione normale in direzione assiale (direzione dell'altezza del provino) e di conseguenza anche i valori di deformazione assiale letti dai due ponti estensimetrici presenti sulle due facce del provino. Riducendo la sezione centrale del corpo centrale si riduce l'effetto del momento flettente, uniformando quindi il più possibile le tensioni normali assiali sulle due facce. Per ridurre ulteriormente l'errore dovuto al momento flettente, dai valori ottenuti dai due ponti estensimetrici ne se ricava un terzo ottenuto come media aritmetica dei due.\par
+
+ Tramite l'uso degli Elementi Finiti con il software Ansys è stato simulato il caricamento del provino in presenza di una componente di momento esterno, introdotta come "rotazione imposta" in modo che le estremità del rullo subiscano uno spostamento assiale di $0.02 \text{ mm}$ in direzione opposta (in accordo alle tolleranze introdotte riportate sui disegni tecnici delle varie parti).
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.6\textwidth]{Images/Capitolo_4/Vincolo_simmetria.png}
+        \caption{Vincolo di simmetria}
+        \label{fig:Vincolo di simmetria}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=0.6\textwidth]{Images/Capitolo_4/Carico_assiale.png}
+        \caption{Carico assiale}
+        \label{fig:Carico assiale}
+    \end{subfigure}
+    \caption{Simulazione di compressione del provino: simmetria e carico}
+    \label{fig:Simulazione di compressione del provino: simmetria e carico}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.6\textwidth]{Images/Capitolo_4/Rotazione_imposta.png}
+        \caption{Rotazione imposta}
+        \label{fig:Rotazione imposta}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \centering
+        \includegraphics[width=0.6\textwidth]{Images/Capitolo_4/Vincolo_di_incastro.png}
+        \caption{Vincolo di incastro}
+        \label{fig:Vincolo di incastro}
+    \end{subfigure}
+    \caption{Simulazione di compressione del provino: rotazione e incastro}
+    \label{fig:Simulazione di compressione del provino: rotazione e incastro}
+\end{figure}
+
+Dalla simulazione sono stati controllati i valori valore della deformazione estensionale in direzione dell'altezza del provino per vedere a quanto ammonta la differenza delle letture dei due estensimetri posti sulle due facce opposte:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_4/Risultati_simulazione.png}
+    \caption{Risultati simulazione}
+    \label{fig:Risultati simulazione}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\textwidth}{!}{% % Inizia il ridimensionamento
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{headerblue} \rule{0pt}{35pt} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta in 10,6mm nella\\ direzione assiale\\ sul lato sinistro \end{tabular}} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta in 10,6mm nella\\ direzione assiale\\ sul lato destro \end{tabular}} \\ \hline
+\rowcolor{rowlight} Errore relativo percentuale & 2,65\% & 1,93\% \\ \hline
+Gradiente $\left[ \frac{\mu\varepsilon}{mm} \right]$ & 2 & 2 \\ \hline
+\end{tabular}% % Chiude la tabular
+} % Chiude resizebox
+\caption{Errore di posizionamento in direzione assiale}
+\label{tab:Errore di posizionamento in direzione assiale}
+\end{table}
+
+Dalla simulazione si vede come il valore medio letto dai ponti estensimetrici sia vicino rispetto al valore nominale del caso del provino solo in compressione pari a $ 953 \, \mu \varepsilon $.
+
+Anche per quanto riguarda i valori in direzione trasversale si leggono valori molto simili tra loro:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_4/Risulati_in_direzione_trasversale.png}
+    \caption{Risultati in direzione trasversale}
+    \label{fig:Risultati in direzione trasversale}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor{headerblue} \rule{0pt}{25pt} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta in 10mm nella\\ direzione trasversale\end{tabular}} \\ \hline
+\rowcolor{rowlight} Errore relativo percentuale & 0,36\% \\ \hline
+Gradiente $\left[ \frac{\mu\varepsilon}{mm} \right]$ & 0,4 \\ \hline
+\end{tabular}
+\caption{Errore di posizionamento in direzione trasversale}
+\label{tab:Errore di posizionamento in direzione trasversale}
+\end{table}
+
+Il posizionamento richiesto ai ponti estensimetrici è quello riportato nella seguente immagine, posto a $36.2 \text{ mm}$ a partire dal basso e al centro rispetto alla direzione trasversale:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png}
+    \caption{Posizionamento dei ponti estensimetrici}
+    \label{fig:Posizionamento dei ponti estensimetrici}
+\end{figure}
+
+In questo modo, considerando gli estensimetri  centrati alla quota di $36.2 \text{ mm}$ con una precisione di $ \pm 0.5 \text{ mm}$ ci si aspetterebbe di commettere al più un errore di circa $ 1 \, \mu \varepsilon $  sia sul lato sinistro che destro.\\
+Per quanto riguarda invece il posizionamento in direzione trasversale, si presume che il valore letto risulti essere \textbf{insensibile} alla variazione di posizionamento lungo questo direzione, pertanto risulta sufficiente un semplice posizionamento in mezzeria lungo la direzione trasversale
+
+
 
 \subsection{Realizzazione e collaudo}
 
