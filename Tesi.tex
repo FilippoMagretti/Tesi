@@ -450,6 +450,18 @@ Successivamente occore determinare l'\textbf{equazione della misura}, che lega l
 Ipotizzando di conoscere l'equazione della misura, è possibile calcolare la \textbf{legge di propagazione dell'incertezza}, che corrisponde alla legge di propagazione degli errori, riportata nell'appendice 1, che consente di calcolare la stima della varianza (ossia il quadrato della deviazione standard) come una combinazione lineare delle varianze associate alle grandezze di ingresso $X_1, X_2, ..., X_n$, ciascuna pesata con il quadrato del coefficiente di sensibilità $c_i$ che rappresenta la derivata parziale della grandezza misurata $Y$ rispetto alla grandezza di ingresso $X_i$.\par
 Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo composta} $u_c$, risultato della propagazione delle varie incertezze.
 
+In questo modo siamo in grado di dire che il valore vero di una misurazione si trova nell'invervallo $[M-U;M+U]$  con una probabilità che è possibile calcolare, chiamata confidenza. Per calcolarla viene attribuito un modello di distribuzione di probabilità, che peril caso di misure e incertezze è quello \textbf{gaussiano}. La validità del modello gaussiano è giustuficata dal \textbf{teorema centrale limite}, in base al quale la combinazionedi più variabili casuali dà luogo ad una variabile di tipo gaussiano appunto.
+
+Il valore calcolato precedentemente di \textbf{incertezza composta $u_c$} diventa quindi la deviazione standard $\varsigma$ della variabile casuale gaussiana \textbf{$M$}, calcolata come media delle misure effettuate. Questo significa che all'intervallo $[M-U;M+U]$ è associata una confidenza del $68 \% $. Se si considerasse un intervallo con semiampiezza pari a $2U$, invece che $U$, si otterrebbe una confidenza superiore al $95 \%$. 
+
+La normativa infatti prevede di applicare un fattore moltiplicativo alla incertezza composta $\mathbf{u_c}$, chiamato \textbf{fattore di copertura} indicato con la lettera $\mathbf{k}$, tipicamente uguale a $2$. Il valore di incertezza così calcolato,
+
+\begin{equation}
+    U = k \cdot u_c
+\end{equation}
+
+ è chiamato \textbf{incertezza estesa}.
+
 \begin{itemize}
     \item Budget di incertezza DOVREI ANCORA PARLARE DI QUESTO, MA NON SO COSA SIA, NON NE HO MAI SENTITO PARLARE
 \end{itemize}
@@ -523,13 +535,49 @@ Come riportato nella tabella \ref{tab:Identificazione dei torsiometri utilizzati
 
 \subsection{Macchina per test STBF}
 
-La macchina per test STBF è un banco prova per ruote dentate in grado di applicare un ciclo di carico affaticante sui T/A facendo vibrare alla loro frequenza naturale le varie parti che la compongono.
+La macchina per test STBF è un banco prova per testare la resistenza dei denti delle ruote dentate in grado di applicare un ciclo di carico affaticante sui T/A facendo andare in risonanza le varie componente flottanti del macchinario mediante un eccitamento generato tramite un elettromagete.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Capitolo_2/Macchinario_STBF.png}
+    \caption{Macchinario STBF}
+    \label{fig:Macchinario STBF}
+\end{figure}
+
+Il sistema di applicazione carico è composto da un puntone "flottante", (collegato tramite delle sottili piastre al telaio) e collegato sopra di esso una cella di carico F1, come mostrato in fig.\ref{fig:Macchinario STBF}. La lettura del calcolo avviene tramite una serie di misurazioni, in quanto in questa configurazione la cella di carico non è rappresentativa del carico che effettivamente si scarica sulla ruota dentata in quanto in parte il carico che passa attraverso il puntone viene ripartito attraverso le piastre sottili laterali e non soltanto sul T/A.
+
+Queste lastre sottili sono dunque strumentate con degli estensimetri, così che possa essere ricavata la quantità di carico che passa attraverso di essi, indicati con dei marcatori verdi nella fig.\ref{fig:Sensori}, chiamati ponti estensimetrici \textbf{U3}. Sottraendo dalla lettura del carico della cella F1 la quota di carico dei ponti estensimetrici U1 e anche il contributo inserziale delle masse vibranti, si ottiene indirettamente il valore del carico trasmetto alla ruota.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_2/Sensori_sulla_STBF.png}
+    \caption{Sensori}
+    \label{fig:Sensori}
+\end{figure}
+
+Inoltre, posizionando altri estensimetri (ponti estensimetrico U1 e U2) siamo in grado di ottenere direttamente il valore di carico che si scarica sul dente del T/A, in particolare \textbf{U2} (evidenziato in blu nella fig.\ref{fig:Sensori}) legge la componente di carico trasversale sul dente, e \textbf{U1} (evidenziato in rosso in fig.\ref{fig:Sensori}) legge il carico normale sul dente.
+
+Con la lettura dell'estensimetri U1 abbiamo quindi una ridondanza del valore del carico sul dente, già ottenuto precedentemente tramite le letture della cella di carico e dei ponti U3. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/Pont_estensimetrici_STBF.png}
+    \caption{Ponti estensimetrici}
+    \label{fig:Ponti estensimetrici}
+\end{figure}
+
+Sono presenti quindi due catene di misura che forniscono la lettura del carico sul dente:
 
 \begin{itemize}
-    \item Descrizione dell'attrezzatura di afferraggio
-    \item Cella di carico
-    \item Ponti estensimetrici
-    \item Sistema di acquisisizione dati
+    \item 
+\end{itemize}
+
+
+\begin{itemize}
+    \item Descrizione dell'attrezzatura di afferraggio- ok
+    \item Cella di carico- no
+    \item Ponti estensimetrici- ok
+    \item Sistema di acquisisizione dati- no
 \end{itemize}
 
 
@@ -542,9 +590,11 @@ La macchina per test STBF è un banco prova per ruote dentate in grado di applic
 
 \subsection{Analisi delle esigenze metrologiche}
 
+La taratura della catena di misura del banco prova Renk richiede un sistema meccanico in grado applicare al macchinario un valore di coppia fino a $1 \cdot 10^6 \text{ Nm}$. Inoltre, è richiesto a questo sistema che garantisca una procedura ad elevata riproducibilità e ripetibilità e riferibilità.
 
+Si rende necessario l'impiego di campioni di riferimento aventi tracciabilità ininterrotta verso i campioni primari.
 
-\subsection{Progettaazione del sistema di taratura}
+\subsection{Progettazione del sistema di taratura}
 
 L'idea di base per la realizzazione di un apparecchio meccanico con il quale poter eseguire la taratura dei torsiometri del banco RENK costiste in un bilanciere che sfrutta dei pesi certificati per generare una coppia mediante un braccio di leva noto.\\
 Qui nascono i primi vincoli progettuali per quanto riguarda gli ingombri: il bilanciere sostituisce i "Test-Article" presenti in questa sezione:
@@ -775,6 +825,7 @@ Il braccio di leva, come già anticipato precedentemente, dovrà essere ruotato 
 
 \subsection{Realizzazione e collaudo}
 
+I  componenti sono stati real
 
 
 \subsection{Procedura di taratura}
@@ -805,13 +856,13 @@ Il braccio di leva, come già anticipato precedentemente, dovrà essere ruotato 
 
 \subsection{Progettazone del sistema di verifica}
 
-Per eseguire la prova di taratura, si esegue una prova statica ad un carico pari a $20kN$. Risulta quindi necessario realizzare un provino strumentato che legga il valore della forza di compressione, e che replichi al meglio le condizioni di caricamento sulla ruota dentata. Quindi è necessario assicurarsi che il contatto tra provino e martello sia un contatto di linea e che il provino sia in contatto con il martello esattamente dove va in contatto con il dente della ruota dentata.
+Per eseguire la prova di taratura, si esegue una prova statica ad un carico pari a $20kN$. Risulta quindi necessario realizzare un provino strumentato che legga il valore della forza di compressione, e che replichi al meglio le condizioni di caricamento sulla ruota dentata. Quindi è necessario assicurarsi che il contatto tra provino e martello sia un contatto di linea e che il contatto con il martello si collochi con grande precisione dove avviene il contatto con il test article.
 
 Dopo un accurato rilievo degli ingombri e volumi di lavoro disponibili, l'idea sviluppata consiste in un provino strumentato, che costituisce quindi uno \textbf{strumento campione}, capace di leggere il carico di compressione ad esso applicato. L'idea è quella di sfruttare 
 Il provino si compone di 3 componenti principali:
 
 \begin{itemize}
-    \item la \textbf{base}:
+    \item la \textbf{base}, realizzata in materiale 39NiCrMo3:
     
 \begin{figure}[H]
     \centering
@@ -819,9 +870,10 @@ Il provino si compone di 3 componenti principali:
     \caption{Base}
     \label{fig:Base}
 \end{figure}
+ 
+la  sua particolare forma consente un corretto posizionamento in macchina con ottima riferibilità alle superifici di riferimento, come mostrato in fig.\ref{fig:Superfici di riferimento viste all'alto};
 
-
-    \item il \textbf{corpo centrale} del provino,
+    \item il \textbf{corpo centrale} del provino, realizzato in materiale 39NiCrMo3,
     
 \begin{figure}[H]
    \centering
@@ -830,7 +882,9 @@ Il provino si compone di 3 componenti principali:
    \label{fig:Corpo centrale}
  \end{figure}
 
- \item il rullo da cuscinetti,
+sulle superfici laterali saranno applicati gli estensimetri, come mostrato in fig.\ref{fig:Posizione estensimetri};
+
+ \item il rullo da cuscinetti, realizzato in 100Cr7 (acciaio a tutta tempra tipico dei cuscinetti):
     
  \begin{figure}[H]
    \centering
@@ -838,7 +892,7 @@ Il provino si compone di 3 componenti principali:
    \label{fig:Rullo}
  \end{figure}
 
-
+ il cui raggio è stato scelto in modo da replicare le condizione di contatto con il dente del T/A;
 
 \end{itemize}
 
@@ -851,14 +905,55 @@ Di seguito è riportato il provino nella sua interezza:
     \label{fig:Provino}
 \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/Capitolo_4/Estensimetri.png}
+    \caption{Posizione estensimetri}
+    \label{fig:Posizione estensimetri}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/Capitolo_4/Superfici_di_riferimento.png}
+    \caption{Superfici di riferimento}
+    \label{fig:Superfici di riferimento}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png}
+    \caption{Superfici di riferimento viste all'alto}
+    \label{fig:Superfici di riferimento viste all'alto}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_4/Posizionamento_in_macchina.png}
+    \caption{Posizionamento in macchina del provino}
+    \label{fig:Posizionamento in macchina del provino}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_4/Posizionamento_nel_cad_davanti.png}
+    \caption{Vista frontale posizionamento nel cad}
+    \label{fig:Vista frontale posizionamento nel cad}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Capitolo_4/Posizionamento_nel_cad.png}
+    \caption{Posizionamento nel cad}
+    \label{fig:Posizionamento nel cad}
+\end{figure}
 
 Il collegamento tra il corpo del provino e il rullo avviene mediante una semplice brasatura. Per quando riguarda il collegamento tra la base e il corpo si ha invece un collegamento mediante delle viti mordenti. Il gioco presente tra le viti mordenti e i fori passanti del corpo del provino consentono di avere la possibilità di effettuare una regolazione del posizionamento del provino direttamente in macchina. Questo risulta necessario in quanto risulta rilevante assicurarsi che il contatto tra il rullo cilindro e la pressa del macchinario avvenga esattamente nello stesso punto dove avviene il contatto tra il dente della ruota dentata (il T/A) e la pressa, in modo da replicare il più possibile le stesse condizioni di caricamento che avvengono di fatto durante l'esecuzione della prova a cui viene sottoposto il T/A.\par
 
-Il provino presenta due ampie superfici laterali, sulle quali sono montati due estensimetri (uno per superficie) che andranno a leggere i valori di compressione a cui viene sottoposto il provino.
+Il provino presenta due ampie superfici laterali, sulle quali sono montati due estensimetri come mostrato in fig.\ref{fig:Posizione estensimetri} che andranno a leggere i valori di compressione a cui viene sottoposto il provino.
 
 La particolare forma del provino "a coltello" è stata scelta per compensare l'effetto del momento flettente che nasce da un eventuale errore di parallelismo (inevitabile) tra l'asse del cilindro e il piano di contatto del "martello". Durante il contatto quindi, oltre a genersarsi una forza di compressione sul provino, nascerebbe anche una coppia che indurrebbe momento flettente nel provino. Questo andrebbe a diversificare i valori della tensione normale in direzione assiale (direzione dell'altezza del provino) e di conseguenza anche i valori di deformazione assiale letti dai due estensimetri presenti sulle due facce del provino. Riducendo la sezione centrale del corpo centrale si riduce l'effetto del momento flettente, uniformando quindi il più possibile le tensioni normali assiali sulle due facce. Per ridurre ulteriormente l'errore dovuto al momento flettente, dai valori ottenuti dai due ponti estensimetrici ne se ricava un terzo ottenuto come media aritmetica dei due.\par
 
- Tramite l'uso degli Elementi Finiti con il software Ansys è stato simulato il caricamento del provino in presenza di una componente di momento esterno, introdotta come "rotazione imposta" in modo che le estremità del rullo subiscano uno spostamento assiale di $0.02 \text{ mm}$ in direzione opposta (in accordo alle tolleranze introdotte riportate sui disegni tecnici delle varie parti).
+ Tramite l'uso degli Elementi Finiti con il software Ansys è stato simulato il caricamento del provino in campo elastico in presenza di una componente di momento esterno, introdotta come "rotazione imposta" in modo che le estremità del rullo subiscano uno spostamento assiale di $0.02 \text{ mm}$ in direzione opposta (in accordo alle tolleranze introdotte riportate sui disegni tecnici delle varie parti).
 
 \begin{figure}[H]
     \centering
