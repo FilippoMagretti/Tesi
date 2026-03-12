@@ -387,9 +387,9 @@ La “Guide to the expression of Uncertainty in Measurement” (GUM) fornisce
 linee guida universali e adottate a livello europeo per valutare l'incertezza nelle misure.\\
 L'incertezza di una misura è un parametro che caratterizza la dispersione dei valori ottenuti, e all'interno di questa guida è previsto considerarla come composta da due componenti che differiscono dal metodo di valutazione: l'incertezza di \textbf{tipo A} e l'incertezza di \textbf{tipo B}.\par
 
-L'incertezza di \textbf{tipo A} viene valutata attraverso una serie di ripetute misurazioni, sulle quali vengono effettuate elaborazioni statistiche. Il procedimento da adottare porta al calcolo dello \textbf{scarto tipo}, e risulta utilizzabile anche in sede di taratura, esprimibile come scostamento tra la media ottenuta da un certo numero di prove e il valore "vero" di riferimento fornito da un campione o da uno strumento campione. I risultati di questo procedimento sono quelli tipicamente ripotati nei certificati di taratura.\par
+Una incertezza di \textbf{tipo A} viene valutata attraverso una serie di ripetute misurazioni, sulle quali vengono effettuate elaborazioni statistiche. Il procedimento da adottare porta al calcolo dello \textbf{scarto tipo}, e risulta utilizzabile anche in sede di taratura, esprimibile come scostamento tra la media ottenuta da un certo numero di prove e il valore "vero" di riferimento fornito da un campione o da uno strumento campione. I risultati di questo procedimento sono quelli tipicamente ripotati nei certificati di taratura.\par
 
-La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare $N$ misurazioni e di seguire i successivi step:
+La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare $N$ misurazioni della stessa grandezza e di seguire i successivi step:
 
 \begin{itemize}
     \item calcolo della \textbf{media} come media aritmetica $m$ dei valori misurati
@@ -404,7 +404,7 @@ La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare 
     s_i = x_i - m
     \end{equation}
 
-    \item calcolo dello \textbf{scarto tipo} $s$ come stima della deviazione standard sperimentale di una distribuzione ipoteticamente gaussiana
+    \item calcolo dello \textbf{scarto tipo} $s$ come stima della deviazione standard sperimentale di una distribuzione ipoteticamente gaussiana 
     
     \begin{equation}
     s = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} s_i^2}
@@ -412,12 +412,14 @@ La procedura per la valutazione dell'incertezza di tipo A prevede di effettuare 
 
 \end{itemize}
 
-Occorre considerare nel calcolo della misurazione anche un altro contributo dovuto alla \textbf{incertezza diripetibilità}, classificabile come incertezzadi tipo A, che viene così calcolata:
+La validità del modello gaussiano è garantitp dal \textbf{Teorema del limite centrale}, in base al quale la combinazione di più variabili causali dà luogo ad una variabile di tipo gaussiano, a patto che il numero di campioni N dati con N maggiore o uguale a 30. Per valori inferiore a 30 è più opportuno fare ricorso alla teoria dei piccoli campioni basata sulla \textbf{distribuzione di Student}
+
+Occorre considerare nel calcolo della misurazione anche un altro contributo dovuto alla \textbf{incertezza di ripetibilità}, classificabile come incertezzadi tipo A, che viene così calcolata:
 
 \begin{itemize}
-    \item calcolo della \textbf{media} $m$ calcolata su $N$ misurazioni come media aritmetica dei valori misurati;
+    \item calcolo della \textbf{media} $m$ calcolata su $N$ misurazioni della stessa grandezza come media aritmetica dei valori misurati;
     \item calcolo dello \textbf{scarto tipo} $s$ come illustrato in precedenza;
-    \item calcolo della \textbf{deviazione standard della media} $s_m$ andando a dividere lo scarto tipo $s$ per la radice quadrata del numero di misurazioni $N$ effettuate
+    \item calcolo della \textbf{deviazione standard della media} $s_m$ andando a dividere lo scarto tipo $s$ per la radice quadrata del numero di misurazioni $N$ effettuate se si assume una distribuzione gaussiana come detto per il procedimento precedente
     
     \begin{equation}
     s_m = \frac{s}{\sqrt{N}}
@@ -425,7 +427,7 @@ Occorre considerare nel calcolo della misurazione anche un altro contributo dovu
 
 \end{itemize}
 
-L'incertezza di \textbf{tipo B} viene valutata invece tramite modalità che non necessitano di misurazioni ripetute, e il suo calcolo parte dalla conoscenza dell'entità massima della variazione casuale \textbf{$a$} di una grandezza, la quale tipicamente è simmetrica rispetto a zero, assumendo quindi valori compresi nell'intervallo $[-a ; a]$. Il valore \textbf{$a$} è ottenuto da report informativi, certificati di taratura, risultati sperimentali, in sostanza da conoscenze a priori del contesto in cui si opera.\\
+Una incertezza di \textbf{tipo B} viene valutata invece tramite modalità che non necessitano di misurazioni ripetute, e il suo calcolo parte dalla conoscenza dell'entità massima della variazione casuale \textbf{$a$} di una grandezza, la quale tipicamente è simmetrica rispetto a zero, assumendo quindi valori compresi nell'intervallo $[-a ; a]$. Il valore \textbf{$a$} è ottenuto da report informativi, certificati di taratura, risultati sperimentali, in sostanza da conoscenze a priori del contesto in cui si opera.\\
 Stabilito il valore di $a$, in seguito a una ipotesi di distribuzione statistica della grandezza misurata all'interno dell'intervallo $[-a ; a]$, è possibile calcolare l'incertezza di tipo B $u$ nel modo seguente:
 
 \begin{itemize}
@@ -438,21 +440,18 @@ Stabilito il valore di $a$, in seguito a una ipotesi di distribuzione statistica
      Questa ipotesi viene fatta nei casi in cui non si hanno informazioni sufficienti per poter fare ipotesi più specifiche riguardo alla distribuzione della grandezza misurata.
 \end{itemize}
 
-Una volta calcolate le due componenti A e B, è possibile calcolare una combinazione di queste due incertezze, calcolando così una incertezza risultante, detta \textbf{incertezza tipo}.\par
+Una volta calcolate tutte le componenti di incertezza relativamente ad una misura effettuata,di tipo A e di tipo B, è possibile calcolare una combinazione di queste incertezze, calcolando così una incertezza risultante, detta \textbf{incertezza tipo}.\par
 
-Al termine di un processo di misurazione, ottenuti $n$ valori di deviazione standard $u_1, u_2, ..., u_n$ associati a $n$ fonti di incertezza, l'\textbf{incertezza tipo} $u$ è data dalla loro somma quadratica, che si basa sull'ipotesi di indipendenza tra le fonti di incertezza:
+Al termine di un processo di misurazione, ottenuti $n$ valori di deviazione standard $u_1, u_2, ..., u_n$ associati a $n$ fonti di incertezza, l'\textbf{incertezza tipo $u$}  è data dalla loro somma quadratica, che si basa sull'ipotesi di indipendenza tra le fonti di incertezza:
 
 \begin{equation}
 u = \sqrt{u_1^2 + u_2^2 + ... + u_n^2}
 \end{equation}
 
-Successivamente occore determinare l'\textbf{equazione della misura}, che lega la grandezza misurata $Y$ alle grandezze di ingresso $X_1, X_2, ..., X_n$ che influenzano la misura. L'eventuale mancanza di informazioni relativa a tali grandezze di ingresso, alle loro relative misure ed incertezze, e alla relazione stessa che le lega alla gradezza misurata, determinerebbe una ulteriore fonte di incertezza, tipica degli ambienti di sperimentazione scientifica e meno usuale in ambito industriale.\par
-Ipotizzando di conoscere l'equazione della misura, è possibile calcolare la \textbf{legge di propagazione dell'incertezza}, che corrisponde alla legge di propagazione degli errori, riportata nell'appendice 1, che consente di calcolare la stima della varianza (ossia il quadrato della deviazione standard) come una combinazione lineare delle varianze associate alle grandezze di ingresso $X_1, X_2, ..., X_n$, ciascuna pesata con il quadrato del coefficiente di sensibilità $c_i$ che rappresenta la derivata parziale della grandezza misurata $Y$ rispetto alla grandezza di ingresso $X_i$.\par
-Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo composta} $u_c$, risultato della propagazione delle varie incertezze.
+Nel caso in cui un misurando sia misurato in modo indiretto occore determinare l'\textbf{equazione della misura}, che lega il misurando $Y$ alle grandezze di ingresso $X_1, X_2, ..., X_n$, misurate e caratterizzate con il procedimento precedentemente descritto, che ne influenzano la misura. L'eventuale mancanza di informazioni relativa a tali grandezze di ingresso, alle loro relative misure ed incertezze, e alla relazione stessa che le lega alla gradezza misurata, determinerebbe una ulteriore fonte di incertezza, tipica degli ambienti di sperimentazione scientifica e meno usuale in ambito industriale.\par
+Ipotizzando di conoscere l'equazione della misura, è possibile calcolare la \textbf{legge di propagazione dell'incertezza}, che corrisponde alla legge di propagazione degli errori, riportata nell'\textit{APPENDICE A}, che consente di calcolare la stima della varianza (ossia il quadrato della deviazione standard) come una combinazione lineare delle varianze associate alle grandezze di ingresso $X_1, X_2, ..., X_n$, ciascuna pesata con il quadrato del coefficiente di sensibilità $c_i$ che rappresenta la derivata parziale della grandezza misurata $Y$ rispetto alla grandezza di ingresso $X_i$. Calcolandone poi la radice quadrata si ottiene l'\textbf{incertezza tipo composta $u_c$}, risultato della propagazione delle varie incertezze. Nel caso di un misurando ottenuto in modo diretto si ha che la sua \textbf{incertezza tipo composta} è del tutto equivalente alla sua \textbf{incertezza tipo}, in quanto corrisponderebbe ad avere una \textbf{equazione della misura} del tipo $Y=X$ banalmente.
 
-In questo modo siamo in grado di dire che il valore vero di una misurazione si trova nell'invervallo $[M-U;M+U]$  con una probabilità che è possibile calcolare, chiamata confidenza. Per calcolarla viene attribuito un modello di distribuzione di probabilità, che peril caso di misure e incertezze è quello \textbf{gaussiano}. La validità del modello gaussiano è giustuficata dal \textbf{teorema centrale limite}, in base al quale la combinazionedi più variabili casuali dà luogo ad una variabile di tipo gaussiano appunto.
-
-Il valore calcolato precedentemente di \textbf{incertezza composta $u_c$} diventa quindi la deviazione standard $\varsigma$ della variabile casuale gaussiana \textbf{$M$}, calcolata come media delle misure effettuate. Questo significa che all'intervallo $[M-U;M+U]$ è associata una confidenza del $68 \% $. Se si considerasse un intervallo con semiampiezza pari a $2U$, invece che $U$, si otterrebbe una confidenza superiore al $95 \%$. 
+In questo modo siamo in grado di dire che il valore vero di una misurazione si trova nell'invervallo $[M-U;M+U]$  con una probabilità che è possibile calcolare, chiamata confidenza. Per calcolarla viene attribuito un modello di distribuzione di probabilità, che per il caso di misure e incertezze è quello \textbf{gaussiano}. La validità del modello gaussiano è giustuficata dal \textbf{teorema centrale limite}, in base al quale la combinazionedi più variabili casuali dà luogo ad una variabile di tipo gaussiano appunto. Il valore calcolato precedentemente di \textbf{incertezza composta $u_c$} diventa quindi la deviazione standard $\sigma$ della variabile casuale gaussiana \textbf{$M$}, calcolata come media delle misure effettuate. Questo significa che all'intervallo $[M-U;M+U]$ è associata una confidenza del $68 \% $. Se si considerasse un intervallo con semiampiezza pari a $2U$, invece che $U$, si otterrebbe una confidenza superiore al $95 \%$. 
 
 La normativa infatti prevede di applicare un fattore moltiplicativo alla incertezza composta $\mathbf{u_c}$, chiamato \textbf{fattore di copertura} indicato con la lettera $\mathbf{k}$, tipicamente uguale a $2$. Il valore di incertezza così calcolato,
 
@@ -462,8 +461,31 @@ La normativa infatti prevede di applicare un fattore moltiplicativo alla incerte
 
  è chiamato \textbf{incertezza estesa}.
 
+\subsection{Budget di incertezza}
+
+Definite le basi teoriche per la trattazione dell'incertezza, la classificazione in incertezza di \textbf{Tipo A} e di \textbf{Tipo B}, è necessario prescrivere una quantificazione sistematica di tutti i contributi di incertezza che agiscono sul processo di misurazione ai fini della taratura. Questa quantificazione consiste nella compilazione del \textbf{budget di incertezza}, che rappresenta uno strumento analitico utile ad ottenere le \textbf{incertezze tipo $u_i$} per ogni variabile in gioco. Verrano di seguito descritte le seguenti fonti di incertezza, che completano il quadro delle variabili in gioco:
+
 \begin{itemize}
-    \item Budget di incertezza DOVREI ANCORA PARLARE DI QUESTO, MA NON SO COSA SIA, NON NE HO MAI SENTITO PARLARE
+    \item \textbf{Incertezza di lettura} di uno strumento analogico o digitale, derivante dalla risoluzione dello strumento stesso;
+    \item \textbf{Incertezza strumentale}, derivante dal suo processo di taratura;
+    \item \textbf{Incertezza di ripetibilità}, legata agli scostamenti fra i risultati di diverse misurazioni;
+\end{itemize}
+
+L'\textbf{incertezza di lettura} è intrensicamente legata alla risoluzione dello strumento di misura. Innanzitutto si definisce il concetto di \textbf{fondo scala} che rappresenta la massima indicazione ottenibile da uno strumento di misura; la \textbf{sensibilità} che rappresenta la minima indicazione del campo di misura di uno strumento; di \textbf{campo di misura} che stabilisce un intervallo di misure prestabilito entro cui deve lavorare lo strumento di misura; di \textbf{portata} che identificail limite superiore e inferiore del campo di misura. Si può ora definire la \textbf{risoluzione} di uno strumento di misura, ossia la più piccola variazione della grandezza misurata che lo strumento è in grado di rilevare e mostrare, ossia il limite inferiore di suddivisione del fondo scala.\\
+Nella \textbf{strumentazione analogica}, chiamata $\mathbf{a}$ la frazione di divisione della scala graduata esistente (variabile da operatore a operatore, e spesso può essere direttamente la risoluzione stessa dello strumento), l'intervallo simmetrico all'interno del quale ricade la misurazione è dato da $VL \pm \frac{a}{2}$. Ammesso di effettuare una singola misurazione, il contributo di incertezza che ne consegue è classificabile come \textbf{incertezza di tipo B} descritto da una distribuzione rettangolare simmetrica centrata in $0$ con ampiezza pari a $\frac{a}{2}$. La deviazione standard che ne rappresenta l'incertezza risulta essere:
+\begin{equation}
+    \frac{a}{2\sqrt{3}}
+\end{equation}
+\noindent
+Nella \textbf{strumentazione digitale}, trascurando problemi di oscillazione non legati alla risoluzione dello strumento stesso ma legati a problemi di altra natura, chiamata $\mathbf{a}$ la risoluzione dello strumento si opera come per il caso della strumentazione analogica. Se invece l'ultimo \textit{digit} del valore mostrato  è soggetto a variazione continua, è più opportuno considerare che l'ampiezza dell'intervallo di variazione non sia più $\frac{a}{2}$ come nel caso precedene bensì $a$m, a cui corrisponde una incertezza  pari a:
+\begin{equation}
+    \frac{a}{\sqrt{3}}
+\end{equation}
+
+L'\textbf{incertezza strumentale o di taratura}
+
+\begin{itemize}
+    \item Budget di incertezza DESCRIZIONE DI COME IDENTIFICARE I TIPI DI INCERTEZZA CHE DI SICURO SONO PRESENTI IN QUESTE PROCEDURE: INCERTEZZA DI LETTURA ANALOGICA E DIGITALE, INCERTEZZA DI TARATURA/STRUMENTALE, DEFINIZIONI DI PORTATA E FONDO SCALA, CLASSE DI PRECISIONE, INCERTEZZA DI RIPETIBILITà (LEGATA ALLA STABILITà DELLE MISURAZIONI)
 \end{itemize}
 
 
@@ -1003,7 +1025,7 @@ Il collegamento tra il corpo del provino e il rullo avviene mediante una semplic
 
 La particolare forma del provino "a coltello" è stata scelta per compensare l'effetto del momento flettente che nasce da un eventuale errore di parallelismo (inevitabile) tra l'asse del cilindro e il piano di contatto del "martello". Durante il contatto quindi, oltre a genersarsi una forza di compressione sul provino, nascerebbe anche una coppia che indurrebbe una componente di momento flettente nel provino. Questo andrebbe a diversificare i valori della tensione normale in direzione assiale (direzione dell'altezza del provino) e di conseguenza anche i valori di deformazione assiale letti dai due estensimetri presenti sulle due facce del provino. Riducendo la sezione centrale del corpo centrale si riduce l'effetto del momento flettente, uniformando quindi il più possibile le tensioni normali assiali sulle due facce. Per ridurre ulteriormente l'errore dovuto al momento flettente, dai valori ottenuti dai due ponti estensimetrici ne se ricava un terzo ottenuto come media aritmetica dei due.\par
 
-\subsection{Simulazione al FEM della prova di compressione}
+\subsection{Simulazione al FEM prova di compressione}
 
  Tramite l'uso degli Elementi Finiti con il software Ansys è stato simulato il caricamento del provino in campo elastico in presenza di una componente di momento esterno, introdotta come "rotazione imposta" in modo che le estremità del rullo subiscano uno spostamento assiale di $0.02 \text{ mm}$ in direzione opposta (in accordo alle tolleranze introdotte riportate sui disegni tecnici delle varie parti).
 
@@ -1156,6 +1178,48 @@ Per quanto riguarda invece il posizionamento in direzione trasversale, si presum
     \newpage
 
 \section{APPENDICI}
+
+\subsection{APPENDICE A - Propagazione dell'incertezza}
+
+Nei casi in cui la misura di un misurando avvenga in maniera indiretta, è necessario avere a disposizione l'equazione che lega il misurando $Y$ alle relative grandezze $X_i$ che ne influenzano la misura:
+
+\begin{equation}
+    Y=f(X_1, X_2, ..., X_n)
+\end{equation}
+
+Ciascuna delle variabili $X_i$ rappresenta una misura ed è caratterizzata da un valore medio $m_i$ ed una deviazione standard $u_i$ che ne rappresenta l'incertezza, calcolata mediante la combinazione delle varie incertezze di tipo A e B (come discusso nel capitolo 1). Sfruttando la \textit{Formula di Taylor}, tramite la quale è possibile approssimare il misurando $Y$ ad un polinomio nell'intorno dei valori assunti nell'intorno delle medie delle singole variabili $X_i$, e facendo l'ipotesi che le variabili aleatorie in gioco (le $X_i$) siano \textbf{indipendenti} fra di loro, si può arrivare alla formulazione della varianza di $Y$ come segue:
+
+\begin{equation}
+    u^2 = \sum_{i=1}^{n} \left[ \left( \frac{\partial Y}{\partial X_i} \right)^2 \cdot u_i^2 \right]
+\end{equation}
+
+Di seguito sono riportati dei semplici casi, per chiarezza:
+
+\begin{itemize}
+    \item somma di n grandezze: $Y=X_1 \pm X_2 \pm ... \pm X_n$
+     
+        \begin{equation}
+            u^2=u_1^2+...+u_n^2
+        \end{equation}
+
+    \item prodotto di due grandezze: $Y=X_1 \cdot X_2$
+    
+        \begin{equation}
+            u^2=X_2 \cdot u_1^2+X_1 \cdot u_2^2
+        \end{equation}
+
+    \item frazione di due grandezze: $Y=\frac{X_1}{X_2}$
+    
+        \begin{equation}
+            u^2=\frac{u_1^2}{X_2^2}+\frac{X_1^2 \cdot u_2^2}{X_2^4}
+        \end{equation}
+
+    \item potenza ennesima di una gradnezza: $Y=X_1^n$
+    
+        \begin{equation}
+            u^2=n^2 \cdot X_1^{2n-2} \cdot u_1^2
+        \end{equation}
+\end{itemize}
 %----------------------------------------------------------------------------------------
 
 
