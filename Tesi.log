@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  12 MAR 2026 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  13 MAR 2026 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,269 +648,269 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has b
 <to be read again> 
                    \relax 
 l.388 ...A} e l'incertezza di \textbf{tipo B}.\par
-                                                   [5] [6] [7] [8] [9]
-<Images/Capitolo_2/RENK.png, id=361, 214.55156pt x 285.31593pt>
+                                                   [5] [6] [7] [8] [9] [10] [11]
+<Images/Capitolo_2/RENK.png, id=376, 214.55156pt x 285.31593pt>
 File: Images/Capitolo_2/RENK.png Graphic file (type png)
 <use Images/Capitolo_2/RENK.png>
-Package pdftex.def Info: Images/Capitolo_2/RENK.png  used on input line 505.
+Package pdftex.def Info: Images/Capitolo_2/RENK.png  used on input line 564.
 (pdftex.def)             Requested size: 264.61333pt x 351.92041pt.
-<Images/Capitolo_2/Architettura del RENK.png, id=362, 785.93625pt x 492.33937pt>
+<Images/Capitolo_2/Architettura del RENK.png, id=377, 785.93625pt x 492.33937pt>
 File: Images/Capitolo_2/Architettura del RENK.png Graphic file (type png)
 <use Images/Capitolo_2/Architettura del RENK.png>
-Package pdftex.def Info: Images/Capitolo_2/Architettura del RENK.png  used on input line 512.
+Package pdftex.def Info: Images/Capitolo_2/Architettura del RENK.png  used on input line 571.
 (pdftex.def)             Requested size: 441.01773pt x 276.2791pt.
- [10 <./Images/Capitolo_2/RENK.png>]
-<Images/Capitolo_2/RENK_lato sinistro_motori.jpg, id=369, 375.147pt x 210.5685pt>
+ [12 <./Images/Capitolo_2/RENK.png>]
+<Images/Capitolo_2/RENK_lato sinistro_motori.jpg, id=384, 375.147pt x 210.5685pt>
 File: Images/Capitolo_2/RENK_lato sinistro_motori.jpg Graphic file (type jpg)
 <use Images/Capitolo_2/RENK_lato sinistro_motori.jpg>
-Package pdftex.def Info: Images/Capitolo_2/RENK_lato sinistro_motori.jpg  used on input line 521.
+Package pdftex.def Info: Images/Capitolo_2/RENK_lato sinistro_motori.jpg  used on input line 580.
 (pdftex.def)             Requested size: 352.81552pt x 198.04364pt.
-<Images/Capitolo_2/RENK_lato destro_TA.jpg, id=370, 284.56313pt x 241.65282pt>
+<Images/Capitolo_2/RENK_lato destro_TA.jpg, id=385, 284.56313pt x 241.65282pt>
 File: Images/Capitolo_2/RENK_lato destro_TA.jpg Graphic file (type jpg)
 <use Images/Capitolo_2/RENK_lato destro_TA.jpg>
-Package pdftex.def Info: Images/Capitolo_2/RENK_lato destro_TA.jpg  used on input line 528.
+Package pdftex.def Info: Images/Capitolo_2/RENK_lato destro_TA.jpg  used on input line 587.
 (pdftex.def)             Requested size: 352.81552pt x 299.6427pt.
- [11 <./Images/Capitolo_2/Architettura del RENK.png> <./Images/Capitolo_2/RENK_lato sinistro_motori.jpg>]
-<Images/Capitolo_2/Torsiometri.png, id=376, 278.54062pt x 173.14688pt>
+ [13 <./Images/Capitolo_2/Architettura del RENK.png> <./Images/Capitolo_2/RENK_lato sinistro_motori.jpg>]
+<Images/Capitolo_2/Torsiometri.png, id=392, 278.54062pt x 173.14688pt>
 File: Images/Capitolo_2/Torsiometri.png Graphic file (type png)
 <use Images/Capitolo_2/Torsiometri.png>
-Package pdftex.def Info: Images/Capitolo_2/Torsiometri.png  used on input line 537.
+Package pdftex.def Info: Images/Capitolo_2/Torsiometri.png  used on input line 596.
 (pdftex.def)             Requested size: 220.50887pt x 137.07515pt.
- [12 <./Images/Capitolo_2/RENK_lato destro_TA.jpg> <./Images/Capitolo_2/Torsiometri.png>]
-<Images/Capitolo_2/Macchinario_STBF.png, id=386, 298.86656pt x 564.60938pt>
+ [14 <./Images/Capitolo_2/RENK_lato destro_TA.jpg> <./Images/Capitolo_2/Torsiometri.png>]
+<Images/Capitolo_2/Macchinario_STBF.png, id=402, 298.86656pt x 564.60938pt>
 File: Images/Capitolo_2/Macchinario_STBF.png Graphic file (type png)
 <use Images/Capitolo_2/Macchinario_STBF.png>
-Package pdftex.def Info: Images/Capitolo_2/Macchinario_STBF.png  used on input line 564.
+Package pdftex.def Info: Images/Capitolo_2/Macchinario_STBF.png  used on input line 623.
 (pdftex.def)             Requested size: 220.50887pt x 416.58102pt.
- [13 <./Images/Capitolo_2/Macchinario_STBF.png>]
-<Images/Capitolo_2/Sensori_sulla_STBF.png, id=395, 625.58719pt x 351.56343pt>
+ [15 <./Images/Capitolo_2/Macchinario_STBF.png>]
+<Images/Capitolo_2/Sensori_sulla_STBF.png, id=410, 625.58719pt x 351.56343pt>
 File: Images/Capitolo_2/Sensori_sulla_STBF.png Graphic file (type png)
 <use Images/Capitolo_2/Sensori_sulla_STBF.png>
-Package pdftex.def Info: Images/Capitolo_2/Sensori_sulla_STBF.png  used on input line 575.
+Package pdftex.def Info: Images/Capitolo_2/Sensori_sulla_STBF.png  used on input line 634.
 (pdftex.def)             Requested size: 441.01773pt x 247.84688pt.
-<Images/Capitolo_2/Pont_estensimetrici_STBF.png, id=398, 340.27126pt x 396.7322pt>
+<Images/Capitolo_2/Pont_estensimetrici_STBF.png, id=413, 340.27126pt x 396.7322pt>
 File: Images/Capitolo_2/Pont_estensimetrici_STBF.png Graphic file (type png)
 <use Images/Capitolo_2/Pont_estensimetrici_STBF.png>
-Package pdftex.def Info: Images/Capitolo_2/Pont_estensimetrici_STBF.png  used on input line 586.
+Package pdftex.def Info: Images/Capitolo_2/Pont_estensimetrici_STBF.png  used on input line 645.
 (pdftex.def)             Requested size: 352.81552pt x 411.38101pt.
- [14 <./Images/Capitolo_2/Sensori_sulla_STBF.png>] [15 <./Images/Capitolo_2/Pont_estensimetrici_STBF.png>] [16]
-<Images/Capitolo_3/Ingombro_bilancino.png, id=413, 840.89156pt x 534.49687pt>
+ [16 <./Images/Capitolo_2/Sensori_sulla_STBF.png>] [17 <./Images/Capitolo_2/Pont_estensimetrici_STBF.png>] [18]
+<Images/Capitolo_3/Ingombro_bilancino.png, id=428, 840.89156pt x 534.49687pt>
 File: Images/Capitolo_3/Ingombro_bilancino.png Graphic file (type png)
 <use Images/Capitolo_3/Ingombro_bilancino.png>
-Package pdftex.def Info: Images/Capitolo_3/Ingombro_bilancino.png  used on input line 631.
+Package pdftex.def Info: Images/Capitolo_3/Ingombro_bilancino.png  used on input line 690.
 (pdftex.def)             Requested size: 198.45662pt x 126.14505pt.
-<Images/Capitolo_3/Ingombro_bilancino (2).png, id=414, 913.91437pt x 524.71031pt>
+<Images/Capitolo_3/Ingombro_bilancino (2).png, id=429, 913.91437pt x 524.71031pt>
 File: Images/Capitolo_3/Ingombro_bilancino (2).png Graphic file (type png)
 <use Images/Capitolo_3/Ingombro_bilancino (2).png>
-Package pdftex.def Info: Images/Capitolo_3/Ingombro_bilancino (2).png  used on input line 637.
+Package pdftex.def Info: Images/Capitolo_3/Ingombro_bilancino (2).png  used on input line 696.
 (pdftex.def)             Requested size: 198.45662pt x 113.9394pt.
-<Images/Capitolo_3/Bilancino_da_solo.png, id=416, 723.45282pt x 553.31718pt>
+<Images/Capitolo_3/Bilancino_da_solo.png, id=431, 723.45282pt x 553.31718pt>
 File: Images/Capitolo_3/Bilancino_da_solo.png Graphic file (type png)
 <use Images/Capitolo_3/Bilancino_da_solo.png>
-Package pdftex.def Info: Images/Capitolo_3/Bilancino_da_solo.png  used on input line 654.
+Package pdftex.def Info: Images/Capitolo_3/Bilancino_da_solo.png  used on input line 713.
 (pdftex.def)             Requested size: 396.91325pt x 303.57396pt.
- [17 <./Images/Capitolo_3/Ingombro_bilancino.png> <./Images/Capitolo_3/Ingombro_bilancino (2).png>]
-<Images/Capitolo_3/vista_in_sezione_bilanciere.png, id=424, 1032.10594pt x 550.30594pt>
+ [19 <./Images/Capitolo_3/Ingombro_bilancino.png> <./Images/Capitolo_3/Ingombro_bilancino (2).png>]
+<Images/Capitolo_3/vista_in_sezione_bilanciere.png, id=440, 1032.10594pt x 550.30594pt>
 File: Images/Capitolo_3/vista_in_sezione_bilanciere.png Graphic file (type png)
 <use Images/Capitolo_3/vista_in_sezione_bilanciere.png>
-Package pdftex.def Info: Images/Capitolo_3/vista_in_sezione_bilanciere.png  used on input line 661.
+Package pdftex.def Info: Images/Capitolo_3/vista_in_sezione_bilanciere.png  used on input line 720.
 (pdftex.def)             Requested size: 396.91325pt x 211.62912pt.
-<Images/Capitolo_3/vista_in_sezione_bilanciere (2).png, id=425, 984.67876pt x 611.28375pt>
+<Images/Capitolo_3/vista_in_sezione_bilanciere (2).png, id=441, 984.67876pt x 611.28375pt>
 File: Images/Capitolo_3/vista_in_sezione_bilanciere (2).png Graphic file (type png)
 <use Images/Capitolo_3/vista_in_sezione_bilanciere (2).png>
-Package pdftex.def Info: Images/Capitolo_3/vista_in_sezione_bilanciere (2).png  used on input line 668.
+Package pdftex.def Info: Images/Capitolo_3/vista_in_sezione_bilanciere (2).png  used on input line 727.
 (pdftex.def)             Requested size: 396.91325pt x 246.40263pt.
- [18 <./Images/Capitolo_3/Bilancino_da_solo.png> <./Images/Capitolo_3/vista_in_sezione_bilanciere.png>]
-<Images/Capitolo_3/Dettaglio_bloccco_cinematico.png, id=432, 370.38374pt x 520.19344pt>
+ [20 <./Images/Capitolo_3/Bilancino_da_solo.png> <./Images/Capitolo_3/vista_in_sezione_bilanciere.png>]
+<Images/Capitolo_3/Dettaglio_bloccco_cinematico.png, id=448, 370.38374pt x 520.19344pt>
 File: Images/Capitolo_3/Dettaglio_bloccco_cinematico.png Graphic file (type png)
 <use Images/Capitolo_3/Dettaglio_bloccco_cinematico.png>
-Package pdftex.def Info: Images/Capitolo_3/Dettaglio_bloccco_cinematico.png  used on input line 694.
+Package pdftex.def Info: Images/Capitolo_3/Dettaglio_bloccco_cinematico.png  used on input line 753.
 (pdftex.def)             Requested size: 176.40439pt x 247.75325pt.
- [19 <./Images/Capitolo_3/vista_in_sezione_bilanciere (2).png>]
-<Images/Capitolo_3/Blocco_cinematico.png, id=439, 808.52063pt x 580.41844pt>
+ [21 <./Images/Capitolo_3/vista_in_sezione_bilanciere (2).png>]
+<Images/Capitolo_3/Blocco_cinematico.png, id=454, 808.52063pt x 580.41844pt>
 File: Images/Capitolo_3/Blocco_cinematico.png Graphic file (type png)
 <use Images/Capitolo_3/Blocco_cinematico.png>
-Package pdftex.def Info: Images/Capitolo_3/Blocco_cinematico.png  used on input line 702.
+Package pdftex.def Info: Images/Capitolo_3/Blocco_cinematico.png  used on input line 761.
 (pdftex.def)             Requested size: 396.91325pt x 284.9389pt.
-<Images/Capitolo_3/Blocco_cinematico_in_sezione.png, id=440, 786.68906pt x 586.44093pt>
+<Images/Capitolo_3/Blocco_cinematico_in_sezione.png, id=455, 786.68906pt x 586.44093pt>
 File: Images/Capitolo_3/Blocco_cinematico_in_sezione.png Graphic file (type png)
 <use Images/Capitolo_3/Blocco_cinematico_in_sezione.png>
-Package pdftex.def Info: Images/Capitolo_3/Blocco_cinematico_in_sezione.png  used on input line 709.
+Package pdftex.def Info: Images/Capitolo_3/Blocco_cinematico_in_sezione.png  used on input line 768.
 (pdftex.def)             Requested size: 396.91325pt x 295.88634pt.
- [20 <./Images/Capitolo_3/Dettaglio_bloccco_cinematico.png> <./Images/Capitolo_3/Blocco_cinematico.png>]
-<Images/Capitolo_3/Bilancino.png, id=447, 1020.81375pt x 564.60938pt>
+ [22 <./Images/Capitolo_3/Dettaglio_bloccco_cinematico.png> <./Images/Capitolo_3/Blocco_cinematico.png>]
+<Images/Capitolo_3/Bilancino.png, id=462, 1020.81375pt x 564.60938pt>
 File: Images/Capitolo_3/Bilancino.png Graphic file (type png)
 <use Images/Capitolo_3/Bilancino.png>
-Package pdftex.def Info: Images/Capitolo_3/Bilancino.png  used on input line 731.
+Package pdftex.def Info: Images/Capitolo_3/Bilancino.png  used on input line 790.
 (pdftex.def)             Requested size: 198.45662pt x 109.7667pt.
-<Images/Capitolo_3/Bilancino_in_sezione.png, id=448, 1042.64531pt x 573.64313pt>
+<Images/Capitolo_3/Bilancino_in_sezione.png, id=463, 1042.64531pt x 573.64313pt>
 File: Images/Capitolo_3/Bilancino_in_sezione.png Graphic file (type png)
 <use Images/Capitolo_3/Bilancino_in_sezione.png>
-Package pdftex.def Info: Images/Capitolo_3/Bilancino_in_sezione.png  used on input line 737.
+Package pdftex.def Info: Images/Capitolo_3/Bilancino_in_sezione.png  used on input line 796.
 (pdftex.def)             Requested size: 198.45662pt x 109.18588pt.
-<Images/Capitolo_3/Bilancino_in_sezione(2).png, id=449, 1056.94875pt x 570.63188pt>
+<Images/Capitolo_3/Bilancino_in_sezione(2).png, id=464, 1056.94875pt x 570.63188pt>
 File: Images/Capitolo_3/Bilancino_in_sezione(2).png Graphic file (type png)
 <use Images/Capitolo_3/Bilancino_in_sezione(2).png>
-Package pdftex.def Info: Images/Capitolo_3/Bilancino_in_sezione(2).png  used on input line 749.
+Package pdftex.def Info: Images/Capitolo_3/Bilancino_in_sezione(2).png  used on input line 808.
 (pdftex.def)             Requested size: 198.45662pt x 107.14124pt.
-<Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png, id=450, 649.67719pt x 561.59813pt>
+<Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png, id=465, 649.67719pt x 561.59813pt>
 File: Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png Graphic file (type png)
 <use Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png>
-Package pdftex.def Info: Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png  used on input line 755.
+Package pdftex.def Info: Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png  used on input line 814.
 (pdftex.def)             Requested size: 198.45662pt x 171.54854pt.
- [21 <./Images/Capitolo_3/Blocco_cinematico_in_sezione.png> <./Images/Capitolo_3/Bilancino.png> <./Images/Capitolo_3/Bilancino_in_sezione.png>]
-<Images/Capitolo_3/Sequenza_montaggio_1.png, id=458, 660.21657pt x 531.48563pt>
+ [23 <./Images/Capitolo_3/Blocco_cinematico_in_sezione.png> <./Images/Capitolo_3/Bilancino.png> <./Images/Capitolo_3/Bilancino_in_sezione.png>]
+<Images/Capitolo_3/Sequenza_montaggio_1.png, id=473, 660.21657pt x 531.48563pt>
 File: Images/Capitolo_3/Sequenza_montaggio_1.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_1.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_1.png  used on input line 776.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_1.png  used on input line 835.
 (pdftex.def)             Requested size: 220.50887pt x 177.51556pt.
-<Images/Capitolo_3/Sequenza_montaggio_2.png, id=459, 819.8128pt x 515.67656pt>
+<Images/Capitolo_3/Sequenza_montaggio_2.png, id=474, 819.8128pt x 515.67656pt>
 File: Images/Capitolo_3/Sequenza_montaggio_2.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_2.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_2.png  used on input line 783.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_2.png  used on input line 842.
 (pdftex.def)             Requested size: 220.50887pt x 138.69946pt.
- [22 <./Images/Capitolo_3/Bilancino_in_sezione(2).png> <./Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png> <./Images/Capitolo_3/Sequenza_montaggio_1.png>]
-<Images/Capitolo_3/Sequenza_montaggio_3.png, id=468, 532.99126pt x 533.74406pt>
+ [24 <./Images/Capitolo_3/Bilancino_in_sezione(2).png> <./Images/Capitolo_3/Dettaglio_Bilancino_in_sezione.png> <./Images/Capitolo_3/Sequenza_montaggio_1.png>]
+<Images/Capitolo_3/Sequenza_montaggio_3.png, id=484, 532.99126pt x 533.74406pt>
 File: Images/Capitolo_3/Sequenza_montaggio_3.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_3.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_3.png  used on input line 793.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_3.png  used on input line 852.
 (pdftex.def)             Requested size: 198.45662pt x 198.73642pt.
-<Images/Capitolo_3/Sequenza_montaggio_3.1.png, id=470, 735.49782pt x 526.96875pt>
+<Images/Capitolo_3/Sequenza_montaggio_3.1.png, id=486, 735.49782pt x 526.96875pt>
 File: Images/Capitolo_3/Sequenza_montaggio_3.1.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_3.1.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_3.1.png  used on input line 804.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_3.1.png  used on input line 863.
 (pdftex.def)             Requested size: 198.45662pt x 142.18697pt.
-<Images/Capitolo_3/Sequenza_montaggio_3.2.png, id=471, 764.8575pt x 521.69907pt>
+<Images/Capitolo_3/Sequenza_montaggio_3.2.png, id=487, 764.8575pt x 521.69907pt>
 File: Images/Capitolo_3/Sequenza_montaggio_3.2.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_3.2.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_3.2.png  used on input line 810.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_3.2.png  used on input line 869.
 (pdftex.def)             Requested size: 198.45662pt x 135.35994pt.
- [23 <./Images/Capitolo_3/Sequenza_montaggio_2.png> <./Images/Capitolo_3/Sequenza_montaggio_3.png>]
-<Images/Capitolo_3/Sequenza_montaggio_4.png, id=478, 1002.74625pt x 408.77719pt>
+ [25 <./Images/Capitolo_3/Sequenza_montaggio_2.png> <./Images/Capitolo_3/Sequenza_montaggio_3.png>]
+<Images/Capitolo_3/Sequenza_montaggio_4.png, id=495, 1002.74625pt x 408.77719pt>
 File: Images/Capitolo_3/Sequenza_montaggio_4.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_4.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_4.png  used on input line 822.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_4.png  used on input line 881.
 (pdftex.def)             Requested size: 441.01773pt x 179.78766pt.
-<Images/Capitolo_3/Sequenza_montaggio_5.1.png, id=479, 793.46437pt x 514.92375pt>
+<Images/Capitolo_3/Sequenza_montaggio_5.1.png, id=496, 793.46437pt x 514.92375pt>
 File: Images/Capitolo_3/Sequenza_montaggio_5.1.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_5.1.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_5.1.png  used on input line 833.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_5.1.png  used on input line 892.
 (pdftex.def)             Requested size: 352.81552pt x 228.96356pt.
- [24 <./Images/Capitolo_3/Sequenza_montaggio_3.1.png> <./Images/Capitolo_3/Sequenza_montaggio_3.2.png> <./Images/Capitolo_3/Sequenza_montaggio_4.png>]
+ [26 <./Images/Capitolo_3/Sequenza_montaggio_3.1.png> <./Images/Capitolo_3/Sequenza_montaggio_3.2.png> <./Images/Capitolo_3/Sequenza_montaggio_4.png>]
 File: Images/Capitolo_3/Sequenza_montaggio_5.1.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_5.1.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_5.1.png  used on input line 842.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_5.1.png  used on input line 901.
 (pdftex.def)             Requested size: 352.81552pt x 228.96356pt.
-<Images/Capitolo_3/Sequenza_montaggio_5.2.png, id=488, 735.49782pt x 563.10374pt>
+<Images/Capitolo_3/Sequenza_montaggio_5.2.png, id=504, 735.49782pt x 563.10374pt>
 File: Images/Capitolo_3/Sequenza_montaggio_5.2.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_5.2.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_5.2.png  used on input line 851.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_5.2.png  used on input line 910.
 (pdftex.def)             Requested size: 352.81552pt x 270.12347pt.
- [25 <./Images/Capitolo_3/Sequenza_montaggio_5.1.png>]
-<Images/Capitolo_3/Sequenza_montaggio_6.png, id=495, 599.23875pt x 484.81125pt>
+ [27 <./Images/Capitolo_3/Sequenza_montaggio_5.1.png>]
+<Images/Capitolo_3/Sequenza_montaggio_6.png, id=510, 599.23875pt x 484.81125pt>
 File: Images/Capitolo_3/Sequenza_montaggio_6.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_6.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_6.png  used on input line 860.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_6.png  used on input line 919.
 (pdftex.def)             Requested size: 352.81552pt x 285.45174pt.
-<Images/Capitolo_3/Sequenza_montaggio_6.1.png, id=496, 967.36406pt x 357.58594pt>
+<Images/Capitolo_3/Sequenza_montaggio_6.1.png, id=511, 967.36406pt x 357.58594pt>
 File: Images/Capitolo_3/Sequenza_montaggio_6.1.png Graphic file (type png)
 <use Images/Capitolo_3/Sequenza_montaggio_6.1.png>
-Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_6.1.png  used on input line 867.
+Package pdftex.def Info: Images/Capitolo_3/Sequenza_montaggio_6.1.png  used on input line 926.
 (pdftex.def)             Requested size: 352.81552pt x 130.41682pt.
- [26 <./Images/Capitolo_3/Sequenza_montaggio_5.2.png> <./Images/Capitolo_3/Sequenza_montaggio_6.png>] [27 <./Images/Capitolo_3/Sequenza_montaggio_6.1.png>] [28]
-<Images/Capitolo_4/Base.png, id=514, 608.2725pt x 481.04718pt>
+ [28 <./Images/Capitolo_3/Sequenza_montaggio_5.2.png> <./Images/Capitolo_3/Sequenza_montaggio_6.png>] [29 <./Images/Capitolo_3/Sequenza_montaggio_6.1.png>] [30]
+<Images/Capitolo_4/Base.png, id=529, 608.2725pt x 481.04718pt>
 File: Images/Capitolo_4/Base.png Graphic file (type png)
 <use Images/Capitolo_4/Base.png>
-Package pdftex.def Info: Images/Capitolo_4/Base.png  used on input line 943.
+Package pdftex.def Info: Images/Capitolo_4/Base.png  used on input line 1002.
 (pdftex.def)             Requested size: 176.40439pt x 139.50745pt.
-<Images/Capitolo_4/Provino.png, id=516, 381.67593pt x 499.11469pt>
+<Images/Capitolo_4/Provino.png, id=531, 381.67593pt x 499.11469pt>
 File: Images/Capitolo_4/Provino.png Graphic file (type png)
 <use Images/Capitolo_4/Provino.png>
-Package pdftex.def Info: Images/Capitolo_4/Provino.png  used on input line 954.
+Package pdftex.def Info: Images/Capitolo_4/Provino.png  used on input line 1013.
 (pdftex.def)             Requested size: 110.25443pt x 144.17596pt.
- [29 <./Images/Capitolo_4/Base.png>]
-<Images/Capitolo_4/Rullo.png, id=523, 527.72156pt x 383.93437pt>
+ [31 <./Images/Capitolo_4/Base.png>]
+<Images/Capitolo_4/Rullo.png, id=539, 527.72156pt x 383.93437pt>
 File: Images/Capitolo_4/Rullo.png Graphic file (type png)
 <use Images/Capitolo_4/Rullo.png>
-Package pdftex.def Info: Images/Capitolo_4/Rullo.png  used on input line 965.
+Package pdftex.def Info: Images/Capitolo_4/Rullo.png  used on input line 1024.
 (pdftex.def)             Requested size: 110.25443pt x 80.21265pt.
-<Images/Capitolo_4/Provino_intero.png, id=524, 533.74406pt x 549.55313pt>
+<Images/Capitolo_4/Provino_intero.png, id=540, 533.74406pt x 549.55313pt>
 File: Images/Capitolo_4/Provino_intero.png Graphic file (type png)
 <use Images/Capitolo_4/Provino_intero.png>
-Package pdftex.def Info: Images/Capitolo_4/Provino_intero.png  used on input line 977.
+Package pdftex.def Info: Images/Capitolo_4/Provino_intero.png  used on input line 1036.
 (pdftex.def)             Requested size: 198.45662pt x 204.33772pt.
-<Images/Capitolo_4/Estensimetri.png, id=525, 423.08063pt x 188.20313pt>
+<Images/Capitolo_4/Estensimetri.png, id=541, 423.08063pt x 188.20313pt>
 File: Images/Capitolo_4/Estensimetri.png Graphic file (type png)
 <use Images/Capitolo_4/Estensimetri.png>
-Package pdftex.def Info: Images/Capitolo_4/Estensimetri.png  used on input line 984.
+Package pdftex.def Info: Images/Capitolo_4/Estensimetri.png  used on input line 1043.
 (pdftex.def)             Requested size: 308.71106pt x 137.3297pt.
- [30 <./Images/Capitolo_4/Provino.png> <./Images/Capitolo_4/Rullo.png> <./Images/Capitolo_4/Provino_intero.png>]
-<Images/Capitolo_4/Superfici_di_riferimento.png, id=533, 362.10281pt x 367.3725pt>
+ [32 <./Images/Capitolo_4/Provino.png> <./Images/Capitolo_4/Rullo.png> <./Images/Capitolo_4/Provino_intero.png>]
+<Images/Capitolo_4/Superfici_di_riferimento.png, id=549, 362.10281pt x 367.3725pt>
 File: Images/Capitolo_4/Superfici_di_riferimento.png Graphic file (type png)
 <use Images/Capitolo_4/Superfici_di_riferimento.png>
-Package pdftex.def Info: Images/Capitolo_4/Superfici_di_riferimento.png  used on input line 991.
+Package pdftex.def Info: Images/Capitolo_4/Superfici_di_riferimento.png  used on input line 1050.
 (pdftex.def)             Requested size: 264.61333pt x 268.46556pt.
-<Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png, id=534, 331.99031pt x 124.21407pt>
+<Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png, id=550, 331.99031pt x 124.21407pt>
 File: Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png Graphic file (type png)
 <use Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png>
-Package pdftex.def Info: Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png  used on input line 998.
+Package pdftex.def Info: Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png  used on input line 1057.
 (pdftex.def)             Requested size: 441.01773pt x 165.01686pt.
-<Images/Capitolo_4/Posizionamento_in_macchina.png, id=535, 350.05782pt x 439.6425pt>
+<Images/Capitolo_4/Posizionamento_in_macchina.png, id=551, 350.05782pt x 439.6425pt>
 File: Images/Capitolo_4/Posizionamento_in_macchina.png Graphic file (type png)
 <use Images/Capitolo_4/Posizionamento_in_macchina.png>
-Package pdftex.def Info: Images/Capitolo_4/Posizionamento_in_macchina.png  used on input line 1005.
+Package pdftex.def Info: Images/Capitolo_4/Posizionamento_in_macchina.png  used on input line 1064.
 (pdftex.def)             Requested size: 441.01773pt x 553.91893pt.
- [31 <./Images/Capitolo_4/Estensimetri.png> <./Images/Capitolo_4/Superfici_di_riferimento.png> <./Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png>]
-<Images/Capitolo_4/Posizionamento_nel_cad_davanti.png, id=544, 497.60907pt x 459.96844pt>
+ [33 <./Images/Capitolo_4/Estensimetri.png> <./Images/Capitolo_4/Superfici_di_riferimento.png> <./Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png>]
+<Images/Capitolo_4/Posizionamento_nel_cad_davanti.png, id=559, 497.60907pt x 459.96844pt>
 File: Images/Capitolo_4/Posizionamento_nel_cad_davanti.png Graphic file (type png)
 <use Images/Capitolo_4/Posizionamento_nel_cad_davanti.png>
-Package pdftex.def Info: Images/Capitolo_4/Posizionamento_nel_cad_davanti.png  used on input line 1012.
+Package pdftex.def Info: Images/Capitolo_4/Posizionamento_nel_cad_davanti.png  used on input line 1071.
 (pdftex.def)             Requested size: 352.81552pt x 326.13069pt.
- [32 <./Images/Capitolo_4/Posizionamento_in_macchina.png>]
-<Images/Capitolo_4/Posizionamento_nel_cad.png, id=550, 446.41782pt x 378.66469pt>
+ [34 <./Images/Capitolo_4/Posizionamento_in_macchina.png>]
+<Images/Capitolo_4/Posizionamento_nel_cad.png, id=565, 446.41782pt x 378.66469pt>
 File: Images/Capitolo_4/Posizionamento_nel_cad.png Graphic file (type png)
 <use Images/Capitolo_4/Posizionamento_nel_cad.png>
-Package pdftex.def Info: Images/Capitolo_4/Posizionamento_nel_cad.png  used on input line 1019.
+Package pdftex.def Info: Images/Capitolo_4/Posizionamento_nel_cad.png  used on input line 1078.
 (pdftex.def)             Requested size: 352.81552pt x 299.2747pt.
- [33 <./Images/Capitolo_4/Posizionamento_nel_cad_davanti.png> <./Images/Capitolo_4/Posizionamento_nel_cad.png>]
-<Images/Capitolo_4/Vincolo_simmetria.png, id=558, 148.30406pt x 227.34938pt>
+ [35 <./Images/Capitolo_4/Posizionamento_nel_cad_davanti.png> <./Images/Capitolo_4/Posizionamento_nel_cad.png>]
+<Images/Capitolo_4/Vincolo_simmetria.png, id=573, 148.30406pt x 227.34938pt>
 File: Images/Capitolo_4/Vincolo_simmetria.png Graphic file (type png)
 <use Images/Capitolo_4/Vincolo_simmetria.png>
-Package pdftex.def Info: Images/Capitolo_4/Vincolo_simmetria.png  used on input line 1036.
+Package pdftex.def Info: Images/Capitolo_4/Vincolo_simmetria.png  used on input line 1095.
 (pdftex.def)             Requested size: 138.91902pt x 212.96953pt.
-<Images/Capitolo_4/Carico_assiale.png, id=559, 165.61874pt x 227.34938pt>
+<Images/Capitolo_4/Carico_assiale.png, id=574, 165.61874pt x 227.34938pt>
 File: Images/Capitolo_4/Carico_assiale.png Graphic file (type png)
 <use Images/Capitolo_4/Carico_assiale.png>
-Package pdftex.def Info: Images/Capitolo_4/Carico_assiale.png  used on input line 1042.
+Package pdftex.def Info: Images/Capitolo_4/Carico_assiale.png  used on input line 1101.
 (pdftex.def)             Requested size: 138.91902pt x 190.70505pt.
- [34]
-<Images/Capitolo_4/Rotazione_imposta.png, id=564, 157.33781pt x 227.34938pt>
+ [36]
+<Images/Capitolo_4/Rotazione_imposta.png, id=579, 157.33781pt x 227.34938pt>
 File: Images/Capitolo_4/Rotazione_imposta.png Graphic file (type png)
 <use Images/Capitolo_4/Rotazione_imposta.png>
-Package pdftex.def Info: Images/Capitolo_4/Rotazione_imposta.png  used on input line 1054.
+Package pdftex.def Info: Images/Capitolo_4/Rotazione_imposta.png  used on input line 1113.
 (pdftex.def)             Requested size: 138.91902pt x 200.74452pt.
-<Images/Capitolo_4/Vincolo_di_incastro.png, id=565, 151.3153pt x 227.34938pt>
+<Images/Capitolo_4/Vincolo_di_incastro.png, id=580, 151.3153pt x 227.34938pt>
 File: Images/Capitolo_4/Vincolo_di_incastro.png Graphic file (type png)
 <use Images/Capitolo_4/Vincolo_di_incastro.png>
-Package pdftex.def Info: Images/Capitolo_4/Vincolo_di_incastro.png  used on input line 1060.
+Package pdftex.def Info: Images/Capitolo_4/Vincolo_di_incastro.png  used on input line 1119.
 (pdftex.def)             Requested size: 138.91902pt x 208.72685pt.
-<Images/Capitolo_4/Risultati_simulazione.png, id=566, 794.97pt x 261.22594pt>
+<Images/Capitolo_4/Risultati_simulazione.png, id=581, 794.97pt x 261.22594pt>
 File: Images/Capitolo_4/Risultati_simulazione.png Graphic file (type png)
 <use Images/Capitolo_4/Risultati_simulazione.png>
-Package pdftex.def Info: Images/Capitolo_4/Risultati_simulazione.png  used on input line 1072.
+Package pdftex.def Info: Images/Capitolo_4/Risultati_simulazione.png  used on input line 1131.
 (pdftex.def)             Requested size: 441.01773pt x 144.9223pt.
- [35 <./Images/Capitolo_4/Vincolo_simmetria.png> <./Images/Capitolo_4/Carico_assiale.png> <./Images/Capitolo_4/Rotazione_imposta.png> <./Images/Capitolo_4/Vincolo_di_incastro.png>]
-<Images/Capitolo_4/Risulati_in_direzione_trasversale.png, id=575, 820.56563pt x 429.10312pt>
+ [37 <./Images/Capitolo_4/Vincolo_simmetria.png> <./Images/Capitolo_4/Carico_assiale.png> <./Images/Capitolo_4/Rotazione_imposta.png> <./Images/Capitolo_4/Vincolo_di_incastro.png>]
+<Images/Capitolo_4/Risulati_in_direzione_trasversale.png, id=591, 820.56563pt x 429.10312pt>
 File: Images/Capitolo_4/Risulati_in_direzione_trasversale.png Graphic file (type png)
 <use Images/Capitolo_4/Risulati_in_direzione_trasversale.png>
-Package pdftex.def Info: Images/Capitolo_4/Risulati_in_direzione_trasversale.png  used on input line 1098.
+Package pdftex.def Info: Images/Capitolo_4/Risulati_in_direzione_trasversale.png  used on input line 1157.
 (pdftex.def)             Requested size: 441.01773pt x 230.61877pt.
-<Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png, id=576, 288.3272pt x 465.23813pt>
+<Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png, id=592, 288.3272pt x 465.23813pt>
 File: Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png Graphic file (type png)
 <use Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png>
-Package pdftex.def Info: Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png  used on input line 1120.
+Package pdftex.def Info: Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png  used on input line 1179.
 (pdftex.def)             Requested size: 198.45662pt x 320.23376pt.
- [36 <./Images/Capitolo_4/Risultati_simulazione.png> <./Images/Capitolo_4/Risulati_in_direzione_trasversale.png>] [37 <./Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png>] [38] [39] [40] [41] (./Tesi.aux)
+ [38 <./Images/Capitolo_4/Risultati_simulazione.png> <./Images/Capitolo_4/Risulati_in_direzione_trasversale.png>] [39 <./Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png>] [40] [41] [42] [43] (./Tesi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -919,18 +919,18 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 3E822D439440623E61836CF0E11ACBEB;8549.
  ) 
 Here is how much of TeX's memory you used:
- 18828 strings out of 467538
- 314524 string characters out of 5423725
+ 18837 strings out of 467538
+ 314615 string characters out of 5423725
  858507 words of memory out of 5000000
  47296 multiletter control sequences out of 15000+600000
  642120 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,117p,1159b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Tesi.pdf (47 pages, 4195442 bytes).
+Output written on Tesi.pdf (49 pages, 4199023 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 752 PDF objects out of 1000 (max. 8388607)
+ 561 compressed objects within 6 object streams
+ 152 named destinations out of 1000 (max. 500000)
  526 words of extra memory for PDF output out of 10000 (max. 10000000)
 

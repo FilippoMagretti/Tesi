@@ -472,22 +472,81 @@ Definite le basi teoriche per la trattazione dell'incertezza, la classificazione
 \end{itemize}
 
 L'\textbf{incertezza di lettura} è intrensicamente legata alla risoluzione dello strumento di misura. Innanzitutto si definisce il concetto di \textbf{fondo scala} che rappresenta la massima indicazione ottenibile da uno strumento di misura; la \textbf{sensibilità} che rappresenta la minima indicazione del campo di misura di uno strumento; di \textbf{campo di misura} che stabilisce un intervallo di misure prestabilito entro cui deve lavorare lo strumento di misura; di \textbf{portata} che identificail limite superiore e inferiore del campo di misura. Si può ora definire la \textbf{risoluzione} di uno strumento di misura, ossia la più piccola variazione della grandezza misurata che lo strumento è in grado di rilevare e mostrare, ossia il limite inferiore di suddivisione del fondo scala.\\
-Nella \textbf{strumentazione analogica}, chiamata $\mathbf{a}$ la frazione di divisione della scala graduata esistente (variabile da operatore a operatore, e spesso può essere direttamente la risoluzione stessa dello strumento), l'intervallo simmetrico all'interno del quale ricade la misurazione è dato da $VL \pm \frac{a}{2}$. Ammesso di effettuare una singola misurazione, il contributo di incertezza che ne consegue è classificabile come \textbf{incertezza di tipo B} descritto da una distribuzione rettangolare simmetrica centrata in $0$ con ampiezza pari a $\frac{a}{2}$. La deviazione standard che ne rappresenta l'incertezza risulta essere:
+Nella strumentazione \textbf{analogica}, chiamata $\mathbf{a}$ la frazione di divisione della scala graduata esistente (variabile da operatore a operatore, e spesso può essere direttamente la risoluzione stessa dello strumento), l'intervallo simmetrico all'interno del quale ricade la misurazione è dato da $VL \pm \frac{a}{2}$ dove con $VL$ si intende il valore letto. Ammesso di effettuare una singola misurazione, il contributo di incertezza che ne consegue è classificabile come \textbf{incertezza di tipo B} descritto da una distribuzione rettangolare simmetrica centrata in $0$ con ampiezza pari a $\frac{a}{2}$. La deviazione standard che ne rappresenta l'incertezza risulta essere:
 \begin{equation}
     \frac{a}{2\sqrt{3}}
 \end{equation}
 \noindent
-Nella \textbf{strumentazione digitale}, trascurando problemi di oscillazione non legati alla risoluzione dello strumento stesso ma legati a problemi di altra natura, chiamata $\mathbf{a}$ la risoluzione dello strumento si opera come per il caso della strumentazione analogica. Se invece l'ultimo \textit{digit} del valore mostrato  è soggetto a variazione continua, è più opportuno considerare che l'ampiezza dell'intervallo di variazione non sia più $\frac{a}{2}$ come nel caso precedene bensì $a$m, a cui corrisponde una incertezza  pari a:
+Nella strumentazione \textbf{digitale}, litimandosi al caso in cui il digit (ossia l'ultima cifra del valore letto) non oscilli, chiamata $\mathbf{a}$ la risoluzione dello strumento si opera come per il caso della strumentazione analogica: il valore della misurazione sarà compreso in $VL \pm \frac{a}{2}$ e ad esso sarà associata una incertezza pari a
+\begin{equation}
+    \frac{a}{2\sqrt{3}}
+\end{equation}
+Se invece l'ultimo \textit{digit} del valore mostrato  è soggetto a variazione continua, è più opportuno considerare che l'ampiezza dell'intervallo di variazione pari ad $a$, a cui corrisponde una incertezza pari a:
 \begin{equation}
     \frac{a}{\sqrt{3}}
 \end{equation}
 
-L'\textbf{incertezza strumentale o di taratura}
+L'\textbf{incertezza strumentale o di taratura} è tipicamente fornita dal costruttore dello strumento, ottenuto come risultato di un processo di taratura dello stesso. Spesso viene riportata la \textbf{classe di precisione} dello strumento che ne esprimono l'incertezza strumentale espressa come percetuale del valore misurato applicabile al campo di misura dello strumento.\\
+Chiamata $C$ la classe di precisione di uno strumento, ottenuta da un processo di taratura, si ottiene il valore di incertezza strumentale nel modo seguente:
+\begin{equation}
+    \frac{C \cdot fs}{100}
+\end{equation}
+dove $fs$ è il fondo scala dello strumento.\\
+Oltre alla classe di precisione si possono trovare altre indicazioni, come ad esempio l'incertezza propria dello strumento che ne caratterizza l'intero campo di lettura, oppure espressioni percentuali dell'incertezza espressa rispetto al fondo scala o alla misura, o direttamente gli scostamenti massimi $a$.\\
+Se viene fornita una espressione relativa dell'incertezza è opportuno trasformarla in assoluta moltiplicandola per il valore del fondo scala o per il valore letto dallo strumento a seconda dei casi, ottenendo così il valore dello scostamento massimo $a$. Dopodiché, dal momento che l'incertezza strumentale rientra fra le incertezze di \textbf{tibo B}, si può ottenere dal valore dello scostamento massimo $a$ l'incertezza tipo come detto già in precedenza, ma con delle precisazioni:
 
 \begin{itemize}
-    \item Budget di incertezza DESCRIZIONE DI COME IDENTIFICARE I TIPI DI INCERTEZZA CHE DI SICURO SONO PRESENTI IN QUESTE PROCEDURE: INCERTEZZA DI LETTURA ANALOGICA E DIGITALE, INCERTEZZA DI TARATURA/STRUMENTALE, DEFINIZIONI DI PORTATA E FONDO SCALA, CLASSE DI PRECISIONE, INCERTEZZA DI RIPETIBILITà (LEGATA ALLA STABILITà DELLE MISURAZIONI)
+    \item generalmente è valido il modello di probabilità espresso dalla distribuzione rettangolare centrata nello zero, per cui vale
+    
+        \begin{equation}
+            \frac{a}{\sqrt{3}}
+        \end{equation}
+    
+    \item nel caso in cui il valore dello scostamento $a$ sia ottenibile dalla classe di precisione è più opportuno usare un'altra distribuzione di probabilità, ad "U" centrata nell'origine che considera che lo scostamento cresca al crescere della distanza dall'origine, e il calcolo dell'incertezza tipo viene come segue:
+    
+        \begin{equation}
+            \frac{a}{\sqrt{2}}
+        \end{equation}
+
 \end{itemize}
 
+L'\textbf{incertezza di ripetibilità} è legata allo scostamento fra i risultati di diverse misurazioni effettuate sulla stessa grandezza, ed è classificabile come incertezza di \textbf{tipo A}. Per calcolarla è necessario effetuare diverse misurazioni, e tipicamente più misurazioni sono e minore è il contributo apportato proprio dall'incertezza di ripetibilità, e si calcola come segue:
+
+\begin{itemize}
+    \item si effettuano $N$ misurazioni:
+    \item se ne calcola la media aritmetica $m$:
+
+        \begin{equation}
+            m = \frac{1}{N} \sum_{i=1}^{N} x_i
+        \end{equation}
+
+    \item se ne calcolano gli scarti $s_i$ come differenze tra le singole misurazioni e la le media $m$:
+    
+    \begin{equation}
+        s_i = x_i - m
+    \end{equation}    
+
+    \item si calcola lo scarto tipo dei dati come deviazione standard di queste misure:
+    
+    \begin{equation}
+        s = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N} s_i^2}
+    \end{equation}
+
+\end{itemize}
+
+\noindent
+Arrivati a questo punto si confronta questo valore di incertezza con tutti gli altri:
+
+\begin{itemize}
+    \item se risulta trascurabile, allora non è necessario effettuare ulteriori misurazioni per migliorare la stima del misurando;
+    \item se non risulta trascurabile, bisogna seguire questa procedura:
+    
+    \begin{itemize}
+        \item il valore della stima ottimale $m$ si calcola come la media dei dati ottenuti;
+        \item il valore dello lo scarto tipo dei dati calcolato precedentemente va invece va diviso per $\sqrt{N}$, ottenendo così l'\textbf{incertezza di ripetibilità}.
+    \end{itemize}
+
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
     \newpage
