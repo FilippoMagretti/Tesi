@@ -967,88 +967,132 @@ Di seguito sono riportati nuovamente i pezzi che compongono i due sotto-sistemi 
 \subsection{Procedura di taratura}
 
 \subsubsection{Scopo e campo di applicazione}
-% Definire l'oggetto della procedura, le tipologie di strumenti in esame, le grandezze fisiche misurate e il campo di misura (range) coperto, incluse limitazioni del metodo.
-Con questa procedura si esegue la taratura della catena di misura dei torsiometri del banco prova Renk in condizioni statiche. In particolare le catene di misura da tarare sono due:
+
+La procedura definisce le modalità operative per la taratura in condizioni statiche delle catene di misura associate ai torsiometri del banco prova Renk. Nello specifico, le catene di acquisizione oggetto di taratura sono due:
 
 \begin{itemize}
-    \item torsiometro HBM T40B (P/N  T40B/1000Nm, S/N 0009S50002FD,fondo scala $1000Nm$), i cui dati vengono in uscita passano da un collegato al condizionatore MX460B ,  il cui segnale analogico in uscita viene inviato al PC nel sistema di acquisizione dati di Labview;
-    \item torsiometro Manner HSFM600 (P/N HSFM 600, serial number 126631, fondo scala $600Nm$) collegato al condizionatore MANNER-EVALUATION-UNIT SN 126631 V7 , il cui segnale analogico in uscita viene convertito in digitale mediante la scheda di acquisizione PXI6210, per poi essere inviato al PC.
+    \item \textbf{Catena 1:} Torsiometro HBM T40B (P/N T40B/1000Nm, S/N 0009S50002FD, fondo scala $1000\,Nm$) $\rightarrow$ Condizionatore MX460B $\rightarrow$ Acquisizione segnale in ambiente LabVIEW.
+    \item \textbf{Catena 2:} Torsiometro Manner HSFM600 (P/N HSFM 600, S/N 126631, fondo scala $600\,Nm$) $\rightarrow$ Condizionatore MANNER-EVALUATION-UNIT (S/N 126631 V7) $\rightarrow$ Scheda di acquisizione PXI-6210 $\rightarrow$ Acquisizione segnale in ambiente LabVIEW.
 \end{itemize}
 
-La taratura viene eseguita mediante l'uso di un bilanciere realizzato ad oc internamente all'azienda, capace di applicare una coppia fino a $1000 \, Nm$
+La taratura viene eseguita mediante l'impiego di un bilanciere progettato ad hoc internamente all'azienda, in grado di applicare una coppia torcente fino a $1000\,Nm$.
 
 \subsubsection{Riferimenti normativi e documentali}
-% Elencare le linee guida internazionali (es. EURAMET, OIML, EA), le norme tecniche (es. ISO, IEC) o i manuali operativi dei costruttori.
-La procedura sarà eseguita in linea alla norma Uni En Iso 17025, seguendo le indicazioni per la procedura dell'analisi dei dati secondo la norma GUM e secondo la norma BS 7882:2017, intitolata "Method for calibration and classification of torque measuring devices". 
-Si fa riferimento anche al documento "Procedura di montaggio del Bilanciere", prodotta internamente all'azienda.
+
+La procedura è redatta e applicata in conformità ai seguenti standard e linee guida:
+\begin{itemize}
+    \item \textbf{UNI EN ISO/IEC 17025:} Requisiti generali per la competenza dei laboratori di prova e di taratura.
+    \item \textbf{ISO/IEC Guide 98-3 (GUM):} Guide to the expression of uncertainty in measurement, per la stima e l'analisi dei dati.
+    \item \textbf{BS 7882:2017:} Method for calibration and classification of torque measuring devices.
+    \item \textbf{Procedura interna:} "Procedura di montaggio del Bilanciere".
+\end{itemize}
 
 \subsubsection{Condizioni ambientali}
-% Specificare i parametri ambientali vincolanti (temperatura, umidità relativa, pressione atmosferica), le tolleranze ammesse e i tempi di acclimatamento.
-La prova deve avvenire in condizioni di temperatura stabile. Tramite termometro, misurare la temperatura da inizio a fine prova assicurandosi che la temperatura non vari di $\pm 1$°C. La temperatura dovrebbe essere compresa in un range tra i $17$° e i $29$°C.
+
+La taratura deve essere eseguita a una temperatura ambientale stabile compresa tra $18^\circ C$ e $28^\circ C$. La temperatura del dispositivo non deve variare di oltre $2^\circ C$ durante l'intera serie di misurazioni. La temperatura deve essere registrata all'inizio e alla fine di ogni serie di misurazione.
 
 
 \subsubsection{Apparecchiature e campioni di riferimento}
-% Elencare le caratteristiche metrologiche minime dei campioni di lavoro e della strumentazione ausiliaria per garantire la riferibilità metrologica.
-Il sistema mediante il quale viene applicata la coppia al torsiometro è un bilanciere, la cui coppia viene generata mediante dei pesi certificati, che costituiscono i campioni primari di riferimento.
 
+La coppia di calibrazione è generata mediante l'applicazione di masse su un bilanciere. Le masse utilizzare sono da $10Kg$, $5kg$ e da $3kg$, e costituiscono i campioni primari di riferimento certificati:
 \begin{itemize}
 
     \item I pesi utilizzati per generare una coppia di $600Nm$ sono i seguenti:
         
-        \begin{itemize}
-            \item SN002;
-            \item SN005;
-            \item SN006;
-            \item SN007;
-            \item SN009;
-            \item SN012.
+        \begin{itemize}    
+            \item SN002 -$10kg$-;
+            \item SN005 -$10kg$-;
+            \item SN006 -$10kg$-;
+            \item SN007 -$10kg$-;
+            \item SN014 -$5kg$-;
+            \item SN017 -$5kg$-;
+            \item SN019 -$5kg$-;
+            \item SN025 -$3kg$-;
+            \item SN028 -$3kg$-;
         \end{itemize}
 
     \item I pesi utilizzati per generare una coppia di $1000Nm$ sono i seguenti:
        
         \begin{itemize}
-            \item SN001;
-            \item SN002;
-            \item SN003;
-            \item SN004;
-            \item SN005;
-            \item SN006;
-            \item SN007;
-            \item SN008;
-            \item SN009;
-            \item SN012.
+            \item SN001 -$10kg$-;
+            \item SN002 -$10kg$-;
+            \item SN003 -$10kg$-;
+            \item SN004 -$10kg$-;
+            \item SN005 -$10kg$-;
+            \item SN006 -$10kg$-;
+            \item SN007 -$10kg$-;
+            \item SN008 -$10kg$-;
+            \item SN009 -$10kg$-;
+            \item SN012 -$10kg$-.
         \end{itemize}
 
 \end{itemize}
 
 \subsubsection{Operazioni preliminari}
-% Elencare ispezione visiva, pulizia, verifiche di alimentazione, azzeramento e autotaratura.
+
 \begin{itemize}
-    \item verificare che la temperatura della stanza sia compresa tra i $20$°C e $24$°C; 
+
+    \item verificare che la temperatura della stanza sia compresa tra i $18$°C e $28$°C; 
     \item accendere i PC di controllo, e attendere $15$ minuti per il riscaldamento dell'elettronica;
     \item assicurarsi che la zona di lavoro sia sgombera da possibili inciampi per via dell'ingombro del bilanciere;
-    \item montare il bilanciere secondo la $procedura \, di \, montaggio$ ed assicurarsi che sia in posizione orizzontale, in modo che il caricamento del torsiometro avvenga in senso orario guardando il macchinario da davanti (la seconda volta deve essere tale per cui il caricamento risulti essere applicato in senso antiorario guardando il macchinario da davanti);
+    \item montare il bilanciere secondo la $procedura \, di \, montaggio$ ed assicurarsi che sia in posizione orizzontale, in modo che il caricamento del torsiometro avvenga in senso orario guardando il macchinario da davanti (la seconda volta deve essere tale per cui il caricamento risulti essere applicato in senso antiorario guardando il macchinario da davanti) sull'albero di destra;
     \item spostare i pesi certificati nella sala del banco prova Renk;
-    \item segnare un riferimento per l'orientamento angolare iniziale del torsiometro, in modo da identificare una posizione zero di partenza (necessaria per stabilire la posizione di riferimento per le successive configurazioni di orientamento del torsiometro);
-    \item eseguire operazione di precaricamento del torsiometro nell'orientamento corrente, applicando per 3 volte consecutive il carico massimo alla struttura, e ogni volta mantenere il precarico per un tempo minimo di $30 \, s$;
-    \item la rimozione del precarico deve essere eseguita rimuovendo un peso per volta facendo attenzione a non impattare con la strumentazione; 
+    \item tracciare un riferimento per l'orientamento angolare iniziale ($0$°) del torsiometro;
+
 \end{itemize}
 
 \subsubsection{Procedura di taratura}
-% Definire connessioni, numero e distribuzione dei punti di taratura, sequenza dei cicli operativi, ripetizioni per punto e tempi di assestamento.
-La serie di caricamento per la taratura deve essere suddivisa in 5 step:
+A) Nel caso in cui il carico massimo da applicare risulti essere pari a $1000Nm$ generati con $100kg$, la serie di caricamento per la taratura deve essere suddivisa nei seguenti 5 step:
 
 \begin{itemize}
-    \item il primo al $20 \% $ del carico massimo;
-    \item il secondo al $40 \% $ del carico massimo;
-    \item il terzo al $ 60 \% $ del carico massimo ;
-    \item il quarto al $ 80 \% $ del carico massimo;
-    \item il quinto al $ 100\% $ del carico massimo;
+    \item il primo al $20 \% $ del carico massimo -$20kg$-;
+    \item il secondo al $40 \% $ del carico massimo -$40kg$-;
+    \item il terzo al $ 60 \% $ del carico massimo -$60kg$-;
+    \item il quarto al $ 80 \% $ del carico massimo -$80kg$-;
+    \item il quinto al $ 100\% $ del carico massimo -$100kg$-;
+\end{itemize}
+
+B)  Nel caso in cui il carico massimo da applicare risulti essere pari a $600Nm$ generati con $60kg$, la serie di caricamento per la taratura deve essere suddivisa nei seguenti 5 step:
+
+\begin{itemize}
+    \item il primo al $20 \% $ del carico massimo -$12kg$-, utilizzando:
+        
+        \begin{itemize}
+            \item SN014;
+            \item SN017;
+            \item SN028;
+        \end{itemize}
+
+    \item il terzo al $ 33.33 \% $ del carico massimo -$20kg$-, aggiungendo:
+       
+        \begin{itemize}
+            \item SN019;
+            \item SN025;
+        \end{itemize}
+
+    \item il quarto al $ 66.67 \% $ del carico massimo -$40kg$-, aggiungendo;
+        
+        \begin{itemize}
+            \item SN002;
+            \item SN005;
+        \end{itemize}
+
+    \item il quinto al $ 83.33 \% $ del carico massimo -$50kg$-, aggiungendo;
+    
+        \begin{itemize}
+            \item SN006;
+        \end{itemize}
+
+    \item il sesto al $ 100 \% $ del carico massimo -$60kg$-, aggiungendo;
+    
+        \begin{itemize}
+            \item SN007.
+        \end{itemize}
 \end{itemize}
 
 La taratura dei torsiometri deve essere eseguita in entrambi i versi di caricamento degli stessi, in senso orario ed antiorario. Dai dati dei pesi certificati, e dalla misura della lunghezza del braccio di leva del bilanciere, siamo in grado di eseguire una taratura che ricade nella  \textbf{classe del dispositivo della coppia da tarare} pari a $\mathbf{0.1}$, come indicato nella norma  BS 7882:201.
 
-Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni angolari differenti del torsiometro:
+Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni angolalri differenti del torsiometro:
 \begin{itemize}
     \item la prima posizione identifica la posizione di riferimento di $0$°;
     \item la seconda va eseguita ruotando di $120$° il torsiometro in senso orario;
@@ -1057,22 +1101,14 @@ Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni an
 
 Il carico massimo di riferimento per le tarature dei due torsiometri montati sul banco prova Renk deve essere pari al fondo scala minimo dei due torsiometri. Ogni volta che si esegue un incremento o decremento di carico, è necessario aspettare un tempo minimo di $30$ s affinché il sistema si stabilizzi.
 
+
 \subsubsection{Taratura nella prima configurazione di riferimento}
 
-A questo punto si inizia la procedura di calibrazione:
-
 \begin{itemize}
-    \item Dopo la procedura di precarico, applicare 2 serie di carico (descritte precedentemente) fino al carico massimo, come mostrato nella fig.\ref{fig:Prima serie di caricamento}.Assicurarsi che l'applicazione e la rimozione di carico avvenga movimentando cautelativamente un peso per volta, senza urtare e danneggiare la strumentazione. Per la registrazione dei valori durante le serie, eseguire le successive operazioni: 
-    \begin{itemize}
-        \item Registrare il valore di lettura di coppia in assenza di carico applicato prima e dopo le 2 serie di caricamento.
-        \item assicurarsi che tra le operazioni di incremento di carico/decremento di carico e lettura degli strumenti siano trascorsi almeno 30 secondi;
-        \item per ogni incremento/decremento di carico eseguire le seguenti operazioni:
-        \begin{itemize}
-            \item segnare il valore del carico letto dopo almeno $30$ secondi di attesa per la stabilizzazione della struttura;
-            \item registrare la lettura delle misurazioni per almeno $30$ s;
-            \item registrare il valore della lettura degli strumenti residua (lettura dello zero) dopo aver rimosso completamente il carico a fine serie, attendendo sempre almeno $30$ s;
-        \end{itemize}
-    \end{itemize}
+    \item \textbf{Precarico :} Applicare il carico massimo di taratura per 3 volte consecutive nel verso di caricamento corrente. Mantenere ciascun precarico per un minimo di 30 secondi. La rimozione del precarico deve avvenire in modo graduale;
+    \item Eseguire due serie consecutive di carico crescente senza modificare l'orientamento del dispositivo;
+    \item Registrare la lettura a coppia nulla prima dell'inizio e al termine di ogni serie;
+    \item Durante ogni gradino di carico (incremento, decremento e rimozione totale), registrare la lettura dell'indicatore attendendo un tempo non inferiore a 30 secondi per la stabilizzazione.
 \end{itemize}
 
 \begin{figure}[H]
@@ -1086,76 +1122,50 @@ A questo punto si inizia la procedura di calibrazione:
 \subsubsection{Taratura nella seconda configurazione di riferimento}
 
 \begin{itemize}
-
-    \item dopo aver rimosso completamente il carico, eseguire la procedura di smontaggio del bilanciere (seguendo la procedura di montaggio al contrario), ruotare il torsiomento nella nuova configurazione, come già spiegato all'inizio di questa sezione (Procedura di calibrazione). Per la registrazione dei valori durante le serie, eseguire le successive operazioni: 
-    
-    \item eseguire un precarico a carico massimo previsto dalla taratura, per poi applicare una serie di caricamento crescente, come mostrato nella fig.\ref{fig:Seconda serie di caricamento}. Assicurarsi che l'applicazione e la rimozione di carico avvenga movimentando cautelativamente un peso per volta, senza urtare e danneggiare la strumentazione; 
-    \begin{itemize}
-        \item Registrare il valore di lettura di coppia in assenza di carico applicato prima e dopo le 2 serie di caricamento.
-        \item assicurarsi che tra le operazioni di incremento di carico/decremento di carico e lettura degli strumenti siano trascorsi almeno 30 secondi;
-        \item per ogni incremento/decremento di carico eseguire le seguenti operazioni:
-        \begin{itemize}
-            \item segnare il valore del carico letto dopo almeno $30$ secondi di attesa per la stabilizzazione della struttura;
-            \item registrare la lettura delle misurazioni per almeno $30$ s;
-            \item registrare il valore della lettura degli strumenti residua (lettura dello zero) dopo aver rimosso completamente il carico a fine serie, attendendo sempre almeno $30$ s;
-        \end{itemize}
-    \end{itemize}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.3\linewidth]{Images/Capitolo_3/Seconda serie di caricamento.png}
-        \caption{Seconda serie di caricamento}
-        \label{fig:Seconda serie di caricamento}
-    \end{figure}
-
-
+    \item A sistema completamente scarico, smontare il bilanciere (seguendo la procedura di montaggio al contrario) e ruotare il torsiometro di $120^\circ$ in senso orario lungo il proprio asse di misurazione;
+    \item Eseguire un singolo ciclo di precarico alla coppia massima per almeno $30$ secondi;
+    \item Applicare una serie di caricamento crescente;
+    \item Registrare la lettura a coppia nulla prima dell'inizio e al termine di ogni serie;
+    \item Durante ogni gradino di carico (incremento, decremento e rimozione totale), registrare la lettura dell'indicatore attendendo un tempo non inferiore a 30 secondi per la stabilizzazione.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\linewidth]{Images/Capitolo_3/Seconda serie di caricamento.png}
+    \caption{Seconda serie di caricamento}
+    \label{fig:Seconda serie di caricamento}
+\end{figure}
+
 
 \subsubsection{Taratura nella terza configurazione di riferimento}
 
 \begin{itemize}
-
-    \item dopo aver rimosso completamente il carico, eseguire la procedura di smontaggio del bilanciere (seguendo la procedura di montaggio al contrario), ruotare il torsiomento nella nuova configurazione, come già spiegato all'inizio di questa sezione (Procedura di calibrazione). Per la registrazione dei valori durante le serie, eseguire le successive operazioni: 
-    
-    \item eseguire un precarico a carico massimo previsto dalla taratura, per poi applicare una serie di caricamento crescente e decrescente, come mostrato nella fig.\ref{fig:Terza serie di caricamento}. Assicurarsi che l'applicazione e la rimozione di carico avvenga movimentando cautelativamente un peso per volta, senza urtare e danneggiare la strumentazione; 
-    
-        \begin{itemize}
-
-        \item Registrare il valore di lettura di coppia in assenza di carico applicato prima e dopo le 2 serie di caricamento.
-        \item assicurarsi che tra le operazioni di incremento di carico/decremento di carico e lettura degli strumenti siano trascorsi almeno 30 secondi;
-        \item per ogni incremento/decremento di carico eseguire le seguenti operazioni:
-        
-            \begin{itemize}
-            \item segnare il valore del carico letto dopo almeno $30$ secondi di attesa per la stabilizzazione della struttura;
-            \item registrare la lettura delle misurazioni per almeno $30$ s;
-            \item registrare il valore della lettura degli strumenti residua (lettura dello zero) dopo aver rimosso completamente il carico a fine serie, attendendo sempre almeno $30$ s;
-            
-        \end{itemize}
-    
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.3\linewidth]{Images/Capitolo_3/Terza serie di caricamento.png}
-            \caption{Terza serie di caricamento}
-            \label{fig:Terza serie di caricamento}
-        \end{figure}
-
-        \end{itemize}
-    
-    La procedura è sintetizzata nella seguente immagine:
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\linewidth]{Images/Capitolo_3/serie di caricamento.png}
-        \caption{Serie intera di caricamento}
-        \label{fig:Serie intera di caricamento}
-    \end{figure}
-
-
-    \item infine, invertire l'orientamento del braccio di leva del bilanciere (dopo aver invertito l'orientamento del braccio il carico dovrebbe risultare essere applicato in senso antiorario), e rieseguire tutti i passaggi precedenti presenti in questa sezione "Procedura di taratura".
-
+    \item Ruotare il torsiometro di ulteriori $120^\circ$ in senso orario;
+    \item Eseguire un singolo ciclo di precarico alla coppia massima per almeno $30$ secondi;
+    \item Applicare una serie di caricamento crescente, seguita da una serie di caricamento decrescente;
+    \item Registrare la lettura a coppia nulla prima dell'inizio e al termine di ogni serie;
+    \item Durante ogni gradino di carico (incremento, decremento e rimozione totale), registrare la lettura dell'indicatore attendendo un tempo non inferiore a 30 secondi per la stabilizzazione.
 \end{itemize}
 
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{Images/Capitolo_3/Terza serie di caricamento.png}
+        \caption{Terza serie di caricamento}
+        \label{fig:Terza serie di caricamento}
+    \end{figure}
 
+    
+    
+La procedura complessiva è sintetizzata nella seguente immagine:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Capitolo_3/serie di caricamento.png}
+    \caption{Serie intera di caricamento}
+    \label{fig:Serie intera di caricamento}
+\end{figure}
 
+\textbf{Infine}, invertire l'orientamento del braccio di leva del bilanciere (dopo aver invertito l'orientamento del braccio il carico dovrebbe risultare essere applicato in senso antiorario), e rieseguire tutti i passaggi precedenti presenti in questa sezione "Procedura di taratura".
 
 \subsubsection{Taratura del secondo torsiometro}
 
