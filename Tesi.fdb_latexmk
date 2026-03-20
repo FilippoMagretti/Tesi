@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1774006217.03654 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1774006221.90084 0
+["pdflatex"] 1774017829.02662 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1774017833.84124 0
   "Images/Capitolo_1/precisione_accuratezza.png" 1773137239 423653 c07b7507a395b2c8d186cc56d178a88c ""
   "Images/Capitolo_2/Architettura del RENK.png" 1772699838 43784 0c5774b0fa42550ff92423724b1d229b ""
   "Images/Capitolo_2/Macchinario_STBF.png" 1773152120 481817 b4a701c9d6d0ef83f6f72c048bc17ba1 ""
@@ -54,12 +54,12 @@
   "Images/Capitolo_4/Vincolo_di_incastro.png" 1773049868 25449 070fddf65b08b9e862bc6078117b89fd ""
   "Images/Capitolo_4/Vincolo_simmetria.png" 1773049825 22148 099d6f7f1ae6b20c2cf697ddedfd1dff ""
   "Images/Frontespizio/Cherubino.jpg" 1768573816 39256 2affa4925d43d09b3676103dbafa6d4d ""
-  "Tesi.aux" 1774006221 22981 ab7b043cf6508000f5c64321ae51419f "pdflatex"
-  "Tesi.lof" 1774006221 5216 581738850c4ac052f01d718df719f0a2 "pdflatex"
-  "Tesi.out" 1774006221 12777 01abbe5359cf82eba9a71f3454463799 "pdflatex"
-  "Tesi.tex" 1774006211 91878 e007f703294f05d5e4d8bbd4230b8158 ""
-  "Tesi.toc" 1774006221 5374 1722f07a6345eec53f50a438f166ca5b "pdflatex"
-  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1774006211 91878 e007f703294f05d5e4d8bbd4230b8158 ""
+  "Tesi.aux" 1774017833 22982 74643a9d36b8f25b73e820da2c2acb60 "pdflatex"
+  "Tesi.lof" 1774017833 5216 ea65232a8516dcefa45f943133dcdb0e "pdflatex"
+  "Tesi.out" 1774017833 12782 daa0d71131bc0939b9b0e1f6be239ca0 "pdflatex"
+  "Tesi.tex" 1774017822 96198 b42c650a4f3cfaf140b0ab4910b2e5d2 ""
+  "Tesi.toc" 1774017833 5375 d5b63499a0c9d678cf8c4e6b00680338 "pdflatex"
+  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1774017822 96198 b42c650a4f3cfaf140b0ab4910b2e5d2 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1768564197 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1768564197 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1768565645 3524 cb3e574dea2d1052e39280babc910dc8 ""

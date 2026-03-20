@@ -613,10 +613,12 @@ Il banco è equipaggiato con due torsiometri, le cui specifiche tecniche sono ri
 
 Le catene di misura per l'acquisizione della coppia sono due:
 \begin{itemize}
-    \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
-    \item \textbf{Catena di misura U1, U2, U3:} Ponti estensimetrici U1, U2, U3 $\rightarrow$ Modulo convertitore A/D (NI 9237) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
-\end{itemize}
+    
+    \item \textbf{Catena 1:} Torsiometro HBM T40B $\rightarrow$ Condizionatore MX460B $\rightarrow$ Acquisizione in ambiente LabVIEW.
+   
+    \item \textbf{Catena 2:} Torsiometro HSFM600 $\rightarrow$ Condizionatore Manner-Evaluation-Unit $\rightarrow$ Scheda di acquisizione PXI-6210 $\rightarrow$ Acquisizione in ambiente Labview.
 
+\end{itemize}
 
 \subsection{Macchina per test STBF}
 La macchina STBF è un banco prova sviluppato per l'analisi della resistenza a fatica alla base del dente delle ruote dentate. Il sistema applica un ciclo di carico dinamico al T/A portando in risonanza le masse flottanti della struttura tramite un eccitatore elettromagnetico.
@@ -1086,39 +1088,44 @@ A) Nel caso in cui il carico massimo da applicare risulti essere pari a $1000Nm$
 B)  Nel caso in cui il carico massimo da applicare risulti essere pari a $600Nm$ generati con $60kg$, la serie di caricamento per la taratura deve essere suddivisa nei seguenti 5 step:
 
 \begin{itemize}
-    \item il primo al $20 \% $ del carico massimo -$12kg$-, utilizzando:
+    \item il primo al $\approx 20 \% $ del carico massimo -$12\,kg$-, utilizzando:
         
         \begin{itemize}
             \item SN002;
             \item SN023.
         \end{itemize}
+        ottenendo $12.8482\,kg$;
 
-    \item il terzo al $ 40 \% $ del carico massimo -$24kg$-, aggiungendo:
+    \item il terzo al $ \approx 40 \% $ del carico massimo -$24\,kg$-, aggiungendo:
        
         \begin{itemize}
             \item SN005;
         \end{itemize}
+        ottenendo $22.9464\,kg$;
 
-    \item il quarto al $ 60 \% $ del carico massimo -$36kg$-, aggiungendo;
+    \item il quarto al $ \approx 60 \% $ del carico massimo -$36\,kg$-, aggiungendo;
         
         \begin{itemize}
             \item SN006;
             \item SN024.
         \end{itemize}
+        ottenendo $35.828\,kg$;
 
-    \item il quinto al $ 80 \% $ del carico massimo -$48kg$-, aggiungendo;
+    \item il quinto al $ \approx 80 \% $ del carico massimo -$48\,kg$-, aggiungendo;
     
         \begin{itemize}
             \item SN007;
             \item SN025.
         \end{itemize}
+        ottenendo $48.7377\,kg$;
 
-    \item il sesto al $ 100 \% $ del carico massimo -$60kg$-, aggiungendo;
+    \item il sesto al $ \approx 100 \% $ del carico massimo -$60\,kg$-, aggiungendo;
     
         \begin{itemize}
             \item SN009;
             \item SN026.
         \end{itemize}
+        ottenendo $61.8129\,kg$;
 \end{itemize}
 
 La taratura dei torsiometri deve essere eseguita in entrambi i versi di caricamento degli stessi, in senso orario ed antiorario. Dai dati dei pesi certificati, e dalla misura della lunghezza del braccio di leva del bilanciere, siamo in grado di eseguire una taratura che ricade nella  \textbf{classe del dispositivo della coppia da tarare} pari a $\mathbf{0.1}$, come indicato nella norma  BS 7882:201.
@@ -1421,7 +1428,7 @@ La strategia di approvvigionamento e la realizzazione dei componenti strutturali
 
 \begin{itemize}
     \item \textbf{Base di supporto:} Realizzata internamente tramite lavorazioni di fresatura su acciaio 39NiCrMo3. La produzione interna ha garantito il controllo diretto sulle tolleranze geoemtriche e dimensionali previste.
-    \item \textbf{Corpo centrale deformabile:} Prodotto su specifica da un'azienda terza su acciaio 39NiCrMo3, garantendone il rispetto per le tolleranze previste da disegno.
+    \item \textbf{Corpo centrale :} Prodotto su specifica da un'azienda terza su acciaio 39NiCrMo3, garantendone il rispetto per le tolleranze previste da disegno.
     \item \textbf{Rullo di contatto e integrazione:} Il rullo in acciaio a tutta tempra 100Cr7 è un componente commerciale. L'integrazione strutturale alla sommità del corpo del provino è stata effettuata tramite saldobrasatura.
 \end{itemize}
 
@@ -1495,22 +1502,29 @@ L'implementazione di carte di controllo statistiche per il monitoraggio sistemat
 
 \section{CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}
 
+\subsection{Procedure di gestione della strumentazione}
 
+La conformità al requisito 6.4 della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale) e l'istituzione di una scheda anagrafica o registro della strumentazione.
 
-\subsection{Procedure di gestione della stumentazione}
-
-
+Tale registro deve includere l'identificazione del software associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di eventuali danni, malfunzionamenti o riparazioni, e i certificati di taratura correnti e pregressi. La procedura deve inoltre normare le operazioni di movimentazione, trasporto, immagazzinamento e uso delle apparecchiature. L'obiettivo è prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per il provino strumentato) che possano invalidare l'integrità metrologica dei campioni e delle catene di misura.
 
 \subsection{Tracciabilità metrologica}
 
+In ottemperanza al requisito 6.5 della norma, il laboratorio deve formalizzare la politica aziendale per l'acquisizione e il mantenimento della riferibilità ininterrotta verso il Sistema Internazionale (SI). Questa sezione definisce i criteri operativi per la qualifica e la selezione dei fornitori esterni di servizi di taratura.
 
+I campioni di riferimento primari del laboratorio (il set di masse per il banco Renk e il provino strumentato per il banco STBF) devono essere tarati esclusivamente da istituti metrologici nazionali (NMI) o da laboratori accreditati secondo la norma ISO/IEC 17025, riconosciuti nel circuito ILAC MRA (International Laboratory Accreditation Cooperation). La procedura interna impone la valutazione metrologica dei certificati di taratura in ingresso prima della messa in servizio della strumentazione: il responsabile tecnico deve verificare esplicitamente che l'incertezza estesa dichiarata dal fornitore esterno sia compatibile con i limiti massimi ammessi nei budget di incertezza delle catene di misura interne.
 
 \subsection{Piano di taratura periodica}
 
+Il mantenimento dello stato di calibrazione richiede la programmazione di intervalli di taratura idonei. La determinazione degli intervalli iniziali si fonda sulle raccomandazioni del costruttore, sull'entità d'uso prevista e sui limiti di accuratezza richiesti per le prove, conformemente alle linee guida internazionali ILAC-G24 (OIML D 10).
 
+Il piano di taratura deve essere supportato da un programma documentato di verifiche intermedie (intermediate checks), necessarie per mantenere la confidenza nello stato di calibrazione dell'attrezzatura tra due tarature ufficiali consecutive. Per i torsiometri e per le celle di carico, tali verifiche prevedono il monitoraggio sistematico del segnale di zero a riposo (zero drift) e l'applicazione di un carico di riferimento semplificato per l'individuazione precoce di derive del guadagno. L'analisi statistica dei risultati delle tarature e delle verifiche intermedie costituisce il fondamento oggettivo per la decisione di mantenere, estendere o ridurre l'intervallo di taratura periodica.
 
 \subsection{Integrazione nel sistema qualità aziendale}
 
+Le procedure tecniche di taratura e verifica sviluppate per i banchi prova devono operare come documenti controllati all'interno del Sistema di Gestione per la Qualità (SGQ) aziendale, in ottemperanza ai requisiti del Capitolo 8 della norma UNI EN ISO/IEC 17025.
+
+L'integrazione richiede la codifica formale delle procedure e la tracciabilità delle relative revisioni. Un elemento critico del SGQ è la gestione del lavoro non conforme (Requisito 7.10): qualora, durante una taratura periodica o una verifica intermedia, un torsiometro o una catena di forza risulti fuori tolleranza (out of tolerance), la procedura deve prescrivere l'isolamento immediato dello strumento e l'attivazione di un'analisi di impatto a ritroso. Questa analisi valuta oggettivamente la validità tecnica e contrattuale di tutti i collaudi sui Test Article eseguiti nel periodo intercorso dall'ultima taratura con esito positivo, definendo le eventuali procedure di richiamo o notifica al cliente.
 
 %----------------------------------------------------------------------------------------
     \newpage
@@ -1563,10 +1577,10 @@ Di seguito sono riportati dei semplici casi, per chiarezza:
         \end{equation}
 \end{itemize}
 
-Nei casi in cui la funzione di $Y$ sia fortemente non lineare, risulta necessario usare la formulazione della varianza al secondo ordine:
+Nei casi in cui la funzione di $Y$ sia fortemente non lineare, risulta necessario includere la formulazione della varianza al secondo ordine:
 
 \begin{equation}
-    u^2=\sum_{i=1}^{n} \sum_{j=1}^{n} \left[ \frac{1}{2} \cdot \left( \frac{\partial^2 Y}{\partial X_i \partial X_j} \right)^2 + \frac{\partial Y}{\partial X_i} \cdot \frac{\partial^3 Y}{\partial X_i \partial X_j^2} \right] \cdot u^2_i \cdot u^2_j
+    u^2=\sum_{i=1}^{n} \left[ \left( \frac{\partial Y}{\partial X_i} \right)^2 \cdot u_i^2 \right]+\sum_{i=1}^{n} \sum_{j=1}^{n} \left[ \frac{1}{2} \cdot \left( \frac{\partial^2 Y}{\partial X_i \partial X_j} \right)^2 + \frac{\partial Y}{\partial X_i} \cdot \frac{\partial^3 Y}{\partial X_i \partial X_j^2} \right] \cdot u^2_i \cdot u^2_j
 \end{equation}
 %----------------------------------------------------------------------------------------
 
