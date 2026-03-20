@@ -553,16 +553,15 @@ Arrivati a questo punto si confronta questo valore di incertezza con tutti gli a
 
 \section{CAPITOLO 2 - DESCRIZIONE DEI SISTEMI DI PROVA}
 
-
-
 \subsection{Banco prova ingranaggi Renk}
+Il banco Renk è un sistema a ricircolo di potenza meccanica, progettato per l'esecuzione di prove su ingranaggi. Tale architettura consente di sottoporre i campioni a coppie e potenze di esercizio impiegando un motore elettrico di azionamento di taglia nominale significativamente inferiore. 
 
-Il banco Renk è un banco prova a ricircolo di potenza meccanica, che consente di effettuare prove su ingranaggi sottoponendoli a elevate coppie e potenze generate da un motore elettrico di taglia inferiore (coppia e potenza inferiori a quelle di esercizio). Questo è reso possibile mediante l'applicazione di un precarico a tutti gli ingranamenti delle ruote della catena cinematica chiusa, fornito da un servo motore di piccola taglia il quale forza la catena cinematica di ruote dentate tramite lo spostamento assiale di una ruota a denti elicoidali (obbligandone quindi l'ingranamento con altre due ruote dentate a denti elicoidali, con angolo d'elica opposto tra loro). In questo modo, quando il sistema viene alimentato da un motore elettrico che genera una determinata potenza e una conseguente coppia, all'interno della catena chiusa di ruote dentate si genera una potenza circolante (e quindi anche una coppia) superiori a quelle in ingresso fornite dal motore. Questa potenza (e coppia) rimane confinata comunque all'interno della catena, da qui il termine "ricircolo di potenza meccanica".
+L'incremento dei carichi interni è ottenuto applicando un precarico statico alla catena cinematica chiusa. Un servomotore induce lo scorrimento assiale di una ruota a denti elicoidali, forzandone l'ingranamento con due ruote coniugate ad angolo d'elica opposto. Conseguentemente, la potenza circolante nel circuito chiuso risulta quantitativamente superiore a quella immessa nel sistema dall'azionamento principale.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{Images/Capitolo_2/RENK.png}
-    \caption{Renk}
+    \caption{Banco prova Renk}
     \label{fig:Renk}
 \end{figure}
 
@@ -573,28 +572,28 @@ Il banco Renk è un banco prova a ricircolo di potenza meccanica, che consente d
     \label{fig:Architettura del banco Renk}
 \end{figure}
 
-Sulla sinistra della fig.\ref{fig:Architettura del banco Renk} si possono vedere il motore elettrico in rosso e il servomotore più piccolino in celeste, nel centro la sezione "slave" contenente una parte della catena cinematica du ruote dentate, e sulla destra la sezione "Test-Article" che chiude la catena con due ruote dentate che costituiscono l'elemento sottoposto al test del banco. In rosso tra la sezione "slave" e quella "T/A" si possono notare i due torsiometri.
+La Figura \ref{fig:Architettura del banco Renk} illustra lo schema dell'architettura: a sinistra sono posizionati il motore elettrico di trazione (rosso) e il servomotore di precarico (azzurro); al centro è collocata la sezione "slave", comprendente parte della catena cinematica; a destra è visibile la sezione Test Article (T/A), che chiude l'anello cinematico mediante l'accoppiamento degli ingranaggi in prova. Interposti tra la sezione "slave" e la sezione T/A operano i due torsiometri di misurazione della coppia (rossi).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/RENK_lato sinistro_motori.jpg}
-    \caption{Renk lato sinistro motori}
+    \caption{Renk - Sezione sinistra (Azionamenti)}
     \label{fig:Renk lato sinistro motori}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/RENK_lato destro_TA.jpg}
-    \caption{Renk lato destro TA}
+    \caption{Renk - Sezione destra (Test Article)}
     \label{fig:Renk lato destro TA}
 \end{figure}
 
-La misura di coppia cui sono sottoposti i "Test Article" sono appunto letti dai due torsiometri, le cui caratteristiche sono riportate in tabella, sono i seguenti:
+Il banco è equipaggiato con due torsiometri, le cui specifiche tecniche sono riportate nella Tabella \ref{tab:Identificazione dei torsiometri utilizzati}:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Images/Capitolo_2/Torsiometri.png}
-    \caption{Torsiometri}
+    \caption{Torsiometri installati}
     \label{fig:Torsiometri}
 \end{figure}
 
@@ -608,15 +607,19 @@ La misura di coppia cui sono sottoposti i "Test Article" sono appunto letti dai 
         T Manner & Manner & HSFM 600 & 18360 & $\pm$600 & Axis 2 & 126631 & $<\pm$0.1\% \\ \hline
     \end{tabular}
     }
-    \caption{Identificazione dei torsiometri utilizzati}
+    \caption{Identificazione dei torsiometri}
     \label{tab:Identificazione dei torsiometri utilizzati}
 \end{table}
 
-Come riportato nella tabella \ref{tab:Identificazione dei torsiometri utilizzati} sull'asse 1 (quello posto in alto nella fig.\ref{fig:Torsiometri}) è posto il torsiometro T-HBM, mentre sull'asse 2 il torsiometro T-Manner. La \textbf{catena di misura} della coppia parte proprio da loro, composta dai \textbf{torsiometri}, i relativi \textbf{conditioners} riportati nella tabella \ref{tab:Identificazione dei torsiometri utilizzati}.
+Le catene di misura per l'acquisizione della coppia sono due:
+\begin{itemize}
+    \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
+    \item \textbf{Catena di misura U1, U2, U3:} Ponti estensimetrici U1, U2, U3 $\rightarrow$ Modulo convertitore A/D (NI 9237) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
+\end{itemize}
+
 
 \subsection{Macchina per test STBF}
-
-La macchina per test STBF è un banco prova per testare la resistenza dei denti delle ruote dentate in grado di applicare un ciclo di carico affaticante sui T/A facendo andare in risonanza le varie componente flottanti del macchinario mediante un eccitamento generato tramite un elettromagete.
+La macchina STBF è un banco prova sviluppato per l'analisi della resistenza a fatica alla base del dente delle ruote dentate. Il sistema applica un ciclo di carico dinamico al T/A portando in risonanza le masse flottanti della struttura tramite un eccitatore elettromagnetico.
 
 \begin{figure}[H]
     \centering
@@ -625,33 +628,42 @@ La macchina per test STBF è un banco prova per testare la resistenza dei denti 
     \label{fig:Macchinario STBF}
 \end{figure}
 
-Il sistema di applicazione carico è composto da un puntone "flottante", (collegato tramite delle sottili piastre al telaio) e collegato sopra di esso una cella di carico F1, come mostrato in fig.\ref{fig:Macchinario STBF}. La lettura del calcolo avviene tramite una serie di misurazioni, in quanto in questa configurazione la cella di carico non è rappresentativa del carico che effettivamente si scarica sulla ruota dentata in quanto in parte il carico che passa attraverso il puntone viene ripartito attraverso le piastre sottili laterali e non soltanto sul T/A.
+Il modulo di applicazione del carico è costituito da un puntone flottante, vincolato al telaio mediante lamine flessibili, e da una cella di carico F1 disposta in serie (Figura \ref{fig:Macchinario STBF}). L'acquisizione del carico trasmesso al dente del T/A è garantita da due metodologie concorrenti e ridondanti:
 
-Queste lastre sottili sono dunque strumentate con degli estensimetri, così che possa essere ricavata la quantità di carico che passa attraverso di essi, indicati con dei marcatori verdi nella fig.\ref{fig:Sensori}, chiamati ponti estensimetrici \textbf{U3}. Sottraendo dalla lettura del carico della cella F1 la quota di carico dei ponti estensimetrici U1 e anche il contributo inserziale delle masse vibranti, si ottiene indirettamente il valore del carico trasmetto alla ruota.
+\begin{itemize}
+    \item \textbf{Misurazione diretta:} lettura del ponte estensimetrico U1, che quantifica direttamente la forza normale applicata al dente del T/A.
+    \item \textbf{Misurazione indiretta:} lettura della cella di carico F1, dalla quale viene sottratta l'aliquota di carico rilevata dal ponte estensimetrico U3 e la forza inerziale della massa flottante. Nella presente trattazione, inerente esclusivamente le procedure di taratura in condizioni statiche, la componente inerziale è posta nulla.
+\end{itemize}
+
+L'elaborazione algebrica tra i segnali F1 e U3 è strettamente necessaria in quanto la cella di carico misura la forza totale spinta dall'attuatore, la quale non si trasferisce integralmente al T/A: una frazione del carico viene assorbita dalle lamine flessibili di vincolo del puntone.
+
+Tali lamine sono strumentate con i ponti estensimetrici \textbf{U3} (identificati dai marcatori verdi in Figura \ref{fig:Sensori}) allo scopo di isolare la quota di carico parassita. Computando la differenza tra il segnale F1 e il segnale U3, si ricava in modo indiretto il carico netto trasmesso al T/A.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Capitolo_2/Sensori_sulla_STBF.png}
-    \caption{Sensori}
+    \caption{Posizionamento dei sensori sulla struttura}
     \label{fig:Sensori}
 \end{figure}
 
-Inoltre, posizionando altri estensimetri (ponti estensimetrico U1 e U2) siamo in grado di ottenere direttamente il valore di carico che si scarica sul dente del T/A, in particolare \textbf{U2} (evidenziato in blu nella fig.\ref{fig:Sensori}) legge la componente di carico trasversale sul dente, e \textbf{U1} (evidenziato in rosso in fig.\ref{fig:Sensori}) legge il carico normale sul dente.
+L'installazione locale di ulteriori sensori garantisce l'isolamento vettoriale delle forze: il ponte estensimetrico \textbf{U2} (marcatore blu in Figura \ref{fig:Sensori}) rileva la componente trasversale del carico sul dente, mentre il ponte \textbf{U1} (marcatore rosso in Figura \ref{fig:Sensori}) rileva la componente normale.
 
-Con la lettura dell'estensimetri U1 abbiamo quindi una ridondanza del valore del carico sul dente, già ottenuto precedentemente tramite le letture della cella di carico e dei ponti U3. 
+Il segnale derivato dal ponte U1 fornisce il traguardo ridondante per la validazione della forza determinata matematicamente dalla differenza
+\begin{equation}
+    F_{T/A}=F1-U3=U1
+\end{equation}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{Images/Capitolo_2/Pont_estensimetrici_STBF.png}
-    \caption{Ponti estensimetrici}
+    \caption{Dettaglio dei ponti estensimetrici}
     \label{fig:Ponti estensimetrici}
 \end{figure}
 
-Sono presenti quindi due catene di misura che forniscono la lettura del carico sul dente:
-
+Le catene di misura del banco STBF sono così strutturate:
 \begin{itemize}
-    \item sensori cella di carico F1 più sensore ponte U3;
-    \item sensori ponte U1.
+    \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (LabVIEW).
+    \item \textbf{Catena di misura U1, U2, U3:} Ponti estensimetrici U1, U2, U3 $\rightarrow$ Modulo convertitore A/D (NI 9237) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (LabVIEW).
 \end{itemize}
 
 \newpage
@@ -659,7 +671,7 @@ Sono presenti quindi due catene di misura che forniscono la lettura del carico s
     \item Descrizione dell'attrezzatura di afferraggio- ok
     \item Cella di carico- no
     \item Ponti estensimetrici- ok
-    \item Sistema di acquisisizione dati- no
+    \item Sistema di acquisizione dati- no
 \end{itemize}
 
 
@@ -672,7 +684,7 @@ Sono presenti quindi due catene di misura che forniscono la lettura del carico s
 
 \subsection{Analisi delle esigenze metrologiche}
 
-La taratura della catena di misura del banco prova Renk richiede un sistema meccanico in grado applicare al macchinario un valore di coppia fino a $1 \cdot 10^6 \text{ Nm}$. Inoltre, è richiesto a questo sistema che garantisca una procedura ad elevata riproducibilità e ripetibilità e riferibilità.
+La taratura della catena di misura del banco prova Renk richiede un sistema meccanico in grado applicare al macchinario un valore di coppia fino a $1 \cdot 10^3 \text{ Nm}$. Inoltre, è richiesto a questo sistema che garantisca una procedura ad elevata riproducibilità e ripetibilità e riferibilità.
 
 Si rende necessario l'impiego di campioni di riferimento aventi tracciabilità ininterrotta verso i campioni primari.
 
@@ -707,7 +719,7 @@ Nella fig.\ref{fig:Lato T/A } sono mostrati gli alberi dove alloggiano i T/A sui
 Una volta definiti i volumi disponibili e gli ingombri del carter, è stato possibile sviluppare il sistema bilanciere, composto da 2 parti principali:
 
 \begin{itemize}
-    \item \textbf{il bilanciere}, composto da il \textbf{braccio di leva}; il \textbf{sistema di contrappesi regolabile} che permette di disporre di una regolazione continua del contrappeso applicato (necessario per riportare il baricentro del bilanciere in asse da scarico, ossia senza i pesi calibrati applicati al braccio di leva); la \textbf{staffa}, elemento di collegamento tra il braccio di leva e l'\textbf{anello di blocco}, flangiato direttamente sull'albero;
+    \item \textbf{il bilanciere}, composto da il \textbf{braccio di leva}; il \textbf{sistema di contrappesi regolabile} che permette di disporre di una regolazione continua del contrappeso applicato (necessario per l'azzeramento del baricentro da scarico); la \textbf{staffa}, elemento di collegamento tra il braccio di leva e l'\textbf{anello di blocco}, flangiato direttamente sull'albero;
     
     \begin{figure}[H]
         \centering
@@ -900,7 +912,7 @@ Nell'insieme il sistema \textbf{bilancino} si presenta come di seguito riportato
         \label{fig:Sequenza di montaggio: 7.1}
     \end{figure}
 
-    Prima che l'albero ingaggi con il profilo scanalato, lo ri ruota in posizione verticale, e solo dopo lo si può portare a battuta in direzione assiale fino a farlo ingaggiare.
+    Prima che l'albero ingaggi con il profilo scanalato, lo ri ruota in posizione verticale, e solo dopo lo si può portare a battuta in direzione assiale fino a farlo ingaggiare con il profilo scanalato.
 
     \begin{figure}[H]
         \centering
@@ -929,9 +941,7 @@ Nell'insieme il sistema \textbf{bilancino} si presenta come di seguito riportato
 
 \end{enumerate} 
 
- Il braccio di leva, come già anticipato precedentemente, dovrà essere ruotato di 180° in modo da applicare il carico al torsiometro anche nel verso opposto per poter eseguire correttamente la procedura di taratura. Per ruotare il braccio è sufficiente svitare le viti (quelle usate nella sequenza di montaggio n°4 della fig.\ref{fig:Sequenza montaggio: 4}), senza dover smontare altre componenti. Sarà poi necessario ripetere tutta la procedura per poter applicare il bilanciere al secondo torsiometro (quello di sinistra) e prevedere anche per lui i caricamenti in entrambi i versi di rotazione (in questo caso, la fase di equilibratura illustrata nella sequenza n°4 della fig.\ref{fig:Sequenza montaggio: 4} non è necessario eseguirla nuovamente, purché durante lo smontaggio e rimontaggio non vengano allentati i bulloni del pacco dei contrappesi).
-
-
+ Il braccio di leva, come già anticipato precedentemente, dovrà essere ruotato di 180° in modo da applicare il carico al torsiometro anche nel verso opposto per poter eseguire correttamente la procedura di taratura. Per ruotare il braccio è sufficiente svitare le viti indicate nella sequenza di montaggio n°4 della fig.\ref{fig:Sequenza montaggio: 4}, senza dover smontare altre componenti. Per la taratura del secondo torsiometro, l'intera procedura di montaggio deve essere traslata sull'asse opposto e sarà necessario eseguire i caricamenti in entrambi i versi di rotazione (in questo caso, la fase di equilibratura illustrata nella sequenza n°4 della fig.\ref{fig:Sequenza montaggio: 4} non è da eseguire nuovamente, purché durante lo smontaggio e rimontaggio non vengano allentati i bulloni del pacco dei contrappesi).
 
 \subsection{Realizzazione e collaudo}
 
@@ -956,12 +966,32 @@ Di seguito sono riportati nuovamente i pezzi che compongono i due sotto-sistemi 
 
     \item Il sistema di blocco cinematico è composto da:
 
-    \begin{itemize}
-        \item componente perno superiore;
-        \item componente perno inferiore;
-        \item forchetta.
-    \end{itemize}
+        \begin{itemize}
+            \item componente perno superiore;
+            \item componente perno inferiore;
+            \item forchetta.
+        \end{itemize}
 
+\end{itemize}
+
+La fase di realizzazione e collaudo certifica la transizione del sistema di taratura dalla progettazione all'impiego operativo, garantendo il rispetto delle specifiche dimensionali e strutturali necessarie per la riferibilità metrologica.
+
+\subsubsection{Fabbricazione e tolleranze di lavorazione}
+La costruzione dei due sottosistemi principali ha richiesto lavorazioni meccaniche per assicurare l'accoppiamento cinematico e la corretta trasmissione dei carichi:
+
+\begin{itemize}
+    \item \textbf{Gruppo Bilanciere:} composto da anello di blocco; staffa; trave a cassone lunga; trave a "L"; piastra di supporto; contrappesi; barra filettata; uniball da $16 \text{ mm}$; vite calibrata da 16mm; spessore per la vite calibrata; adattatore M12-M16. La foratura sulla trave ad "L" è stata realizzata sull'assieme assemblato, per garantire la precisione dell'interasse di applicazione del carico, di modo che rispettasse la tolleranza sull'interasse di $1000 \pm 0.5 \, mm$.
+    \item \textbf{Sistema di blocco cinematico:} La forchetta è stata sagomata mediante taglio al plasma e rifinita alle macchine utensili tramite fresatura. I perni di blocco sono stati ricavati per asportazione di truciolo e successivamente uniti mediante saldatura strutturale. Poiché tali elementi costituiscono unicamente il vincolo di reazione statico e non influiscono sull'equazione di misurazione della coppia, non sono stati imposti requisiti di tolleranza dimensionale stringenti ai fini della riferibilità metrologica, se non per l'accoppiamento tra forchetta e perno. Per tale accoppiamento è stato previsto che avvenga con un gioco minimo e massimo, tale da garantire assenza di interferenze e al contempo minimizzare l'escursione angolare del sistema.
+\end{itemize}
+
+\subsubsection{Collaudo dimensionale e verifica funzionale}
+Prima dell'impiego operativo per la taratura ufficiale dei torsiometri, l'attrezzatura è stata sottoposta a una procedura di collaudo:
+
+\begin{itemize}
+    \item \textbf{Misurazione del braccio di leva:} L'interasse effettivo tra il centro di rotazione del torsiometro (asse dell'albero) e il punto di applicazione del carico (asse dello snodo sferico) è stato rilevato e certificato. Il valore misurato costituisce la grandezza $L$ fondamentale per l'equazione di conversione massa-coppia ($T = m \cdot g \cdot L$). L'incertezza strumentale associata a tale misurazione geometrica costituisce un parametro di ingresso nel budget di incertezza complessivo.
+    \item \textbf{Test di bilanciamento a vuoto:} Il test ha validato la capacità del sistema di raggiungere il perfetto equilibrio statico orizzontale da scarico.
+    \item \textbf{Verifica dei giochi cinematici:} L'accoppiamento tra la forchetta e il perno del blocco di reazione è stato testato montando i componenti a banco. L'ispezione ha verificato che il vincolo consenta l'assemblaggio manuale senza interferenze, garantendo al contempo un gioco angolare sufficientemente ridotto da non compromettere l'allineamento durante l'applicazione dei carichi massimi ($\pm 1$°).
+    \item \textbf{Collaudo strutturale in esercizio:} Il sistema assemblato è stato caricato progressivamente fino alla capacità nominale massima prevista dai calcoli ($1000\,Nm$).
 \end{itemize}
 
 \subsection{Procedura di taratura}
@@ -989,42 +1019,42 @@ La procedura è redatta e applicata in conformità ai seguenti standard e linee 
 
 \subsubsection{Condizioni ambientali}
 
-La taratura deve essere eseguita a una temperatura ambientale stabile compresa tra $18^\circ C$ e $28^\circ C$. La temperatura del dispositivo non deve variare di oltre $2^\circ C$ durante l'intera serie di misurazioni. La temperatura deve essere registrata all'inizio e alla fine di ogni serie di misurazione.
+La taratura deve essere eseguita a una temperatura ambientale stabile compresa tra $18^\circ C$ e $28^\circ C$. La temperatura del dispositivo non deve variare di oltre $1^\circ C$ durante l'intera serie di misurazioni. La temperatura deve essere registrata all'inizio e alla fine di ogni serie di misurazione.
 
 
 \subsubsection{Apparecchiature e campioni di riferimento}
 
 La coppia di calibrazione è generata mediante l'applicazione di masse su un bilanciere. Le masse utilizzare sono da $10Kg$, $5kg$ e da $3kg$, e costituiscono i campioni primari di riferimento certificati:
+
 \begin{itemize}
 
     \item I pesi utilizzati per generare una coppia di $600Nm$ sono i seguenti:
         
         \begin{itemize}    
-            \item SN002 -$10kg$-;
-            \item SN005 -$10kg$-;
-            \item SN006 -$10kg$-;
-            \item SN007 -$10kg$-;
-            \item SN009 -$10kg$-;
-            \item SN023 -$3kg$-;
-            \item SN024 -$3kg$-;
-            \item SN025 -$3kg$-;
-            \item SN026 -$3kg$-;
+            \item SN002 -$9989,8 \pm 0.200\,g$-;
+            \item SN005 -$10098.2 \pm 0.200\,g$-;
+            \item SN006 -$10018.0 \pm 0.200\,g$-;
+            \item SN007 -$10044.6 \pm 0.200\,g$-;
+            \item SN009 -$10217.0 \pm 0.200\,g$-;
+            \item SN023 -$2859.2 \pm 0.100\,g$-;
+            \item SN024 -$2863.6 \pm 0.100\,g$-;
+            \item SN025 -$2865.1 \pm 0.100\,g$-;
+            \item SN026 -$2858.2 \pm 0.100\,g$-;
         \end{itemize}
-
 
     \item I pesi utilizzati per generare una coppia di $1000Nm$ sono i seguenti:
        
         \begin{itemize}
-            \item SN001 -$10kg$-;
-            \item SN002 -$10kg$-;
-            \item SN003 -$10kg$-;
-            \item SN004 -$10kg$-;
-            \item SN005 -$10kg$-;
-            \item SN006 -$10kg$-;
-            \item SN007 -$10kg$-;
-            \item SN008 -$10kg$-;
-            \item SN009 -$10kg$-;
-            \item SN012 -$10kg$-.
+            \item SN001 -$9989.8 \pm 0.200\,g$-;
+            \item SN002 -$9989,8 \pm 0.200\,g$-;
+            \item SN003 -$9750.8 \pm 0.200\,g$-;
+            \item SN004 -$9984.0 \pm 0.200\,g$-;
+            \item SN005 -$10098.2 \pm 0.200\,g$-;
+            \item SN006 -$10018.0 \pm 0.200\,g$-;
+            \item SN007 -$10044.6 \pm 0.200\,g$-;
+            \item SN008 -$9989.0 \pm 0.200\,g$-;
+            \item SN009 -$10217.0 \pm 0.200\,g$-;
+            \item SN012 -$10026.0\pm 0.200\,g$-.
         \end{itemize}
 
 \end{itemize}
@@ -1195,83 +1225,77 @@ Eseguire la taratura del secondo torsiometro, seguendo quindi tutti i punti elen
 \subsection{Analisi della catena di misura della forza}
 
 
+\subsection{Progettazione del sistema di verifica}
 
-\subsection{Progettazone del sistema di verifica}
+La procedura di taratura richiede l'esecuzione di prove statiche fino a un carico di compressione massimo pari a $20\,kN$. È pertanto necessaria la progettazione di un provino strumentato con funzione di strumento campione, in grado di quantificare la forza applicata replicando rigorosamente le condizioni cinematiche e di contatto esistenti tra il Test Article (ruota dentata) e la piastra di carico (attuatore del banco STBF). Il requisito fondamentale è la riproduzione di un contatto hertziano lineare, posizionato con elevata accuratezza nella medesima coordinata spaziale in cui avviene l'ingranamento in esercizio.
 
-Per eseguire la prova di taratura, si esegue una prova statica ad un carico pari a $20kN$. Risulta quindi necessario realizzare un provino strumentato che legga il valore della forza di compressione, e che replichi al meglio le condizioni di caricamento sulla ruota dentata. Quindi è necessario assicurarsi che il contatto tra provino e martello sia un contatto di linea e che il contatto con il martello si collochi con grande precisione dove avviene il contatto con il test article.
-
-Dopo un accurato rilievo degli ingombri e volumi di lavoro disponibili, l'idea sviluppata consiste in un provino strumentato, che costituisce quindi uno \textbf{strumento campione}, capace di leggere il carico di compressione ad esso applicato. L'idea è quella di sfruttare 
-Il provino si compone di 3 componenti principali:
+Il provino strumentato è basato su tre componenti principali:
 
 \begin{itemize}
-    \item la \textbf{base}, realizzata in materiale 39NiCrMo3:
-    
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Base.png}
-    \caption{Base}
-    \label{fig:Base}
-\end{figure}
- 
-la  sua particolare forma consente un corretto posizionamento in macchina con ottima riferibilità alle superifici di riferimento, come mostrato in fig.\ref{fig:Superfici di riferimento viste all'alto};
+    \item \textbf{Base (Materiale: 39NiCrMo3):} 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\linewidth]{Images/Capitolo_4/Base.png}
+        \caption{Base di supporto}
+        \label{fig:Base}
+    \end{figure}
+    Il design geometrico garantisce l'accoppiamento cinematico con la macchina di prova, assicurando una riferibilità metrologica diretta rispetto ai piani di riferimento strutturali, come illustrato in Figura \ref{fig:Superfici di riferimento viste all'alto}.
 
-    \item il \textbf{corpo centrale} del provino, realizzato in materiale 39NiCrMo3,
-    
-\begin{figure}[H]
-   \centering
-   \includegraphics[width=0.25\linewidth]{Images/Capitolo_4/Provino.png}
-   \caption{Corpo centrale}
-   \label{fig:Corpo centrale}
- \end{figure}
+    \item \textbf{Corpo centrale (Materiale: 39NiCrMo3):}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.25\linewidth]{Images/Capitolo_4/Provino.png}
+        \caption{Corpo centrale deformabile}
+        \label{fig:Corpo centrale}
+    \end{figure}
+    Costituisce l'elemento elastico del trasduttore. Le ampie superfici laterali piane sono destinate all'installazione dei ponti estensimetrici per la misurazione della deformazione assiale (Figura \ref{fig:Posizione estensimetri}).
 
-sulle superfici laterali saranno applicati gli estensimetri, come mostrato in fig.\ref{fig:Posizione estensimetri};
-
- \item il rullo da cuscinetti, realizzato in 100Cr7 (acciaio a tutta tempra tipico dei cuscinetti):
-    
- \begin{figure}[H]
-   \centering
-   \includegraphics[width=0.25\linewidth]{Images/Capitolo_4/Rullo.png}     \caption{Rullo}
-   \label{fig:Rullo}
- \end{figure}
-
- il cui raggio è stato scelto in modo da replicare le condizione di contatto con il dente del T/A;
-
+    \item \textbf{Rullo di contatto (Materiale: 100Cr7):}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.25\linewidth]{Images/Capitolo_4/Rullo.png}
+        \caption{Rullo di interfaccia}
+        \label{fig:Rullo}
+    \end{figure}
+    Realizzato in acciaio a tutta tempra per cuscinetti volventi. Il raggio di curvatura è dimensionato per simulare le rigidezze di interfaccia e l'area di contatto teorica del dente del Test Article.
 \end{itemize}
 
-Di seguito è riportato il provino nella sua interezza:
+L'assieme completo è riportato nelle figure seguenti:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\linewidth]{Images/Capitolo_4/Provino_intero.png}
-    \caption{Provino}
+    \caption{Provino strumentato (Assieme)}
     \label{fig:Provino}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Images/Capitolo_4/Estensimetri.png}
-    \caption{Posizione estensimetri}
+    \caption{Posizionamento dei ponti estensimetrici}
     \label{fig:Posizione estensimetri}
 \end{figure}
+
+Il collegamento strutturale tra il corpo deformabile e il rullo superiore è realizzato mediante saldobrasatura. L'accoppiamento tra il corpo e la base inferiore è invece garantito da collegamenti filettati. I fori passanti sul corpo del provino sono stati dimensionati con un gioco radiale calcolato per consentire una tolleranza di regolazione fine in macchina pari a $\pm 0,5\,mm$. Questa calibrazione geometrica è critica per allineare l'asse di contatto del rullo all'esatta direttrice di carico della ruota dentata (T/A).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{Images/Capitolo_4/Superfici_di_riferimento.png}
-    \caption{Superfici di riferimento}
+    \caption{Superfici di riscontro}
     \label{fig:Superfici di riferimento}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png}
-    \caption{Superfici di riferimento viste all'alto}
+    \caption{Allineamento delle superfici di riferimento}
     \label{fig:Superfici di riferimento viste all'alto}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Capitolo_4/Posizionamento_in_macchina.png}
-    \caption{Posizionamento in macchina del provino}
+    \caption{Integrazione del provino nella macchina di prova}
     \label{fig:Posizionamento in macchina del provino}
 \end{figure}
 
@@ -1289,29 +1313,27 @@ Di seguito è riportato il provino nella sua interezza:
     \label{fig:Posizionamento nel cad}
 \end{figure}
 
-Il collegamento tra il corpo del provino e il rullo avviene mediante una semplice brasatura. Per quando riguarda il collegamento tra la base e il corpo si ha invece un collegamento mediante delle viti mordenti. Il gioco presente tra le viti mordenti e i fori passanti del corpo del provino consentono di avere la possibilità di effettuare una regolazione del posizionamento di $0.5 \text{ mm}$ del provino direttamente in macchina. Questo risulta necessario in quanto risulta rilevante assicurarsi che il contatto tra il rullo cilindro e la pressa del macchinario avvenga esattamente nello stesso punto dove avviene il contatto tra il dente della ruota dentata (il T/A) e la pressa, in modo da replicare il più possibile le stesse condizioni di caricamento che avvengono di fatto durante l'esecuzione della prova a cui viene sottoposto il T/A. Il provino presenta due ampie superfici laterali, sulle quali sono montati due estensimetri come mostrato in fig.\ref{fig:Posizione estensimetri} che andranno a leggere i valori di compressione a cui viene sottoposto il provino.
+La geometria rastremata del corpo centrale ("a coltello") risponde a specifiche esigenze metrologiche. In condizioni operative, l'inevitabile difetto di parallelismo tra la generatrice del rullo e il piano della piastra di carico genera un momento flettente parassita, il quale introduce gradienti di tensione normale lungo la sezione trasversale. La riduzione del momento d'inerzia della sezione centrale diminuisce la rigidezza flessionale del componente, agevolando l'adattamento cinematico. Per annullare matematicamente l'errore sistematico indotto dalla flessione residua, la deformazione assiale effettiva viene calcolata estraendo la media aritmetica dei segnali acquisiti dai due estensimetri installati in modo simmetrico sulle facce opposte del provino, elidendo così le componenti tensionali di segno discorde.
 
-La particolare forma del provino "a coltello" è stata scelta per compensare l'effetto del momento flettente che nasce da un eventuale errore di parallelismo (inevitabile) tra l'asse del cilindro e il piano di contatto del "martello". Durante il contatto quindi, oltre a genersarsi una forza di compressione sul provino, nascerebbe anche una coppia che indurrebbe una componente di momento flettente nel provino. Questo andrebbe a diversificare i valori della tensione normale in direzione assiale (direzione dell'altezza del provino) e di conseguenza anche i valori di deformazione assiale letti dai due estensimetri presenti sulle due facce del provino. Riducendo la sezione centrale del corpo centrale si riduce l'effetto del momento flettente, uniformando quindi il più possibile le tensioni normali assiali sulle due facce. Per ridurre ulteriormente l'errore dovuto al momento flettente, dai valori ottenuti dai due ponti estensimetrici ne se ricava un terzo ottenuto come media aritmetica dei due.\par
+\subsection{Simulazione FEM del comportamento a compressione}
 
-\subsection{Simulazione al FEM prova di compressione}
-
- Tramite l'uso degli Elementi Finiti con il software Ansys è stato simulato il caricamento del provino in campo elastico in presenza di una componente di momento esterno, introdotta come "rotazione imposta" in modo che le estremità del rullo subiscano uno spostamento assiale di $0.02 \text{ mm}$ in direzione opposta (in accordo alle tolleranze introdotte riportate sui disegni tecnici delle varie parti).
+Al fine di validare il posizionamento degli estensimetri e la sensibilità del provino ai disallineamenti, è stata condotta un'analisi strutturale agli elementi finiti (FEM) in campo lineare elastico tramite il solutore Ansys. L'errore di parallelismo è stato modellato imponendo una rotazione asimmetrica: le estremità del rullo di contatto sono state sottoposte a spostamenti assiali  pari a $0,02\,mm$ in direzioni opposte, in coerenza con l'analisi delle tolleranze dimensionali a disegno.
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.45\textwidth}
         \centering
         \includegraphics[width=0.7\textwidth]{Images/Capitolo_4/Vincolo_simmetria.png}
-        \caption{Vincolo di simmetria}
+        \caption{Vincoli di simmetria}
         \label{fig:Vincolo di simmetria}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
     \centering
         \includegraphics[width=0.7\textwidth]{Images/Capitolo_4/Carico_assiale.png}
-        \caption{Carico assiale}
+        \caption{Forza di compressione}
         \label{fig:Carico assiale}
     \end{subfigure}
-    \caption{Simulazione di compressione del provino: simmetria e carico}
+    \caption{Modello FEM: carichi e simmetrie}
     \label{fig:Simulazione di compressione del provino: simmetria e carico}
 \end{figure}
 
@@ -1320,51 +1342,49 @@ La particolare forma del provino "a coltello" è stata scelta per compensare l'e
     \begin{subfigure}{0.45\textwidth}
         \centering
         \includegraphics[width=0.7\textwidth]{Images/Capitolo_4/Rotazione_imposta.png}
-        \caption{Rotazione imposta}
+        \caption{Spostamenti differenziali (Rotazione)}
         \label{fig:Rotazione imposta}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
     \centering
         \includegraphics[width=0.7\textwidth]{Images/Capitolo_4/Vincolo_di_incastro.png}
-        \caption{Vincolo di incastro}
+        \caption{Vincolo di incastro alla base}
         \label{fig:Vincolo di incastro}
     \end{subfigure}
-    \caption{Simulazione di compressione del provino: rotazione e incastro}
+    \caption{Modello FEM: condizioni al contorno e disallineamenti}
     \label{fig:Simulazione di compressione del provino: rotazione e incastro}
 \end{figure}
 
-Dalla simulazione sono stati controllati i valori valore della deformazione estensionale in direzione assiale su entrambe le facce in più punti, per valutare la \textbf{$\varepsilon_{media}$} da confrontare con la $\varepsilon_{nominale}=953 \, \mu \varepsilon$:
+I risultati dell'analisi hanno permesso di mappare il campo di deformazione lungo l'asse longitudinale. Il valore della deformazione assiale media rilevata sulle due facce ($\varepsilon_{media}$) è stato comparato con la deformazione nominale teorica in assenza di momento flettente ($\varepsilon_{nominale} = 953 \, \mu\varepsilon$).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Capitolo_4/Risultati_simulazione.png}
-    \caption{Risultati simulazione}
+    \caption{Campo delle deformazioni assiali ($\mu\varepsilon$)}
     \label{fig:Risultati simulazione}
 \end{figure}
 
 \begin{table}[ht]
 \centering
 \renewcommand{\arraystretch}{1.5}
-\resizebox{\textwidth}{!}{% % Inizia il ridimensionamento
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|c|c|}
 \hline
-\rowcolor{headerblue} \rule{0pt}{35pt} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta in 10,6mm nella\\ direzione assiale\\ sul lato sinistro AC \end{tabular}} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta in 10,6mm nella\\ direzione assiale\\ sul lato destro BD \end{tabular}} \\ \hline
+\rowcolor{headerblue} \rule{0pt}{35pt} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta su $10,6\,mm$\\ direzione assiale (Lato SX)\end{tabular}} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta su $10,6\,mm$\\ direzione assiale (Lato DX)\end{tabular}} \\ \hline
 \rowcolor{rowlight} Errore relativo percentuale & 2,65\% & 1,93\% \\ \hline
-Gradiente $\left[ \frac{\mu\varepsilon}{mm} \right]$ & 2 & 2 \\ \hline
-\end{tabular}% % Chiude la tabular
-} % Chiude resizebox
-\caption{Errore di posizionamento in direzione assiale}
+Gradiente tensionales $\left[ \frac{\mu\varepsilon}{mm} \right]$ & 2 & 2 \\ \hline
+\end{tabular}%
+}
+\caption{Sensibilità della deformazione all'errore di posizionamento assiale}
 \label{tab:Errore di posizionamento in direzione assiale}
 \end{table}
 
-Dalla simulazione si vede come il valore medio letto dagli estensimetri sia vicino rispetto al valore nominale del caso del provino solo in compressione pari a $ 953 \, \mu \varepsilon $.
-
-Anche per quanto riguarda i valori in direzione trasversale si leggono valori molto simili tra loro:
+L'analisi conferma che l'elisione delle componenti flessionali tramite la media dei segnali restituisce un valore convergente rispetto alla deformazione pura di compressione ($953 \, \mu\varepsilon$). L'estensione dell'analisi alla direzione trasversale ha evidenziato un gradiente deformazionale trascurabile.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Capitolo_4/Risulati_in_direzione_trasversale.png}
-    \caption{Risultati in direzione trasversale}
+    \caption{Campo delle deformazioni trasversali}
     \label{fig:Risultati in direzione trasversale}
 \end{figure}
 
@@ -1373,27 +1393,53 @@ Anche per quanto riguarda i valori in direzione trasversale si leggono valori mo
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|l|c|}
 \hline
-\rowcolor{headerblue} \rule{0pt}{25pt} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta in 10mm nella\\ direzione trasversale\end{tabular}} \\ \hline
+\rowcolor{headerblue} \rule{0pt}{25pt} & \color{white}\textbf{\begin{tabular}[c]{@{}c@{}}Variazione letta su $10\,mm$\\ direzione trasversale\end{tabular}} \\ \hline
 \rowcolor{rowlight} Errore relativo percentuale & 0,36\% \\ \hline
-Gradiente $\left[ \frac{\mu\varepsilon}{mm} \right]$ & 0,4 \\ \hline
+Gradiente tensionale $\left[ \frac{\mu\varepsilon}{mm} \right]$ & 0,4 \\ \hline
 \end{tabular}
-\caption{Errore di posizionamento in direzione trasversale}
+\caption{Sensibilità della deformazione all'errore di posizionamento trasversale}
 \label{tab:Errore di posizionamento in direzione trasversale}
 \end{table}
 
-Il posizionamento richiesto agli estensimetri è quello riportato nella seguente immagine, posto a $36.2 \text{ mm}$ a partire dal basso e al centro rispetto alla direzione trasversale:
+Sulla base dei gradienti di deformazione ricavati, la quota ottimale per l'installazione del centro di griglia dell'estensimetro è stata fissata a $36,2\,mm$ dalla base.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\linewidth]{Images/Capitolo_4/Posizionamento_ponti_estensimetrici.png}
-    \caption{Posizionamento dei ponti estensimetrici}
+    \caption{Quote di installazione dei ponti estensimetrici}
     \label{fig:Posizionamento dei ponti estensimetrici}
 \end{figure}
 
-In questo modo, considerando gli estensimetri  posizionati alla quota di $36.2 \text{ mm}$ con una precisione di $ \pm 0.5 \text{ mm}$ ci si aspetterebbe di commettere al più un errore di circa $ 1 \, \mu \varepsilon $  sia sul lato sinistro che destro.\\
-Per quanto riguarda invece il posizionamento in direzione trasversale, si presume che il valore letto risulti essere \textbf{insensibile} alla variazione di posizionamento lungo questo direzione, pertanto risulta sufficiente un semplice posizionamento in mezzeria lungo la direzione trasversale
+Il gradiente assiale estratto dal modello ($2\,\mu\varepsilon/mm$) dimostra che un errore manuale di incollaggio dell'estensimetro pari alla tolleranza di posizionamento standard ($\pm 0,5\,mm$) induce un'incertezza sulla lettura pari a circa $1\,\mu\varepsilon$. Tale valore risulta metrologicamente trascurabile ai fini del calcolo del budget di incertezza della catena di misura. Il limitato gradiente trasversale ($0,4\,\mu\varepsilon/mm$) rende il sistema insensibile alle lievi deviazioni di posizionamento lungo la direzione orizzontale, confermando la robustezza del design proposto.
 
+\subsection{Realizzazione, strumentazione e collaudo}
 
+La transizione del provino strumentato dalla progettazione all'impiego operativo come strumento campione richiede la validazione delle tolleranze di lavorazione, l'applicazione rigorosa dei sensori e la certificazione metrologica.
+
+\subsubsection{Fabbricazione e tolleranze meccaniche}
+La strategia di approvvigionamento e la realizzazione dei componenti strutturali si sono articolate come segue:
+
+\begin{itemize}
+    \item \textbf{Base di supporto:} Realizzata internamente tramite lavorazioni di fresatura su acciaio 39NiCrMo3. La produzione interna ha garantito il controllo diretto sulle tolleranze geoemtriche e dimensionali previste.
+    \item \textbf{Corpo centrale deformabile:} Prodotto su specifica da un'azienda terza su acciaio 39NiCrMo3, garantendone il rispetto per le tolleranze previste da disegno.
+    \item \textbf{Rullo di contatto e integrazione:} Il rullo in acciaio a tutta tempra 100Cr7 è un componente commerciale. L'integrazione strutturale alla sommità del corpo del provino è stata effettuata tramite saldobrasatura.
+\end{itemize}
+
+\subsubsection{Installazione dei ponti estensimetrici}
+L'applicazione dei trasduttori (estensimetri) e la realizzazione dei circuiti di misura sono state affidate a un'ulteriore azienda terza specializzata, che ha curato i seguenti aspetti:
+
+\begin{itemize}
+    \item \textbf{Tracciatura e incollaggio:} Le griglie estensimetriche sono state posizionate sull'asse di mezzeria trasversale a una quota di $36,2\,mm$ dalla base di appoggio. L'operazione di incollaggio è stata eseguita garantendo un errore di posizionamento inferiore a $\pm 0,5\,mm$, limitando l'incertezza derivante dal gradiente tensionale assiale a valori trascurabili ($\le 1\,\mu\varepsilon$).
+    \item \textbf{Cablaggio:} I sensori sono stati cablati in configurazione di ponte di Wheatstone, integrando le protezioni meccaniche e le schermature necessarie a isolare i segnali in tensione dalle interferenze elettromagnetiche ambientali.
+\end{itemize}
+
+\subsubsection{Collaudo e certificazione metrologica}
+Per l'adempimento della funzione di campione primario ai sensi della norma UNI EN ISO/IEC 17025, il provino strumentato è stato sottoposto alla seguente procedura di verifica:
+
+\begin{itemize}
+    \item \textbf{Controllo a banco:} Verifica metrologica del parallelismo  tra la generatrice superiore del rullo di contatto e il piano di appoggio inferiore; riferimento in macchina del corpo centrale sfruttando grazie al gioco di $0.5\,mm$ garantito dai fori passanti presenti sulla base del provino per garantire il corretto posizionamento della  zona di contatto tra rullo e martello.
+    \item \textbf{Taratura certificata:} Il dispositivo completo è stato tarato presso un laboratorio primario accreditato [INSERIRE NOME LABORATORIO] per la determinazione della curva di calibrazione forza-deformazione in compressione nel range operativo fino a $20\,kN$. Il certificato di taratura emesso [INSERIRE NUMERO CERTIFICATO] istituisce la riferibilità metrologica ininterrotta ai campioni primari e quantifica l'incertezza strumentale standard, parametro obbligatorio per la compilazione del budget di incertezza del banco prova STBF.
+\end{itemize}
 
 \subsection{Procedura di verifica}
 
@@ -1405,16 +1451,44 @@ Per quanto riguarda invece il posizionamento in direzione trasversale, si presum
 %----------------------------------------------------------------------------------------
     \newpage
 
+
+    
 \section{CAPITOLO 5 - CONFRONTO CON REQUISITI ISO 17025}
 
 
 
 \subsection{Adeguatezza metrologica}
 
+La validazione delle procedure e dei sistemi di taratura sviluppati richiede la dimostrazione analitica del soddisfacimento dei requisiti prescritti dalla norma UNI EN ISO/IEC 17025 e dalle normative tecniche verticali di settore (BS 7882:2017 e ISO 7500-1:2018).
+
+\textbf{Validazione della rintracciabilità metrologica (Requisito 6.5)}\\
+La riferibilità metrologica è garantita attraverso una catena ininterrotta e documentata di calibrazioni. Per il banco prova Renk, la catena ha origine dalle masse certificate (campioni primari), il cui valore di forza peso è trasferito al torsiometro tramite la geometria nota del bilanciere. Per la macchina STBF, la riferibilità è istituita dal provino strumentato, tarato presso un laboratorio primario, il quale trasferisce il valore vero convenzionale di forza ai ponti estensimetrici e alla cella di carico del sistema.
+
+\textbf{Convalida dei metodi di taratura (Requisito 7.2)}\\
+Le procedure operative redatte minimizzano le influenze parassite. Il protocollo impone sequenze di carico rigorose, l'attesa di tempi di stabilizzazione definiti ($\ge 30\,s$) per l'elisione dei transitori dinamici e il campionamento in configurazioni angolari multiple ($0^\circ$, $120^\circ$, $240^\circ$) per la mediazione degli errori sistematici di montaggio, assicurando ripetibilità e riproducibilità.
+
+\textbf{Valutazione dell'incertezza di misura}\\
+Il budget di incertezza integra i contributi di Tipo A, derivanti dalla ripetibilità sperimentale delle serie di carico, e i contributi di Tipo B. Questi ultimi includono la risoluzione degli indicatori digitali, l'incertezza di calibrazione dei campioni primari (masse e provino) e le tolleranze geometriche di lavorazione (es. interasse del bilanciere). L'incertezza estesa ($U$) calcolata definisce il limite di affidabilità della misurazione.
+
+\textbf{Classificazione dei sistemi}\\
+L'analisi dei dati sperimentali, incrociata con il budget di incertezza, attesta l'idoneità dei sistemi al raggiungimento degli obiettivi prefissati. Le deviazioni massime calcolate per l'errore di ripetibilità, l'errore di interpolazione e l'errore di reversibilità consentono l'assegnazione della Classe 0.1 per i torsiometri del banco Renk, in piena conformità ai parametri della Tabella 1 della norma BS 7882:2017.
 
 
 \subsection{Margini di miglioramento}
 
+L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per incrementare ulteriormente le prestazioni metrologiche e ridurre l'incertezza tipo composta ($u_c$).
+
+\textbf{Riduzione delle incertezze dominanti}\\
+L'analisi di sensibilità sul budget di incertezza permette di isolare i contributi maggiormente impattanti. Qualora l'incertezza geometrica del bilanciere risulti predominante, è prescrivibile un restringimento delle tolleranze di lavorazione (es. restringimento del campo di tolleranza sulle quote di foratura per l'uniball). Se la componente termica risulta critica per la strumentazione, è necessario l'adeguamento del sistema di climatizzazione per contenere le fluttuazioni ambientali entro un range più restrittivo ($\le \pm 0,5^\circ C$).
+
+\textbf{Automazione dell'acquisizione dati}\\
+La transizione dalla registrazione manuale a routine di acquisizione automatizzate in ambiente LabVIEW elimina l'errore umano di lettura (approssimazione del digit fluttuante). L'integrazione software consente inoltre di imporre temporalmente il rigoroso rispetto dei periodi di stabilizzazione meccanica prima del campionamento del segnale.
+
+\textbf{Ottimizzazione del campionamento (Banco Renk)}\\
+Per il torsiometro con fondo scala a $600\,Nm$, l'approvvigionamento di un set integrativo di masse certificate (tagli da $1\,kg$ e $2\,kg$) permetterebbe la composizione di gradini di carico perfettamente equispaziati ai target nominali esatti (20\%, 40\%, 60\%, 80\%, 100\%). Tale configurazione minimizza i residui nell'applicazione dei modelli di interpolazione polinomiale richiesti dalla norma.
+
+\textbf{Monitoraggio della deriva a lungo termine}\\
+L'implementazione di carte di controllo statistiche per il monitoraggio sistematico delle letture di azzeramento e delle derive di fondo scala consente di tracciare la stabilità temporale dei trasduttori. Questo approccio predittivo garantisce la programmazione mirata degli interventi di ricalibrazione prima del decadimento delle prestazioni garantite dalla taratura.
 
 %----------------------------------------------------------------------------------------
     \newpage
