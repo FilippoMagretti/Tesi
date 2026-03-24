@@ -24,30 +24,45 @@
 \contentsline {subsubsection}{\numberline {3.5.3}Condizioni ambientali}{31}{subsubsection.3.5.3}%
 \contentsline {subsubsection}{\numberline {3.5.4}Apparecchiature e campioni di riferimento}{31}{subsubsection.3.5.4}%
 \contentsline {subsubsection}{\numberline {3.5.5}Operazioni preliminari}{32}{subsubsection.3.5.5}%
-\contentsline {subsubsection}{\numberline {3.5.6}Procedura di taratura}{32}{subsubsection.3.5.6}%
+\contentsline {subsubsection}{\numberline {3.5.6}Procedura di taratura}{33}{subsubsection.3.5.6}%
 \contentsline {subsubsection}{\numberline {3.5.7}Taratura nella prima configurazione di riferimento}{34}{subsubsection.3.5.7}%
-\contentsline {subsubsection}{\numberline {3.5.8}Taratura nella seconda configurazione di riferimento}{34}{subsubsection.3.5.8}%
-\contentsline {subsubsection}{\numberline {3.5.9}Taratura nella terza configurazione di riferimento}{35}{subsubsection.3.5.9}%
-\contentsline {subsubsection}{\numberline {3.5.10}Taratura del secondo torsiometro}{36}{subsubsection.3.5.10}%
-\contentsline {subsection}{\numberline {3.6}Analisi dei risultati sperimentali}{36}{subsection.3.6}%
-\contentsline {section}{\numberline {4}CAPITOLO 4 - SISTEMA DI VERIFICA DI CELLA DI CARICO E PONTI ESTENSIMETRICI}{37}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Analisi della catena di misura della forza}{37}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Progettazione del sistema di verifica}{37}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Simulazione FEM del comportamento a compressione}{43}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Realizzazione, strumentazione e collaudo}{46}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Fabbricazione e tolleranze meccaniche}{46}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Installazione dei ponti estensimetrici}{47}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Collaudo e certificazione metrologica}{47}{subsubsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.5}Procedura di verifica}{47}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Analisi delle prestazioni metrologiche}{47}{subsection.4.6}%
-\contentsline {section}{\numberline {5}CAPITOLO 5 - CONFRONTO CON REQUISITI ISO 17025}{48}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Adeguatezza metrologica}{48}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Margini di miglioramento}{48}{subsection.5.2}%
-\contentsline {section}{\numberline {6}CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}{50}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Procedure di gestione della strumentazione}{50}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Tracciabilità metrologica}{50}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Piano di taratura periodica}{50}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Integrazione nel sistema qualità aziendale}{51}{subsection.6.4}%
-\contentsline {section}{\numberline {7}CAPITOLO 7 - CONCLUSIONI}{52}{section.7}%
-\contentsline {section}{\numberline {8}APPENDICI}{53}{section.8}%
-\contentsline {subsection}{\numberline {8.1}APPENDICE A - Propagazione dell'incertezza}{53}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {3.5.8}Taratura nella seconda configurazione di riferimento}{35}{subsubsection.3.5.8}%
+\contentsline {subsubsection}{\numberline {3.5.9}Taratura nella terza configurazione di riferimento}{36}{subsubsection.3.5.9}%
+\contentsline {subsubsection}{\numberline {3.5.10}Taratura del secondo torsiometro}{37}{subsubsection.3.5.10}%
+\contentsline {subsection}{\numberline {3.6}Elaborazione dei dati sperimentali (BS 7882:2017)}{37}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Stima dell'incertezza (BS 7882:2017)}{39}{subsubsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.7}Valutazione dei risultati e Criteri di classificazione (BS 7882:2017)}{40}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Regola decisionale e Incertezza di misura (BS 7882:2017)}{41}{subsubsection.3.7.1}%
+\contentsline {section}{\numberline {4}CAPITOLO 4 - SISTEMA DI VERIFICA PONTI ESTENSIMETRICI}{42}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Analisi delle esigenze metrologiche}{42}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Progettazione del sistema di verifica}{42}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Simulazione FEM del comportamento a compressione}{48}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Realizzazione, strumentazione e collaudo}{51}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Fabbricazione e tolleranze meccaniche}{51}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Installazione dei ponti estensimetrici}{52}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Collaudo e certificazione metrologica}{52}{subsubsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.5}Procedura di verifica}{53}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Scopo e campo di applicazione}{53}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Riferimenti normativi e documentali}{54}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Condizioni ambientali}{54}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}Apparecchiature e campioni di riferimento}{54}{subsubsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.5}Operazioni preliminari}{54}{subsubsection.4.5.5}%
+\contentsline {subsubsection}{\numberline {4.5.6}Esecuzione della misurazione}{55}{subsubsection.4.5.6}%
+\contentsline {subsubsection}{\numberline {4.5.7}\textbf {Procedura operativa passo-passo:}}{56}{subsubsection.4.5.7}%
+\contentsline {subsection}{\numberline {4.6}Elaborazione dei dati sperimentali (UNI EN ISO 7500-1:2018)}{56}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Valutazione dell'incertezza di misura (UNI EN ISO 7500-1:2018, Annex C)}{57}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Incertezza per forze crescenti}{58}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Incertezza per forze decrescenti}{58}{subsubsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.8}Valutazione dei risultati e Criteri di classificazione}{59}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Regola decisionale per la dichiarazione di conformità}{59}{subsubsection.4.8.1}%
+\contentsline {section}{\numberline {5}CAPITOLO 5 - CONFRONTO CON REQUISITI ISO 17025}{60}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Adeguatezza metrologica}{60}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Margini di miglioramento}{60}{subsection.5.2}%
+\contentsline {section}{\numberline {6}CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}{62}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Procedure di gestione della strumentazione}{62}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Tracciabilità metrologica}{62}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Piano di taratura periodica}{62}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Integrazione nel sistema qualità aziendale}{63}{subsection.6.4}%
+\contentsline {section}{\numberline {7}CAPITOLO 7 - CONCLUSIONI}{64}{section.7}%
+\contentsline {section}{\numberline {8}APPENDICI}{65}{section.8}%
+\contentsline {subsection}{\numberline {8.1}APPENDICE A - Propagazione dell'incertezza}{65}{subsection.8.1}%

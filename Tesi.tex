@@ -686,9 +686,9 @@ Le catene di misura del banco STBF sono così strutturate:
 
 \subsection{Analisi delle esigenze metrologiche}
 
-La taratura della catena di misura del banco prova Renk richiede un sistema meccanico in grado applicare al macchinario un valore di coppia fino a $1 \cdot 10^3 \text{ Nm}$. Inoltre, è richiesto a questo sistema che garantisca una procedura ad elevata riproducibilità e ripetibilità e riferibilità.
+La definizione delle specifiche metrologiche per la taratura della catena di misura di coppia del banco prova Renk è finalizzata ad assicurare la riferibilità delle misure di coppia nel campo operativo $0-1000\,\text{Nm}$, puntando alla classificazione in Classe 0,1 secondo la norma \textbf{BS 7882:2017}. La taratura richiede un sistema meccanico in grado applicare al macchinario un valore di coppia fino a $1 \cdot 10^3 \text{ Nm}$. Inoltre, è richiesto a questo sistema che garantisca una procedura ad elevata riproducibilità e ripetibilità e riferibilità.
 
-Si rende necessario l'impiego di campioni di riferimento aventi tracciabilità ininterrotta verso i campioni primari.
+Si rende necessario l'impiego di campioni di riferimento certificati.
 
 
 \subsection{Progettazione del sistema di taratura}
@@ -947,7 +947,7 @@ Nell'insieme il sistema \textbf{bilancino} si presenta come di seguito riportato
 
 \subsection{Realizzazione e collaudo}
 
-Di seguito sono riportati nuovamente i pezzi che compongono i due sotto-sistemi principali:
+Di seguito sono riportati nuovamente i componenti dei due sotto-sistemi principali:
 
 \begin{itemize}
     \item Il bilanciere è composto da:
@@ -999,7 +999,6 @@ Prima dell'impiego operativo per la taratura ufficiale dei torsiometri, l'attrez
 \subsection{Procedura di taratura}
 
 \subsubsection{Scopo e campo di applicazione}
-
 La procedura definisce le modalità operative per la taratura in condizioni statiche delle catene di misura associate ai torsiometri del banco prova Renk. Nello specifico, le catene di acquisizione oggetto di taratura sono due:
 
 \begin{itemize}
@@ -1010,7 +1009,6 @@ La procedura definisce le modalità operative per la taratura in condizioni stat
 La taratura viene eseguita mediante l'impiego di un bilanciere progettato ad hoc internamente all'azienda, in grado di applicare una coppia torcente fino a $1000\,Nm$.
 
 \subsubsection{Riferimenti normativi e documentali}
-
 La procedura è redatta e applicata in conformità ai seguenti standard e linee guida:
 \begin{itemize}
     \item \textbf{UNI EN ISO/IEC 17025:} Requisiti generali per la competenza dei laboratori di prova e di taratura.
@@ -1020,14 +1018,12 @@ La procedura è redatta e applicata in conformità ai seguenti standard e linee 
 \end{itemize}
 
 \subsubsection{Condizioni ambientali}
-
 La taratura deve essere eseguita a una temperatura ambientale stabile compresa tra $18^\circ C$ e $28^\circ C$. La temperatura del dispositivo non deve variare di oltre $1^\circ C$ durante l'intera serie di misurazioni. La temperatura deve essere registrata all'inizio e alla fine di ogni serie di misurazione.
 
 
 \subsubsection{Apparecchiature e campioni di riferimento}
-
+% Elencare le caratteristiche metrologiche minime dei campioni di lavoro e della strumentazione ausiliaria per garantire la riferibilità metrologica.
 La coppia di calibrazione è generata mediante l'applicazione di masse su un bilanciere. Le masse utilizzare sono da $10Kg$, $5kg$ e da $3kg$, e costituiscono i campioni primari di riferimento certificati:
-
 \begin{itemize}
 
     \item I pesi utilizzati per generare una coppia di $600Nm$ sono i seguenti:
@@ -1062,19 +1058,27 @@ La coppia di calibrazione è generata mediante l'applicazione di masse su un bil
 \end{itemize}
 
 \subsubsection{Operazioni preliminari}
-
+% Elencare ispezione visiva, pulizia, verifiche di alimentazione, azzeramento e autotaratura.
 \begin{itemize}
-
     \item verificare che la temperatura della stanza sia compresa tra i $18$°C e $28$°C; 
     \item accendere i PC di controllo, e attendere $15$ minuti per il riscaldamento dell'elettronica;
     \item assicurarsi che la zona di lavoro sia sgombera da possibili inciampi per via dell'ingombro del bilanciere;
     \item montare il bilanciere secondo la $procedura \, di \, montaggio$ ed assicurarsi che sia in posizione orizzontale, in modo che il caricamento del torsiometro avvenga in senso orario guardando il macchinario da davanti (la seconda volta deve essere tale per cui il caricamento risulti essere applicato in senso antiorario guardando il macchinario da davanti) sull'albero di destra;
     \item spostare i pesi certificati nella sala del banco prova Renk;
     \item tracciare un riferimento per l'orientamento angolare iniziale ($0$°) del torsiometro;
+    \item \textbf{Determinazione della risoluzione dell'indicatore della macchina ($r$):} A macchina di prova accesa, con motori, meccanismi di azionamento e sistemi di controllo attivi, mantenere il provino strumentato completamente scarico:
+    
+    \begin{itemize}
+
+        \item la risoluzione $\mathbf{r}$ è pari a un incremento di un digit dell'indicatore numerico;
+
+    \end{itemize}
+
 
 \end{itemize}
 
 \subsubsection{Procedura di taratura}
+% Definire connessioni, numero e distribuzione dei punti di taratura, sequenza dei cicli operativi, ripetizioni per punto e tempi di assestamento.
 A) Nel caso in cui il carico massimo da applicare risulti essere pari a $1000Nm$ generati con $100kg$, la serie di caricamento per la taratura deve essere suddivisa nei seguenti 5 step:
 
 \begin{itemize}
@@ -1139,7 +1143,6 @@ Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni an
 
 Il carico massimo di riferimento per le tarature dei due torsiometri montati sul banco prova Renk deve essere pari al fondo scala minimo dei due torsiometri. Ogni volta che si esegue un incremento o decremento di carico, è necessario aspettare un tempo minimo di $30$ s affinché il sistema si stabilizzi.
 
-
 \subsubsection{Taratura nella prima configurazione di riferimento}
 
 \begin{itemize}
@@ -1174,7 +1177,6 @@ Il carico massimo di riferimento per le tarature dei due torsiometri montati sul
     \label{fig:Seconda serie di caricamento}
 \end{figure}
 
-
 \subsubsection{Taratura nella terza configurazione di riferimento}
 
 \begin{itemize}
@@ -1203,33 +1205,192 @@ La procedura complessiva è sintetizzata nella seguente immagine:
     \label{fig:Serie intera di caricamento}
 \end{figure}
 
+
 \textbf{Infine}, invertire l'orientamento del braccio di leva del bilanciere (dopo aver invertito l'orientamento del braccio il carico dovrebbe risultare essere applicato in senso antiorario), e rieseguire tutti i passaggi precedenti presenti in questa sezione "Procedura di taratura".
+
+
+
+
+
 
 \subsubsection{Taratura del secondo torsiometro}
 
-Eseguire la taratura del secondo torsiometro, seguendo quindi tutti i punti elencati precedentemente, compresa la procedura preliminare, applicando il bilanciere al secondo asse del banco prova Renk.
+Eseguire la taratura del secondo torsiometro, seguendo quindi tutti i punti elencati nel Capitolo 6, applicando il bilancere al secondo asse del banco prova Renk.
 
+\subsection{Elaborazione dei dati sperimentali (BS 7882:2017)}
 
+L'elaborazione dei dati sperimentali acquisiti durante la taratura deve essere condotta in conformità alla Sezione 6 della norma BS 7882:2017. Tutte le elaborazioni matematiche, la valutazione degli errori, il calcolo dell'incertezza e la successiva classificazione devono essere eseguiti in modo rigorosamente indipendente per il senso di caricamento orario e per il senso di caricamento antiorario.
 
-\subsection{Analisi dei risultati sperimentali}
-
-
+I parametri metrologici fondamentali per la successiva classificazione del dispositivo sono determinati mediante le seguenti equazioni.
 
 \begin{itemize}
-    \item Linearità
-    \item Ripetibiilità
-    \item Isteresi   
+    \item \textbf{Limite Inferiore di Calibrazione ($T_{min}$):} Rappresenta il valore minimo di coppia a partire dal quale il dispositivo può essere verificato per una determinata classe. Il calcolo si ottiene mediante la seguente equazione:
+    \begin{equation}
+        T_{min} = a \cdot r
+    \end{equation}
+    dove $r$ è la risoluzione dell'indicatore in unità di coppia e $a$ è il coefficiente relativo alla classe target. Per la \textbf{Classe 0.1}, il coefficiente è $a = 2000$. I punti di taratura scelti non devono essere inferiori a $T_{min}$.
+
+    \item \textbf{Deflessione ($d$):} Per ciascun livello di coppia applicato, la deflessione è calcolata come differenza algebrica tra la lettura dell'indicatore al carico target e la lettura dell'indicatore a coppia nulla (zero iniziale) registrata prima dell'inizio della serie.
+
+    \item \textbf{Ripetibilità relativa ($R_1$):} Esprime l'accordo tra due misurazioni successive eseguite nelle medesime condizioni di carico. È calcolata valutando esclusivamente le serie \textbf{crescenti}. Per ogni livello di coppia, è calcolata come percentuale della deflessione media tra la prima e la seconda serie di carico incrementale:
+    \begin{equation}
+        R_1 = \left| \frac{d_1 - d_2}{\overline{d}_{R1}} \right| \times 100
+    \end{equation}
+    dove $d_1$ e $d_2$ sono le deflessioni della prima e seconda serie crescente per un dato livello di carico, e $\overline{d}_{R1} = \frac{d_1 + d_2}{2}$.
+
+    \item \textbf{Riproducibilità relativa ($R_2$):} Esprime l'accordo tra le misurazioni eseguite al variare delle condizioni (cambio di orientamento angolare), valutando esclusivamente la \textbf{prima serie crescente} di ciascun orientamento. Per ciascun livello di coppia, è calcolata come:
+    \begin{equation}
+        R_2 = \left| \frac{d_{max} - d_{min}}{\overline{d}_{R2}} \right| \times 100
+    \end{equation}
+    dove $d_{max}$ e $d_{min}$ sono rispettivamente la deflessione massima e minima registrate per ogni incremento di carico valutando \textbf{tutte le serie crescenti} eseguite, e $\overline{d}_{R2}$ è la media delle deflessioni lette unicamente durante la prima serie di ciascun orientamento (es. $\overline{d}_{R2} = \frac{d_1 + d_3 + d_4}{3}$ per tre orientamenti, dove $1$-$3$-$4$ sono rispettivamente la $1$°-$3$°-$4$° serie di caricamento).
+
+    \item \textbf{Deflessione residua relativa ($R_0$):} Calcolata utilizzando la massima deflessione residua assoluta a vuoto registrata tra tutte le serie, espressa in percentuale rispetto alla deflessione media calcolata al carico massimo:
+    \begin{equation}
+        R_0 = \frac{d_{0,max}}{\overline{d}_{R2,max}} \times 100
+    \end{equation}
+
+    \item \textbf{Reversibilità relativa ($R_3$):} Parametro determinato unicamente se la procedura prevede cicli di carico decrescenti. È la differenza tra la deflessione per un dato livello di carico nell'unica serie decrescente ($d_{dec}$) e la corrispondente deflessione nell'ultima serie crescente ($d_{inc}$):
+    \begin{equation}
+        R_3 = \frac{d_{dec} - d_{inc}}{d_{inc}} \times 100
+    \end{equation}
+
+    \item \textbf{Errore relativo di indicazione incrementale ($E_i$):} Qualora il dispositivo restituisca letture direttamente in unità di coppia, l'errore si valuta sui dati incrementali rispetto al valore vero convenzionale della coppia applicata ($T$):
+    \begin{equation}
+        E_i = \frac{\overline{d}_{R2} - T}{T} \times 100
+    \end{equation}
+
+    \item \textbf{Errore relativo di interpolazione incrementale ($E_{it}$):} Qualora l'output sia in unità elettriche (es. mV/V), l'errore si valuta rispetto a una curva di best-fit polinomiale interpolata sulle medie incrementali $\overline{d}_{R2}$. La differenza è calcolata tra la deflessione media incrementale $\overline{d}_{R2}$ e il valore calcolato $d_{comp}$ derivante dall'equazione di interpolazione:
+    \begin{equation}
+        E_{it} = \frac{\overline{d}_{R2} - d_{comp}}{d_{comp}} \times 100
+    \end{equation}
+
+    \item \textbf{Errore relativo combinato (incrementale e decrementale) ($E_{id}$ o $E_{itd}$):} Parametri calcolati individuando la deviazione massima cercando il caso peggiore tra \textbf{tutte} le serie di caricamento (incrementali e decrementali). Non concorrono all'assegnazione della classe di precisione, ma costituiscono il parametro $rd$ per determinare l'intervallo di incertezza:
+    \begin{equation}
+        E_{id} = \frac{d_{max} - T}{T} \times 100 \quad \text{oppure} \quad E_{itd} = \frac{d_{max} - d_{comp}}{d_{comp}} \times 100
+    \end{equation}
+    dove $d_{max}$ è la deflessione con massima deviazione rispetto al valore teorico su tutte le serie eseguite.
 \end{itemize}
+
+\subsubsection{Stima dell'incertezza (BS 7882:2017)}
+
+La stima dell'incertezza dei risultati di taratura del torsiometro è calcolata in conformità all'Allegato B (Normativo) della norma BS 7882:2017. Per ogni livello di coppia applicato, l'incertezza tipo composta relativa ($u_c$) è determinata dalla combinazione quadratica delle singole componenti di incertezza standard ($u_i$) espresse in termini relativi:
+
+\begin{equation}
+    u_c = \sqrt{\sum_{i=1}^{n} u_i^2}
+\end{equation}
+
+I contributi di incertezza considerati per il calcolo sono i seguenti:
+
+\begin{itemize}
+    \item \textbf{Incertezza della coppia di taratura ($u_1$):} Incertezza standard associata alla coppia generata dal sistema di taratura.
+
+    \item \textbf{Incertezza di riproducibilità ($u_2$):} Deviazione standard associata alla dispersione delle deflessioni incrementali per i vari orientamenti angolari.
+    \begin{equation}
+        u_2 = \left| \frac{0.5 R_2}{\sqrt{2}} \right|
+    \end{equation}
+
+    \item \textbf{Incertezza di ripetibilità ($u_3$):} Contributo dovuto alla ripetibilità della deflessione misurata tra le serie crescenti eseguite nella medesima configurazione.
+    \begin{equation}
+        u_3 = \left| \frac{0.5 R_1}{\sqrt{3}} \right|
+    \end{equation}
+
+    \item \textbf{Incertezza di risoluzione ($u_4$):} Derivante dalla risoluzione ($r$) dell'indicatore. Essendo la deflessione calcolata come differenza tra due letture (carico applicato e zero iniziale) la risoluzione dell'indicatore è da conteggiare due volte dato che non è possibile azzerare il valore di lettura iniziale. Si assume una distribuzione triangolare.
+    \begin{equation}
+        u_4 = \left| \frac{r}{\sqrt{6}} \right|
+    \end{equation}
     
+    \item \textbf{Incertezza della deflessione residua ($u_5$):} Contributo relativo alla variazione dello zero al termine del ciclo di carico.
+    \begin{equation}
+        u_5 = \left| \frac{0.5 R_0}{\sqrt{3}} \right|
+    \end{equation}
+
+    \item \textbf{Incertezza termica ($u_6$):} Contributo generato dalla variazione della temperatura ambiente ($\Delta t$) durante il ciclo di calibrazione.
+    \begin{equation}
+        u_6 = \left| \frac{K \Delta t}{2\sqrt{3}} \right|
+    \end{equation}
+    dove $K$ è il coefficiente di sensibilità termica relativo del dispositivo espressa in $\% / ^\circ C$.
+
+    \item \textbf{Incertezza per errore di interpolazione ($u_7$):} Da computare esclusivamente se la deflessione è espressa in unità elettriche (es. mV/V) e si impiega un'equazione interpolante. Il calcolo utilizza l'errore incrementale $E_{it}$:
+    \begin{equation}
+        u_7 = \left| \frac{E_{it}}{2} \right|
+    \end{equation}
+
+    \item \textbf{Incertezza di reversibilità ($u_8$):} Contributo da includere esclusivamente qualora il dispositivo sia tarato per misurare anche coppie decrementali.
+    \begin{equation}
+        u_8 = \left| \frac{R_3}{\sqrt{3}} \right|
+    \end{equation}
+\end{itemize}
+
+L'incertezza estesa ($U$) è calcolata moltiplicando l'incertezza tipo composta per un fattore di copertura $k=2$, corrispondente a un livello di confidenza di circa il $95\%$:
+\begin{equation}
+    U = k \cdot u_c
+\end{equation}
+
+Infine, l'intervallo di incertezza di misura relativo ($U'_{interval}$) definisce il range all'interno del quale è probabile che ricada l'errore atteso. È ottenuto sommando l'incertezza estesa al modulo della deviazione relativa ($rd$):
+\begin{equation}
+    U'_{interval} = |rd| + U
+\end{equation}
+dove $rd$ corrisponde all'errore incrementale ($E_i$ o $E_{it}$) nel caso di taratura in assenza di ciclo di scarico, oppure all'errore combinato ($E_{id}$ o $E_{itd}$) nel caso in cui la calibrazione includa carichi decrementali.
+
+\subsection{Valutazione dei risultati e Criteri di classificazione (BS 7882:2017)}
+
+La valutazione finale dei risultati e la conseguente classificazione della catena di misura dei torsiometri sono effettuate confrontando gli errori relativi calcolati con i limiti di tolleranza stabiliti dalla norma BS 7882:2017.
+
+Affinché la catena di misura relativa al torsiometro sia certificata in una determinata classe (es. classe 0.1, come target per la presente procedura), tutti i parametri valutati (esclusivamente sulle serie incrementali per $R_1, R_2, E_i$ o $E_{it}$, più $R_3$ per la reversibilità) per i vari step di carico dal massimo fino al limite inferiore di calibrazione non devono superare i valori massimi consentiti riportati nella Tabella \ref{tab:class_bs7882}. L'intervallo minimo di misurazione per una classe selezionata deve essere dal 20\% al 100\% della coppia massima applicata. 
+
+La classe assegnata al sistema corrisponde alla classe meno restrittiva ottenuta tra tutti i parametri verificati.
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \rowcolor{headerblue}
+        \textcolor{white}{\textbf{Classe}} & \textcolor{white}{\textbf{Ripetibilità}} & \textcolor{white}{\textbf{Riproducibilità}} & \textcolor{white}{\textbf{Interpolazione}} & \textcolor{white}{\textbf{Zero}} & \textcolor{white}{\textbf{Reversibilità}} & \textcolor{white}{\textbf{Indicazione}} \\
+        \rowcolor{headerblue}
+        \textcolor{white}{\textbf{}} & \textcolor{white}{\textbf{($R_1$) [\%]}} & \textcolor{white}{\textbf{($R_2$) [\%]}} & \textcolor{white}{\textbf{($E_{it}$) [\%]}} & \textcolor{white}{\textbf{($R_0$) [\%]}} & \textcolor{white}{\textbf{($R_3$) [\%]}} & \textcolor{white}{\textbf{($E_i$) [\%]}} \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{0.05} & 0.025 & 0.05 & $\pm 0.025$ & $\pm 0.01$ & $\pm 0.062$ & $\pm 0.025$ \\
+        \hline
+        \textbf{0.1} & 0.05 & 0.10 & $\pm 0.05$ & $\pm 0.02$ & $\pm 0.125$ & $\pm 0.05$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{0.2} & 0.10 & 0.20 & $\pm 0.10$ & $\pm 0.04$ & $\pm 0.250$ & $\pm 0.10$ \\
+        \hline
+        \textbf{0.5} & 0.25 & 0.50 & $\pm 0.25$ & $\pm 0.10$ & $\pm 0.625$ & $\pm 0.25$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{1.0} & 0.50 & 1.00 & $\pm 0.50$ & $\pm 0.20$ & $\pm 1.250$ & $\pm 0.50$ \\
+        \hline
+        \textbf{2.0} & 1.00 & 2.00 & $\pm 1.00$ & $\pm 0.40$ & $\pm 2.500$ & $\pm 1.00$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{5.0} & 2.50 & 5.00 & $\pm 2.50$ & $\pm 1.00$ & $\pm 6.250$ & $\pm 2.50$ \\
+        \hline
+    \end{tabular}
+    }
+    \caption{Criteri per la classificazione dei dispositivi di misurazione della coppia (BS 7882:2017, Tabella 2).}
+    \label{tab:class_bs7882}
+\end{table}
+
+\subsubsection{Regola decisionale e Incertezza di misura (BS 7882:2017)}
+
+In conformità al punto 7.1.3 della norma BS 7882:2017, le incertezze di misura ottenute durante la calibrazione non devono essere utilizzate per determinare la classificazione del dispositivo.
+
+La dichiarazione di conformità a una specifica classe si basa esclusivamente sul confronto diretto tra i valori misurati o calcolati dei parametri ($R_1, R_2, E_{it}, R_0, R_3, E_i$) e i limiti percentuali fissati nella Tabella \ref{tab:class_bs7882}. Non viene applicata alcuna decurtazione (banda di guardia) ai limiti di accettazione per compensare il valore dell'incertezza.
+
+Il parametro $U'_{interval}$ (intervallo di incertezza di misura relativo) viene calcolato e riportato nel certificato di taratura al solo scopo di definire il range entro cui è probabile che ricada l'errore atteso per ciascun livello di coppia, soddisfacendo in questo modo i requisiti di riferibilità metrologica imposti dalla norma UNI EN ISO/IEC 17025.   
 
 %----------------------------------------------------------------------------------------
     \newpage
 
-\section{CAPITOLO 4 - SISTEMA DI VERIFICA DI CELLA DI CARICO E PONTI ESTENSIMETRICI}
+\section{CAPITOLO 4 - SISTEMA DI VERIFICA PONTI ESTENSIMETRICI}
 
+\subsection{Analisi delle esigenze metrologiche}
 
-
-\subsection{Analisi della catena di misura della forza}
+La definizione delle specifiche metrologiche per la verifica delle catene di misura di forza della macchina STBF è finalizzata a garantire la riferibilità delle misure di compressione nel campo operativo $0-20\,\text{kN}$, puntando alla classificazione del sistema secondo i requisiti della norma \textbf{ISO 7500-1:2018}. La procedura richiede l'impiego di un sistema meccanico (provino strumentato) capace di agire da \textbf{strumento campione} fino a $20\,\text{kN}$, replicando le condizioni di interfaccia e di contatto tra Test Article e macchinario, in modo da simulare il più fedelmente possibile le condizioni di caricamento. È richiesto che tale sistema assicuri elevati standard di ripetibilità e riproducibilità, minimizzando le incertezze derivanti da disallineamenti o carichi parassiti.
 
 
 \subsection{Progettazione del sistema di verifica}
@@ -1450,9 +1611,280 @@ Per l'adempimento della funzione di campione primario ai sensi della norma UNI E
 
 \subsection{Procedura di verifica}
 
+\subsubsection{Scopo e campo di applicazione}
+% Definire l'oggetto della procedura, le tipologie di strumenti in esame, le grandezze fisiche misurate e il campo di misura (range) coperto, incluse limitazioni del metodo.
+La presente procedura definisce le modalità operative per la taratura delle catene di misura associate ai ponti estensimetrici \textbf{U1} ed \textbf{U3} del banco prova STBF. Nello specifico, le catene di acquisizione coinvolte in questa procedura sono se le seguenti:
+
+\begin{itemize}
+    \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
+    \item \textbf{Catena di misura U1, U3:} Ponti estensimetrici U1, U3 $\rightarrow$ Modulo convertitore A/D (NI 9237) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
+\end{itemize}
+
+La determinazione del carico applicato al T/A (Test Article) in condizioni statiche si articola su due metodologie concorrenti:
+
+\begin{enumerate}
+    \item \textbf{Misurazione indiretta:} Elaborazione differenziale tra il segnale della forza totale applicata in condizioni statiche, rilevato dalla cella di carico F1, e il segnale del ponte estensimetrico U3, rappresentativo della frazione di carico trasferita e assorbita dal telaio:
+    \begin{equation}
+        F_{T/A} = F1 - U3
+    \end{equation}
+    
+    \item \textbf{Misurazione diretta (ridondante):} Rilevamento puntuale del carico applicato al T/A tramite il ponte estensimetrico U1:
+    \begin{equation}
+        F_{T/A} = U1
+    \end{equation}
+    
+    Uguagliando le due relazioni, si ottiene l'equazione di bilancio mediante la quale è possibile validare e tarare la catena di misura del ponte estensimetrico U1 rispetto ai riferimenti:
+    \begin{equation}
+        U1 = F1 - U3
+    \end{equation}
+\end{enumerate}
+
+La procedura stabilisce i criteri per il confronto sistematico tra il modello di misurazione indiretta e quello diretto mediata dal \textbf{Provino Strumentato}. L'architettura ridondante è necessaria per validare la coerenza delle letture e identificare eventuali derive o perdite di calibrazione nei singoli trasduttori, prevenendo la compromissione metrologica dell'intero sistema di prova.
+
+La taratura viene eseguita mediante l'impiego di un provino strumentato certificato, con un campo di misura in compressione fino a $20\,kN$. Durante la procedura, il provino strumentato sostituisce fisicamente il T/A (Test Article) all'interno del banco prova, agendo da campione di trasferimento. La misurazione fornita dal provino strumentato costituisce il valore vero convenzionale del carico applicato al T/A, stabilendo il riferimento metrologico assoluto rispetto al quale vengono confrontate e validate le equazioni di misurazione diretta (U1) e indiretta (F1 - U3).
+
+\subsubsection{Riferimenti normativi e documentali}
+% Elencare le linee guida internazionali (es. EURAMET, OIML, EA), le norme tecniche (es. ISO, IEC) o i manuali operativi dei costruttori.
+La presente procedura è redatta e applicata in conformità ai seguenti standard e linee guida internazionali:
+
+\begin{itemize}
+    \item \textbf{UNI EN ISO/IEC 17025:} Requisiti generali per la competenza dei laboratori di prova e di taratura.
+    \item \textbf{ISO/IEC Guide 98-3 (GUM):} Uncertainty of measurement -- Part 3: Guide to the expression of uncertainty in measurement, per la procedura di stima e analisi dei dati.
+    \item \textbf{ISO 7500-1:2018:} Metallic materials — Calibration and verification of static uniaxial testing machines — Part 1: Tension/compression testing machines — Calibration and verification of the force-measuring system.
+\end{itemize}
+
+\subsubsection{Condizioni ambientali}
+% Specificare i parametri ambientali vincolanti (temperatura, umidità relativa, pressione atmosferica), le tolleranze ammesse e i tempi di acclimatamento.
+Conformemente alla sezione 6.4.2 della norma ISO 7500-1:2018, la taratura deve essere eseguita a una temperatura ambientale compresa tra 10 °C e 35 °C. È richiesto un periodo di tempo sufficiente per consentire alla strumentazione di prova e del banco di raggiungere una temperatura stabile.
+
+La temperatura della strumentazione non deve variare di oltre 2 °C dall'inizio alla fine di ciascuna serie di calibrazione. La temperatura alla quale viene effettuata la taratura deve essere registrata nel rapporto di verifica.
+
+\subsubsection{Apparecchiature e campioni di riferimento}
+% Elencare le caratteristiche metrologiche minime dei campioni di lavoro e della strumentazione ausiliaria per garantire la riferibilità metrologica.
+La taratura viene eseguita utilizzando il provino strumentato, progettato internamenteall'azienda e prodotto da terzi. La taratura del provino è stata eseguita da INSERIRETARATURADELPROVINOSTRUMENTATO.
+
+\subsubsection{Operazioni preliminari}
+% Elencare ispezione visiva, pulizia, verifiche di alimentazione, azzeramento e autotaratura.
+La fase preparatoria deve essere completata rigorosamente prima dell'inizio delle misurazioni per la taratura. Gli operatori devono attenersi alla seguente sequenza:
+
+\begin{enumerate}
+
+    \item \textbf{Ispezione generale:}
+    
+    \begin{itemize}
+
+        \item Verificare l'assenza di usura pronunciata e difetti negli elementi di guida e allentamenti nei fissaggi strutturali.
+        
+        \item Accertare l'assenza di interferenze ambientali (vibrazioni, disturbi di alimentazione elettrica, variazioni termiche locali).
+        
+    \end{itemize}
+
+    \item \textbf{Determinazione della risoluzione dell'indicatore della macchina ($r$):} A macchina di prova accesa, con motori, meccanismi di azionamento e sistemi di controllo attivi, mantenere il provino strumentato completamente scarico:
+    
+    \begin{itemize}
+
+        \item se i valori dell'indicatore di misura del banco non fluttuano, la risoluzione $\mathbf{r}$ è pari a un incremento di un digit dell'indicatore numerico;
+
+        \item se i valori mostrano fluttuazioni, la risoluzione effettiva $\mathbf{r}$ si calcola assumendola pari alla metà dell'ampiezza di fluttuazione misurata, sommata a un incremento di un digit.(la corretta definizione di $r$ è vincolante per calcolare e validare il limite inferiore di calibrazione del macchinario).
+    
+    \end{itemize}
+
+    \item \textbf{Allineamento:} Installare il provino strumentato di riferimento (cella di carico campione) assicurando il corretto allineamento assiale per minimizzare le componenti di flessione parassita.
+    
+    \item \textbf{Condizionamento (Precarico):} Immediatamente prima della procedura di taratura, applicare una forza crescente da zero fino al carico massimo operativo ($20\,kN$) e scaricare completamente. Ripetere questo ciclo di precarico per almeno tre volte consecutive per assestare la meccanica e i sensori.
+    
+
+\end{enumerate}
+
+\subsubsection{Esecuzione della misurazione}
+% Definire connessioni, numero e distribuzione dei punti di taratura, sequenza dei cicli operativi, ripetizioni per punto e tempi di assestamento.
+
+La serie di caricamento per il range fino a $20\,kN$ è suddivisa in cinque livelli discreti di forza da applicare, equispaziati tra il 20\% e il 100\% del fondo scala calibrato. I target operativi sono:
+
+\begin{itemize}
+    \item $4\,kN$  ($20\%$); 
+    \item $8\,kN$  ($40\%$);
+    \item $12\,kN$ ($60\%$); 
+    \item $16\,kN$ ($80\%$);
+    \item $20\,kN$ ($100\%$).
+\end{itemize} 
+
+La procedura prescrive quindi l'esecuzione di \textbf{tre serie distinte} di misurazioni suddivise in 5 step:
+
+\begin{itemize}
+
+    \item $1$° $=$ una serie crescente;
+
+    \item $2$° $=$ una serie crescente;
+
+    \item $3$° $=$ una serie crescente $+$ una serie decrescente;
+
+\end{itemize}
 
 
-\subsection{Analisi delle prestazioni metrologiche}
+La taratura è condotta applicando una forza nominale basata sull'indicatore del campione di riferimento. L'operatore manovra il sistema di attuazione arrestando l'incremento di carico nel momento in cui il display del provino strumentato raggiunge il valore nominale previsto per il gradino in corso. A carico stabilizzato, si rileva e si registra la forza effettiva leggendo il dato corrispondente sul display della macchina di prova (banco STBF).
+
+\subsubsection{\textbf{Procedura operativa passo-passo:}}
+
+\begin{enumerate}
+    
+    \item \textbf{Azzeramento iniziale:} Scaricare completamente il sistema. Attendere circa $30\,s$ dalla rimozione totale della forza. Verificare o impostare a zero le letture degli indicatori prima di iniziare la serie (registrazione dello zero).
+    
+    \item \textbf{Caricamento al primo step:} Applicare la forza in modo progressivo e lento fino al raggiungimento del primo livello nominale target ($4\,kN$).
+    
+    \item \textbf{Registrazione dei dati:} A stabilizzazione avvenuta, registrare i seguenti valori:
+    
+    \begin{itemize}
+        \item Il valore di riferimento indicato dal provino strumentato ($F$).
+        \item Il valore di forza calcolato dalla catena di misurazione indiretta.
+        \item Il valore di forza misurato dalla catena di misurazione diretta.
+    \end{itemize}
+
+    \item \textbf{Progressione ai livelli successivi:} Incrementare la forza al livello target successivo ($8\,kN$) e ripetere la fase di registrazione descritta al \textbf{punto 3}. Continuare la progressione per i livelli a $12\,kN$, $16\,kN$ e $20\,kN$ ripetendo per ogni livello la registrazione  dei dati come descritto al \textbf{punto 3}. La forza deve essere applicata in modo strettamente crescente, senza scaricare il sistema tra i singoli gradini.
+    
+    \item \textbf{Scarico e lettura residua dello zero:} Dopo la registrazione al carico massimo ($20\,kN$), rimuovere gradualmente e completamente la forza. Attendere circa $30\,s$ e registrare l'indicazione residua degli strumenti. Per la serie decrescente, una volta rimosso il carico corrispondente all'ultimo step, attendere $30\,s$ e registrare l'indicazione residua degli strumenti.
+    
+    \item \textbf{Iterazione delle serie:} Ripetere integralmente i passaggi da \textbf{1} a \textbf{5} per un totale di tre serie di misurazioni. Al termine di ogni serie di misurazione, estrarre il provino dal macchinario e riposizionarlo successivamente, in modo a rendere indipendenti tra loro le serie di caricamento.
+    
+\end{enumerate}
+
+\subsection{Elaborazione dei dati sperimentali (UNI EN ISO 7500-1:2018)}
+
+L'elaborazione dei dati sperimentali acquisiti deve essere condotta in conformità alla norma UNI EN ISO 7500-1:2018. I parametri metrologici fondamentali per la classificazione del sistema di misura delle forze sono determinati mediante le seguenti equazioni.
+
+\begin{itemize}
+    \item \textbf{Risoluzione relativa ($a$):} La risoluzione relativa $a$ dell'indicatore di forza da verificare è definito dalla seguente relazione:
+    \begin{equation}
+        a=\frac{r}{F_i} \cdot 100
+    \end{equation}
+    dove $r$ è la risoluzione dell'indicatore di forza da verificare, e $F_i$ è la forza indicata dallo stesso indicatore di forza.
+    
+    \item \textbf{Errore relativo di indicazione ($q$):} Per ogni livello di carico applicato di ciascuna serie crescente, calcolare l'Errore relativo di indicazione. L'errore quantifica lo scostamento tra la forza indicata dalla macchina e la forza vera convenzionale misurata dallo strumento campione.
+    \begin{equation}
+        q_1 = \frac{F_{i1} - F_1}{F_1} \times 100
+    \end{equation}
+    \begin{equation}
+         q_2 = \frac{F_{i2} - F_2}{F_2} \times 100
+    \end{equation}
+    \begin{equation}
+         q_3 = \frac{F_{i3} - F_3}{F_3} \times 100
+    \end{equation}  
+    \begin{equation}
+         q = \frac{q_1+q_2+q_3}{3}
+    \end{equation}  
+        dove $F_{ij}$ è un livello di forza della $j$-esima serie indicata dall'indicatore da verificare, $F_j$ è il valore vero della forza applicata della $j$-esima serie letta sullo strumento campione. La $1$° $2$° e $3$° serie sono quelle crescenti.
+        
+    \item \textbf{Errore relativo di ripetibilità ($b$):} Esprime la dispersione dei valori per misurazioni ripetute allo stesso livello di carico valutando esclusivamente le tre serie crescenti.
+    \begin{equation}
+        b = q_{max}-q_{min}
+    \end{equation}
+    dove $q_{max}$ e $q_{min}$ sono rispettivamente il valore massimo e minimo degli errori di indicazione $q_1, q_2, q_3$ calcolati per il medesimo livello di forza.
+
+    \item \textbf{Errore relativo di reversibilità ($v$):} Valutato unicamente se è richiesta la verifica a carico decrescente per la determinazione dell'isteresi.
+    \begin{equation}
+        v = \frac{F_i' - F_i}{F} \times 100
+    \end{equation}
+    dove $F_i'$ è la forza indicata con carico decrescente, $F_i$ è la forza indicata con carico crescente nell'ultima serie eseguita, e $F$ è il valore vero della forza di riferimento per il medesimo livello di carico.
+
+    \item \textbf{Errore relativo di zero ($f_0$):} Quantifica la deviazione dell'indicatore a scarico avvenuto.
+    \begin{equation}
+        f_0 = \frac{F_{i0}}{F_N} \times 100
+    \end{equation}
+    dove $F_{i0}$ è la lettura residua dell'indicatore di forza da verificare dopo la rimozione totale della forza e $F_N$ è il fondo scala di misura della macchina.
+\end{itemize}
+
+
+\subsection{Valutazione dell'incertezza di misura (UNI EN ISO 7500-1:2018, Annex C)}
+
+La stima dell'incertezza relativa di calibrazione è calcolata in conformità all'Allegato C della norma. I calcoli sono distinti tra i dati acquisiti in fase crescente e decrescente.
+
+\subsubsection{Incertezza per forze crescenti}
+L'incertezza tipo combinata relativa percentuale ($u_c$) per ciascun punto di taratura in fase crescente è ottenuta mediante la combinazione quadratica delle singole componenti:
+
+\begin{equation}
+    u_c = \sqrt{u_{std}^2 + u_{res}^2 + u_{rep}^2}
+\end{equation}
+
+I contributi di incertezza (espressi in percentuale) sono i seguenti:
+
+\begin{itemize}
+    \item \textbf{Incertezza dello strumento campione ($u_{std}$):} Incertezza standard della forza di calibrazione applicata, dedotta dal certificato di taratura dello strumento campione.
+    \item \textbf{Incertezza di risoluzione ($u_{res}$):} L'incertezza relativa alla risoluzione è data dalla combinazione di due contributi: la risoluzione relativa $a_F$ calcolata al valore di carico applicato e la risoluzione relativa $a_z$ al carico nullo.
+    \begin{equation}
+         u_{res} = \sqrt{ \left[\frac{a_F}{2\sqrt{3}}\right]^2 + \left[\frac{a_z}{2\sqrt{3}}\right]^2 }   
+    \end{equation}
+
+    \item \textbf{Incertezza di ripetibilità ($u_{rep}$):} Calcolata sulla base della deviazione standard sperimentale dei valori misurati per ciascun livello di forza nelle serie crescenti.
+    \begin{equation}
+        u_{rep} = \sqrt{\frac{1}{n(n-1)} \sum_{i=1}^{n} (q_i - q)^2}
+    \end{equation}
+    dove $n=3$ è il numero di serie incrementali; $q_i$ è l'errore misurato al valore di carico nominale (\%); $q$ è l'errore medio misurato (\%).
+\end{itemize}
+
+L'incertezza estesa relativa ($U$) per le forze crescenti è determinata applicando un fattore di copertura $k=2$, corrispondente a un livello di confidenza di circa il $95\%$:
+\begin{equation}
+    U = k \cdot u_c
+\end{equation}
+
+L'intervallo dell'errore relativo medio atteso per le forze crescenti ($E$) è stimato come:
+\begin{equation}
+    E = q \pm U
+\end{equation}
+
+\subsubsection{Incertezza per forze decrescenti}
+Per le forze decrescenti, l'incertezza tipo combinata ($u_c'$) è calcolata includendo i contributi dell'errore di indicazione incrementale ($q$) e dell'errore di reversibilità ($v$). Assumendo che il contributo di incertezza di $v$ sia identico a quello di $q$, la relazione è puramente analitica:
+\begin{equation}
+    u_c' = \sqrt{2} \cdot u_c
+\end{equation}
+
+L'incertezza estesa relativa per le forze decrescenti ($U'$) è determinata applicando il medesimo fattore di copertura $k=2$:
+\begin{equation}
+    U' = k \cdot u_c'
+\end{equation}
+
+L'intervallo dell'errore relativo medio atteso per le forze decrescenti ($E'$) definisce l'intervallo di probabilità del comportamento del sistema in regime di isteresi, ed è calcolato come:
+\begin{equation}
+    E' = (q + v) \pm U'
+\end{equation}
+
+\subsection{Valutazione dei risultati e Criteri di classificazione}
+La valutazione finale dei risultati e la conseguente classificazione della catena di misura del banco prova sono effettuate confrontando gli errori relativi calcolati con i limiti di tolleranza prestabiliti. I criteri di accettazione sono conformi alla Tabella 2 della norma UNI EN ISO 7500-1:2018.
+
+Affinché la macchina di prova o lo specifico intervallo di misura siano certificati in una determinata classe, tutti i parametri valutati (errore di indicazione $q$, ripetibilità $b$, reversibilità $v$, errore di zero $f_0$ e risoluzione $a$) devono soddisfare contemporaneamente i requisiti massimi consentiti per quella classe. La classe assegnata al sistema corrisponde alla classe meno restrittiva ottenuta tra tutti i parametri verificati.
+
+Di seguito si riportano i valori massimi consentiti (espressi in percentuale) per le classi di precisione previste dalla norma:
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \rowcolor{headerblue}
+        \textcolor{white}{\textbf{Classe}} & \textcolor{white}{\textbf{Indicazione ($q$)}} & \textcolor{white}{\textbf{Ripetibilità ($b$)}} & \textcolor{white}{\textbf{Reversibilità ($v$)}} & \textcolor{white}{\textbf{Zero ($f_0$)}} & \textcolor{white}{\textbf{Risoluzione ($a$)}} \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{0,5} & $\pm 0,5$ & $0,5$ & $\pm 0,75$ & $\pm 0,05$ & $0,25$ \\
+        \hline
+        \textbf{1} & $\pm 1,0$ & $1,0$ & $\pm 1,5$ & $\pm 0,1$ & $0,5$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{2} & $\pm 2,0$ & $2,0$ & $\pm 3,0$ & $\pm 0,2$ & $1,0$ \\
+        \hline
+        \textbf{3} & $\pm 3,0$ & $3,0$ & $\pm 4,5$ & $\pm 0,3$ & $1,5$ \\
+        \hline
+    \end{tabular}
+    }
+    \caption{Valori massimi consentiti per le caratteristiche del sistema di misurazione della forza (ISO 7500-1:2018, Tabella 2).}
+    \label{tab:classificazione_iso}
+\end{table}
+
+\subsubsection{Regola decisionale per la dichiarazione di conformità}
+In relazione all'incertezza di misura e alla dichiarazione di conformità, la norma UNI EN ISO 7500-1:2018 stabilisce che i requisiti del documento limitano già intrinsecamente le componenti principali di incertezza. 
+
+Conformemente al Capitolo 7 della norma, l'incertezza stimata ($U$) è esplicitamente tenuta in considerazione dal metodo di classificazione stesso e non deve essere utilizzata per ridurre ulteriormente le tolleranze ammesse. Ridurre l'accuratezza ammissibile sottraendo il valore dell'incertezza (applicazione di una banda di guardia) comporterebbe un doppio conteggio ("double counting") dell'incertezza stessa. 
+
+La classificazione finale del banco prova è pertanto stabilita dal solo confronto diretto tra gli scostamenti misurati durante la taratura e i limiti indicati in Tabella \ref{tab:classificazione_iso}.
 
 
 %----------------------------------------------------------------------------------------
@@ -1582,6 +2014,9 @@ Nei casi in cui la funzione di $Y$ sia fortemente non lineare, risulta necessari
 \begin{equation}
     u^2=\sum_{i=1}^{n} \left[ \left( \frac{\partial Y}{\partial X_i} \right)^2 \cdot u_i^2 \right]+\sum_{i=1}^{n} \sum_{j=1}^{n} \left[ \frac{1}{2} \cdot \left( \frac{\partial^2 Y}{\partial X_i \partial X_j} \right)^2 + \frac{\partial Y}{\partial X_i} \cdot \frac{\partial^3 Y}{\partial X_i \partial X_j^2} \right] \cdot u^2_i \cdot u^2_j
 \end{equation}
+
+I conti analitici per l'ottenimento delle formule
+possono essere trovati al capitolo 5 della norma JCGM 100:2008 -GUM-.
 %----------------------------------------------------------------------------------------
 
 
