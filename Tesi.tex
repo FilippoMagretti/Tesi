@@ -1134,7 +1134,7 @@ B)  Nel caso in cui il carico massimo da applicare risulti essere pari a $600Nm$
 
 La taratura dei torsiometri deve essere eseguita in entrambi i versi di caricamento degli stessi, in senso orario ed antiorario. Dai dati dei pesi certificati, e dalla misura della lunghezza del braccio di leva del bilanciere, siamo in grado di eseguire una taratura che ricade nella  \textbf{classe del dispositivo della coppia da tarare} pari a $\mathbf{0.1}$, come indicato nella norma  BS 7882:201.
 
-Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni angolalri differenti del torsiometro:
+Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni angolari differenti del torsiometro:
 \begin{itemize}
     \item la prima posizione identifica la posizione di riferimento di $0$°;
     \item la seconda va eseguita ruotando di $120$° il torsiometro in senso orario;
@@ -1264,12 +1264,20 @@ I parametri metrologici fondamentali per la successiva classificazione del dispo
         E_{it} = \frac{\overline{d}_{R2} - d_{comp}}{d_{comp}} \times 100
     \end{equation}
 
-    \item \textbf{Errore relativo combinato (incrementale e decrementale) ($E_{id}$ o $E_{itd}$):} Parametri calcolati individuando la deviazione massima cercando il caso peggiore tra \textbf{tutte} le serie di caricamento (incrementali e decrementali). Non concorrono all'assegnazione della classe di precisione, ma costituiscono il parametro $rd$ per determinare l'intervallo di incertezza:
+    \item \textbf{Errore relativo di indicazione incrementale e decrementale ($E_{id})$:} Nel caso in cui siano utilizzate serie di carimento incrementali e decrementali, qualora il dispositivo restituisca letture direttamente in unità di coppia, l'errore si calcola con i parametri calcolati individuando la deviazione massima ($d_{max})$ cercando il caso peggiore tra \textbf{tutte} le serie di caricamento (incrementali e decrementali). Non concorrono all'assegnazione della classe di precisione, ma costituiscono il parametro $rd$ per determinare l'intervallo di incertezza:
     \begin{equation}
-        E_{id} = \frac{d_{max} - T}{T} \times 100 \quad \text{oppure} \quad E_{itd} = \frac{d_{max} - d_{comp}}{d_{comp}} \times 100
+        E_{id} = \frac{d_{max} - T}{T} \times 100 
     \end{equation}
-    dove $d_{max}$ è la deflessione con massima deviazione rispetto al valore teorico su tutte le serie eseguite.
+    dove $d_{max}$ è la deflessione con massima deviazione rispetto al valore teorico su tutte le serie eseguite, incrementali e decrementali.
+    
+    \item \textbf{Errore relativo di interpolazione incrementale e decrementale($E_{itd}$):} Nel caso in cui siano utilizzate serie di carimento incrementali e decrementali, qualora l'output sia in unità elettriche (es. mV/V), l'errore si valuta rispetto a una curva di best-fit polinomiale interpolata sulle medie incrementali $\overline{d}_{R2}$. La differenza è calcolata tra la deflessione massima incrementale $d_{max}$ e il valore calcolato $d_{comp}$ derivante dall'equazione di interpolazione:
+    \begin{equation}
+        E_{itd} = \frac{d_{max} - d_{comp}}{d_{comp}} \times 100
+    \end{equation}
+
 \end{itemize}
+
+
 
 \subsubsection{Stima dell'incertezza (BS 7882:2017)}
 
@@ -1282,7 +1290,7 @@ La stima dell'incertezza dei risultati di taratura del torsiometro è calcolata 
 I contributi di incertezza considerati per il calcolo sono i seguenti:
 
 \begin{itemize}
-    \item \textbf{Incertezza della coppia di taratura ($u_1$):} Incertezza standard associata alla coppia generata dal sistema di taratura.
+    \item \textbf{Incertezza della coppia di taratura ($u_1$):} Incertezza standard associata alla coppia generata dal sistema di taratura, già calcolata precedentemente per l'identificazione della classe del dispositivo della coppia da tarare.
 
     \item \textbf{Incertezza di riproducibilità ($u_2$):} Deviazione standard associata alla dispersione delle deflessioni incrementali per i vari orientamenti angolari.
     \begin{equation}
@@ -1679,7 +1687,7 @@ La fase preparatoria deve essere completata rigorosamente prima dell'inizio dell
         
     \end{itemize}
 
-    \item \textbf{Determinazione della risoluzione dell'indicatore della macchina ($r$):} A macchina di prova accesa, con motori, meccanismi di azionamento e sistemi di controllo attivi, mantenere il provino strumentato completamente scarico:
+    \item \textbf{Risoluzione dell'indicatore della macchina ($r$):} A macchina di prova accesa, con motori, meccanismi di azionamento e sistemi di controllo attivi, mantenere il provino strumentato completamente scarico:
     
     \begin{itemize}
 
@@ -1724,7 +1732,7 @@ La procedura prescrive quindi l'esecuzione di \textbf{tre serie distinte} di mis
 
 La taratura è condotta applicando una forza nominale basata sull'indicatore del campione di riferimento. L'operatore manovra il sistema di attuazione arrestando l'incremento di carico nel momento in cui il display del provino strumentato raggiunge il valore nominale previsto per il gradino in corso. A carico stabilizzato, si rileva e si registra la forza effettiva leggendo il dato corrispondente sul display della macchina di prova (banco STBF).
 
-\subsubsection{\textbf{Procedura operativa passo-passo:}}
+\subsubsection{Procedura operativa passo-passo:}
 
 \begin{enumerate}
     
@@ -1904,7 +1912,7 @@ La validazione delle procedure e dei sistemi di taratura sviluppati richiede la 
 La riferibilità metrologica è garantita attraverso una catena ininterrotta e documentata di calibrazioni. Per il banco prova Renk, la catena ha origine dalle masse certificate (campioni primari), il cui valore di forza peso è trasferito al torsiometro tramite la geometria nota del bilanciere. Per la macchina STBF, la riferibilità è istituita dal provino strumentato, tarato presso un laboratorio primario, il quale trasferisce il valore vero convenzionale di forza ai ponti estensimetrici e alla cella di carico del sistema.
 
 \textbf{Convalida dei metodi di taratura (Requisito 7.2)}\\
-Le procedure operative redatte minimizzano le influenze parassite. Il protocollo impone sequenze di carico rigorose, l'attesa di tempi di stabilizzazione definiti ($\ge 30\,s$) per l'elisione dei transitori dinamici e il campionamento in configurazioni angolari multiple ($0^\circ$, $120^\circ$, $240^\circ$) per la mediazione degli errori sistematici di montaggio, assicurando ripetibilità e riproducibilità.
+Le procedure operative redatte minimizzano le influenze parassite. Il protocollo impone sequenze di carico rigorose, l'attesa di tempi di stabilizzazione definiti ($\ge 30\,s$) per l'elisione dei transitori dinamici, il campionamento in configurazioni angolari multiple per i torsiometri ($0^\circ$, $120^\circ$, $240^\circ$) e il riposizionamento del provino strumentato per ogni serie di caricamento per la mediazione degli errori sistematici di montaggio, assicurando ripetibilità e riproducibilità.
 
 \textbf{Valutazione dell'incertezza di misura}\\
 Il budget di incertezza integra i contributi di Tipo A, derivanti dalla ripetibilità sperimentale delle serie di carico, e i contributi di Tipo B. Questi ultimi includono la risoluzione degli indicatori digitali, l'incertezza di calibrazione dei campioni primari (masse e provino) e le tolleranze geometriche di lavorazione (es. interasse del bilanciere). L'incertezza estesa ($U$) calcolata definisce il limite di affidabilità della misurazione.
@@ -1918,7 +1926,7 @@ L'analisi dei dati sperimentali, incrociata con il budget di incertezza, attesta
 L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per incrementare ulteriormente le prestazioni metrologiche e ridurre l'incertezza tipo composta ($u_c$).
 
 \textbf{Riduzione delle incertezze dominanti}\\
-L'analisi di sensibilità sul budget di incertezza permette di isolare i contributi maggiormente impattanti. Qualora l'incertezza geometrica del bilanciere risulti predominante, è prescrivibile un restringimento delle tolleranze di lavorazione (es. restringimento del campo di tolleranza sulle quote di foratura per l'uniball). Se la componente termica risulta critica per la strumentazione, è necessario l'adeguamento del sistema di climatizzazione per contenere le fluttuazioni ambientali entro un range più restrittivo ($\le \pm 0,5^\circ C$).
+L'analisi di sensibilità sul budget di incertezza permette di isolare i contributi maggiormente impattanti. Qualora l'incertezza geometrica del bilanciere risulti predominante, è prescrivibile un restringimento delle tolleranze di lavorazione (es. restringimento del campo di tolleranza sull'interasse uniball-torsiometro). Se la componente termica risulta critica per la strumentazione, è necessario l'adeguamento del sistema di climatizzazione per contenere le fluttuazioni ambientali entro un range più restrittivo ($\le \pm 0,5^\circ C$).
 
 \textbf{Automazione dell'acquisizione dati}\\
 La transizione dalla registrazione manuale a routine di acquisizione automatizzate in ambiente LabVIEW elimina l'errore umano di lettura (approssimazione del digit fluttuante). L'integrazione software consente inoltre di imporre temporalmente il rigoroso rispetto dei periodi di stabilizzazione meccanica prima del campionamento del segnale.
@@ -1940,19 +1948,19 @@ La conformità al requisito 6.4 della norma UNI EN ISO/IEC 17025 impone l'implem
 
 Tale registro deve includere l'identificazione del software associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di eventuali danni, malfunzionamenti o riparazioni, e i certificati di taratura correnti e pregressi. La procedura deve inoltre normare le operazioni di movimentazione, trasporto, immagazzinamento e uso delle apparecchiature. L'obiettivo è prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per il provino strumentato) che possano invalidare l'integrità metrologica dei campioni e delle catene di misura.
 
-\subsection{Tracciabilità metrologica}
+\subsection{Tracciabilità metrologica -INSERIRE LA TRACCIABILITà DEL PROVINO E DELLE MASSE} 
 
 In ottemperanza al requisito 6.5 della norma, il laboratorio deve formalizzare la politica aziendale per l'acquisizione e il mantenimento della riferibilità ininterrotta verso il Sistema Internazionale (SI). Questa sezione definisce i criteri operativi per la qualifica e la selezione dei fornitori esterni di servizi di taratura.
 
 I campioni di riferimento primari del laboratorio (il set di masse per il banco Renk e il provino strumentato per il banco STBF) devono essere tarati esclusivamente da istituti metrologici nazionali (NMI) o da laboratori accreditati secondo la norma ISO/IEC 17025, riconosciuti nel circuito ILAC MRA (International Laboratory Accreditation Cooperation). La procedura interna impone la valutazione metrologica dei certificati di taratura in ingresso prima della messa in servizio della strumentazione: il responsabile tecnico deve verificare esplicitamente che l'incertezza estesa dichiarata dal fornitore esterno sia compatibile con i limiti massimi ammessi nei budget di incertezza delle catene di misura interne.
 
-\subsection{Piano di taratura periodica}
+\subsection{Piano di taratura periodica -INSERIRE IL PIANO DI TARATURA PERIODICO DELLE CATENE DI MISURA DEI BANCHI-}
 
 Il mantenimento dello stato di calibrazione richiede la programmazione di intervalli di taratura idonei. La determinazione degli intervalli iniziali si fonda sulle raccomandazioni del costruttore, sull'entità d'uso prevista e sui limiti di accuratezza richiesti per le prove, conformemente alle linee guida internazionali ILAC-G24 (OIML D 10).
 
 Il piano di taratura deve essere supportato da un programma documentato di verifiche intermedie (intermediate checks), necessarie per mantenere la confidenza nello stato di calibrazione dell'attrezzatura tra due tarature ufficiali consecutive. Per i torsiometri e per le celle di carico, tali verifiche prevedono il monitoraggio sistematico del segnale di zero a riposo (zero drift) e l'applicazione di un carico di riferimento semplificato per l'individuazione precoce di derive del guadagno. L'analisi statistica dei risultati delle tarature e delle verifiche intermedie costituisce il fondamento oggettivo per la decisione di mantenere, estendere o ridurre l'intervallo di taratura periodica.
 
-\subsection{Integrazione nel sistema qualità aziendale}
+\subsection{Integrazione nel sistema qualità aziendale -NON HO CAPITO COSA POTERCI SCRIVERE-}
 
 Le procedure tecniche di taratura e verifica sviluppate per i banchi prova devono operare come documenti controllati all'interno del Sistema di Gestione per la Qualità (SGQ) aziendale, in ottemperanza ai requisiti del Capitolo 8 della norma UNI EN ISO/IEC 17025.
 
@@ -1961,7 +1969,21 @@ L'integrazione richiede la codifica formale delle procedure e la tracciabilità 
 %----------------------------------------------------------------------------------------
     \newpage
 
-\section{CAPITOLO 7 - CONCLUSIONI}
+\section{CAPITOLO 7 - RISULTATI DEL PROCESSO DI TARATURA DELLE CATENE DI MISURA DEI TORSIOMETRI }
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 8 - RISULTATI DEL PROCESSO DI TARATURA DELLA CATENA DI MISURA DEI PONTI ESTENSIMETRICI}
+
+
+%----------------------------------------------------------------------------------------
+    \newpage
+
+\section{CAPITOLO 9 - CONCLUSIONI}
+
+
+
 %----------------------------------------------------------------------------------------
     \newpage
 
