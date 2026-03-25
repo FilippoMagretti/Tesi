@@ -60,9 +60,9 @@
 \contentsline {subsection}{\numberline {5.2}Margini di miglioramento}{60}{subsection.5.2}%
 \contentsline {section}{\numberline {6}CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}{62}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Procedure di gestione della strumentazione}{62}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Tracciabilità metrologica -INSERIRE LA TRACCIABILITà DEL PROVINO E DELLE MASSE}{62}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Piano di taratura periodica -INSERIRE IL PIANO DI TARATURA PERIODICO DELLE CATENE DI MISURA DEI BANCHI-}{62}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Integrazione nel sistema qualità aziendale -NON HO CAPITO COSA POTERCI SCRIVERE-}{63}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.2}Tracciabilità metrologica dei campioni primari}{62}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Piano di taratura periodica delle catene di misura}{62}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Integrazione nel Sistema di Gestione per la Qualità (SGQ)}{63}{subsection.6.4}%
 \contentsline {section}{\numberline {7}CAPITOLO 7 - RISULTATI DEL PROCESSO DI TARATURA DELLE CATENE DI MISURA DEI TORSIOMETRI }{64}{section.7}%
 \contentsline {section}{\numberline {8}CAPITOLO 8 - RISULTATI DEL PROCESSO DI TARATURA DELLA CATENA DI MISURA DEI PONTI ESTENSIMETRICI}{65}{section.8}%
 \contentsline {section}{\numberline {9}CAPITOLO 9 - CONCLUSIONI}{66}{section.9}%

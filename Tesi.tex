@@ -55,6 +55,12 @@
 % Per modificare l'header delle pagine 
 \usepackage{fancyhdr}
 
+% Per la bibliografia
+\usepackage{xurl}  %consente si spezzare gli url per evita errori "too wide
+\usepackage{csquotes}
+\usepackage[english,italian]{babel}
+\usepackage[style=numeric, backend=biber]{biblatex}
+\addbibresource{mybib.bib}
 % -----------------------------------------------------------------
 
 
@@ -144,7 +150,7 @@
 } \lstset{style=codeStyle}
 
 % Togliendo il commento al comando che segue, si inseriscono nella bibliografia anche le fonti presenti in Bibliography.bib ma non citati direttamente con il comando \cite
-% \nocite{*}
+\nocite{*}
 
 % Margini prima e dopo blocchi di codice, per avere più distanza
 \lstset{aboveskip=20pt,belowskip=20pt}
@@ -1624,7 +1630,7 @@ Per l'adempimento della funzione di campione primario ai sensi della norma UNI E
 La presente procedura definisce le modalità operative per la taratura delle catene di misura associate ai ponti estensimetrici \textbf{U1} ed \textbf{U3} del banco prova STBF. Nello specifico, le catene di acquisizione coinvolte in questa procedura sono se le seguenti:
 
 \begin{itemize}
-    \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
+    \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD (SN 17955160) $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
     \item \textbf{Catena di misura U1, U3:} Ponti estensimetrici U1, U3 $\rightarrow$ Modulo convertitore A/D (NI 9237) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
 \end{itemize}
 
@@ -1669,7 +1675,7 @@ La temperatura della strumentazione non deve variare di oltre 2 °C dall'inizio 
 
 \subsubsection{Apparecchiature e campioni di riferimento}
 % Elencare le caratteristiche metrologiche minime dei campioni di lavoro e della strumentazione ausiliaria per garantire la riferibilità metrologica.
-La taratura viene eseguita utilizzando il provino strumentato, progettato internamenteall'azienda e prodotto da terzi. La taratura del provino è stata eseguita da INSERIRETARATURADELPROVINOSTRUMENTATO.
+La taratura viene eseguita utilizzando il provino strumentato, progettato internamenteall'azienda e prodotto da terzi. La strumentazione e taratura del provino è stata eseguita da SINT TECHNOLOGY.
 
 \subsubsection{Operazioni preliminari}
 % Elencare ispezione visiva, pulizia, verifiche di alimentazione, azzeramento e autotaratura.
@@ -1895,76 +1901,90 @@ Conformemente al Capitolo 7 della norma, l'incertezza stimata ($U$) è esplicita
 La classificazione finale del banco prova è pertanto stabilita dal solo confronto diretto tra gli scostamenti misurati durante la taratura e i limiti indicati in Tabella \ref{tab:classificazione_iso}.
 
 
-%----------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------
+
     \newpage
 
-
-    
 \section{CAPITOLO 5 - CONFRONTO CON REQUISITI ISO 17025}
-
-
 
 \subsection{Adeguatezza metrologica}
 
-La validazione delle procedure e dei sistemi di taratura sviluppati richiede la dimostrazione analitica del soddisfacimento dei requisiti prescritti dalla norma UNI EN ISO/IEC 17025 e dalle normative tecniche verticali di settore (BS 7882:2017 e ISO 7500-1:2018).
+La validazione delle procedure e dei sistemi di taratura sviluppati richiede la dimostrazione analitica del soddisfacimento dei requisiti prescritti dalla norma UNI EN ISO/IEC 17025 (nello specifico i requisiti tecnici del Capitolo 5) e dalle normative tecniche verticali di settore (BS 7882:2017 e ISO 7500-1:2018).
 
-\textbf{Validazione della rintracciabilità metrologica (Requisito 6.5)}\\
-La riferibilità metrologica è garantita attraverso una catena ininterrotta e documentata di calibrazioni. Per il banco prova Renk, la catena ha origine dalle masse certificate (campioni primari), il cui valore di forza peso è trasferito al torsiometro tramite la geometria nota del bilanciere. Per la macchina STBF, la riferibilità è istituita dal provino strumentato, tarato presso un laboratorio primario, il quale trasferisce il valore vero convenzionale di forza ai ponti estensimetrici e alla cella di carico del sistema.
+\textbf{Validazione dei metodi di taratura e stima dell'incertezza (Requisiti 5.4.5 e 5.4.6)}\\
+Le procedure operative redatte costituiscono metodi non normalizzati sviluppati dal laboratorio, la cui validazione è stata condotta dimostrando l'adeguatezza allo scopo previsto. Il protocollo impone sequenze di carico rigorose e l'attesa di tempi di stabilizzazione definiti ($\ge 30\,s$) per l'elisione dei transitori dinamici. La frammentazione degli errori sistematici di montaggio è assicurata dal campionamento in configurazioni angolari multiple per i torsiometri ($0^\circ$, $120^\circ$, $240^\circ$) e dal riposizionamento iterativo del provino strumentato. Il budget di incertezza documentato integra i contributi di Tipo A e di Tipo B (risoluzione, incertezza dei campioni, influenze ambientali), restituendo un'incertezza estesa ($U$) che definisce quantitativamente l'affidabilità della misurazione in ottemperanza al requisito 5.4.6.
 
-\textbf{Convalida dei metodi di taratura (Requisito 7.2)}\\
-Le procedure operative redatte minimizzano le influenze parassite. Il protocollo impone sequenze di carico rigorose, l'attesa di tempi di stabilizzazione definiti ($\ge 30\,s$) per l'elisione dei transitori dinamici, il campionamento in configurazioni angolari multiple per i torsiometri ($0^\circ$, $120^\circ$, $240^\circ$) e il riposizionamento del provino strumentato per ogni serie di caricamento per la mediazione degli errori sistematici di montaggio, assicurando ripetibilità e riproducibilità.
-
-\textbf{Valutazione dell'incertezza di misura}\\
-Il budget di incertezza integra i contributi di Tipo A, derivanti dalla ripetibilità sperimentale delle serie di carico, e i contributi di Tipo B. Questi ultimi includono la risoluzione degli indicatori digitali, l'incertezza di calibrazione dei campioni primari (masse e provino) e le tolleranze geometriche di lavorazione (es. interasse del bilanciere). L'incertezza estesa ($U$) calcolata definisce il limite di affidabilità della misurazione.
+\textbf{Apparecchiature e Riferibilità metrologica (Requisiti 5.5 e 5.6)}\\
+Il requisito 5.6 impone che tutte le tarature e le misurazioni effettuate dal laboratorio siano riferibili al Sistema Internazionale (SI). Questa condizione è soddisfatta garantendo che le grandezze fisiche misurate (coppia e forza) siano derivate in modo ininterrotto da campioni primari muniti di certificato di taratura accreditato, come dettagliato nel Capitolo 6. I sistemi progettati (bilanciere e provino) assolvono la funzione di apparecchiature di trasferimento (requisito 5.5), la cui geometria e rigidezza non alterano la catena di riferibilità.
 
 \textbf{Classificazione dei sistemi}\\
-L'analisi dei dati sperimentali, incrociata con il budget di incertezza, attesta l'idoneità dei sistemi al raggiungimento degli obiettivi prefissati. Le deviazioni massime calcolate per l'errore di ripetibilità, l'errore di interpolazione e l'errore di reversibilità consentono l'assegnazione della Classe 0.1 per i torsiometri del banco Renk, in piena conformità ai parametri della Tabella 1 della norma BS 7882:2017.
-
+L'analisi dei dati sperimentali, incrociata con il budget di incertezza, attesta l'idoneità dei sistemi. Le deviazioni massime calcolate per l'errore di ripetibilità, l'errore di interpolazione e l'errore di reversibilità consentono l'assegnazione della Classe 0.1 per i torsiometri del banco Renk secondo la BS 7882:2017, e il rispetto dei limiti della ISO 7500-1:2018 per la catena estensimetrica della macchina STBF.
 
 \subsection{Margini di miglioramento}
 
-L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per incrementare ulteriormente le prestazioni metrologiche e ridurre l'incertezza tipo composta ($u_c$).
+L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per ridurre l'incertezza tipo composta ($u_c$) e aumentare la robustezza del processo metrologico.
 
 \textbf{Riduzione delle incertezze dominanti}\\
-L'analisi di sensibilità sul budget di incertezza permette di isolare i contributi maggiormente impattanti. Qualora l'incertezza geometrica del bilanciere risulti predominante, è prescrivibile un restringimento delle tolleranze di lavorazione (es. restringimento del campo di tolleranza sull'interasse uniball-torsiometro). Se la componente termica risulta critica per la strumentazione, è necessario l'adeguamento del sistema di climatizzazione per contenere le fluttuazioni ambientali entro un range più restrittivo ($\le \pm 0,5^\circ C$).
+L'analisi di sensibilità sul budget di incertezza permette di isolare i contributi maggiormente impattanti. Qualora l'incertezza geometrica del bilanciere risulti predominante (contributo derivato dalla misurazione del braccio di leva $L$), è prescrivibile l'esecuzione di un rilievo tridimensionale (CMM) dell'interasse effettivo uniball-torsiometro. Se la componente termica risulta critica, è necessario l'adeguamento del sistema di climatizzazione per contenere le fluttuazioni ambientali entro un range più restrittivo ($\le \pm 0,5^\circ C$ durante il singolo ciclo di taratura).
 
 \textbf{Automazione dell'acquisizione dati}\\
-La transizione dalla registrazione manuale a routine di acquisizione automatizzate in ambiente LabVIEW elimina l'errore umano di lettura (approssimazione del digit fluttuante). L'integrazione software consente inoltre di imporre temporalmente il rigoroso rispetto dei periodi di stabilizzazione meccanica prima del campionamento del segnale.
+La transizione dalla registrazione manuale a routine di acquisizione automatizzate in ambiente LabVIEW elimina l'incertezza legata all'errore umano di lettura (approssimazione del digit fluttuante). L'integrazione software consente di imporre un campionamento vincolato temporalmente, garantendo il rigoroso rispetto dei periodi di stabilizzazione meccanica prima dell'estrazione del dato.
 
 \textbf{Ottimizzazione del campionamento (Banco Renk)}\\
-Per il torsiometro con fondo scala a $600\,Nm$, l'approvvigionamento di un set integrativo di masse certificate (tagli da $1\,kg$ e $2\,kg$) permetterebbe la composizione di gradini di carico perfettamente equispaziati ai target nominali esatti (20\%, 40\%, 60\%, 80\%, 100\%). Tale configurazione minimizza i residui nell'applicazione dei modelli di interpolazione polinomiale richiesti dalla norma.
-
-\textbf{Monitoraggio della deriva a lungo termine}\\
-L'implementazione di carte di controllo statistiche per il monitoraggio sistematico delle letture di azzeramento e delle derive di fondo scala consente di tracciare la stabilità temporale dei trasduttori. Questo approccio predittivo garantisce la programmazione mirata degli interventi di ricalibrazione prima del decadimento delle prestazioni garantite dalla taratura.
+Per il torsiometro con fondo scala a $600\,Nm$, l'approvvigionamento di un set integrativo di masse certificate (tagli frazionari da $1\,kg$ e $2\,kg$) permetterebbe la composizione di gradini di carico equivalenti ai target nominali esatti (20\%, 40\%, 60\%, 80\%, 100\%). Tale configurazione minimizza i residui nell'applicazione dei modelli di interpolazione polinomiale richiesti dalla norma BS 7882:2017.
 
 %----------------------------------------------------------------------------------------
+
     \newpage
 
 \section{CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}
 
 \subsection{Procedure di gestione della strumentazione}
 
-La conformità al requisito 6.4 della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale) e l'istituzione di una scheda anagrafica o registro della strumentazione.
+La conformità ai requisiti della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale) e l'istituzione di una scheda anagrafica (registro della strumentazione).
 
-Tale registro deve includere l'identificazione del software associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di eventuali danni, malfunzionamenti o riparazioni, e i certificati di taratura correnti e pregressi. La procedura deve inoltre normare le operazioni di movimentazione, trasporto, immagazzinamento e uso delle apparecchiature. L'obiettivo è prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per il provino strumentato) che possano invalidare l'integrità metrologica dei campioni e delle catene di misura.
+Il registro deve includere l'identificazione del software di condizionamento associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di malfunzionamenti e l'archivio dei certificati di taratura. La procedura norma le operazioni di movimentazione, immagazzinamento e uso per prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per le celle di carico e il provino strumentato) che invaliderebbero l'integrità metrologica.
 
-\subsection{Tracciabilità metrologica -INSERIRE LA TRACCIABILITà DEL PROVINO E DELLE MASSE} 
+\subsection{Tracciabilità metrologica dei campioni primari} 
 
-In ottemperanza al requisito 6.5 della norma, il laboratorio deve formalizzare la politica aziendale per l'acquisizione e il mantenimento della riferibilità ininterrotta verso il Sistema Internazionale (SI). Questa sezione definisce i criteri operativi per la qualifica e la selezione dei fornitori esterni di servizi di taratura.
+La validità della calibrazione dei banchi prova è subordinata alla riferibilità ininterrotta dei campioni di lavoro utilizzati. 
 
-I campioni di riferimento primari del laboratorio (il set di masse per il banco Renk e il provino strumentato per il banco STBF) devono essere tarati esclusivamente da istituti metrologici nazionali (NMI) o da laboratori accreditati secondo la norma ISO/IEC 17025, riconosciuti nel circuito ILAC MRA (International Laboratory Accreditation Cooperation). La procedura interna impone la valutazione metrologica dei certificati di taratura in ingresso prima della messa in servizio della strumentazione: il responsabile tecnico deve verificare esplicitamente che l'incertezza estesa dichiarata dal fornitore esterno sia compatibile con i limiti massimi ammessi nei budget di incertezza delle catene di misura interne.
+\textbf{Tracciabilità delle Masse (Banco Renk):}\\
+La generazione della coppia di riferimento si fonda sul valore di forza peso esercitato dai campioni di massa. Le masse da $10\,kg$, $5\,kg$ e $3\,kg$ impiegate devono appartenere a una classe di precisione definita (INSERIRE DOCUMENTAZIONE DELLE MASSE). La tracciabilità è garantita dal certificato di taratura emesso da un laboratorio accreditato (INSERIRE IL NOME DEL LABORATORIO CHE HA CERTIFICATO LE MASSE). Il certificato fornisce il valore convenzionale della massa e l'incertezza estesa associata.
 
-\subsection{Piano di taratura periodica -INSERIRE IL PIANO DI TARATURA PERIODICO DELLE CATENE DI MISURA DEI BANCHI-}
+\textbf{Tracciabilità del Provino Strumentato (Banco STBF):}\\
+Il provino strumentato, fungendo da trasduttore di trasferimento per la forza, possiede una catena di tracciabilità basata sulla taratura in compressione eseguita dal laboratorio SINT TECHNOLOGY. Il certificato di taratura associa il segnale elettrico in uscita (mV/V) ai valori di forza applicati da una macchina campione primaria. L'incertezza dichiarata in tale certificato costituisce il contributo di riferimento ($u_{std}$) nel budget di incertezza per la calibrazione dei ponti estensimetrici U1 e U3.
 
-Il mantenimento dello stato di calibrazione richiede la programmazione di intervalli di taratura idonei. La determinazione degli intervalli iniziali si fonda sulle raccomandazioni del costruttore, sull'entità d'uso prevista e sui limiti di accuratezza richiesti per le prove, conformemente alle linee guida internazionali ILAC-G24 (OIML D 10).
+\subsection{Piano di taratura periodica delle catene di misura}
 
-Il piano di taratura deve essere supportato da un programma documentato di verifiche intermedie (intermediate checks), necessarie per mantenere la confidenza nello stato di calibrazione dell'attrezzatura tra due tarature ufficiali consecutive. Per i torsiometri e per le celle di carico, tali verifiche prevedono il monitoraggio sistematico del segnale di zero a riposo (zero drift) e l'applicazione di un carico di riferimento semplificato per l'individuazione precoce di derive del guadagno. L'analisi statistica dei risultati delle tarature e delle verifiche intermedie costituisce il fondamento oggettivo per la decisione di mantenere, estendere o ridurre l'intervallo di taratura periodica.
+Le catene di misura dei banchi Renk e STBF sono soggette a derive metrologiche indotte da fatica meccanica, invecchiamento dell'elettronica e variazioni ambientali. Il laboratorio definisce un piano di taratura per garantire la tenuta in tolleranza dei sistemi.
 
-\subsection{Integrazione nel sistema qualità aziendale -NON HO CAPITO COSA POTERCI SCRIVERE-}
+\textbf{Intervallo di taratura ufficiale:}\\
+L'intervallo base tra due tarature complete (eseguite secondo BS 7882 e ISO 7500-1) è fissato a 12 mesi. Tale frequenza è cautelativa per macchinari sottoposti a cicli di prova a fatica ad alta frequenza e ad alto carico. Qualora la strumentazione subisca smontaggi, sovraccarichi accidentali o interventi di manutenzione straordinaria, la taratura ufficiale deve essere immediatamente ripetuta.
 
-Le procedure tecniche di taratura e verifica sviluppate per i banchi prova devono operare come documenti controllati all'interno del Sistema di Gestione per la Qualità (SGQ) aziendale, in ottemperanza ai requisiti del Capitolo 8 della norma UNI EN ISO/IEC 17025.
+\textbf{Verifiche intermedie (Intermediate Checks):}\\
+Per assicurare la stabilità del sistema tra due tarature annuali, sono previste verifiche intermedie semestrali o propedeutiche all'inizio di campagne di prova critiche.
+\begin{itemize}
+    \item \textit{Banco Renk:} Applicazione di un singolo livello di coppia noto (es. 50\% del fondo scala) in configurazione statica e registrazione dello scostamento rispetto alla taratura ufficiale.
+    \item \textit{Banco STBF:} Verifica della deriva di zero (Zero drift) a sistema scarico e attivazione della procedura di shunt-calibration interna dei moduli NI 9237 per verificare la stabilità del guadagno dell'amplificatore.
+\end{itemize}
+I dati derivanti dalle verifiche intermedie e dalle ricalibrazioni annuali vengono tracciati mediante carte di controllo, permettendo la valutazione della deriva a lungo termine e l'eventuale rimodulazione dell'intervallo di taratura.
 
-L'integrazione richiede la codifica formale delle procedure e la tracciabilità delle relative revisioni. Un elemento critico del SGQ è la gestione del lavoro non conforme (Requisito 7.10): qualora, durante una taratura periodica o una verifica intermedia, un torsiometro o una catena di forza risulti fuori tolleranza (out of tolerance), la procedura deve prescrivere l'isolamento immediato dello strumento e l'attivazione di un'analisi di impatto a ritroso. Questa analisi valuta oggettivamente la validità tecnica e contrattuale di tutti i collaudi sui Test Article eseguiti nel periodo intercorso dall'ultima taratura con esito positivo, definendo le eventuali procedure di richiamo o notifica al cliente.
+\subsection{Integrazione nel Sistema di Gestione per la Qualità (SGQ)}
+
+Le procedure di taratura descritte si inseriscono nell'architettura documentale del SGQ del laboratorio, disciplinando sia il controllo operativo sia la gestione delle anomalie. L'integrazione si struttura in tre fasi:
+
+\textbf{Controllo della Documentazione:}\\
+Le metodologie operative (montaggio bilanciere, posizionamento provino, acquisizione dati) diventano istruzioni operative controllate.
+
+\textbf{Gestione delle Non Conformità e Analisi di Impatto:}\\
+Qualora durante una taratura periodica o una verifica intermedia si riscontri che un trasduttore opera fuori dai limiti della propria classe di precisione (condizione di \textit{Out of Tolerance}), il SGQ impone l'immediata segregazione logica o fisica del macchinario. Contestualmente, si avvia un'analisi di impatto a ritroso: il responsabile tecnico valuta oggettivamente se l'errore riscontrato ha compromesso i risultati delle prove a fatica condotte sui Test Article dei clienti nel periodo intercorso dall'ultima taratura valida.
+
+\textbf{Azioni Correttive:}\\
+Sulla base dell'analisi di impatto, vengono definite le azioni correttive. Queste spaziano dalla ricalibrazione del software di condizionamento (aggiornamento dei coefficienti polinomiali), alla sostituzione dell'hardware difettoso, fino alla potenziale emissione di rapporti di prova emendati e alla formale notifica di richiamo ai clienti le cui prove risultino tecnicamente invalidate.
+
+
+
 
 %----------------------------------------------------------------------------------------
     \newpage
@@ -2038,7 +2058,16 @@ Nei casi in cui la funzione di $Y$ sia fortemente non lineare, risulta necessari
 \end{equation}
 
 I conti analitici per l'ottenimento delle formule
-possono essere trovati al capitolo 5 della norma JCGM 100:2008 -GUM-.
+possono essere trovati al capitolo 5 della norma JCGM 100:2008 -GUM- \cite{GUM}.
+%----------------------------------------------------------------------------------------
+
+    \newpage
+
+
+%\printbibliography[block=ragged]
+\printbibliography
+
+
 %----------------------------------------------------------------------------------------
 
 
