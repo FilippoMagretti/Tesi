@@ -333,6 +333,10 @@ INPUT Tesi.lof
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 OUTPUT Tesi.lof
+INPUT ./Tesi.lot
+INPUT ./Tesi.lot
+INPUT Tesi.lot
+OUTPUT Tesi.lot
 INPUT ./Images/Capitolo_1/precisione_accuratezza.png
 INPUT ./Images/Capitolo_1/precisione_accuratezza.png
 INPUT ./Images/Capitolo_1/precisione_accuratezza.png
