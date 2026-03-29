@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Tesi"] 1774439167.11958 "Tesi.bcf" "Tesi.bbl" "Tesi" 1774598576.13448 0
-  "Tesi.bcf" 1774598575 108671 d0201482e98833bb4fd1b0a18196c122 "pdflatex"
+["biber Tesi"] 1774439167.11958 "Tesi.bcf" "Tesi.bbl" "Tesi" 1774788270.55887 0
+  "Tesi.bcf" 1774788270 108671 d0201482e98833bb4fd1b0a18196c122 "pdflatex"
   "mybib.bib" 1774434742 1786 7966c25feec5916d6c29c23e4938b53d ""
   (generated)
   "Tesi.bbl"
   "Tesi.blg"
   (rewritten before read)
-["pdflatex"] 1774598569.808 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1774598576.13567 0
+["pdflatex"] 1774788264.88485 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1774788270.56 0
   "Images/Capitolo_1/precisione_accuratezza.png" 1773137239 423653 c07b7507a395b2c8d186cc56d178a88c ""
   "Images/Capitolo_2/Architettura del RENK.png" 1772699838 43784 0c5774b0fa42550ff92423724b1d229b ""
   "Images/Capitolo_2/Macchinario_STBF.png" 1773152120 481817 b4a701c9d6d0ef83f6f72c048bc17ba1 ""
@@ -61,15 +61,15 @@
   "Images/Capitolo_4/Vincolo_di_incastro.png" 1773049868 25449 070fddf65b08b9e862bc6078117b89fd ""
   "Images/Capitolo_4/Vincolo_simmetria.png" 1773049825 22148 099d6f7f1ae6b20c2cf697ddedfd1dff ""
   "Images/Frontespizio/Cherubino.jpg" 1768573816 39256 2affa4925d43d09b3676103dbafa6d4d ""
-  "Tesi.aux" 1774598575 27127 d0fedb7d3004d0bdf345544e1b15eb42 "pdflatex"
+  "Tesi.aux" 1774788270 27127 53ab2d9a7ee7045254c123fb93540cc1 "pdflatex"
   "Tesi.bbl" 1774439169 6991 d026afcb17b154f1931f5b008a47ec8d "biber Tesi"
-  "Tesi.lof" 1774598575 5217 725078c56e74b516e023d6710f1c05aa "pdflatex"
-  "Tesi.lot" 1774598575 839 3b0df19a49afa548a637e5f0b0b6d0ae "pdflatex"
-  "Tesi.out" 1774598575 18495 b2b9d5a10f7c471c65707616baa45e83 "pdflatex"
-  "Tesi.run.xml" 1774598575 2331 d2bd779c2ddf3d688a655a2c9c5afa4b "pdflatex"
-  "Tesi.tex" 1774598562 133550 b81d408ee7a42bb862a062bf65ebe7dd ""
-  "Tesi.toc" 1774598575 7477 5e4097bffdb551f632c60877c2cebb6d "pdflatex"
-  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1774598562 133550 b81d408ee7a42bb862a062bf65ebe7dd ""
+  "Tesi.lof" 1774788270 5217 725078c56e74b516e023d6710f1c05aa "pdflatex"
+  "Tesi.lot" 1774788270 839 3b0df19a49afa548a637e5f0b0b6d0ae "pdflatex"
+  "Tesi.out" 1774788270 18495 b2b9d5a10f7c471c65707616baa45e83 "pdflatex"
+  "Tesi.run.xml" 1774788270 2331 d2bd779c2ddf3d688a655a2c9c5afa4b "pdflatex"
+  "Tesi.tex" 1774788257 134914 ca8022412b3b010610924c0e67eef490 ""
+  "Tesi.toc" 1774788270 7477 db379e5849a64615925272f0714b44dd "pdflatex"
+  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1774788257 134914 ca8022412b3b010610924c0e67eef490 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1768564197 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1768564197 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1768565645 3524 cb3e574dea2d1052e39280babc910dc8 ""

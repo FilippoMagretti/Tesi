@@ -564,7 +564,7 @@ Arrivati a questo punto si confronta questo valore di incertezza con tutti gli a
 \section{CAPITOLO 2 - DESCRIZIONE DEI SISTEMI DI PROVA}
 
 \subsection{Banco prova ingranaggi Renk}
-Il banco Renk è un sistema a ricircolo di potenza meccanica, progettato per l'esecuzione di prove su ingranaggi. Tale architettura consente di sottoporre i campioni a coppie e potenze di esercizio impiegando un motore elettrico di azionamento di taglia nominale significativamente inferiore. 
+Il banco Renk è un sistema a ricircolo di potenza meccanica, progettato per l'esecuzione di prove su ingranaggi. Tale architettura consente di sottoporre i campioni a coppie e potenze di esercizio elevate impiegando un motore elettrico di azionamento di taglia nominale significativamente inferiore. 
 
 L'incremento dei carichi interni è ottenuto applicando un precarico statico alla catena cinematica chiusa. Un servomotore induce lo scorrimento assiale di una ruota a denti elicoidali, forzandone l'ingranamento con due ruote coniugate ad angolo d'elica opposto. Conseguentemente, la potenza circolante nel circuito chiuso risulta quantitativamente superiore a quella immessa nel sistema dall'azionamento principale.
 
@@ -658,7 +658,7 @@ Tali lamine sono strumentate con i ponti estensimetrici \textbf{U3} (identificat
     \label{fig:Sensori}
 \end{figure}
 
-L'installazione locale di ulteriori sensori garantisce l'isolamento vettoriale delle forze: il ponte estensimetrico \textbf{U2} (marcatore blu in Figura \ref{fig:Sensori}) rileva la componente trasversale del carico sul dente, mentre il ponte \textbf{U1} (marcatore rosso in Figura \ref{fig:Sensori}) rileva la componente normale.
+L'installazione locale di ulteriori sensori permette la lettura delle componenti della forza sul dente del T.A.: il ponte estensimetrico \textbf{U2} (marcatore blu in Figura \ref{fig:Sensori}) rileva la componente trasversale del carico sul dente, mentre il ponte \textbf{U1} (marcatore rosso in Figura \ref{fig:Sensori}) rileva la componente normale.
 
 Il segnale derivato dal ponte U1 fornisce il traguardo ridondante per la validazione della forza determinata matematicamente dalla differenza
 \begin{equation}
@@ -1000,8 +1000,10 @@ Prima dell'impiego operativo per la taratura ufficiale dei torsiometri, l'attrez
 
 \subsection{Procedura di taratura}
 
+Di seguito è riportata la procedura utilizzata per l'esecuzione dell'operazione di taratura/verifica che è stata condotta dai tecnici di laboratorio.
+
 \subsubsection{Scopo e campo di applicazione}
-La procedura definisce le modalità operative per la taratura in condizioni statiche delle catene di misura associate ai torsiometri del banco prova Renk. Nello specifico, le catene di acquisizione oggetto di taratura sono due:
+La procedura definisce le modalità operative per la taratura in condizioni statiche delle catene di misura associate ai torsiometri del banco prova Renk. Nello specifico, le catene di acquisizione oggetto di taratura/verifica sono due:
 
 \begin{itemize}
     \item \textbf{Catena 1:} Torsiometro HBM T40B (P/N T40B/1000Nm, S/N 0009S50002FD, fondo scala $1000\,Nm$) $\rightarrow$ Condizionatore MX460B $\rightarrow$ Acquisizione segnale in ambiente LabVIEW.
@@ -1600,7 +1602,7 @@ La strategia di approvvigionamento e la realizzazione dei componenti strutturali
 \begin{itemize}
     \item \textbf{Base di supporto:} Realizzata internamente tramite lavorazioni di fresatura su acciaio 39NiCrMo3. La produzione interna ha garantito il controllo diretto sulle tolleranze geoemtriche e dimensionali previste.
     \item \textbf{Corpo centrale :} Prodotto su specifica da un'azienda terza su acciaio 39NiCrMo3, garantendone il rispetto per le tolleranze previste da disegno.
-    \item \textbf{Rullo di contatto e integrazione:} Il rullo in acciaio a tutta tempra 100Cr7 è un componente commerciale. L'integrazione strutturale alla sommità del corpo del provino è stata effettuata tramite saldobrasatura.
+    \item \textbf{Rullo di contatto e integrazione:} Il rullo in acciaio a tutta tempra 100Cr7 è un componente commerciale, necessario per reggere le elevate pressioni di contatto che si generano durante l'esecuzione dell'operazione. L'integrazione strutturale alla sommità del corpo del provino è stata effettuata tramite saldobrasatura.
 \end{itemize}
 
 \subsubsection{Installazione dei ponti estensimetrici}
@@ -1612,14 +1614,16 @@ L'applicazione dei trasduttori (estensimetri) e la realizzazione dei circuiti di
 \end{itemize}
 
 \subsubsection{Collaudo e certificazione metrologica}
-Per l'adempimento della funzione di campione primario ai sensi della norma UNI EN ISO/IEC 17025, il provino strumentato è stato sottoposto alla seguente procedura di verifica:
+Per l'adempimento della funzione di \textbf{strumento campione} ai sensi della norma UNI EN ISO/IEC 17025, il provino strumentato è stato sottoposto alla seguente procedura di verifica:
 
 \begin{itemize}
     \item \textbf{Controllo a banco:} Verifica metrologica del parallelismo  tra la generatrice superiore del rullo di contatto e il piano di appoggio inferiore; riferimento in macchina del corpo centrale sfruttando grazie al gioco di $0.5\,mm$ garantito dai fori passanti presenti sulla base del provino per garantire il corretto posizionamento della  zona di contatto tra rullo e martello.
-    \item \textbf{Taratura certificata:} Il dispositivo completo è stato tarato internamente all'azienda nel range operativo fino a $20\,kN$. Il certificato di taratura emesso [INSERIRE NUMERO CERTIFICATO] istituisce la riferibilità metrologica ininterrotta ai campioni primari e quantifica l'incertezza strumentale standard, parametro obbligatorio per la compilazione del budget di incertezza del banco prova STBF. La taratura della cella di carico F1 è stata invece affidata ad una azienda terza, NOMEAZIENDA correlata dal relativo certificato di taratura NUMEROCERTIFICATO.
+    \item \textbf{Taratura certificata:} Il dispositivo completo è stato tarato internamente all'azienda nel range operativo fino a $20\,kN$, mediante l'uso della cella di carico F1, il cui certificato di taratura emesso [MATTEO MI DEVE ANCORA DARE IL SUO CERTIFICATO DI TARATURA] istituisce la riferibilità metrologica ininterrotta ai campioni primari. La taratura della cella di carico F1 è stata affidata ad una azienda terza, SINT TECHNOLOGY, correlata dal relativo certificato di taratura NUMEROCERTIFICATOCHEMATTEOMIDEVEANCORADARE.
 \end{itemize}
 
 \subsection{Procedura di verifica}
+
+Di seguito è riportata la procedura utilizzata per l'esecuzione dell’operazione di taratura/verifica che è stata condotta dai tecnici di laboratorio.
 
 \subsubsection{Scopo e campo di applicazione}
 % Definire l'oggetto della procedura, le tipologie di strumenti in esame, le grandezze fisiche misurate e il campo di misura (range) coperto, incluse limitazioni del metodo.
@@ -1892,16 +1896,12 @@ Di seguito si riportano i valori massimi consentiti (espressi in percentuale) pe
 \end{table}
 
 \subsubsection{Regola decisionale per la dichiarazione di conformità}
-In relazione all'incertezza di misura e alla dichiarazione di conformità, la norma UNI EN ISO 7500-1:2018 stabilisce che i requisiti del documento limitano già intrinsecamente le componenti principali di incertezza. 
-
-Conformemente al Capitolo 7 della norma, l'incertezza stimata ($U$) è esplicitamente tenuta in considerazione dal metodo di classificazione stesso e non deve essere utilizzata per ridurre ulteriormente le tolleranze ammesse. Ridurre l'accuratezza ammissibile sottraendo il valore dell'incertezza (applicazione di una banda di guardia) comporterebbe un doppio conteggio ("double counting") dell'incertezza stessa. 
+In relazione all'incertezza di misura e alla dichiarazione di conformità, la norma UNI EN ISO 7500-1:2018 stabilisce che i requisiti del documento limitano già le componenti principali di incertezza, e quindi, conformemente al Capitolo 7 della norma, l'incertezza stimata ($U$) non deve essere utilizzata per ridurre ulteriormente le tolleranze ammesse. Ridurre l'accuratezza ammissibile sottraendo il valore dell'incertezza (applicazione di una banda di guardia) comporterebbe un doppio conteggio ("double counting") dell'incertezza stessa. 
 
 La classificazione finale del banco prova è pertanto stabilita dal solo confronto diretto tra gli scostamenti misurati durante la taratura e i limiti indicati in Tabella \ref{tab:classificazione_iso}.
 
 
-%---------------------------------------------------------------------------------------------
-
-    \newpage
+%----------------------------------------------------------------------------------------------
 
 \section{CAPITOLO 5 - CONFRONTO CON REQUISITI ISO 17025}
 
@@ -1909,11 +1909,12 @@ La classificazione finale del banco prova è pertanto stabilita dal solo confron
 
 La validazione delle procedure e dei sistemi di taratura sviluppati richiede la dimostrazione analitica del soddisfacimento dei requisiti prescritti dalla norma UNI EN ISO/IEC 17025 (nello specifico i requisiti tecnici del Capitolo 5) e dalle normative tecniche verticali di settore (BS 7882:2017 e ISO 7500-1:2018).
 
-\textbf{Validazione dei metodi di taratura e stima dell'incertezza (Requisiti 5.4.5 e 5.4.6):} le procedure operative redatte costituiscono metodi non normalizzati sviluppati dal laboratorio, la cui validazione è stata condotta dimostrando l'adeguatezza allo scopo previsto. Il protocollo impone sequenze di carico rigorose e l'attesa di tempi di stabilizzazione definiti ($\ge 30\,s$) per l'elisione dei transitori dinamici. La frammentazione degli errori sistematici di montaggio è assicurata dal campionamento in configurazioni angolari multiple per i torsiometri ($0^\circ$, $120^\circ$, $240^\circ$) e dal riposizionamento iterativo del provino strumentato. Il budget di incertezza documentato integra i contributi di Tipo A e di Tipo B (risoluzione, incertezza dei campioni, influenze ambientali), restituendo un'incertezza estesa ($U$) che definisce quantitativamente l'affidabilità della misurazione in ottemperanza al requisito 5.4.6.
+\textbf{Adozione di metodi normalizzati e stima dell'incertezza (Requisiti 5.4.2 e 5.4.6):} le procedure operative redatte applicano i metodi normalizzati a livello internazionale delle norme \textbf{BS 7882:2017} e \textbf{ISO 7500-1:2018}. Conformemente al punto 5.4.2 della norma UNI EN ISO/IEC 17025, il laboratorio ha confermato la propria capacità di operare in accordo a tali metodi standard, dimostrando che i sistemi di taratura/verifica progettati ad hoc (\textbf{bilanciere} e \textbf{provino strumentato}) consentono l'esecuzione delle precedure di taratura secondo \textbf{metodi normalizzati}. L'applicazione delle norme impone una serie di requisiti da soddisfare (per esempio le sequenze di carico rigorose e l'attesa di tempi di stabilizzazione definiti -$\ge 30\,s$- per l'elisione dei transitori dinamici, etc) il cui soddisfacimento garantisce l'accuratezza necessaria per il calcolo dell'incertezza. Ad esempio, la stima degli errori sistematici di montaggio è assicurata dal campionamento in configurazioni angolari multiple per i torsiometri ($0^\circ$, $120^\circ$, $240^\circ$) e dal riposizionamento iterativo del provino strumentato. Il budget di incertezza documentato integra i contributi di Tipo A e di Tipo B (risoluzione, incertezza dei campioni, influenze ambientali), restituendo un'incertezza estesa ($U$) che definisce quantitativamente l'affidabilità della misurazione (come richiesto nel punto 5.4.6 della norma).
 
-\textbf{Apparecchiature e Riferibilità metrologica (Requisiti 5.5 e 5.6):} il requisito 5.6 impone che tutte le tarature e le misurazioni effettuate dal laboratorio siano riferibili al Sistema Internazionale (SI). Questa condizione è soddisfatta garantendo che le grandezze fisiche misurate (coppia e forza) siano derivate in modo ininterrotto da campioni primari muniti di certificato di taratura accreditato, come dettagliato nel Capitolo 6. I sistemi progettati (bilanciere e provino) assolvono la funzione di apparecchiature di trasferimento (requisito 5.5), la cui geometria e rigidezza non alterano la catena di riferibilità.
+\textbf{Apparecchiature e Riferibilità metrologica (Requisiti 5.5 e 5.6):} il requisito 5.6 impone che tutte le tarature e le misurazioni effettuate dal laboratorio siano riferibili al Sistema Internazionale (SI). Questa condizione è soddisfatta garantendo che le grandezze fisiche misurate (coppia e forza) siano derivate in modo ininterrotto da campioni primari muniti di certificato di taratura accreditato, come dettagliato nel Capitolo 6. I sistemi progettati (bilanciere e provino) assolvono la funzione di apparecchiature di trasferimento del carico , la cui geometria e rigidezza non alterano la catena di riferibilità .
+\textbf{Apparecchiature e Riferibilità metrologica (Requisiti 5.5 e 5.6):} il requisito 5.6 impone che tutte le tarature e le misurazioni effettuate dal laboratorio siano riferibili al Sistema Internazionale (SI). Questa condizione è soddisfatta garantendo che le grandezze fisiche misurate (coppia e forza) siano derivate in modo ininterrotto da campioni primari muniti di certificato di taratura accreditato, come dettagliato nel Capitolo 6. I sistemi progettati (bilanciere e provino) assolvono la funzione di apparecchiature di trasferimento del carico, la cui geometria e rigidezza non alterano la catena di riferibilità.
 
-\textbf{Classificazione dei sistemi:} l'analisi dei dati sperimentali, incrociata con il budget di incertezza, attesta l'idoneità dei sistemi. Le deviazioni massime calcolate per l'errore di ripetibilità, l'errore di interpolazione e l'errore di reversibilità consentono l'assegnazione della Classe 0.1 per i torsiometri del banco Renk secondo la BS 7882:2017, e il rispetto dei limiti della ISO 7500-1:2018 per la catena estensimetrica della macchina STBF.
+\textbf{Classificazione dei sistemi:} le deviazioni massime calcolate per tutti i contributi di errore compresi nel budget di incertezza consentono l'assegnazione della Classe [QUI CI INSERITò LA CLASSE APPENA LA CALCOLO] per la catena di misura dei torsiometri del banco Renk secondo la BS 7882:2017, e il rispetto dei limiti della ISO 7500-1:2018 per la catena di misura dei ponti estensimetrici della macchina STBF per l'assegnazione della classe [QUI CI INSERITò LA CLASSE APPENA LA CALCOLO].
 
 \subsection{Margini di miglioramento}
 
@@ -1925,6 +1926,7 @@ L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per 
 
 \textbf{Ottimizzazione del campionamento (Banco Renk):} per il torsiometro con fondo scala a $600\,Nm$, l'approvvigionamento di un set integrativo di masse certificate (tagli frazionari da $1\,kg$ e $2\,kg$) permetterebbe la composizione di gradini di carico equivalenti ai target nominali esatti (20\%, 40\%, 60\%, 80\%, 100\%). Tale configurazione minimizza i residui nell'applicazione dei modelli di interpolazione polinomiale richiesti dalla norma BS 7882:2017.
 
+
 %----------------------------------------------------------------------------------------
 
     \newpage
@@ -1933,34 +1935,32 @@ L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per 
 
 \subsection{Procedure di gestione della strumentazione}
 
-La conformità ai requisiti della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale) e l'istituzione di una scheda anagrafica (registro della strumentazione).
-
-Il registro deve includere l'identificazione del software di condizionamento associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di malfunzionamenti e l'archivio dei certificati di taratura. La procedura norma le operazioni di movimentazione, immagazzinamento e uso per prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per le celle di carico e il provino strumentato) che invaliderebbero l'integrità metrologica.
+La conformità ai requisiti della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale -l'azienda adotta un sistema di riconoscimento dei componenti mediante un PART NUMBER-) e di un registro. Il registro deve includere l'identificazione del software di condizionamento associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di malfunzionamenti e l'archivio dei certificati di taratura. La norma prevede di includere anche le operazioni di movimentazione, immagazzinamento e uso per prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per le celle di carico e il provino strumentato) che invaliderebbero l'integrità metrologica.
 
 \subsection{Tracciabilità metrologica dei campioni primari} 
 
 La validità della calibrazione dei banchi prova è subordinata alla riferibilità ininterrotta dei campioni di lavoro utilizzati. 
 
-\textbf{Tracciabilità delle Masse (Banco Renk):} la generazione della coppia di riferimento si fonda sul valore di forza peso esercitato dai campioni di massa. Le masse da $10\,kg$, $5\,kg$ e $3\,kg$ impiegate devono munite di certificato di taratura, emesso dal laboratorio "ALFA SERVICE snc" accreditato secondo gli standard dell'ente italiano di accreditamento ACCREDIA. I certificati fornisce+ono il valore convenzionale della massa e l'incertezza estesa associata:
+\textbf{Tracciabilità delle Masse (Banco Renk):} la generazione della coppia di riferimento si fonda sul valore di forza peso esercitato dai campioni di massa. Le masse da $10\,kg$, $5\,kg$ e $3\,kg$ impiegate devono munite di certificato di taratura, emesso dal laboratorio "ALFA SERVICE snc" accreditato secondo gli standard dell'ente italiano di accreditamento ACCREDIA. I certificati forniscono il valore medio della massa e l'incertezza estesa associata:
 \begin{itemize}
     \item masse $3\,kg$ $\rightarrow$ LAT 296 25-M-00085;
     \item masse $5\,kg$ $\rightarrow$ LAT 296 25-M-00086;
     \item masse $10\,kg$ $\rightarrow$ LAT 296 25-M-00087;
 \end{itemize}
 
-\textbf{Tracciabilità del Provino Strumentato e della Cella di Carico F1 (Banco STBF):} il provino strumentato, fungendo da trasduttore di trasferimento per la forza, strumentato dalla azienda SINT TECHNOLOGY, possiede una catena di tracciabilità basata sulla taratura in compressione eseguita internamente mediante la stessa cella di carico F1, la quale è stata tarata in compressione dall'azienda INSERIREAZIENDA (certificato di taratura identificato dal codice di taratura INSERIRECODICE). Il certificato di taratura associa il segnale elettrico in uscita (mV/V) ai valori di forza applicati da una macchina campione primaria. L'incertezza dichiarata in tale certificato costituisce il contributo di riferimento ($u_{std}$) nel budget di incertezza per la calibrazione dei ponti estensimetrici U1 e U3.
+\textbf{Tracciabilità del Provino Strumentato e della Cella di Carico F1 (Banco STBF):} il provino strumentato, fungendo da trasduttore di trasferimento per la forza, strumentato dall'azienda SINT TECHNOLOGY, possiede una catena di tracciabilità basata sulla taratura in compressione eseguita internamente mediante la stessa cella di carico F1, la quale è stata tarata in compressione dall'azienda INSERIREAZIENDA (certificato di taratura identificato dal codice di taratura INSERIRECODICE). L'incertezza dichiarata nel certificato del provino costituisce il contributo di riferimento ($u_{std}$) nel budget di incertezza per la calibrazione dei ponti estensimetrici U1 e U3.
 
 
 \subsection{Piano di taratura periodica delle catene di misura}
 
-Le catene di misura dei banchi Renk e STBF sono soggette a derive metrologiche indotte da fatica meccanica, invecchiamento dell'elettronica e variazioni ambientali. Il laboratorio definisce un piano di taratura per garantire la tenuta in tolleranza dei sistemi.
+Le catene di misura dei banchi Renk e STBF sono soggette a derive metrologiche indotte da fatica meccanica, invecchiamento dell'elettronica e variazioni ambientali (temperatura e umidità in particolare). Il laboratorio definisce un piano di taratura per garantire la tenuta in tolleranza dei sistemi.
 
 \textbf{Intervallo di taratura ufficiale:} l'intervallo base tra due tarature complete (eseguite secondo BS 7882 e ISO 7500-1) è fissato a 12 mesi. Tale frequenza è cautelativa per macchinari sottoposti a cicli di prova a fatica ad alta frequenza e ad alto carico. Qualora la strumentazione subisca smontaggi, sovraccarichi accidentali o interventi di manutenzione straordinaria, la taratura ufficiale deve essere immediatamente ripetuta.
 
 \textbf{Verifiche intermedie:} per assicurare la stabilità del sistema tra due tarature annuali, sono previste verifiche intermedie semestrali o propedeutiche all'inizio di campagne di prova critiche.
 \begin{itemize}
     \item \textit{Banco Renk:} Applicazione di un singolo livello di coppia noto (es. 50\% del fondo scala) in configurazione statica e registrazione dello scostamento rispetto alla taratura ufficiale.
-    \item \textit{Banco STBF:} Verifica della deriva di zero (Zero drift) a sistema scarico e attivazione della procedura di shunt-calibration interna dei moduli NI 9237 per verificare la stabilità del guadagno dell'amplificatore.
+    \item \textit{Banco STBF:} Verifica della deriva di zero a sistema scarico  per verificare la stabilità dell'intera catena di misura.
 \end{itemize}
 I dati derivanti dalle verifiche intermedie e dalle ricalibrazioni annuali vengono tracciati mediante carte di controllo, permettendo la valutazione della deriva a lungo termine e l'eventuale rimodulazione dell'intervallo di taratura.
 
@@ -1972,7 +1972,7 @@ Le procedure di taratura descritte si inseriscono nell'architettura documentale 
 
 \textbf{Gestione delle Non Conformità:} qualora durante una taratura periodica o una verifica intermedia si riscontri che un trasduttore opera fuori dai limiti della propria classe di precisione (condizione di \textit{Out of Tolerance}), il SGQ impone l'immediata segregazione logica o fisica del macchinario. Contestualmente, si avvia un'analisi di impatto a ritroso: il responsabile tecnico valuta oggettivamente se l'errore riscontrato ha compromesso i risultati delle prove a fatica condotte sui Test Article dei clienti nel periodo intercorso dall'ultima taratura valida.
 
-\textbf{Azioni Correttive:} sulla base dell'analisi di impatto, vengono definite le azioni correttive. Queste spaziano dalla ricalibrazione del software di condizionamento (aggiornamento dei coefficienti polinomiali), alla sostituzione dell'hardware difettoso, fino alla potenziale emissione di rapporti di prova emendati e alla formale notifica di richiamo ai clienti le cui prove risultino tecnicamente invalidate.
+\textbf{Azioni Correttive:} sulla base dell'analisi di impatto, vengono definite le azioni correttive. Queste spaziano dalla ricalibrazione del software di condizionamento (aggiornamento dei coefficienti polinomiali di taratura), alla sostituzione dell'hardware difettoso, fino alla potenziale emissione di rapporti di prova emendati e alla formale notifica di richiamo ai clienti le cui prove risultino tecnicamente invalidate.
 
 
 

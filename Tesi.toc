@@ -41,7 +41,7 @@
 \contentsline {subsubsection}{\numberline {4.4.1}Fabbricazione e tolleranze meccaniche}{50}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Installazione dei ponti estensimetrici}{51}{subsubsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.3}Collaudo e certificazione metrologica}{51}{subsubsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.5}Procedura di verifica}{52}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Procedura di verifica}{51}{subsection.4.5}%
 \contentsline {subsubsection}{\numberline {4.5.1}Scopo e campo di applicazione}{52}{subsubsection.4.5.1}%
 \contentsline {subsubsection}{\numberline {4.5.2}Riferimenti normativi e documentali}{53}{subsubsection.4.5.2}%
 \contentsline {subsubsection}{\numberline {4.5.3}Condizioni ambientali}{53}{subsubsection.4.5.3}%
@@ -57,7 +57,7 @@
 \contentsline {subsubsection}{\numberline {4.8.1}Regola decisionale per la dichiarazione di conformità}{58}{subsubsection.4.8.1}%
 \contentsline {section}{\numberline {5}CAPITOLO 5 - CONFRONTO CON REQUISITI ISO 17025}{59}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Adeguatezza metrologica}{59}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Margini di miglioramento}{59}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Margini di miglioramento}{60}{subsection.5.2}%
 \contentsline {section}{\numberline {6}CAPITOLO 6 - GESTIONE DELLA STRUMENTAZIONE E PROCESSI DI QUALITÀ}{61}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Procedure di gestione della strumentazione}{61}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Tracciabilità metrologica dei campioni primari}{61}{subsection.6.2}%
