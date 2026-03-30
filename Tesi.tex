@@ -225,7 +225,7 @@
 
 \vspace{30mm}
 \hrulefill
-\\\centering{\large{ANNO ACCADEMICO 2025/2026}}
+\\\centering{\large{ANNO ACCADEMICO 2025/2026}\\ \vspace{5pt} 17 Aprile 2026}
 
 \end{titlepage}
 
@@ -1136,7 +1136,9 @@ B)  Nel caso in cui il carico massimo da applicare risulti essere pari a $600Nm$
         ottenendo $61.8129\,kg$;
 \end{itemize}
 
-La taratura dei torsiometri deve essere eseguita in entrambi i versi di caricamento degli stessi, in senso orario ed antiorario. Dai dati dei pesi certificati, e dalla misura della lunghezza del braccio di leva del bilanciere, siamo in grado di eseguire una taratura che ricade nella  \textbf{classe del dispositivo della coppia da tarare} pari a $\mathbf{0.1}$, come indicato nella norma  BS 7882:201.
+La taratura dei torsiometri deve essere eseguita in entrambi i versi di caricamento degli stessi, in senso orario ed antiorario. 
+
+Dai dati dei pesi certificati, e dalla misura della lunghezza del braccio di leva del bilanciere, siamo in grado di eseguire potenzialmente una taratura che ricade nella  \textbf{classe del dispositivo della coppia da tarare} pari a $\mathbf{0.1}$, come indicato nella norma  BS 7882:201.Il calcolo della classe del dispositivo della coppia da tarare è stato eseguito considerando l'incertezza totale associata alla generazione della coppia di riferimento, che include l'incertezza dei pesi certificati, l'incertezza associata alla misura del braccio di leva, e l'incertezza associata all'allineamento del bilanciere. I dettagli di questo conto sono riportati nel Capitolo 7.
 
 Per questa classe è previsto eseguire la taratura in almeno 3 configurazioni angolari differenti del torsiometro:
 \begin{itemize}
@@ -1618,16 +1620,16 @@ Per l'adempimento della funzione di \textbf{strumento campione} ai sensi della n
 
 \begin{itemize}
     \item \textbf{Controllo a banco:} Verifica metrologica del parallelismo  tra la generatrice superiore del rullo di contatto e il piano di appoggio inferiore; riferimento in macchina del corpo centrale sfruttando grazie al gioco di $0.5\,mm$ garantito dai fori passanti presenti sulla base del provino per garantire il corretto posizionamento della  zona di contatto tra rullo e martello.
-    \item \textbf{Taratura certificata:} Il dispositivo completo è stato tarato internamente all'azienda nel range operativo fino a $20\,kN$, mediante l'uso della cella di carico F1, il cui certificato di taratura emesso [MATTEO MI DEVE ANCORA DARE IL SUO CERTIFICATO DI TARATURA] istituisce la riferibilità metrologica ininterrotta ai campioni primari. La taratura della cella di carico F1 è stata affidata ad una azienda terza, SINT TECHNOLOGY, correlata dal relativo certificato di taratura NUMEROCERTIFICATOCHEMATTEOMIDEVEANCORADARE.
+    \item \textbf{Taratura:} Il dispositivo completo è stato tarato internamente all'azienda (mediante la stessa procedura prevista per la virifica del banco STBF, descritta successivamente)  nel range operativo fino a $20\,kN$. La taratura in questione è stata eseguita mediante un secondo banco prova STBF. La taratura della cella F1 e dei ponti U1 e U3 del secondo banco prova STBF è stata affidata all'azienda LBG TESTING EQUIPMENT, la quale ha anche fornito il certificato di taratura che ne istituisce la riferibilità metrologica ininterrotta ai campioni primari. La strumentazione del provino strumentato è stata affidata ad una azienda terza, SINT TECHNOLOGY.
 \end{itemize}
 
 \subsection{Procedura di verifica}
 
-Di seguito è riportata la procedura utilizzata per l'esecuzione dell’operazione di taratura/verifica che è stata condotta dai tecnici di laboratorio.
+Di seguito è riportata la procedura utilizzata per l'esecuzione dell'operazione di taratura/verifica che è stata condotta dai tecnici di laboratorio.
 
 \subsubsection{Scopo e campo di applicazione}
 % Definire l'oggetto della procedura, le tipologie di strumenti in esame, le grandezze fisiche misurate e il campo di misura (range) coperto, incluse limitazioni del metodo.
-La presente procedura definisce le modalità operative per la taratura delle catene di misura associate ai ponti estensimetrici \textbf{U1} ed \textbf{U3} del banco prova STBF. Nello specifico, le catene di acquisizione coinvolte in questa procedura sono se le seguenti:
+La presente procedura definisce le modalità operative per la taratura/verifica delle catene di misura associate ai ponti estensimetrici \textbf{U1} ed \textbf{U3} e della cella di carico \textbf{F1} del banco prova STBF. Nello specifico, le catene di acquisizione coinvolte in questa procedura sono se le seguenti:
 
 \begin{itemize}
     \item \textbf{Catena di misura F1:} Cella di carico F1 $\rightarrow$ Amplificatore SGAD (SN 17955160) $\rightarrow$ Modulo convertitore A/D (NI 9205, Canale 1) $\rightarrow$ Chassis NI cDAQ-9174 $\rightarrow$ PC (ambiente LabVIEW).
@@ -1948,7 +1950,7 @@ La validità della calibrazione dei banchi prova è subordinata alla riferibilit
     \item masse $10\,kg$ $\rightarrow$ LAT 296 25-M-00087;
 \end{itemize}
 
-\textbf{Tracciabilità del Provino Strumentato e della Cella di Carico F1 (Banco STBF):} il provino strumentato, fungendo da trasduttore di trasferimento per la forza, strumentato dall'azienda SINT TECHNOLOGY, possiede una catena di tracciabilità basata sulla taratura in compressione eseguita internamente mediante la stessa cella di carico F1, la quale è stata tarata in compressione dall'azienda INSERIREAZIENDA (certificato di taratura identificato dal codice di taratura INSERIRECODICE). L'incertezza dichiarata nel certificato del provino costituisce il contributo di riferimento ($u_{std}$) nel budget di incertezza per la calibrazione dei ponti estensimetrici U1 e U3.
+\textbf{Tracciabilità del Provino Strumentato e del banco prova STBF:} il provino strumentato, fungendo da trasduttore di trasferimento per la forza, strumentato dall'azienda SINT TECHNOLOGY, possiede una catena di tracciabilità basata sulla taratura in compressione eseguita internamente mediante un secondo banco prova STBF, il quale è stato tarato nel mese di marzo 2026 in compressione dall'azienda LBG TEST EQUIPMENT (certificato di taratura della cella F1 identificato dal codice di taratura  00115LAT 2026 - 195 e certificati di taratura dei ponti U1 e U3 identificati dal codice 00115LAT 2025 - 1127) accreditato secondo gli standard dell'ente italiano di accreditamento ACCREDIA. L'incertezza dichiarata nel certificato di taratura del provino costituisce il contributo di riferimento ($u_{std}$) nel budget di incertezza per la calibrazione dei ponti estensimetrici U1 e U3 e della cella di carico F1.
 
 
 \subsection{Piano di taratura periodica delle catene di misura}
@@ -1957,12 +1959,7 @@ Le catene di misura dei banchi Renk e STBF sono soggette a derive metrologiche i
 
 \textbf{Intervallo di taratura ufficiale:} l'intervallo base tra due tarature complete (eseguite secondo BS 7882 e ISO 7500-1) è fissato a 12 mesi. Tale frequenza è cautelativa per macchinari sottoposti a cicli di prova a fatica ad alta frequenza e ad alto carico. Qualora la strumentazione subisca smontaggi, sovraccarichi accidentali o interventi di manutenzione straordinaria, la taratura ufficiale deve essere immediatamente ripetuta.
 
-\textbf{Verifiche intermedie:} per assicurare la stabilità del sistema tra due tarature annuali, sono previste verifiche intermedie semestrali o propedeutiche all'inizio di campagne di prova critiche.
-\begin{itemize}
-    \item \textit{Banco Renk:} Applicazione di un singolo livello di coppia noto (es. 50\% del fondo scala) in configurazione statica e registrazione dello scostamento rispetto alla taratura ufficiale.
-    \item \textit{Banco STBF:} Verifica della deriva di zero a sistema scarico  per verificare la stabilità dell'intera catena di misura.
-\end{itemize}
-I dati derivanti dalle verifiche intermedie e dalle ricalibrazioni annuali vengono tracciati mediante carte di controllo, permettendo la valutazione della deriva a lungo termine e l'eventuale rimodulazione dell'intervallo di taratura.
+\textbf{Verifiche intermedie:} per assicurare la stabilità del sistema tra due tarature annuali, sono previste verifiche intermedie (per il banco Renk, per i banchi STBF e per il provino strumentato) semestrali o propedeutiche all'inizio di campagne di prova critiche. I dati derivanti dalle verifiche intermedie e dalle ricalibrazioni annuali vengono tracciati mediante carte di controllo, permettendo la valutazione della deriva a lungo termine e l'eventuale rimodulazione dell'intervallo di taratura.
 
 \subsection{Integrazione nel Sistema di Gestione per la Qualità (SGQ)}
 
@@ -1982,10 +1979,207 @@ Le procedure di taratura descritte si inseriscono nell'architettura documentale 
 
 \section{CAPITOLO 7 - RISULTATI DEL PROCESSO DI TARATURA DELLE CATENE DI MISURA DEI TORSIOMETRI }
 
+\subsection{Operazione preliminare - Calcolo classe del dispositivo della coppia da tarare}
+
+Il procedimento richiede il calcolo dell'incertezza relativa percentuale associata al valore del carico applicato mediante il bilanciere. Questo parametro permette di stabilire la miglior classe di precisione alla quale può essere classificata la catena di misura in questione. Di seguito si riportano i calcoli eseguiti:
+
+\begin{itemize}
+
+\item{
+\noindent
+\textbf{Peso masse primarie in kg:}
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \rowcolor{headerblue}
+        \textcolor{white}{\textbf{ID}} & \textcolor{white}{\textbf{S/N}} & \textcolor{white}{\textbf{Massa [kg]}} & \textcolor{white}{\textbf{Incertezza estesa [kg]}} \\
+        \hline
+        \rowcolor{rowlight}
+        $M_{1}$ & SN002 & 10.1834 & 0.0002 \\
+        \hline
+        $M_{2}$ & SN005 & 10.0982 & 0.0002 \\
+        \hline
+        \rowcolor{rowlight}
+        $M_{3}$ & SN006 & 10.0982 & 0.0002 \\
+        \hline
+        $M_{4}$ & SN007 & 10.0446 & 0.0002 \\
+        \hline
+        \rowcolor{rowlight}
+        $M_{5}$ & SN009 & 10.2170 & 0.0002 \\
+        \hline
+        $M_{6}$ & SN023 & 2.8592 & 0.0001 \\
+        \hline
+        \rowcolor{rowlight}
+        $M_{7}$ & SN024 & 2.8636 & 0.0001 \\
+        \hline
+        $M_{8}$ & SN025 & 2.8651 & 0.0001 \\
+        \hline
+        \rowcolor{rowlight}
+        $M_{9}$ & SN026 & 2.8582 & 0.0001 \\
+        \hline
+    \end{tabular}
+    \caption{Dati delle masse primarie certificati}
+    \label{tab:dati_masse}
+\end{table}
+
+\begin{align}
+u_{1} &:= \frac{u_{\text{estesa}\_1}}{2} = 1 \cdot 10^{-4} \text{ kg} \\
+u_{2} &:= \frac{u_{\text{estesa}\_2}}{2} = 1 \cdot 10^{-4} \text{ kg} \\
+u_{3} &:= \frac{u_{\text{estesa}\_3}}{2} = 1 \cdot 10^{-4} \text{ kg} \\
+u_{4} &:= \frac{u_{\text{estesa}\_4}}{2} = 1 \cdot 10^{-4} \text{ kg} \\
+u_{5} &:= \frac{u_{\text{estesa}\_5}}{2} = 1 \cdot 10^{-4} \text{ kg} \\
+u_{6} &:= \frac{u_{\text{estesa}\_6}}{2} = 5 \cdot 10^{-5} \text{ kg} \\
+u_{7} &:= \frac{u_{\text{estesa}\_7}}{2} = 5 \cdot 10^{-5} \text{ kg} \\
+u_{8} &:= \frac{u_{\text{estesa}\_8}}{2} = 5 \cdot 10^{-5} \text{ kg} \\
+u_{9} &:= \frac{u_{\text{estesa}\_9}}{2} = 5 \cdot 10^{-5} \text{ kg}
+\end{align}
+
+\begin{align}
+P &:= 9.81 \cdot \sum_{i=1}^{9} M_{i} = 609.078 \text{ N} \\
+u_{P} &:= 9.81 \cdot \sqrt{\sum_{i=1}^{9} u_{i}^{2}} = 0.002 \text{ N}
+\end{align}
+}
+
+\item{
+\noindent
+\textbf{Lunghezza braccio di leva in mm:}
+\begin{align}
+L &:= 1000 \text{ mm} \\
+risol_{L} &:= 0.5 \text{ mm} \\
+err_{L} &:= \frac{risol_{L}}{2} = 0.25 \text{ mm} \\
+u_{L} &:= \frac{err_{L}}{2 \cdot \sqrt{3}} = 0.072 \text{ mm}
+\end{align}
+}
+
+\item{
+\noindent
+\textbf{Posizione angolare in deg:}
+\begin{align}
+risol_{\theta} &:= \frac{1}{180} \cdot \pi = 0.017 \text{ rad} \\
+\theta &:= 0 \text{ rad} \\
+err_{\theta} &:= \frac{risol_{\theta}}{2} = 0.009 \text{ rad} \\
+u_{\theta} &:= \frac{err_{\theta}}{2 \cdot \sqrt{3}} = 0.003 \text{ rad}
+\end{align}
+
+\begin{equation}
+T := L \cdot P \cdot \cos(\theta) = 6.091 \cdot 10^{5} \text{ Nmm}
+\end{equation}
+}
+
+\item{
+\vspace{0.5cm}
+\noindent
+\textbf{Contributi termini del primo ordine per il calcolo dell'incertezza combinata:}
+
+Contributo primo ordine dato dalla lunghezza:
+\begin{equation}
+u_{T\_L} := (P \cdot \cos(\theta))^{2} \cdot u_{L}^{2} = 1.932 \cdot 10^{3} \text{ (Nmm)}^{2}
+\end{equation}
+
+Contributo primo ordine dato dal peso:
+\begin{equation}
+u_{T\_P} := (L \cdot \cos(\theta))^{2} \cdot u_{P}^{2} = 5.774 \text{ (Nmm)}^{2}
+\end{equation}
+
+Contributo primo ordine dato dall'angolo:
+\begin{equation}
+u_{T\_\theta} := (L \cdot P \cdot (-\sin(\theta)))^{2} \cdot u_{\theta}^{2} = 0 \text{ (Nmm)}^{2}
+\end{equation}
+}
+
+\item{
+\textbf{Incertezza combinata dei termini di primo ordine:}
+\begin{equation}
+u_{1\_\text{square}} := u_{T\_L} + u_{T\_P} + u_{T\_\theta} = 1.938 \cdot 10^{3} \text{ (Nmm)}^{2}
+\end{equation}
+}
+
+\item{
+\vspace{0.5cm}
+\noindent
+\textbf{Contributi termini del secondo ordine per il calcolo dell'incertezza combinata:}
+\begin{align}
+A &:= \cos(\theta)^{2} \cdot u_{L}^{2} \cdot u_{P}^{2} \text{ (Nmm)}^{2} \\
+B &:= P^{2} \cdot (\sin(\theta)^{2} - \cos(\theta)^{2}) \cdot u_{L}^{2} \cdot u_{\theta}^{2} \text{ (Nmm)}^{2} \\
+C &:= L^{2} \cdot (\sin(\theta)^{2} - \cos(\theta)^{2}) \cdot u_{P}^{2} \cdot u_{\theta}^{2} \text{ (Nmm)}^{2} \\
+D &:= L^{2} \cdot P^{2} \cdot \left(\frac{1}{2} \cdot \cos(\theta)^{2} - \sin(\theta)^{2}\right) \cdot u_{\theta}^{4} \text{ (Nmm)}^{2}
+\end{align}
+
+\begin{equation}
+u_{2\_\text{square}} := A + B + C + D = 7.458 \text{ (Nmm)}^{2}
+\end{equation}
+}
+
+\item{
+\vspace{0.5cm}
+\noindent
+\textbf{Incertezza tipo combinata:}
+\begin{equation}
+u_{T} := \sqrt{u_{1\_\text{square}} + u_{2\_\text{square}}} = 44.107 \text{ Nmm}
+\end{equation}
+}
+
+\item{
+\vspace{0.5cm}
+\noindent
+\textbf{Calcolo dell'incertezza risultante:}
+\begin{align}
+u_{T\_\text{estesa}} &:= u_{T} \cdot 2 = 88.213 \text{ Nmm} \\
+u_{T\_\text{rel\_perc}} &:= \frac{u_{T\_\text{estesa}}}{T} \cdot 100 = 0.014 \%
+\end{align}
+}
+
+\end{itemize}
+
+Confrontando l'incertezza relativa percentuale calcolata ($0.014\%$) con i parametri indicati dalla norma BS 7882:2017, la catena di misura dei torsiometri del banco Renk risulta potenzialmente classificabile in Classe 0.1, in quanto il valore misurato è inferiore all'incertezza massima ammissibile ($0.02\%$) per tale classe, come evidenziato nella Tabella \ref{tab:incertezza_coppie_taratura}.
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|c|c|}
+        \hline
+        \rowcolor{headerblue}
+        \textcolor{white}{\textbf{Classe del dispositivo della}} & \textcolor{white}{\textbf{Incertezza massima ammissibile della}} \\
+        \rowcolor{headerblue}
+        \textcolor{white}{\textbf{coppia da tarare}} & \textcolor{white}{\textbf{coppia di taratura applicata\textsuperscript{A)} [\%]}} \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{0.05} & $\pm 0.01$ \\
+        \hline
+        \textbf{0.1} & $\pm 0.02$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{0.2} & $\pm 0.04$ \\
+        \hline
+        \textbf{0.5} & $\pm 0.10$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{1.0} & $\pm 0.20$ \\
+        \hline
+        \textbf{2.0} & $\pm 0.40$ \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{5.0} & $\pm 1.00$ \\
+        \hline
+        \multicolumn{2}{|l|}{\small \textsuperscript{A)} Utilizzando un fattore di copertura $k = 2$ per un livello di confidenza di circa il 95\%.} \\
+        \hline
+    \end{tabular}
+    \caption{Incertezza delle coppie di taratura (BS 7882:2017, Tabella 1).}
+    \label{tab:incertezza_coppie_taratura}
+\end{table}
+
+\subsection{Risultati numerici della procedura di verifica del Banco Renk}
+
 %----------------------------------------------------------------------------------------
     \newpage
 
 \section{CAPITOLO 8 - RISULTATI DEL PROCESSO DI TARATURA DELLA CATENA DI MISURA DEI PONTI ESTENSIMETRICI}
+
+\subsection{Taratura e determinazione dell'incertezza del provino strumentato}
+
+\subsection{Risultati numerici della procedura di verifica del Banco STBF}
 
 
 %----------------------------------------------------------------------------------------
