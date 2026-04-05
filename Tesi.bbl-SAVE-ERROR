@@ -1,0 +1,173 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{BS7882}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=44ea1b356dcd7bfe0ece54601fb6bcec}{%
+           family={{BSI}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {British Standards Institution}%
+      }
+      \list{location}{1}{%
+        {Londra, UK}%
+      }
+      \strng{namehash}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{fullhash}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{fullhashraw}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{bibnamehash}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{authorbibnamehash}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{authornamehash}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{authorfullhash}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \strng{authorfullhashraw}{44ea1b356dcd7bfe0ece54601fb6bcec}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{BS 7882:2017}
+      \field{title}{BS 7882:2017 - Method for calibration and classification of torque measuring devices}
+      \field{year}{2017}
+      \true{nocite}
+    \endentry
+    \entry{Ferrari2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7c6a5375c023cfb36227e378772bab77}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Milano}%
+      }
+      \list{publisher}{1}{%
+        {FrancoAngeli}%
+      }
+      \strng{namehash}{7c6a5375c023cfb36227e378772bab77}
+      \strng{fullhash}{7c6a5375c023cfb36227e378772bab77}
+      \strng{fullhashraw}{7c6a5375c023cfb36227e378772bab77}
+      \strng{bibnamehash}{7c6a5375c023cfb36227e378772bab77}
+      \strng{authorbibnamehash}{7c6a5375c023cfb36227e378772bab77}
+      \strng{authornamehash}{7c6a5375c023cfb36227e378772bab77}
+      \strng{authorfullhash}{7c6a5375c023cfb36227e378772bab77}
+      \strng{authorfullhashraw}{7c6a5375c023cfb36227e378772bab77}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{88-464-6598-9}
+      \field{series}{Formazione permanente-Pratica di}
+      \field{title}{Qualità nella misurazione. Introduzione alla metrologia e guida applicativa}
+      \field{year}{2005}
+      \true{nocite}
+      \keyw{metrologia}
+    \endentry
+    \entry{ISO7500}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=5b512ee8a59deb284ad0a6a035ba10b1}{%
+           family={{ISO}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \list{location}{1}{%
+        {Ginevra, Svizzera}%
+      }
+      \strng{namehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{fullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{fullhashraw}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{bibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{authorbibnamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{authornamehash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{authorfullhash}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \strng{authorfullhashraw}{5b512ee8a59deb284ad0a6a035ba10b1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{ISO 7500-1:2018}
+      \field{title}{ISO 7500-1:2018 - Metallic materials — Calibration and verification of static uniaxial testing machines — Part 1: Tension/compression testing machines — Calibration and verification of the force-measuring system}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{ISO17025}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=0828a8408614177181026ea908d5594a}{%
+           family={{ISO/IEC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Organization for Standardization}%
+      }
+      \list{location}{1}{%
+        {Ginevra, Svizzera}%
+      }
+      \strng{namehash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhash}{0828a8408614177181026ea908d5594a}
+      \strng{fullhashraw}{0828a8408614177181026ea908d5594a}
+      \strng{bibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorbibnamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authornamehash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhash}{0828a8408614177181026ea908d5594a}
+      \strng{authorfullhashraw}{0828a8408614177181026ea908d5594a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{ISO/IEC 17025}
+      \field{title}{UNI CEI EN ISO/IEC 17025:2005 - Requisiti generali per la competenza dei laboratori di prova e di taratura}
+      \field{year}{2005}
+      \true{nocite}
+    \endentry
+    \entry{GUM}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=65e68b639d9a9ec9294e01c64ffbd0c1}{%
+           family={{JCGM}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Joint Committee for Guides in Metrology}%
+      }
+      \list{location}{1}{%
+        {Sèvres, Francia}%
+      }
+      \strng{namehash}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{fullhash}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{fullhashraw}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{bibnamehash}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{authorbibnamehash}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{authornamehash}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{authorfullhash}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \strng{authorfullhashraw}{65e68b639d9a9ec9294e01c64ffbd0c1}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{JCGM 100:2008}
+      \field{title}{JCGM 100:2008 (GUM 1995 with minor corrections) - Evaluation of measurement data — Guide to the expression of uncertainty in measurement}
+      \field{year}{2008}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

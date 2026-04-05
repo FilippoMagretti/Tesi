@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Tesi"] 1774439167.11958 "Tesi.bcf" "Tesi.bbl" "Tesi" 1774889966.61505 0
-  "Tesi.bcf" 1774889966 108671 d0201482e98833bb4fd1b0a18196c122 "pdflatex"
+["biber Tesi"] 1775402072.81611 "Tesi.bcf" "Tesi.bbl" "Tesi" 1775402364.89327 0
+  "Tesi.bcf" 1775402364 108671 d0201482e98833bb4fd1b0a18196c122 "pdflatex"
   "mybib.bib" 1774434742 1786 7966c25feec5916d6c29c23e4938b53d ""
   (generated)
   "Tesi.bbl"
   "Tesi.blg"
   (rewritten before read)
-["pdflatex"] 1774889960.82539 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1774889966.61618 0
+["pdflatex"] 1775402358.74344 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1775402364.89441 0
   "Images/Capitolo_1/precisione_accuratezza.png" 1773137239 423653 c07b7507a395b2c8d186cc56d178a88c ""
   "Images/Capitolo_2/Architettura del RENK.png" 1772699838 43784 0c5774b0fa42550ff92423724b1d229b ""
   "Images/Capitolo_2/Macchinario_STBF.png" 1773152120 481817 b4a701c9d6d0ef83f6f72c048bc17ba1 ""
@@ -60,16 +60,20 @@
   "Images/Capitolo_4/Superfici_di_riferimento_dall_alto.png" 1773066643 13907 b4460dd0baf7b6698f5ab6648bc44fdd ""
   "Images/Capitolo_4/Vincolo_di_incastro.png" 1773049868 25449 070fddf65b08b9e862bc6078117b89fd ""
   "Images/Capitolo_4/Vincolo_simmetria.png" 1773049825 22148 099d6f7f1ae6b20c2cf697ddedfd1dff ""
+  "Images/Capitolo_7/Bilanciere_installato_1.jpeg" 1775201263 311544 fc527d633f465e513213d5b552a5249c ""
+  "Images/Capitolo_7/Bilanciere_installato_2.jpeg" 1775201250 330913 8bac2414129c80f46293ad019ab094bd ""
+  "Images/Capitolo_8/Provino_strumentato.jpeg" 1775116644 230459 7c17578822a5b4a07bd36383b9ce7ed6 ""
+  "Images/Capitolo_8/Taratura_provino.jpeg" 1775116746 253954 4cb3ec79932ce6156e64b8776b3af14a ""
   "Images/Frontespizio/Cherubino.jpg" 1768573816 39256 2affa4925d43d09b3676103dbafa6d4d ""
-  "Tesi.aux" 1774889966 28389 b72755220e1a2f10624a0e02e7d80287 "pdflatex"
-  "Tesi.bbl" 1774439169 6991 d026afcb17b154f1931f5b008a47ec8d "biber Tesi"
-  "Tesi.lof" 1774889966 5217 725078c56e74b516e023d6710f1c05aa "pdflatex"
-  "Tesi.lot" 1774889966 1094 0d360357d9a22982cd2ed20aa8a44a92 "pdflatex"
-  "Tesi.out" 1774889966 20148 ab914b336b870345f904f6e2a769d1cb "pdflatex"
-  "Tesi.run.xml" 1774889966 2331 d2bd779c2ddf3d688a655a2c9c5afa4b "pdflatex"
-  "Tesi.tex" 1774889959 142624 0fc89223fd969ee034cedf6a5319387a ""
-  "Tesi.toc" 1774889966 8010 59e01f8339b3334fae8b2255d3c6c0ab "pdflatex"
-  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1774889959 142624 0fc89223fd969ee034cedf6a5319387a ""
+  "Tesi.aux" 1775402364 31414 19896c3f319756f4e2af71c44dc8dc01 "pdflatex"
+  "Tesi.bbl" 1775402079 6991 d026afcb17b154f1931f5b008a47ec8d "biber Tesi"
+  "Tesi.lof" 1775402364 5606 bf4d0d1d95d70f92b1bbf07218f77ba1 "pdflatex"
+  "Tesi.lot" 1775402364 1890 4e1432be21d57b51493c872a595becd7 "pdflatex"
+  "Tesi.out" 1775402364 20001 5625765ef33be99cb0febe950190c6cb "pdflatex"
+  "Tesi.run.xml" 1775402364 2331 d2bd779c2ddf3d688a655a2c9c5afa4b "pdflatex"
+  "Tesi.tex" 1775402357 173554 059ebf755cf5be9e587af2bbb3301b82 ""
+  "Tesi.toc" 1775402364 7983 68a6006bd1cc6f1307b99185922bbeb4 "pdflatex"
+  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1775402357 173554 059ebf755cf5be9e587af2bbb3301b82 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1768564197 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1768564197 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1768565645 3524 cb3e574dea2d1052e39280babc910dc8 ""

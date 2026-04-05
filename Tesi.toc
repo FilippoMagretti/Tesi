@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.1}Analisi delle esigenze metrologiche}{18}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Progettazione del sistema di taratura}{18}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Sequenza di montaggio}{23}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Realizzazione e collaudo}{28}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Realizzazione e collaudo}{27}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Fabbricazione e tolleranze di lavorazione}{28}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Collaudo dimensionale e verifica funzionale}{29}{subsubsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.5}Procedura di taratura}{29}{subsection.3.5}%
@@ -24,15 +24,15 @@
 \contentsline {subsubsection}{\numberline {3.5.3}Condizioni ambientali}{30}{subsubsection.3.5.3}%
 \contentsline {subsubsection}{\numberline {3.5.4}Apparecchiature e campioni di riferimento}{30}{subsubsection.3.5.4}%
 \contentsline {subsubsection}{\numberline {3.5.5}Operazioni preliminari}{31}{subsubsection.3.5.5}%
-\contentsline {subsubsection}{\numberline {3.5.6}Procedura di taratura}{32}{subsubsection.3.5.6}%
+\contentsline {subsubsection}{\numberline {3.5.6}Procedura di taratura}{31}{subsubsection.3.5.6}%
 \contentsline {subsubsection}{\numberline {3.5.7}Taratura nella prima configurazione di riferimento}{33}{subsubsection.3.5.7}%
-\contentsline {subsubsection}{\numberline {3.5.8}Taratura nella seconda configurazione di riferimento}{34}{subsubsection.3.5.8}%
-\contentsline {subsubsection}{\numberline {3.5.9}Taratura nella terza configurazione di riferimento}{35}{subsubsection.3.5.9}%
-\contentsline {subsubsection}{\numberline {3.5.10}Taratura del secondo torsiometro}{36}{subsubsection.3.5.10}%
-\contentsline {subsection}{\numberline {3.6}Elaborazione dei dati sperimentali (BS 7882:2017)}{36}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Stima dell'incertezza (BS 7882:2017)}{38}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.5.8}Taratura nella seconda configurazione di riferimento}{33}{subsubsection.3.5.8}%
+\contentsline {subsubsection}{\numberline {3.5.9}Taratura nella terza configurazione di riferimento}{34}{subsubsection.3.5.9}%
+\contentsline {subsubsection}{\numberline {3.5.10}Taratura del secondo torsiometro}{35}{subsubsection.3.5.10}%
+\contentsline {subsection}{\numberline {3.6}Elaborazione dei dati sperimentali (BS 7882:2017)}{35}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Stima dell'incertezza (BS 7882:2017)}{37}{subsubsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.7}Valutazione dei risultati e Criteri di classificazione (BS 7882:2017)}{39}{subsection.3.7}%
-\contentsline {subsubsection}{\numberline {3.7.1}Regola decisionale e Incertezza di misura (BS 7882:2017)}{40}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.1}Regola decisionale e Incertezza di misura (BS 7882:2017)}{39}{subsubsection.3.7.1}%
 \contentsline {section}{\numberline {4}CAPITOLO 4 - SISTEMA DI VERIFICA PONTI ESTENSIMETRICI}{41}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Analisi delle esigenze metrologiche}{41}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Progettazione del sistema di verifica}{41}{subsection.4.2}%
@@ -64,11 +64,11 @@
 \contentsline {subsection}{\numberline {6.3}Piano di taratura periodica delle catene di misura}{62}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Integrazione nel Sistema di Gestione per la Qualità (SGQ)}{62}{subsection.6.4}%
 \contentsline {section}{\numberline {7}CAPITOLO 7 - RISULTATI DEL PROCESSO DI TARATURA DELLE CATENE DI MISURA DEI TORSIOMETRI }{63}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Operazione preliminare - Calcolo classe del dispositivo della coppia da tarare}{63}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Operazione preliminare - Calcolo classe di taratura}{63}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Risultati numerici della procedura di verifica del Banco Renk}{65}{subsection.7.2}%
-\contentsline {section}{\numberline {8}CAPITOLO 8 - RISULTATI DEL PROCESSO DI TARATURA DELLA CATENA DI MISURA DEI PONTI ESTENSIMETRICI}{66}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Taratura e determinazione dell'incertezza del provino strumentato}{66}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Risultati numerici della procedura di verifica del Banco STBF}{66}{subsection.8.2}%
-\contentsline {section}{\numberline {9}CAPITOLO 9 - CONCLUSIONI}{67}{section.9}%
-\contentsline {section}{\numberline {10}APPENDICI}{68}{section.10}%
-\contentsline {subsection}{\numberline {10.1}APPENDICE A - Propagazione dell'incertezza}{68}{subsection.10.1}%
+\contentsline {section}{\numberline {8}CAPITOLO 8 - RISULTATI DEL PROCESSO DI TARATURA DELLA CATENA DI MISURA DEI PONTI ESTENSIMETRICI}{72}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Taratura e determinazione dell'incertezza del provino strumentato}{72}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Risultati numerici della procedura di verifica del Banco STBF}{74}{subsection.8.2}%
+\contentsline {section}{\numberline {9}CAPITOLO 9 - CONCLUSIONI}{75}{section.9}%
+\contentsline {section}{\numberline {10}APPENDICI}{76}{section.10}%
+\contentsline {subsection}{\numberline {10.1}APPENDICE A - Propagazione dell'incertezza}{76}{subsection.10.1}%
