@@ -252,21 +252,14 @@
 	\pagenumbering{arabic}
 	\setcounter{page}{1}
 
-    \setcounter{section}{-1}
+    %\setcounter{section}{-1}
 %----------------------------------------------------------------------------------------
     \blankpage
     \newpage
 
 
-\section{Introduzione}
+\section*{Abstract}
 
-
-
-\subsection{Contesto di riferimento e obiettivi del tirocinio}
-
-
-
-\subsection{I sistemi di prova per trasmissioni meccaniche e il ruolo della metrologia}
 
 
 %----------------------------------------------------------------------------------------
@@ -2363,7 +2356,7 @@ Le prove hanno fornito i seguenti risultati numerici:
 \end{table}
 
 \newpage
-Dai valori sono stati ricavati di conseguenza i valori corrispondenti delle deflessioni (valore di lettura in output a cui viene sottratto il valore dello zero letto prima dell'applicazione del carico):
+Dai valori sono stati ricavati di conseguenza i valori corrispondenti delle deflessioni come indicato dalla norma \textbf{BS 7882:2017} (valore di lettura in output a cui viene sottratto il valore dello zero letto prima dell'applicazione del carico):
 
 \begin{table}[H]
     \centering
@@ -2604,15 +2597,15 @@ Si calcolano quindi i valori dei parametri per la determinazione della classe de
         \rowcolor{rowlight}
         \textbf{Nm} & \textbf{$u_1$} & \textbf{$u_2$} & \textbf{$u_3$} & \textbf{$u_4$} & \textbf{$u_5$} & \textbf{$u_6$} & \textbf{$u_7$} & \textbf{$u_8$} & \textbf{$U_{tipo}$} & \textbf{$U_{estesa}$} \\
         \hline
-        100 & 0,01 & 0,091 & 0,032 & 0,002 & 8E-05 & 0 & 0 & 0,047 & 0,107 & 0,2148 \\
+        100 & 0,01 & 0,091 & 0,032 & 0,002 & 8E-05 & 0 & 0 & 0,047 & 0,107 & 0,215 \\
         \hline
-        200 & 0,01 & 0,073 & 0,009 & 0,002 & 8E-05 & 0 & 0 & 0,114 & 0,136 & 0,2719 \\
+        200 & 0,01 & 0,073 & 0,009 & 0,002 & 8E-05 & 0 & 0 & 0,114 & 0,136 & 0,272 \\
         \hline
         300 & 0,01 & 0,049 & 0,018 & 0,002 & 8E-05 & 0 & 0 & -0,04 & 0,066 & 0,132 \\
         \hline
-        400 & 0,01 & 0,056 & 0,023 & 0,002 & 8E-05 & 0 & 0 & -0,04 & 0,073 & 0,1467 \\
+        400 & 0,01 & 0,056 & 0,023 & 0,002 & 8E-05 & 0 & 0 & -0,04 & 0,073 & 0,147 \\
         \hline
-        500 & 0,01 & 0,03 & 0,003 & 0,002 & 8E-05 & 0 & 0 & 0 & 0,031 & 0,0629 \\
+        500 & 0,01 & 0,03 & 0,003 & 0,002 & 8E-05 & 0 & 0 & 0 & 0,031 & 0,063 \\
         \hline
     \end{tabular}%
     }
@@ -2658,13 +2651,13 @@ Si calcolano quindi i valori dei parametri per la determinazione della classe de
         \hline
         100 & 0,01 & 0,146 & 0,047 & 0,002 & 5E-05 & 0 & 0 & 0,052 & 0,163 & 0,325 \\
         \hline
-        200 & 0,01 & 0,039 & 0,007 & 0,002 & 5E-05 & 0 & 0 & 0,067 & 0,078 & 0,1566 \\
+        200 & 0,01 & 0,039 & 0,007 & 0,002 & 5E-05 & 0 & 0 & 0,067 & 0,078 & 0,157 \\
         \hline
-        300 & 0,01 & 0,068 & 0,018 & 0,002 & 5E-05 & 0 & 0 & 0,01 & 0,071 & 0,1424 \\
+        300 & 0,01 & 0,068 & 0,018 & 0,002 & 5E-05 & 0 & 0 & 0,01 & 0,071 & 0,142 \\
         \hline
-        400 & 0,01 & 0,006 & 7E-04 & 0,002 & 5E-05 & 0 & 0 & 0,057 & 0,058 & 0,1156 \\
+        400 & 0,01 & 0,006 & 7E-04 & 0,002 & 5E-05 & 0 & 0 & 0,057 & 0,058 & 0,116 \\
         \hline
-        500 & 0,01 & 0,072 & 0,018 & 0,002 & 5E-05 & 0 & 0 & 0 & 0,075 & 0,1493 \\
+        500 & 0,01 & 0,072 & 0,018 & 0,002 & 5E-05 & 0 & 0 & 0 & 0,075 & 0,149 \\
         \hline
     \end{tabular}%
     }
@@ -3023,7 +3016,28 @@ Viene ricavata anche la retta di best fit di taratura del provino, che rappresen
 
 \section{CAPITOLO 9 - CONCLUSIONI}
 
+Dall'analisi dei risultati è stato possibile classificare la classe di appartenenza delle catene di misura di coppia e di forza e i valori di banchi prova Renk e STBF, e anche i valori di incertezza associati:
 
+\begin{itemize}
+    
+    \item La catena di misura del torsiometro HBM è stata classificata in classe 0.5, con un'incertezza estesa che varia da un minimo di 0.116\% ad un massimo di 0.325\% a seconda del livello di carico testato.
+   
+    \item La catena di misura del torsiometro Manner è stata classificata in classe 1, con un'incertezza estesa che varia da un minimo di 0.09\% ad un massimo di 0.807\% a seconda del livello di carico testato.
+    
+    \item La catena di misura del banco prova STBF è stata classificata in classe INSERISCICALSSE, con un'incertezza estesa che risulta essere .
+
+\end{itemize}
+
+
+    Analizzando i parametri che sono stati vincolanti per la classificazione delle singole catene di misura, è possibile evidenziare che:
+
+\begin{itemize}
+    
+    \item  L'elemento che ha maggiormente influenzato la classificazione per la catena di misura del torsiometro HBM è stata la "Relative reproducibility" identificato dal parametro $R_2$. 
+    
+    \item  L'elemento che ha maggiormente influenzato la classificazione per la catena di misura del torsiometro Manner è stata la "Relative repeatability" identificata dal parametro $R_1$, e la "Relative reversibility" identificata dal parametro $R_3$.
+
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
     \newpage

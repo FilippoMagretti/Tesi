@@ -1,8 +1,5 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {section}{\numberline {0}Introduzione}{1}{section.0}%
-\contentsline {subsection}{\numberline {0.1}Contesto di riferimento e obiettivi del tirocinio}{1}{subsection.0.1}%
-\contentsline {subsection}{\numberline {0.2}I sistemi di prova per trasmissioni meccaniche e il ruolo della metrologia}{1}{subsection.0.2}%
 \contentsline {section}{\numberline {1}CAPITOLO 1 - RIFERIMENTI NORMATIVI E METROLOGICI}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}La metrologia nei laboratori di prova}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}1.2 La normativa UNI EN ISO 17025}{4}{subsection.1.2}%
