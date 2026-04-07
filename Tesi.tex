@@ -1898,7 +1898,7 @@ La validazione delle procedure e dei sistemi di taratura sviluppati richiede la 
 \textbf{Apparecchiature e Riferibilità metrologica (Requisiti 5.5 e 5.6):} il requisito 5.6 impone che tutte le tarature e le misurazioni effettuate dal laboratorio siano riferibili al Sistema Internazionale (SI). Questa condizione è soddisfatta garantendo che le grandezze fisiche misurate (coppia e forza) siano derivate in modo ininterrotto da campioni primari muniti di certificato di taratura accreditato, come dettagliato nel Capitolo 6. I sistemi progettati (bilanciere e provino) assolvono la funzione di apparecchiature di trasferimento del carico , la cui geometria e rigidezza non alterano la catena di riferibilità .
 \textbf{Apparecchiature e Riferibilità metrologica (Requisiti 5.5 e 5.6):} il requisito 5.6 impone che tutte le tarature e le misurazioni effettuate dal laboratorio siano riferibili al Sistema Internazionale (SI). Questa condizione è soddisfatta garantendo che le grandezze fisiche misurate (coppia e forza) siano derivate in modo ininterrotto da campioni primari muniti di certificato di taratura accreditato, come dettagliato nel Capitolo 6. I sistemi progettati (bilanciere e provino) assolvono la funzione di apparecchiature di trasferimento del carico, la cui geometria e rigidezza non alterano la catena di riferibilità.
 
-\textbf{Classificazione dei sistemi:} le deviazioni massime calcolate per tutti i contributi di errore compresi nel budget di incertezza consentono l'assegnazione della Classe [QUI CI INSERITò LA CLASSE APPENA LA CALCOLO] per la catena di misura dei torsiometri del banco Renk secondo la BS 7882:2017, e il rispetto dei limiti della ISO 7500-1:2018 per la catena di misura dei ponti estensimetrici della macchina STBF per l'assegnazione della classe [QUI CI INSERITò LA CLASSE APPENA LA CALCOLO].
+\textbf{Classificazione dei sistemi:} le deviazioni massime calcolate per tutti i contributi di errore compresi nel budget di incertezza consentono l'assegnazione della Classe per la catena di misura dei torsiometri del banco Renk secondo la BS 7882:2017, e il rispetto dei limiti della ISO 7500-1:2018 per la catena di misura dei ponti estensimetrici della macchina STBF per l'assegnazione della classe.
 
 \subsection{Margini di miglioramento}
 
@@ -1908,7 +1908,7 @@ L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per 
 
 \textbf{Automazione dell'acquisizione dati:} la transizione dalla registrazione manuale a routine di acquisizione automatizzate in ambiente LabVIEW elimina l'incertezza legata all'errore umano di lettura (approssimazione del digit fluttuante). L'integrazione software consente di imporre un campionamento vincolato temporalmente, garantendo il rigoroso rispetto dei periodi di stabilizzazione meccanica prima dell'estrazione del dato.
 
-\textbf{Ottimizzazione del campionamento (Banco Renk):} per il torsiometro con fondo scala a $600\,Nm$, l'approvvigionamento di un set integrativo di masse certificate (tagli frazionari da $1\,kg$ e $2\,kg$) permetterebbe la composizione di gradini di carico equivalenti ai target nominali esatti (20\%, 40\%, 60\%, 80\%, 100\%). Tale configurazione minimizza i residui nell'applicazione dei modelli di interpolazione polinomiale richiesti dalla norma BS 7882:2017.
+\textbf{Ottimizzazione del campionamento (Banco Renk):} per il torsiometro con fondo scala a $600\,Nm$, l'approvvigionamento di un set integrativo di masse certificate (tagli frazionari da $1\,kg$ e $2\,kg$) permetterebbe la composizione di gradini di carico equivalenti ai target nominali esatti (20\%, 40\%, 60\%, 80\%, 100\%). Tale configurazione minimizza i residui nell'applicazione dei modelli di interpolazione polinomiale richiesti dalla norma BS 7882:2017 tarando il torsiometro Manner più accurato rispetto al proprio fondo scala.
 
 
 %----------------------------------------------------------------------------------------
@@ -1919,7 +1919,7 @@ L'analisi critica dei sistemi realizzati evidenzia ambiti di ottimizzazione per 
 
 \subsection{Procedure di gestione della strumentazione}
 
-La conformità ai requisiti della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale -l'azienda adotta un sistema di riconoscimento dei componenti mediante un PART NUMBER-) e di un registro. Il registro deve includere l'identificazione del software di condizionamento associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di malfunzionamenti e l'archivio dei certificati di taratura. La norma prevede di includere anche le operazioni di movimentazione, immagazzinamento e uso per prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per le celle di carico e il provino strumentato) che invaliderebbero l'integrità metrologica.
+La conformità ai requisiti della norma UNI EN ISO/IEC 17025 impone l'implementazione di una procedura documentata per la gestione sistematica delle apparecchiature e dei campioni di riferimento. Le precedenti procedure di taratura descritte soddisfano queste esigenze. Il processo richiede l'identificazione univoca di ciascun componente (tramite matricola o codice identificativo aziendale -l'azienda adotta un sistema di riconoscimento dei componenti mediante un PART NUMBER-) e di un registro. Il registro deve includere l'identificazione del software di condizionamento associato, le specifiche tecniche, le istruzioni del costruttore, lo storico delle manutenzioni, le registrazioni di malfunzionamenti e l'archivio dei certificati di taratura. La norma prevede di includere anche le operazioni di movimentazione, immagazzinamento e uso per prevenire deterioramenti, ossidazioni (critiche per le masse certificate) o shock meccanici (critici per le celle di carico e il provino strumentato) che invaliderebbero l'integrità metrologica.
 
 \subsection{Tracciabilità metrologica dei campioni primari} 
 
@@ -2394,7 +2394,7 @@ Dai valori sono stati ricavati di conseguenza i valori corrispondenti delle defl
         \rowcolor{rowlight}
         \multicolumn{4}{|c|}{\textbf{Seconda serie}} \\
         \hline
-        0 & 0,037 & -99,55 & 0 \\
+        0 & 0,037 & 0 & 0 \\
         \hline
         100 & 98,394 & 99,63 & 98 \\
         \hline
@@ -2571,15 +2571,15 @@ Si calcolano quindi i valori dei parametri per la determinazione della classe de
         \rowcolor{rowlight}
         \textbf{Nm} & \textbf{$T_{min}$} & \textbf{$R_0$} & \textbf{$R_1$} & \textbf{$R_2$} & \textbf{$R_3$} & \textbf{$E_{id}$} \\
         \hline
-        100 & 10 & 0,0003 & 0,11 & 0,257 & 0,081 & -0.015 \\
+        100 & 10 & 0,03 & 0,11 & 0,257 & 0,081 & -0.015 \\
         \hline
-        200 & 10 & 0,0003 & 0,03 & 0,206 & 0,198 & -0.012 \\
+        200 & 10 & 0,03 & 0,03 & 0,206 & 0,198 & -0.012 \\
         \hline
-        300 & 10 & 0,0003 & 0,064 & 0,14 & -0,07 & -0.013 \\
+        300 & 10 & 0,03 & 0,064 & 0,14 & -0,07 & -0.013 \\
         \hline
-        400 & 10 & 0,0003 & 0,079 & 0,158 & -0,07 & -0.014 \\
+        400 & 10 & 0,03 & 0,079 & 0,158 & -0,07 & -0.014 \\
         \hline
-        500 & 10 & 0,0003 & 0,01 & 0,086 & 0 & -0.011 \\
+        500 & 10 & 0,03 & 0,01 & 0,086 & 0 & -0.011 \\
         \hline
     \end{tabular}%
     }
@@ -2623,15 +2623,15 @@ Si calcolano quindi i valori dei parametri per la determinazione della classe de
         \rowcolor{rowlight}
         \textbf{Nm} & \textbf{$T_{min}$} & \textbf{$R_0$} & \textbf{$R_1$} & \textbf{$R_2$} & \textbf{$R_3$} & \textbf{$E_{id}$} \\
         \hline
-        100 & 10 & 0,0002 & 0,162 & 0,414 & 0,091 & -0.007 \\
+        100 & 10 & 0,02 & 0,162 & 0,414 & 0,091 & -0.007 \\
         \hline
-        200 & 10 & 0,0002 & 0,025 & 0,111 & 0,116 & -0.008 \\
+        200 & 10 & 0,02 & 0,025 & 0,111 & 0,116 & -0.008 \\
         \hline
-        300 & 10 & 0,0002 & 0,061 & 0,192 & 0,017 & -0.011 \\
+        300 & 10 & 0,02 & 0,061 & 0,192 & 0,017 & -0.011 \\
         \hline
-        400 & 10 & 0,0002 & 0,003 & 0,018 & 0,099 & -0.011 \\
+        400 & 10 & 0,02 & 0,003 & 0,018 & 0,099 & -0.011 \\
         \hline
-        500 & 10 & 0,0002 & 0,063 & 0,204 & 0 & -0.008 \\
+        500 & 10 & 0,02 & 0,063 & 0,204 & 0 & -0.008 \\
         \hline
     \end{tabular}%
     }
@@ -2706,15 +2706,15 @@ Si evidenziano i risultati ottenuti e si riporta la classe di appartenenza per l
         \rowcolor{rowlight}
         \textbf{Nm} & \textbf{$T_{min}$} & \textbf{$R_0$} & \textbf{$R_1$} & \textbf{$R_2$} & \textbf{$R_3$} & \textbf{$E_{id}$} \\
         \hline
-        100 & 10 & 6E-04 & 0,08 & 0,451 & 0,3302 & 0,003 \\
+        100 & 10 & 0.06 & 0,08 & 0,451 & 0,3302 & 0,003 \\
         \hline
-        200 & 10 & 6E-04 & 0,1 & 0,3 & 0,4895 & 0,006 \\
+        200 & 10 & 0.06 & 0,1 & 0,3 & 0,4895 & 0,006 \\
         \hline
-        300 & 10 & 6E-04 & 0,308 & 0,308 & 0,5684 & 0,003 \\
+        300 & 10 & 0.06 & 0,308 & 0,308 & 0,5684 & 0,003 \\
         \hline
-        400 & 10 & 6E-04 & 0,07 & 0,123 & 0,6935 & 0,002 \\
+        400 & 10 & 0.06 & 0,07 & 0,123 & 0,6935 & 0,002 \\
         \hline
-        500 & 10 & 6E-04 & 0,07 & 0,112 & 0 & -0.003 \\
+        500 & 10 & 0.06 & 0,07 & 0,112 & 0 & -0.003 \\
         \hline
     \end{tabular}%
     }
@@ -2758,15 +2758,15 @@ Si evidenziano i risultati ottenuti e si riporta la classe di appartenenza per l
         \rowcolor{rowlight}
         \textbf{Nm} & \textbf{$T_{min}$} & \textbf{$R_0$} & \textbf{$R_1$} & \textbf{$R_2$} & \textbf{$R_3$} & \textbf{$E_{id}$} \\
         \hline
-        100 & 10 & 7E-04 & 0,132 & 0,233 & 0,3302 & -0,007 \\
+        100 & 10 & 0.07 & 0,132 & 0,233 & 0,3302 & -0,007 \\
         \hline
-        200 & 10 & 7E-04 & 0,172 & 0,318 & 0,4895 & -0,006 \\
+        200 & 10 & 0.07 & 0,172 & 0,318 & 0,4895 & -0,006 \\
         \hline
-        300 & 10 & 7E-04 & 0,02 & 0,168 & 0,5684 & -0,007 \\
+        300 & 10 & 0.07 & 0,02 & 0,168 & 0,5684 & -0,007 \\
         \hline
-        400 & 10 & 7E-04 & 0,401 & 0,437 & 0,6935 & -0.004 \\
+        400 & 10 & 0.07 & 0,401 & 0,437 & 0,6935 & -0.004 \\
         \hline
-        500 & 10 & 7E-04 & 0,24 & 0,363 & 0 & -0.005 \\
+        500 & 10 & 0.07 & 0,24 & 0,363 & 0 & -0.005 \\
         \hline
     \end{tabular}%
     }
@@ -2861,74 +2861,59 @@ Di seguito sono riportati i risultati numerici ottenuti dopo la prova eseguita i
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        & \textbf{risoluzione [N]} & \textbf{risoluzione [N]} & \textbf{risoluzione [mV/V]} & \\
-        & 0,5 & 0,05 & 0,00005 & \\
-        \hline
         \rowcolor{headerblue}
         \textcolor{white}{\textbf{[kN]}} & \textcolor{white}{\textbf{Cella di carico F1 [N]}} & \textcolor{white}{\textbf{Ponte U3 [N]}} & \textcolor{white}{\textbf{Provino strumentato [mV/V]}} & \textcolor{white}{\textbf{Cella carico - ponte U3}} \\
         \hline
-        0 & 1 & -32,2 & -0,0021 & 33,2 \\
+        \rowcolor{rowlight}
+        \multicolumn{5}{|c|}{\textbf{Prima serie - Configurazione angolare 0$^\circ$}} \\
         \hline
-        primo precarico 20kN & 20131 & 137,8 & -1,2190 & 19993,2 \\
+        0 & 0 & 0,0 & 0,0008 & \\
         \hline
-        0 & 1 & -30,35 & -0,0012 & 31,35 \\
+        4 & 4014 & 13,0 & -0,2440 & 4001,3 \\
         \hline
-        secondo precarico 20kN & 20137 & 138 & -1,2189 & 19999 \\
+        8 & 8042 & 46,2 & -0,4876 & 7996,3 \\
         \hline
-        0 & 4 & -30 & -0,0011 & 34 \\
+        12 & 12074 & 77,8 & -0,7314 & 11996,2 \\
         \hline
-        terzo precarico 20kN & 20140 & 138,3 & -1,2178 & 20001,7 \\
+        16 & 16111 & 108,6 & -0,9752 & 16002,2 \\
+        \hline
+        20 & 20139 & 138,6 & -1,2183 & 20000,6 \\
+        \hline
+        0 & 2 & 0,0 & 0,0015 & 2,2 \\
         \hline
         \rowcolor{rowlight}
-        \multicolumn{5}{|c|}{\textbf{Prima serie}} \\
+        \multicolumn{5}{|c|}{\textbf{Seconda serie - Configurazione angolare 120$^\circ$}} \\
         \hline
-        0 & & & 0,0008 & \\
+        0 & 0 & 0,0 & 0,0009 & \\
         \hline
-        4 & 4014 & 13 & -0,2439 & 4001 \\
+        4 & 4013 & 12,5 & -0,2437 & 4000,3 \\
         \hline
-        8 & 8041 & 46,2 & -0,4876 & 7994,8 \\
+        8 & 8044 & 45,9 & -0,4876 & 7998,5 \\
         \hline
-        12 & 12073 & 77,8 & -0,7312 & 11995,2 \\
+        12 & 12082 & 77,8 & -0,7315 & 12004,3 \\
         \hline
-        16 & 16110 & 108,6 & -0,9751 & 16001,4 \\
+        16 & 16108 & 108,5 & -0,9747 & 15999,1 \\
         \hline
-        20 & 20138 & 138,6 & -1,2181 & 19999,4 \\
+        20 & 20136 & 138,5 & -1,218 & 19997,9 \\
         \hline
-        0 & 1 & 0 & 0,0014 & 1 \\
-        \hline
-        \rowcolor{rowlight}
-        \multicolumn{5}{|c|}{\textbf{Seconda serie}} \\
-        \hline
-        0 & & & 0,0009 & \\
-        \hline
-        4 & 4013 & 12,5 & -0,2437 & 4000,5 \\
-        \hline
-        8 & 8044 & 45,9 & -0,4876 & 7998,1 \\
-        \hline
-        12 & 12082 & 77,7 & -0,7315 & 12004,3 \\
-        \hline
-        16 & 16107 & 108,5 & -0,9746 & 15998,5 \\
-        \hline
-        20 & 20137 & 138,5 & -1,2179 & 19998,5 \\
-        \hline
-        0 & -1 & -0,1 & 0,0013 & -0,9 \\
+        0 & 0 & -0,1 & 0,0014 & -0,1 \\
         \hline
         \rowcolor{rowlight}
-        \multicolumn{5}{|c|}{\textbf{Terza serie}} \\
+        \multicolumn{5}{|c|}{\textbf{Terza serie - Configurazione angolare 240$^\circ$}} \\
         \hline
-        0 & & & 0,0011 & \\
+        0 & 0 & 0,0 & 0,0011 & \\
         \hline
-        4 & 4014 & 13,1 & -0,2436 & 4000,9 \\
+        4 & 4014 & 13,2 & -0,2437 & 4000,5 \\
         \hline
-        8 & 8048 & 46,4 & -0,4877 & 8001,6 \\
+        8 & 8048 & 46,4 & -0,4877 & 8001,8 \\
         \hline
-        12 & 12081 & 78,2 & -0,7314 & 12002,8 \\
+        12 & 12082 & 78,2 & -0,7315 & 12003,4 \\
         \hline
-        16 & 16110 & 108,9 & -0,9747 & 16001,1 \\
+        16 & 16110 & 108,9 & -0,9747 & 16000,7 \\
         \hline
-        20 & 20133 & 138,9 & -1,2174 & 19994,1 \\
+        20 & 20133 & 138,9 & -1,2175 & 19994,3 \\
         \hline
-        0 & 2 & 0 & 0,0014 & 2 \\
+        0 & 1 & 0,0 & 0,0015 & 1,2 \\
         \hline
     \end{tabular}%
     }
@@ -2953,19 +2938,17 @@ I parametri calcolati sono di seguito riportati:
         \textcolor{white}{\textbf{Carico [kN]}} & \textcolor{white}{\textbf{a [\%]}} & \textcolor{white}{\textbf{q [\%]}} & \textcolor{white}{\textbf{b [\%]}} & \textcolor{white}{\textbf{v [\%]}} & \textcolor{white}{\textbf{$f_0$ [\%]}} \\
         \hline
         \rowcolor{rowlight}
-        \textbf{4} & -0,0205 & -0,122 & 0,03106 & N.M. & \\
+        \textbf{4} & -0,0205 & -0,122 & 0,03106 & N.M. & -0,1468 \\
         \hline
-        \textbf{8} & -0,0103 & 0,04154 & 0,02075 & N.M. & \\
-        \hline
-        \rowcolor{rowlight}
-        \textbf{12} & -0,0068 & 0,02963 & 0,02618 & N.M. & \\
-        \hline
-        \textbf{16} & -0,0051 & 0,01184 & 0,02293 & N.M. & \\
+        \textbf{8} & -0,0103 & 0,04154 & 0,02075 & N.M. & -0,1468 \\
         \hline
         \rowcolor{rowlight}
-        \textbf{20} & -0,0041 & -0,0216 & 0,00635 & N.M. & \\
+        \textbf{12} & -0,0068 & 0,02963 & 0,02618 & N.M. & -0,1468 \\
         \hline
-        \textbf{0} & & & & & -0,1468 \\
+        \textbf{16} & -0,0051 & 0,01184 & 0,02293 & N.M. & -0,1468 \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{20} & -0,0041 & -0,0216 & 0,00635 & N.M. & -0,1468 \\
         \hline
     \end{tabular}
     \caption{Risultati dei parametri metrologici valutati per la classificazione}
@@ -3020,11 +3003,11 @@ Dall'analisi dei risultati è stato possibile classificare la classe di apparten
 
 \begin{itemize}
     
-    \item La catena di misura del torsiometro HBM è stata classificata in classe 0.5, con un'incertezza estesa che varia da un minimo di 0.116\% ad un massimo di 0.325\% a seconda del livello di carico testato.
+    \item La catena di misura del torsiometro HBM è stata classificata in classe 0.5, con un'incertezza estesa che varia da un minimo di 0.116\% ad un massimo di 0.325\% a seconda del livello di carico testato. 
    
     \item La catena di misura del torsiometro Manner è stata classificata in classe 1, con un'incertezza estesa che varia da un minimo di 0.09\% ad un massimo di 0.807\% a seconda del livello di carico testato.
     
-    \item La catena di misura del banco prova STBF è stata classificata in classe INSERISCICALSSE, con un'incertezza estesa che risulta essere .
+    \item La catena di misura del secondo banco prova STBF è stata classificata in classe INSERISCICALSSE, con un'incertezza estesa che risulta essere .
 
 \end{itemize}
 
@@ -3033,9 +3016,15 @@ Dall'analisi dei risultati è stato possibile classificare la classe di apparten
 
 \begin{itemize}
     
-    \item  L'elemento che ha maggiormente influenzato la classificazione per la catena di misura del torsiometro HBM è stata la "Relative reproducibility" identificato dal parametro $R_2$. 
+    \item  L'elemento che ha maggiormente influenzato la classificazione per la catena di misura del torsiometro HBM è stato la \textbf{"Relative reproducibility"} identificato dal parametro $\mathbf{R_2}$. 
     
-    \item  L'elemento che ha maggiormente influenzato la classificazione per la catena di misura del torsiometro Manner è stata la "Relative repeatability" identificata dal parametro $R_1$, e la "Relative reversibility" identificata dal parametro $R_3$.
+    Questo significa che la catena di misura del torsiometro HBM ha mostrato una buona riproducibilità (bassa dispersione tra i valori misurati nelle stesse condizioni di prova) mentre ha mostrato una più scarsa ripetibilità (maggiore dispersione tra i valori misurati in differenti condizioni di prova -nelle differenti configurazioni angolari-), che però non è stata vincolante per la classificazione in classe 0.5, che risulta buona e conferma lo stato di taratura della relativa catena di misura.
+    
+    \item  L'elemento che ha maggiormente influenzato la classificazione per la catena di misura del torsiometro Manner è stato la \textbf{"Relative repeatability"} identificata dal parametro $\mathbf{R_1}$, e la \textbf{"Relative reversibility"} identificata dal parametro $\mathbf{R_3}$. 
+    
+    Questi parametri evidenziano che la catena di misura del torsiometro Manner ha mostrato una certa dispersione tra i valori misurati nelle stesse condizioni di prova -nella stessa configurazione angolare- sia per il caso delle 2 serie di caricamento consecutive ($R_1$) sia per il caso delle 2 serie consecutive di caricamento e scarico ($R_3$), indice di bassa ripetibilità. Infatti, se si guardano anche i valori di $R_2$ si osserva un certo grado errore per quanto riguarda anche la riproducibilità, che comunque è risultata essere meno critico per la classificazione in classe 1, che comunque risulta buona confermando lo stato di taratura della relativa catena di misura.
+
+    \item L'elemento che maggiormente ha influenzato la classificazione per la catena di misura del secondo banco prova STBF (ricordando che il primo banco STBF, precedentemente tarato nel mese di marzo del corrente anno 2026, è stato usato per la taratura del provino strumentato) è stato
 
 \end{itemize}
 

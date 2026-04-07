@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  6 APR 2026 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  7 APR 2026 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1222,41 +1222,6 @@ File: Images/Capitolo_7/Bilanciere_installato_2.jpeg Graphic file (type jpg)
 <use Images/Capitolo_7/Bilanciere_installato_2.jpeg>
 Package pdftex.def Info: Images/Capitolo_7/Bilanciere_installato_2.jpeg  used on input line 2156.
 (pdftex.def)             Requested size: 441.01773pt x 248.07161pt.
- [66 <./Images/Capitolo_7/Bilanciere_installato_1.jpeg> <./Images/Capitolo_7/Bilanciere_installato_2.jpeg>] [67] [68] [69] [70] [71]
-<Images/Capitolo_8/Provino_strumentato.jpeg, id=1083, 2055.68pt x 1956.30875pt>
-File: Images/Capitolo_8/Provino_strumentato.jpeg Graphic file (type jpg)
-<use Images/Capitolo_8/Provino_strumentato.jpeg>
-Package pdftex.def Info: Images/Capitolo_8/Provino_strumentato.jpeg  used on input line 2844.
-(pdftex.def)             Requested size: 198.45662pt x 188.83635pt.
-<Images/Capitolo_8/Taratura_provino.jpeg, id=1084, 853.68938pt x 1050.92625pt>
-File: Images/Capitolo_8/Taratura_provino.jpeg Graphic file (type jpg)
-<use Images/Capitolo_8/Taratura_provino.jpeg>
-Package pdftex.def Info: Images/Capitolo_8/Taratura_provino.jpeg  used on input line 2850.
-(pdftex.def)             Requested size: 198.45662pt x 244.30576pt.
- [72 <./Images/Capitolo_8/Provino_strumentato.jpeg> <./Images/Capitolo_8/Taratura_provino.jpeg>] [73] [74] [75] [76] [77] [78] (./Tesi.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-29>
- ***********
-Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 50E414268505665BE1F68CAB202C910D;19115.
-Package logreq Info: Writing requests to 'Tesi.run.xml'.
-\openout1 = `Tesi.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 27034 strings out of 467538
- 479551 string characters out of 5423725
- 1486158 words of memory out of 5000000
- 55230 multiletter control sequences out of 15000+600000
- 645427 words of font info for 83 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 108i,18n,117p,1521b,2167s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Tesi.pdf (86 pages, 5702199 bytes).
-PDF statistics:
- 1309 PDF objects out of 1440 (max. 8388607)
- 1054 compressed objects within 11 object streams
- 346 named destinations out of 1000 (max. 500000)
- 843 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ [66 <./Images/Capitolo_7/Bilanciere_installato_1.jpeg
+!pdfTeX error: pdflatex.exe (file ./Images/Capitolo_7/Bilanciere_installato_1.jpeg): fflush() failed (Invalid argument)
+ ==> Fatal error occurred, no output PDF file produced!
