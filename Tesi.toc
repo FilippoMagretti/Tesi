@@ -66,6 +66,6 @@
 \contentsline {section}{\numberline {8}CAPITOLO 8 - RISULTATI DEL PROCESSO DI TARATURA DELLA CATENA DI MISURA DEI PONTI ESTENSIMETRICI}{72}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Taratura e determinazione dell'incertezza del provino strumentato}{72}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Risultati numerici della procedura di verifica del Banco STBF}{75}{subsection.8.2}%
-\contentsline {section}{\numberline {9}CAPITOLO 9 - CONCLUSIONI}{78}{section.9}%
-\contentsline {section}{\numberline {10}APPENDICI}{80}{section.10}%
-\contentsline {subsection}{\numberline {10.1}APPENDICE A - Propagazione dell'incertezza}{80}{subsection.10.1}%
+\contentsline {section}{\numberline {9}CAPITOLO 9 - CONCLUSIONI}{79}{section.9}%
+\contentsline {section}{\numberline {10}APPENDICI}{81}{section.10}%
+\contentsline {subsection}{\numberline {10.1}APPENDICE A - Propagazione dell'incertezza}{81}{subsection.10.1}%

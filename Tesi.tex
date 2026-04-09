@@ -260,6 +260,14 @@
 
 \section*{Abstract}
 
+Il presente elaborato illustra lo sviluppo, l'implementazione e la validazione metrologica di procedure e sistemi di taratura per catene di misura di coppia e forza. L'obiettivo primario è il soddisfacimento dei requisiti tecnici e gestionali stabiliti dalla norma UNI EN ISO/IEC 17025, necessari per il percorso di accreditamento di un laboratorio di prove su trasmissioni meccaniche. La trattazione si fonda sull'applicazione rigorosa dei metodi normalizzati di settore (BS 7882:2017 e ISO 7500-1:2018) e della guida GUM per la compilazione dei budget di incertezza e la valutazione dell'incertezza estesa.\par
+
+Per quanto concerne la misurazione della coppia torcente, l'analisi si concentra sul banco prova per ingranaggi a ricircolo di potenza Renk, operante in un campo di misura fino a $1000 \text{ Nm}$. È stato progettato, realizzato e collaudato un sistema meccanico di taratura a bilanciere ad azzeramento baricentrico, interfacciato con masse primarie certificate atte a garantire la riferibilità al Sistema Internazionale (SI). L'elaborazione dei dati sperimentali ha consentito la classificazione delle due catene di misura installate: il torsiometro HBM ha conseguito la Classe 0,5 (incertezza estesa massima pari allo $0,325\%$), mentre il torsiometro Manner è stato classificato in Classe 1 (incertezza estesa massima pari allo $0,807\%$).\par
+
+Parallelamente, per le misurazioni di forza in compressione fino a $20 \text{ kN}$ su una macchina per test di resistenza a fatica alla base del dente (STBF), è stato ingegnerizzato un provino strumentato operante come trasduttore di trasferimento (strumento campione). La topologia a rigidezza flessionale ridotta e le quote di installazione dei ponti estensimetrici, validate preventivamente tramite analisi agli elementi finiti (FEM), hanno garantito l'elisione dei gradienti tensionali parassiti indotti da difetti di parallelismo al contatto. L'applicazione della procedura di taratura ha permesso di valutare l'architettura ridondante del banco STBF 2, assegnando la Classe 0,5 alla catena di misura diretta (ponte U1, incertezza estesa massima dello $0,34\%$) e la Classe 1 alla catena di misura indiretta (cella F1 - ponte U3, incertezza estesa massima dello $0,66\%$).\par
+
+Nell'insieme, le attività condotte confermano l'adeguatezza tecnica dei dispositivi progettati e delle procedure operative redatte, assicurando la rintracciabilità metrologica ininterrotta per entrambe le grandezze fisiche. I risultati sperimentali validano lo stato di taratura della strumentazione, consentendo la strutturazione di un piano di verifica periodica e l'integrazione sistematica delle azioni di salvaguardia metrologica all'interno del Sistema di Gestione per la Qualità del laboratorio.
+
 
 
 %----------------------------------------------------------------------------------------
@@ -2848,8 +2856,8 @@ Di seguito sono riportati i risultati numerici ottenuti dopo la prova eseguita i
     \begin{subfigure}{0.45\textwidth}
     \centering
         \includegraphics[width=1\textwidth]{Images/Capitolo_8/Taratura_provino.jpeg}
-        \caption{Prova di taratura}
-        \label{fig:Prova di taratura}
+        \caption{Prova di taratura del provino}
+        \label{fig:Prova di taratura del provino}
     \end{subfigure}
     \caption{Taratura provino}
     \label{fig:Taratura provino}
@@ -2999,6 +3007,15 @@ Per quanto riguarda l'incertezza associata al provino strumentato, è possibile 
 Viene ricavata anche la retta di best fit di taratura del provino, che rappresenta la relazione tra il carico applicato e la risposta del provino strumentato (in mV/V), implementata nel software di acquisizione dati. L'incertezza per i punti di taratura del provino inlfuirà direttamente sull'incertezza combinata estesa per la verifica delle catene di misura diretta e indiretta del Banco prova STBF 2, analizzato nel successivo sottocapitolo.
 
 \subsection{Risultati numerici della procedura di verifica del Banco STBF}
+
+Una volta tarato il provino strumentato, ed implementata la retta di taratura nel software di acquisizione dati, è stata eseguita la procedura di verifica del banco prova STBF 2, seguendo la procedura descritta nel capitolo 5.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/Capitolo_8/Taratura_stbf_2.jpeg}
+    \caption{Prova di taratura del banco prova STBF 2}
+    \label{fig:Prova di taratura del banco prova STBF 2}
+\end{figure}
 
 Le prove condotte sul banco prova STBF 2 hanno prodotto i seguenti risultati:
 
@@ -3184,19 +3201,19 @@ Rispetto alla catena di misura diretta, questa catena ricade in \textbf{classe 1
         \hline
         \rowcolor{headerblue}
         \textcolor{white}{\textbf{[kN]}} & \textcolor{white}{\textbf{$u_{res}$}} & \textcolor{white}{\textbf{$u_{rep}$}} & \textcolor{white}{\textbf{$u_{Provino}$}} & \textcolor{white}{\textbf{$u_{tipo}$}} & \textcolor{white}{\textbf{$U_{estesa}$}} & \textcolor{white}{\textbf{[N]}} \\
-        \rowcolor{headerblue}
-        \rowcolor{rowlight}
-        \textbf{4} & 0,00 & 0,06 & 0,33 & 0,33 & 0,66 & 26,4 \\
-        \hline
-        \textbf{8} & 0,00 & 0,02 & 0,17 & 0,17 & 0,34 & 27,4 \\
         \hline
         \rowcolor{rowlight}
-        \textbf{12} & 0,00 & 0,02 & 0,13 & 0,13 & 0,25 & 30,4 \\
+        \textbf{4} & 0,01 & 0,03 & 0,33 & 0,33 & 0,65 & 26,0 \\
         \hline
-        \textbf{16} & 0,00 & 0,01 & 0,12 & 0,12 & 0,23 & 37,1 \\
+        \textbf{8} & 0,00 & 0,02 & 0,17 & 0,17 & 0,34 & 27,2 \\
         \hline
         \rowcolor{rowlight}
-        \textbf{20} & 0,00 & 0,01 & 0,13 & 0,13 & 0,25 & 50,1 \\
+        \textbf{12} & 0,00 & 0,04 & 0,13 & 0,13 & 0,26 & 31,2 \\
+        \hline
+        \textbf{16} & 0,00 & 0,01 & 0,12 & 0,12 & 0,23 & 36,8 \\
+        \hline
+        \rowcolor{rowlight}
+        \textbf{20} & 0,00 & 0,01 & 0,13 & 0,13 & 0,25 & 50,0 \\
         \hline
     \end{tabular}%
     }

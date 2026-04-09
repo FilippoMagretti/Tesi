@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Tesi"] 1775723414.01708 "Tesi.bcf" "Tesi.bbl" "Tesi" 1775728292.39888 0
-  "Tesi.bcf" 1775728291 108671 d0201482e98833bb4fd1b0a18196c122 "pdflatex"
+["biber Tesi"] 1775723414.01708 "Tesi.bcf" "Tesi.bbl" "Tesi" 1775731690.74208 0
+  "Tesi.bcf" 1775731690 108671 d0201482e98833bb4fd1b0a18196c122 "pdflatex"
   "mybib.bib" 1774434742 1786 7966c25feec5916d6c29c23e4938b53d ""
   (generated)
   "Tesi.bbl"
   "Tesi.blg"
   (rewritten before read)
-["pdflatex"] 1775728285.91409 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1775728292.40016 0
+["pdflatex"] 1775731684.19951 "c:/Users/filip/Desktop/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1775731690.74322 0
   "Images/Capitolo_1/precisione_accuratezza.png" 1773137239 423653 c07b7507a395b2c8d186cc56d178a88c ""
   "Images/Capitolo_2/Architettura del RENK.png" 1772699838 43784 0c5774b0fa42550ff92423724b1d229b ""
   "Images/Capitolo_2/Macchinario_STBF.png" 1773152120 481817 b4a701c9d6d0ef83f6f72c048bc17ba1 ""
@@ -64,16 +64,17 @@
   "Images/Capitolo_7/Bilanciere_installato_2.jpeg" 1775201250 330913 8bac2414129c80f46293ad019ab094bd ""
   "Images/Capitolo_8/Provino_strumentato.jpeg" 1775116644 230459 7c17578822a5b4a07bd36383b9ce7ed6 ""
   "Images/Capitolo_8/Taratura_provino.jpeg" 1775116746 253954 4cb3ec79932ce6156e64b8776b3af14a ""
+  "Images/Capitolo_8/Taratura_stbf_2.jpeg" 1775729799 257298 b433a4fc0cab32f88c26f262c5f0d1ca ""
   "Images/Frontespizio/Cherubino.jpg" 1768573816 39256 2affa4925d43d09b3676103dbafa6d4d ""
-  "Tesi.aux" 1775728291 32919 7b20867ca815ca6891b3657d7a37f4da "pdflatex"
+  "Tesi.aux" 1775731690 33258 7eabb4e87df52c20067936657a2bc092 "pdflatex"
   "Tesi.bbl" 1775723454 6991 d026afcb17b154f1931f5b008a47ec8d "biber Tesi"
-  "Tesi.lof" 1775728291 5607 953b825dbf896f03115c6b791a132f7a "pdflatex"
-  "Tesi.lot" 1775728291 2779 b0593c7e1f99d0f44f94919e3131e725 "pdflatex"
-  "Tesi.out" 1775728291 19115 50e414268505665be1f68cab202c910d "pdflatex"
-  "Tesi.run.xml" 1775728291 2331 d2bd779c2ddf3d688a655a2c9c5afa4b "pdflatex"
-  "Tesi.tex" 1775728284 188163 21468a5504c5cc175c15424eb51657bc ""
-  "Tesi.toc" 1775728291 7660 a26af60565630faaefb759e76352dd31 "pdflatex"
-  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1775728284 188163 21468a5504c5cc175c15424eb51657bc ""
+  "Tesi.lof" 1775731690 5728 b778d525a3e39041d2171f8359ff2b0d "pdflatex"
+  "Tesi.lot" 1775731690 2779 4ff201fa530d24f0a2382bc2289e794c "pdflatex"
+  "Tesi.out" 1775731690 19115 50e414268505665be1f68cab202c910d "pdflatex"
+  "Tesi.run.xml" 1775731690 2331 d2bd779c2ddf3d688a655a2c9c5afa4b "pdflatex"
+  "Tesi.tex" 1775731683 191416 28975387d7be8e2b672e5c6684c4e06e ""
+  "Tesi.toc" 1775731690 7660 c3c5bf4ab4df97a951ff49436b4f909b "pdflatex"
+  "c:/Users/filip/Desktop/Tesi/Tesi.tex" 1775731683 191416 28975387d7be8e2b672e5c6684c4e06e ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1768564197 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1768564197 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1768565645 3524 cb3e574dea2d1052e39280babc910dc8 ""
